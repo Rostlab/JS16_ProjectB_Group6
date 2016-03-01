@@ -1,4 +1,5 @@
 const fs = require("fs");
+const cultureconv = require("./culture");
 fs.readFile('charachters_details.txt', function (err, data) {
     if (err) {
         return console.error(err);
@@ -9,9 +10,11 @@ fs.readFile('charachters_details.txt', function (err, data) {
 function convertToARFF(json){
 	json = JSON.parse(json);
 	var arff = "@DATA\n";
+	var cultures = new Array();
 	json.forEach(function(element,index){
 		var born = "?";
 		var died = "?";
+
 		if(element["Born"] !== undefined){
 			born = '"'+filterData(element["Born"])+'"';
 			//console.log(born);
@@ -22,15 +25,17 @@ function convertToARFF(json){
 		}
 
 		var name = (element["name"] !== undefined)?('"'+filterData(element["name"])+'"'):"?";
-		var culture = (element["Culture"] !== undefined)?('"'+filterData(element["Culture"])+'"'):"?";
+		var culture = (element["Culture"] !== undefined)?(cultureconv.convert_culture(filterData(element["Culture"]))):"?";
+		//console.log(culture);
 		var allegiance = (element["Allegiance"] !== undefined)?('"'+filterData(element["Allegiance"])+'"'):"?";
-		console.log(allegiance); 
-		var race = (element["Race"] !== undefined)?('"'+filterData(element["Race"])+'"'):"?";
+		//console.log(allegiance); 
 		var title = (element["Title"] !== undefined)?('"'+filterData(element["Title"])+'"'):"?";
-		arff += name+','+culture+','+allegiance+','+born+','+died+','+race+','+title+'\n';
+		//console.log(title);
+		arff += name+','+culture+','+allegiance+','+born+','+died+','+title+'\n';
 	});
-	//console.log(arff);
-	var header = "@RELATION characters\n@ATTRIBUTE name  STRING\n@ATTRIBUTE culture   STRING\n@ATTRIBUTE allegiance  STRING\n@ATTRIBUTE born  STRING\n@ATTRIBUTE died 	STRING\n@ATTRIBUTE race STRING\n@ATTRIBUTE title STRING\n";
+
+	var header = "@RELATION characters\n@ATTRIBUTE name  STRING\n@ATTRIBUTE culture   {"+cultureconv.allcultures()+"}\n@ATTRIBUTE allegiance  STRING\n@ATTRIBUTE born  STRING\n@ATTRIBUTE died 	STRING\n@ATTRIBUTE title STRING\n";
+
 	var filestring = header+arff;
 	fs.writeFile("characters.arff",filestring,function (err, data) {
 	   if (err) {
@@ -50,3 +55,4 @@ function filterData(date){
 	filtered = filtered.replace(/\s(between|before|AC|BC|and|or|around|,|After|the)(?=(\S))/g," $1 ");	//insert withespace after all words in list if there isn't one
 	return filtered;
 } 
+
