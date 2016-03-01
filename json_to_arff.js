@@ -14,6 +14,7 @@ function convertToARFF(json){
 		var died = "?";
 		if(element["Born"] !== undefined){
 			born = '"'+filterData(element["Born"])+'"';
+			//console.log(born);
 		}
 		if(element["Died"] !== undefined){
 			died = '"'+filterData(element["Died"])+'"';
@@ -22,7 +23,8 @@ function convertToARFF(json){
 
 		var name = (element["name"] !== undefined)?('"'+filterData(element["name"])+'"'):"?";
 		var culture = (element["Culture"] !== undefined)?('"'+filterData(element["Culture"])+'"'):"?";
-		var allegiance = (element["Allegiance"] !== undefined)?('"'+filterData(element["Allegiance"])+'"'):"?"; 
+		var allegiance = (element["Allegiance"] !== undefined)?('"'+filterData(element["Allegiance"])+'"'):"?";
+		console.log(allegiance); 
 		var race = (element["Race"] !== undefined)?('"'+filterData(element["Race"])+'"'):"?";
 		var title = (element["Title"] !== undefined)?('"'+filterData(element["Title"])+'"'):"?";
 		arff += name+','+culture+','+allegiance+','+born+','+died+','+race+','+title+'\n';
