@@ -1,6 +1,7 @@
 const fs = require("fs");
 const cultureconv = require("./culture");
 const bornconv = require("./born");
+const allegianceconv = require("./allegiance");
 fs.readFile('charachters_details.txt', function (err, data) {
     if (err) {
         return console.error(err);
@@ -32,8 +33,8 @@ function convertToARFF(json){
 		var name = (element["name"] !== undefined)?('"'+filterData(element["name"])+'"'):"?";
 		var culture = (element["Culture"] !== undefined)?(cultureconv.convert_culture(filterData(element["Culture"]))):"?";
 		//console.log(culture);
-		var allegiance = (element["Allegiance"] !== undefined)?('"'+filterData(element["Allegiance"])+'"'):"?";
-		//console.log(allegiance); 
+		var allegiance = (element["Allegiance"] !== undefined)?('"'+allegianceconv.getAllegiance(filterData(element["Allegiance"]))+'"'):"?";
+		console.log(allegiance); 
 		var title = (element["Title"] !== undefined)?('"'+filterData(element["Title"])+'"'):"?";
 		//console.log(title);
 		arff += name+','+culture+','+allegiance+','+born+','+died+','+title+'\n';
