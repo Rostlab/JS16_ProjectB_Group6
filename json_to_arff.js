@@ -33,7 +33,7 @@ function convertToARFF(json){
 		var name = (element["name"] !== undefined)?('"'+filterData(element["name"])+'"'):"?";
 		var culture = (element["Culture"] !== undefined)?(cultureconv.convert_culture(filterData(element["Culture"]))):"?";
 		//console.log(culture);
-		var allegiance = (element["Allegiance"] !== undefined)?('"'+allegianceconv.getAllegiance(filterData(element["Allegiance"]))+'"'):"?";
+		var allegiance = (element["Allegiance"] !== undefined)?(allegianceconv.getAllegiance(filterData(element["Allegiance"]))):"?";
 		console.log(allegiance); 
 		var title = (element["Title"] !== undefined)?('"'+filterData(element["Title"])+'"'):"?";
 		//console.log(title);
