@@ -2,6 +2,7 @@ const fs = require("fs");
 const cultureconv = require("./culture");
 const bornconv = require("./born");
 const allegianceconv = require("./allegiance");
+const titleconv = require("./title");
 fs.readFile('charachters_details.txt', function (err, data) {
     if (err) {
         return console.error(err);
@@ -15,7 +16,7 @@ function convertToARFF(json){
 	var cultures = new Array();
 	json.forEach(function(element,index){
 		var born = "?";
-		var died = "?";
+		var isAlive= '"dead"';
 
 		if(element["Born"] !== undefined){
 			born = bornconv.convert_born(filterData(element["Born"]));
@@ -25,22 +26,21 @@ function convertToARFF(json){
 			//console.log(born);
 		}
 
-		if(element["Died"] !== undefined){
-			died = '"'+filterData(element["Died"])+'"';
-			//console.log(died);
+		if(element["Died"] == undefined && element["Died in"] == undefined) {
+			isAlive = '"alive"';
 		}
 
 		var name = (element["name"] !== undefined)?('"'+filterData(element["name"])+'"'):"?";
 		var culture = (element["Culture"] !== undefined)?(cultureconv.convert_culture(filterData(element["Culture"]))):"?";
 		//console.log(culture);
 		var allegiance = (element["Allegiance"] !== undefined)?(allegianceconv.getAllegiance(filterData(element["Allegiance"]))):"?";
-		console.log(allegiance); 
-		var title = (element["Title"] !== undefined)?('"'+filterData(element["Title"])+'"'):"?";
+		//console.log(allegiance);
+		var title = (element["Title"] !== undefined)?(titleconv.convert_title(element["Title"])):((element["Other Titles"] !== undefined) && (element["Title"] == undefined))?(titleconv.convert_title(element["Other Titles"])):"?";
 		//console.log(title);
-		arff += name+','+culture+','+allegiance+','+born+','+died+','+title+'\n';
+		arff += name+','+culture+','+allegiance+','+born+','+title+','+isAlive+'\n';
 	});
 
-	var header = "@RELATION characters\n@ATTRIBUTE name  STRING\n@ATTRIBUTE culture   {"+cultureconv.allcultures()+"}\n@ATTRIBUTE allegiance  STRING\n@ATTRIBUTE born  STRING\n@ATTRIBUTE died 	STRING\n@ATTRIBUTE title STRING\n";
+	var header = "@RELATION characters\n@ATTRIBUTE name  STRING\n@ATTRIBUTE culture  {"+cultureconv.allcultures()+"}\n@ATTRIBUTE allegiance  STRING\n@ATTRIBUTE born  STRING\n@ATTRIBUTE title  {"+titleconv.alltitles()+"}\n@ATTRIBUTE isAlive {'dead','alive'}\n";
 
 	var filestring = header+arff;
 	fs.writeFile("characters.arff",filestring,function (err, data) {

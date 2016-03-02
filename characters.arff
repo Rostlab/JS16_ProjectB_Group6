@@ -1,2243 +1,2243 @@
 @RELATION characters
 @ATTRIBUTE name  STRING
-@ATTRIBUTE culture   {ironborn,northmen,freefolk,braavosi,valyrian,ghiscari,dothraki,dornish,westeros,mountainclans,tyroshi,qaren,ironmen}
+@ATTRIBUTE culture  {ironborn,northmen,freefolk,braavosi,valyrian,ghiscari,dothraki,dornish,westeros,mountainclans,tyroshi,qaren,ironmen}
 @ATTRIBUTE allegiance  STRING
 @ATTRIBUTE born  STRING
-@ATTRIBUTE died 	STRING
-@ATTRIBUTE title STRING
+@ATTRIBUTE title  {Iron King,King in the North,Hand of the King,King,Princess,Prince,Lord Commander,Queen,Lady,Knight,Commander,Captain,Grand Maester,Archmaester,Maester,Master,Admiral,Lord,Sword,Steward,Cupbearer,Septa,Septon,Wisdom,Shield,Khal,Bloodrider,Castellan,Ser}
+@ATTRIBUTE isAlive {'dead','alive'}
 @DATA
-"Abelar Hightower",?,"Hightower",?,?,"Ser"
-"Addam",?,?,?,?,"Ser "
-"Addam Frey",?,"Frey",?,?,"Ser"
-"Addam Marbrand",?,"Marbrand",?,?,"Ser "
-"Addam Osgrey",?,"Osgrey",NaN,"In 196 AC ",?
-"Addam Velaryon","valyrian","Velaryon",NaN,"In 130 AC , at Tumbleton ",?
-"Addison Hill",?,"Swyft",?,?,"SerLord Commander of the Kingsguard"
-"Aegon Blackfyre",?,"Blackfyre",NaN,"In 196 AC ",?
-"Aegon Frey (Bloodborn)",?,"Frey",NaN,?,?
-"Aegon Frey (Jinglebell)",?,"Frey",NaN,"In 299 AC ",?
-"Aegon III Targaryen","valyrian",?,499,?,?
-"Aegon II Targaryen",?,?,499,?,?
-"Aegon IV",?,?,?,?,?
-"Aegon IV Targaryen",?,?,499,?,?
-"Aegon I Targaryen",?,?,498,?,?
-"Aegon Targaryen","valyrian","Targaryen",NaN,"In 283 AC (Supposedly), at King's Landing ",?
-"Aegon V",?,?,?,?,?
-"Aegon V Targaryen",?,?,498,?,?
-"Aegor Rivers",?,"Bracken",NaN,"In 241 AC , at Essos","Ser"
-"Aelinor Penrose","valyrian","Penrose",?,?,"Queen"
-"Aemma Arryn",?,"Arryn",NaN,"In 105 AC ","Queen"
-"Aemon Blackfyre",?,"Blackfyre",NaN,"In 196 AC , at Redgrass Field",?
-"Aemon Costayne",?,"Costayne",?,?,?
-"Aemon Estermont",?,"Estermont",?,?,"Ser"
-"Aemon Rivers",?,"Frey",?,?,"Ser"
-"Aemon Targaryen",?,?,?,?,?
-"Aemond Targaryen","valyrian","Targaryen",NaN,"In 130 AC , at the Gods Eye","PrinceProtector of the RealmPrince Regent"
-"Aenys Frey",?,"Frey",NaN,"In 300 AC , at NearWinterfell","Ser"
-"Aenys I Targaryen",?,?,493,?,?
-"Aerion Targaryen","valyrian","Targaryen",NaN,"In 232 AC","Prince"
-"Aeron Greyjoy","ironmen","Greyjoy",NaN,?,"Priest of the Drowned GodCaptain of the Golden Storm(formerly)"
-"Aerys II Targaryen",?,?,498,?,?
-"Aerys I Targaryen",?,?,NaN,?,?
-"Aethan",?,?,?,?,?
-"Aethelmure",?,?,?,?,"Grand Maester"
-"Aggar",?,"Greyjoy",?,"In 299 AC , at Winterfell",?
-"Aggo","dothraki","Targaryen",?,?,"KoBloodriderof Daenerys Targaryen"
-"Aglantine",?,?,?,?,"Septa"
-"Agrivane",?,?,?,?,"Archmaester"
-"Aladale Wynch",?,"Wynch",?,"In 300 AC , at Bridge of Skulls","Ser"
-"Alan",?,?,?,?,?
-"Alannys Harlaw","ironborn","Greyjoy",?,?,"Queen of the Iron Islands"
-"Alaric of Eysen",?,?,?,?,?
-"Alayaya",?,?,NaN,?,?
-"Albar Royce",?,"Royce",?,?,"Ser"
-"Albett",?,?,?,?,?
-"Alchemists' Guild",?,?,?,?,?
-"Alebelly","northmen","Stark",?,"In 299 AC , at Winterfell",?
-"Alekyne Florent",?,"Florent",?,?,"Lord of Brightwater Keep (attainted)"
-"Alequo Adarys","tyroshi",?,?,?,?
-"Alerie Hightower",?,"Hightower",NaN,?,"Lady ofHighgarden"
-"Alesander Frey",?,"Frey",NaN,?,?
-"Alesander Staedmon",?,"Staedmon",?,?,"Lord ofBroad Arch"
-"Alesander Torrent",?,?,?,?,?
-"Alester Florent",?,"Florent",?,"In 300 AC , at Dragonstone","Hand of the KingLord ofBrightwater Keep"
-"Alester Norcross",?,"Norcross",NaN,?,?
-"Alester Oakheart",?,"Oakheart",?,"At Prince's Pass",?
-"Alfyn",?,?,?,?,?
-"Alia",?,?,?,?,?
-"Alicent Hightower",?,"Hightower",NaN,"In 133 AC ","LadyQueenDowager Queen"
-"All-for-Joffrey",?,?,?,"In 299 AC , at Riverlands",?
-"Alla Tyrell",?,"Tyrell",NaN,?,?
-"Allaquo","braavosi",?,?,?,?
-"Allar Deem",?,?,?,"In 299 AC , at The Narrow Sea",?
-"Allard Seaworth",?,"Seaworth",?,"In 299 AC , at Blackwater Bay",?
-"Alliser Thorne",?,?,NaN,?,"Ser"
-"Allyria Dayne",?,"Dayne",?,?,?
-"Alvyn Sharp","ironborn","Sharp",?,?,?
-"Alyce",?,?,?,?,?
-"Alyce Graceford",?,"Graceford",?,?,"Lady"
-"Alyn",?,"Stark",?,"In 298 AC , at Riverlands",?
-"Alyn Ambrose",?,"Ambrose",?,?,?
-"Alyn Cockshaw",?,"Cockshaw",?,?,"Lord"
-"Alyn Connington",?,"Connington",?,?,"SerLord Commander of the Kingsguard"
-"Alyn Estermont",?,"Estermont",?,?,"Ser"
-"Alyn Frey",?,"Frey",NaN,?,?
-"Alyn Haigh",?,"Haigh",NaN,?,?
-"Alyn Hunt",?,"Hunt",?,?,"Ser"
-"Alyn Stackspear",?,"Stackspear",?,?,"Ser"
-"Alyn Velaryon",?,"Velaryon",NaN,?,"LordAdmiral "
-"Alys Arryn",?,"Arryn",?,?,?
-"Alys Frey",?,"Frey",?,?,?
-"Alys Karstark","northmen","Karstark",NaN,?,?
-"Alysane Mormont","northmen","Mormont",NaN,?,?
-"Alysanne Bracken",?,"Bracken",?,?,?
-"Alysanne Bulwer",?,"Bulwer",NaN,?,"Lady ofBlackcrown"
-"Alysanne Hightower",?,"Hightower",?,?,?
-"Alysanne Lefford",?,"Lefford",?,?,"Lady of Golden Tooth"
-"Alysanne Osgrey",?,"Osgrey",NaN,"In 209 AC , at King's Landing",?
-"Alysanne Targaryen",?,?,497,?,?
-"Alysanne of Tarth",?,"Tarth",?,?,?
-"Alyssa Arryn",?,"Arryn",?,?,?
-"Alyssa Blackwood",?,"Blackwood",NaN,"In or between 269 AC and 277 AC ","Lady"
-"Alyx Frey",?,"Frey",NaN,?,?
-"Amabel",?,"Whent",?,?,?
-"Amarei Crakehall",?,"Crakehall",NaN,"In 264 AC ",?
-"Ambrode",?,?,?,?,?
-"Ambrose Butterwell",?,"Butterwell",NaN,?,"Lord ofWhitewallsHand of the King"
-"Amerei Frey",?,"Frey",NaN,?,"Lady of Darry"
-"Amory Lorch",?,"Lorch",?,"In 299 AC , at Harrenhal","SerCastellan ofHarrenhal"
-"Andals",?,?,?,?,?
-"Andar Royce",?,"Royce",?,?,"Ser"
-"Anders Yronwood",?,"Yronwood",?,?,"Lord of YronwoodThe BloodroyalWarden of the Stone Way"
-"Andrew Estermont",?,"Estermont",?,?,"Ser"
-"Andrey Charlton",?,"Charlton",?,"In 299 AC , at the Riverlands","Ser"
-"Andrey Dalt","dornish","Dalt",?,?,"Ser"
-"Andrik","ironborn","Drumm",?,?,"Lord of Southshield"
-"Andros Brax",?,"Brax",?,"In 298 AC , at Riverrun","Lord ofHornvale"
-"Androw Ashford",?,"Ashford",?,?,"Ser"
-"Androw Frey",?,"Frey",NaN,?,?
-"Anguy",?,?,?,?,?
-"Annara Farring",?,"Farring",?,?,"Lady"
-"Antario Jast",?,"Jast",?,?,"Lord"
-"Anvil Ryn",?,?,?,"At the Riverlands",?
-"Anya Waynwood",?,"Waynwood",?,?,"Lady ofIronoaks"
-"Arbor",?,?,?,?,?
-"Archibald Yronwood",?,"Yronwood",?,?,"Ser"
-"Ardrian Celtigar",?,"Celtigar",NaN,?,"Lord ofClaw Isle"
-"Areo Hotah",?,"Martell",NaN,?,"Captain of the Guard atSunspear"
-"Argilac",?,?,?,?,?
-"Argrave the Defiant",?,"Butterwell",?,?,"Ser"
-"Arianne Martell","dornish","Martell",NaN,?,"Princess ofDorne"
-"Arianne of Tarth",?,"Tarth",?,?,?
-"Arlan of Pennytree",?,?,NaN,"In 209 AC , at the Reach","Ser"
-"Armen",?,?,?,?,?
-"Armond Caswell",?,"Caswell",?,?,"Lord ofBitterbridge"
-"Arneld",?,?,?,?,"Ser"
-"Arnell",?,?,?,?,"Ser"
-"Arnolf Karstark","northmen","Karstark",?,?,"Castellan ofKarhold"
-"Aron Santagar","dornish","Santagar",?,"In 299 AC , at King's Landing","SerMaster-at-arms of the Red Keep"
-"Arrec",?,?,?,?,?
-"Arron",?,?,?,?,?
-"Arron Qorgyle",?,"Qorgyle",?,?,"Ser"
-"Arryk",?,?,?,?,?
-"Arryk (Guard)",?,"Tyrell",?,?,?
-"Arson","freefolk",?,?,?,?
-"Arthor Karstark","northmen","Karstark",?,?,?
-"Arthur Ambrose",?,"Ambrose",?,?,"Lord"
-"Arthur Dayne",?,"Dayne",?,"In 283 AC , at Tower of Joy","SerSword of the Morning"
-"Artos Stark","northmen","Stark",?,?,?
-"Artys Arryn",?,?,?,?,?
-"Arwood Frey",?,"Frey",NaN,?,"Ser"
-"Arwyn Frey",?,"Frey",NaN,?,?
-"Arwyn Oakheart",?,"Oakheart",?,?,"Lady of Old Oak"
-"Arya Stark","northmen","Stark",NaN,?,"Princess of Winterfell"
-"Arys Oakheart",?,"Oakheart",?,"In 300 AC , at Dorne","Ser"
-"Asha Greyjoy","ironborn","Greyjoy",NaN,?,"Captain of the Black WindConqueror ofDeepwood Motte"
-"Ashara Dayne","westeros","Dayne",?,"In 283 AC , at Starfall",?
-"Ashford Tourney",?,?,?,?,?
-"Assadora of Ibben",?,?,?,?,?
-"Aubrey Ambrose",?,"Ambrose",?,?,"Ser"
-"Aurane Waters",?,"Velaryon",NaN,?,"Grand Admiral (Master of Ships)Lord Waters "
-"Axell Florent",?,"Florent",?,?,"SerHand of the Queen"
-"Ayrmidon","valyrian",?,?,?,?
-"Azor Ahai",?,?,?,?,?
-"Azzak","ghiscari",?,?,?,"Cupbearer"
-"Bael","freefolk",?,?,?,"King-Beyond-the-Wall"
-"Baela Targaryen","valyrian","Targaryen",NaN,?,"Lady"
-"Baelon Targaryen (son of Aerys)","valyrian","Targaryen",?,?,?
-"Baelon Targaryen (son of Viserys I)","valyrian","Targaryen",NaN,"In 105 AC , at King's Landing","Prince"
-"Baelor Blacktyde",?,"Blacktyde",?,"In 300 AC , at Old Wyk","Lord of BlacktydeCaptain of the Nightflyer"
-"Baelor Hightower",?,"Hightower",?,?,"Ser"
-"Baelor I Targaryen",?,?,499,?,?
-"Baelor Targaryen (son of Daeron II)",?,"Targaryen",NaN,"In 209 AC , at Ashford","Prince of DragonstoneProtector of the RealmHand of the King"
-"Ballabar",?,?,?,?,"Maester"
-"Balman Byrch",?,"Byrch",?,"In 300 AC , at Stokeworth","Ser"
-"Balon Botley","ironborn","Botley",?,?,?
-"Balon Greyjoy",?,?,?,?,?
-"Balon Swann",?,"Swann",?,?,"Ser"
-"Bandy","northmen","Stark",?,?,?
-"Bannen",?,?,?,"In 299 AC , at Craster's Keep",?
-"Barba Bracken",?,"Bracken",NaN,?,?
-"Barbara Bracken",?,"Bracken",?,?,?
-"Barbrey Dustin","northmen","Ryswell",?,?,"Lady ofBarrowton"
-"Barra",?,?,NaN,"In 299 AC , at King's Landing",?
-"Barre",?,?,?,?,"Septon"
-"Barristan Selmy","westeros","Selmy",NaN,?,"SerLord Commander(former)Queen'sHand"
-"Barsena Blackhair",?,?,?,?,?
-"Barth",?,?,?,?,"SeptonHand of the King"
-"Barth (brewer)",?,"Stark",?,?,?
-"Barthogan Stark",?,"Stark",?,?,"Lord ofWinterfell"
-"Bass",?,?,?,?,?
-"Bastard's Boys",?,?,?,?,?
-"Bayard Norcross",?,"Norcross",?,?,"Ser"
-"Bear Island",?,?,?,?,?
-"Bearded Ben",?,?,?,?,?
-"Beardless Dick",?,?,?,?,?
-"Becca",?,"Arryn",?,?,?
-"Becca the Baker",?,?,?,"At Riverlands",?
-"Beck",?,?,NaN,"At Donnelwood","Goodman"
-"Bedwyck",?,?,?,?,?
-"Belandra",?,"Martell",?,?,?
-"Belaquo Bonebreaker",?,?,?,?,?
-"Beldecar",?,?,?,?,?
-"Belgrave",?,?,?,?,"Lord"
-"Belis",?,?,?,"At King's Landing","Wisdom"
-"Bella",?,?,NaN,?,?
-"Bellegere Otherys","braavosi",?,?,?,?
-"Bellegere Otherys (Courtesan)",?,?,?,?,?
-"Bellena Hawick",?,"Hawick",?,?,?
-"Bellonara Otherys","braavosi",?,?,?,?
-"Belwas",?,"Targaryen",?,?,?
-"Ben",?,?,NaN,?,?
-"Ben (Big Belly)",?,?,?,?,?
-"Ben Blackthumb",?,"Whent",?,?,?
-"Ben Bones",?,"Bolton",?,?,?
-"Ben Bushy",?,"Bushy",?,"In 299 AC , at the Blackwater Rush","Ser"
-"Ben Plumm",?,?,?,?,"Commander of the Second Sons"
-"Benedar Belmore",?,"Belmore",?,?,"Lord of Strongsong"
-"Benedict",?,?,?,?,"Archmaester"
-"Benedict Broom",?,"Broom",?,?,"SerMaster-at-arms atCasterly Rock"
-"Benfred Tallhart","northmen","Tallhart",NaN,"In 299 AC , at Stony Shore",?
-"Benfrey Frey",?,"Frey",NaN,"In 299 AC , at the Twins","Ser"
-"Benjen Stark","northmen",?,NaN,?,"First Ranger of the Night's Watch"
-"Benjen Stark (Bitter)",?,"Stark",?,?,"King in the NorthLord ofWinterfell"
-"Benjen Stark (Sweet)","northmen","Stark",?,?,"King in the NorthLord ofWinterfell"
-"Bennard Brune",?,"Brune",?,?,"Serthe Knight ofBrownhollow"
-"Bennarion Botley","ironborn","Botley",?,?,?
-"Bennet",?,?,?,?,"Septon"
-"Bennis",?,"Osgrey",?,?,"Ser"
-"Beqqo","braavosi",?,?,?,?
-"Beren Tallhart","northmen","Tallhart",NaN,?,?
-"Berena Hornwood","northmen","Hornwood",?,?,?
-"Beric Dondarrion",?,"Dondarrion",NaN,"In 300 AC (His seventh &amp; final death), at the Riverlands","Lord of Blackhaven"
-"Beron Blacktyde",?,"Blacktyde",?,?,?
-"Beron Stark","northmen","Stark",?,?,"Lord of WinterfellWarden of the North"
-"Bertram Beesbury",?,"Beesbury",?,?,"Ser"
-"Bess Bracken",?,"Bracken",?,?,?
-"Bessa",?,?,?,"At Hag's Mire",?
-"Bessa (Winterfell)",?,?,?,?,?
-"Beth Cassel","northmen","Cassel",?,?,?
-"Bethany (Blushing Bethany)","braavosi",?,?,?,?
-"Bethany Bolton","northmen","Bolton",?,?,"Lady ofthe Dreadfort"
-"Bethany Bracken",?,"Bracken",NaN,"In 178 AC",?
-"Bethany Fair-Fingers",?,?,?,?,?
-"Bethany Redwyne",?,"Redwyne",?,?,?
-"Bethany Rosby",?,"Rosby",NaN,"In or between 282 AC and 284 AC ","Lady"
-"Betharios of Braavos",?,"Frey",?,?,?
-"Bhakaz zo Loraq","ghiscari",?,?,?,"Cupbearer"
-"Bharbo","dothraki",?,?,?,"Khal"
-"Big Boil","freefolk",?,?,?,?
-"Biter",?,?,?,"In 300 AC , at the inn at the crossroads",?
-"Bitterbridge",?,?,?,?,?
-"Black Bernarr",?,?,?,?,?
-"Black Jack Bulwer",?,?,?,?,?
-"Blackfyre Rebellion",?,?,?,?,?
-"Blackhaven",?,?,?,?,?
-"Blane",?,?,?,?,?
-"Bloodbeard",?,?,?,?,?
-"Bloodrider",?,?,?,?,?
-"Bloody Gate",?,?,?,?,?
-"Bluetooth","ironborn","Greyjoy",?,?,?
-"Bodger","freefolk",?,?,?,?
-"Bonifer Hasty",?,"Hasty",?,?,"SerCastellan ofHarrenhal"
-"Borcas",?,?,?,?,?
-"Boremund Harlaw","ironborn","Harlaw",?,?,"Master ofHarridan Hill"
-"Boros Blount",?,"Blount",?,?,"Ser"
-"Borroq","freefolk",?,?,?,?
-"Bors",?,"Martell",?,?,?
-"Bowen Marsh",?,?,?,?,"First StewardLord Steward"
-"Boy",?,?,NaN,?,?
-"Braavos",?,?,?,?,?
-"Bradamar Frey",?,"Frey",NaN,?,?
-"Bran Stark","northmen","Stark",NaN,?,"Prince"
-"Bran the Builder",?,"Stark",?,?,"King of Winter"
-"Brandon Norrey","mountainclans","Norrey",?,?,"The NorreyLord Norrey"
-"Brandon Stark","northmen","Stark",NaN,"In 282 AC , at King's Landing",?
-"Brandon Stark (Bad)","northmen","Stark",?,?,"King in the NorthLord ofWinterfell"
-"Brandon Stark (Burner)","northmen","Stark",?,?,"King in the North"
-"Brandon Stark (Shipwright)","northmen","Stark",?,?,"King in the North"
-"Brandon Stark (son of Cregan)","northmen","Stark",?,?,"Lord ofWinterfell"
-"Brandon Stark (the daughterless)",?,"Stark",?,?,"Lord ofWinterfell"
-"Brandon Tallhart","northmen","Tallhart",NaN,?,?
-"Branston Cuy",?,"Cuy",?,?,"Lord of Sunflower Hall"
-"Brea","braavosi",?,?,?,?
-"Brella",?,"Baratheon",?,?,?
-"Brenett",?,"Frey",?,?,"Maester"
-"Briar","freefolk",?,?,?,?
-"Brienne of Tarth",?,"Tarth",NaN,?,?
-"Brogg","freefolk",?,?,?,?
-"Bronn",?,"Stokeworth",NaN,?,"SerLord Protector of StokeworthLord ofStokeworth(claimed)"
-"Brotherhood without banners",?,?,?,?,?
-"Brown Bernarr",?,?,?,"In 299 AC , at Fist of the First Men",?
-"Brusco","braavosi",?,?,?,?
-"Bryan Fossoway",?,"Fossoway",?,"In 299 AC , at Blackwater Rush","Ser"
-"Bryan Frey",?,"Frey",NaN,?,?
-"Bryan of Oldtown",?,?,?,?,?
-"Bryce Caron",?,"Caron",?,"In 299 AC , at Blackwater Rush","Lord ofNightsongLord ofthe Marches"
-"Bryen",?,"Baelish",NaN,?,?
-"Bryen Caron",?,"Caron",?,"In 289 AC ","Lord of the Marches"
-"Bryen Farring",?,"Farring",?,"In 300 AC , at the wolfswood",?
-"Brynden Rivers",?,"Targaryen",NaN,"In 252 AC (presumed), at beyond the Wall","Hand of the KingLord Commander of the Night's Watch"
-"Brynden Tully",?,"Tully",NaN,?,"SerWarden of the Southern MarchesKnight of the Gate(formerly)"
-"Buford Bulwer",?,"Bulwer",?,?,"Ser"
-"Bump","freefolk",?,?,?,?
-"Burton Crakehall",?,"Crakehall",?,"In 299 AC , at the Riverlands","Ser"
-"Butterbumps",?,"Tyrell",?,?,?
-"Buu",?,?,?,?,?
-"Byam Flint",?,?,?,"In 299 AC , at Craster's Keep","Ser"
-"Byan Votyris",?,?,?,?,?
-"Byren Flowers",?,?,?,?,?
-"Byron",?,"Baelish",?,?,"Ser"
-"Cadwyl","ironborn","Greyjoy",?,?,?
-"Cadwyn",?,"Lannister",?,?,"Ser"
-"Caleotte",?,"Martell",?,?,"Maester"
-"Calon","northmen","Stark",?,?,?
-"Camarron of the Count",?,?,?,?,?
-"Canker Jeyne","braavosi",?,?,?,?
-"Carellen Smallwood",?,"Smallwood",?,?,?
-"Carolei Waynwood",?,"Waynwood",?,?,?
-"Carrot",?,"Royce",?,?,?
-"Cass",?,?,?,?,?
-"Cassana Estermont",?,"Estermont",?,"In 278 AC , at Shipbreaker Bay, nearStorm's End",?
-"Cassella Vaith","dornish","Vaith",?,?,"Lady ofVaith"
-"Casterly Rock",?,?,?,?,?
-"Castle Black",?,?,?,?,?
-"Castos",?,?,?,?,"Archmaester"
-"Catelyn Bracken",?,"Bracken",?,?,?
-"Catelyn Tully",?,"Stark",NaN,"In 299 AC , at the Twins","Lady of Winterfell"
-"Cayn","northmen","Stark",?,"In 298 AC , at King's Landing",?
-"Cedra",?,"Martell",?,?,?
-"Cedric Payne",?,"Payne",?,"In 298 AC , at Riverlands","Ser"
-"Cedrik Storm",?,"Buckler",?,?,?
-"Cellador",?,?,?,?,"Septon"
-"Cerenna Lannister",?,"Lannister",?,?,?
-"Cerrick","ironborn",?,?,?,"Maester"
-"Cersei Frey",?,"Frey",NaN,?,?
-"Cersei Lannister",?,"Lannister",NaN,?,"Queen DowagerProtector of the RealmLady ofCasterly RockQueen Regent"
-"Cetheres",?,?,?,?,"Archmaester"
-"Chataya",?,?,?,?,?
-"Chayle",?,?,?,"In 299 AC , at Winterfell","Septon"
-"Chella","mountainclans",?,?,?,?
-"Chett",?,?,?,"In 299 AC , at Fist of the First Men",?
-"Cheyk",?,?,?,?,?
-"Chiggen",?,?,?,"In 298 AC , at Mountains of the Moon",?
-"Chiswyck",?,"Clegane",?,"In 299 AC , at Harrenhal",?
-"Citadel",?,?,?,?,?
-"Clarence Charlton",?,"Charlton",?,?,"Ser"
-"Clarence Crabb",?,"Crabb",?,?,"Ser"
-"Clarence Crabb (Short)",?,"Crabb",?,?,"Ser"
-"Clarent Crakehall",?,"Crakehall",?,"In 130 AC , at Gods Eye","Ser"
-"Clayton Suggs",?,"Baratheon",?,?,"Ser"
-"Clement",?,?,NaN,?,"Brother"
-"Clement Crabb",?,"Crabb",?,?,"Ser"
-"Clement Piper",?,"Piper",?,?,"Lord ofPinkmaiden"
-"Cleon",?,?,?,"In 300 AC , at Astapor","King Cleon of Astapor"
-"Cleos Frey",?,"Frey",NaN,"In 299 AC , at Riverlands","Ser"
-"Cletus Yronwood",?,"Yronwood",?,"In 300 AC , at Disputed Lands","Ser"
-"Cley Cerwyn","northmen","Cerwyn",NaN,"In 299 AC , at Winterfell","Lord ofCerwyn"
-"Cleyton Caswell",?,"Caswell",?,?,"Ser"
-"Clifford Conklyn",?,"Conklyn",?,?,"Ser"
-"Clubfoot Karl",?,?,?,"In 300 AC , at Beyond the Wall",?
-"Clydas",?,?,NaN,?,?
-"Cohollo","dothraki",?,?,"In 298 AC , at Dothraki Sea","KoBloodriderof Khal Drogo"
-"Coldhands",?,?,?,?,?
-"Coldmoat",?,?,?,?,?
-"Colemon",?,"Arryn",?,?,"Maester"
-"Colen of Greenpools",?,"Baratheon",?,?,"Ser"
-"Colin Florent",?,"Florent",?,?,"Ser"
-"Collio Quaynis","tyroshi",?,?,?,?
-"Colmar Frey",?,"Frey",NaN,?,?
-"Company of the Cat",?,?,?,?,?
-"Conn",?,?,?,"In 298 AC , at Green Fork of the riverTrident, the Riverlands",?
-"Conwy",?,?,?,?,?
-"Coratt",?,?,?,?,?
-"Corliss Penny",?,"Baratheon",?,?,"Ser"
-"Corlys Velaryon","valyrian","Velaryon",NaN,"In 132 AC ","Lord ofthe TidesMaster ofDriftmarkHand of the Queen"
-"Cortnay Penrose",?,"Penrose",?,"In 299 AC , at Storm's End","SerCastellan ofStorm's End"
-"Cosgrove",?,"Butterwell",?,?,"Steward"
-"Cossomo","braavosi",?,?,?,?
-"Cotter Pyke","ironborn",?,?,?,"Commander ofEastwatch-by-the-Sea"
-"Courtenay Greenhill",?,?,?,?,"Ser"
-"Craghas Drahar",?,?,?,"In 108 AC",?
-"Cragorn",?,"Greyjoy",?,"In 300 AC",?
-"Craster","freefolk",?,?,"In 299 AC , at Craster's Keep",?
-"Crawn","mountainclans",?,?,?,?
-"Cregan Karstark","northmen","Karstark",NaN,?,?
-"Cregan Stark","northmen","Stark",?,?,"Lord ofWinterfellWarden of the NorthHand of the King"
-"Creighton Longbough",?,?,NaN,?,"Ser"
-"Creighton Redfort",?,"Redfort",?,?,"Ser"
-"Cressen",?,?,NaN,"In 299 AC , at Dragonstone","Maester"
-"Criston Cole",?,"Cole",NaN,"In 130 AC , at the Butcher's Ballsouth of the Gods Eye","SerLord Commander of the KingsguardHand of the King"
-"Crownlands",?,?,?,?,?
-"Cuger",?,?,?,?,?
-"Cutjack",?,?,?,?,?
-"Cynthea Frey",?,"Frey",NaN,?,?
-"Cyrenna Swann",?,"Swann",NaN,"In or between 249 AC and 257 AC ",?
-"Daario Naharis","tyroshi",?,?,?,?
-"Dacey Mormont","northmen","Mormont",NaN,"In 299 AC , at the Twins",?
-"Dacks",?,"Redfort",?,?,?
-"Daegon Shepherd","ironborn","Shepherd",?,?,?
-"Daella Targaryen (daughter of Jaehaerys I)",?,"Targaryen",NaN,?,"PrincessLady of the Eyrie"
-"Daella Targaryen (daughter of Maekar I)","valyrian","Targaryen",NaN,?,"Princess"
-"Daemon Blackfyre",?,"Blackfyre",NaN,"In 196 AC , at Redgrass Field","Ser"
-"Daemon II Blackfyre",?,"Blackfyre",NaN,?,"King of the Andals, the Rhoynar and the First Men (claimant)Lord of the Seven Kingdoms (claimant)Protector of the Realm (claimant)"
-"Daemon Sand","dornish","Allyrion",NaN,?,"Ser"
-"Daemon Targaryen","valyrian","Targaryen",NaN,"In 130 AC , at the Gods Eye","PrinceProtector of the RealmCommander of the City Watch of King's LandingMaster of coinMaster of lawsKing of the Stepstones and the Narrow Sea"
-"Daena Targaryen","valyrian","Targaryen",NaN,?,?
-"Daenerys Targaryen","valyrian","Targaryen",NaN,?,"Queen of the Andalsand the Rhoynarand the First Men, Lord of the Seven KingdomsKhaleesiof the Great Grass SeaBreaker of Shackles/ChainsQueen ofMeereenPrincess ofDragonstone"
-"Daenerys Targaryen (daughter of Aegon IV)",?,"Targaryen",NaN,?,"Princess"
-"Daeron II Targaryen",?,?,499,?,?
-"Daeron I Targaryen",?,?,499,?,?
-"Daeron Targaryen (son of Maekar I)",?,"Targaryen",NaN,"In or between 221 AC and 233 AC ","Prince of Dragonstone"
-"Daeron Targaryen (son of Viserys I)",?,"Targaryen",NaN,"In 130 AC , at Tumbleton","Prince"
-"Daeron Vaith",?,"Vaith",?,?,"Lord of the Red Dunes"
-"Daeryssa",?,?,?,?,"Princess"
-"Dafyn Vance",?,"Vance",?,?,"Ser"
-"Dagmer","ironborn","Greyjoy",?,?,"Captain ofFoamdrinker"
-"Dagon Greyjoy",?,"Greyjoy",?,?,"Lord ofPyke"
-"Dagon Ironmaker","ironborn","Ironmaker",?,?,?
-"Dagos Manwoody",?,"Manwoody",?,?,"Lord of Kingsgrave"
-"Dake",?,"Osgrey",?,"At Coldmoat",?
-"Dake (Guard)",?,?,?,?,?
-"Dalbridge",?,?,NaN,"In 299 AC , at Skirling Pass",?
-"Dale Drumm",?,"Drumm",?,?,?
-"Dale Seaworth",?,"Seaworth",?,"In 299 AC , at Blackwater Rush",?
-"Dalla","freefolk",?,?,"In 300 AC , at NearCastle Black",?
-"Dalla (Dragonstone)",?,"Baratheon",?,?,?
-"Damion Lannister",?,"Lannister",?,?,"SerCastellan of Casterly Rock"
-"Damon Dance-for-Me",?,"Bolton",?,?,?
-"Damon Lannister (Lord)",?,?,?,?,?
-"Damon Lannister (son of Jason)",?,"Lannister",NaN,?,?
-"Damon Paege",?,"Paege",?,?,"Ser"
-"Damon Shett",?,"Shett",?,?,"the Knight of Gull TowerSer"
-"Damon Vypren",?,"Vypren",NaN,?,"Ser"
-"Dan","freefolk",?,?,?,?
-"Dance of the Dragons",?,?,?,?,?
-"Dancy",?,?,?,?,?
-"Danelle Lothston",?,"Lothston",?,?,"Lady ofHarrenhal"
-"Danny Flint",?,?,?,?,?
-"Danos Slynt",?,"Slynt",?,?,?
-"Danwell Frey",?,"Frey",NaN,?,"Ser"
-"Dareon",?,?,?,"In 300 AC , at Braavos",?
-"Darla Deddings",?,"Deddings",?,?,"Lady"
-"Darlessa Marbrand",?,"Marbrand",?,?,?
-"Daryn Hornwood",?,"Hornwood",?,"In 298 AC , at the Whispering Wood",?
-"Daughter of the Dusk","braavosi",?,?,?,?
-"Daven Lannister",?,"Lannister",NaN,?,"SerWarden of the West"
-"Davos Seaworth","westeros","Seaworth",NaN,?,"SerLord of the Rainwood "
-"Deana Hardyng",?,"Hardyng",?,?,?
-"Deepwood Motte",?,?,?,?,?
-"Del","freefolk",?,NaN,"In 299 AC , at Queenscrown",?
-"Delena Florent",?,"Florent",?,?,?
-"Della Frey",?,"Frey",NaN,?,?
-"Delonne Allyrion","dornish","Allyrion",?,?,"Lady ofGodsgrace"
-"Delp",?,"Tully",?,"In 299 AC , at Riverrun",?
-"Denestan",?,?,?,?,"Maester"
-"Dennet",?,?,?,?,?
-"Dennis Plumm",?,"Plumm",?,?,"Ser"
-"Denyo Terys","braavosi",?,NaN,?,?
-"Denys Arryn",?,"Arryn",?,"In 283 AC , at Stoney Sept","SerKeeper of the Gates of the Moon"
-"Denys Darklyn",?,"Darklyn",?,?,"Lord of Duskendale"
-"Denys Drumm","ironborn","Drumm",?,?,?
-"Denys Mallister",?,"Mallister",NaN,?,"Ser"
-"Denys Redwyne",?,"Redwyne",?,?,?
-"Denyse Hightower",?,"Hightower",?,?,?
-"Dermot",?,?,?,?,"Ser"
-"Desmond",?,"Stark",?,"In 298 AC , at King's Landing",?
-"Desmond Grell",?,"Grell",NaN,?,"Ser"
-"Desmond Redwyne",?,"Redwyne",?,?,"Ser"
-"Devan Seaworth",?,"Seaworth",NaN,?,?
-"Devyn Sealskinner","freefolk",?,?,?,?
-"Deziel Dalt",?,"Dalt",?,?,"TheKnightofLemonwood"
-"Dhazzar","ghiscari",?,?,?,"Cupbearer"
-"Dick",?,?,?,?,?
-"Dick Crabb",?,"Crabb",?,"In 300 AC , at Whispers",?
-"Dick Follard",?,?,?,"In 299 AC , at Castle Black",?
-"Dickon Frey",?,"Frey",NaN,?,?
-"Dickon Manwoody",?,"Manwoody",?,?,?
-"Dickon Tarly",?,"Tarly",NaN,?,?
-"Dirk",?,?,?,"In 300 AC , at Beyond the Wall.",?
-"Dobber",?,?,?,"In 299 AC , at Gods Eye",?
-"Dolf",?,?,?,?,?
-"Domeric Bolton",?,"Bolton",NaN,"In 297 AC ",?
-"Donal Noye",?,"Baratheon",NaN,"In 300 AC , at The Wall, nearCastle Black",?
-"Donel Greyjoy","ironborn","Greyjoy",?,?,?
-"Donella Hornwood",?,"Hornwood",NaN,"In 299 AC , at Hornwood","Lady ofHornwood"
-"Donnel Drumm","ironborn","Drumm",?,?,?
-"Donnel Haigh",?,"Haigh",NaN,?,"Ser"
-"Donnel Hill",?,?,?,?,?
-"Donnel Locke",?,"Locke",?,"In 299 AC , at the Twins","Ser"
-"Donnel Waynwood",?,"Waynwood",NaN,?,"SerKnight of the Gate"
-"Donnel of Duskendale",?,?,?,?,"Ser"
-"Donnis","northmen","Stark",?,?,?
-"Donnor Stark","northmen","Stark",?,?,"Lord ofWinterfell"
-"Dontos Hollard",?,"Hollard",NaN,"In 300 AC , at Blackwater Bay","Ser"
-"Donyse",?,?,?,?,"Septa"
-"Doran Martell","dornish","Nymeros",NaN,?,"Prince of Dorne"
-"Dorcas",?,"Lannister",?,?,?
-"Dorea Sand","dornish","Martell",NaN,?,?
-"Doreah",?,"Targaryen",NaN,"In 299 AC , at Red Waste",?
-"Dormund","freefolk",?,?,"In 300 AC , at The Wall",?
-"Dorne",?,?,?,?,?
-"Dornish Dilly",?,?,?,"In 299 AC , at Castle Black",?
-"Dorren Stark",?,"Stark",?,?,"King in the North"
-"Doss","freefolk",?,?,?,?
-"Dothraki",?,?,?,?,?
-"Dragonstone",?,?,?,?,?
-"Draqaz","ghiscari",?,?,?,"Cupbearer"
-"Drennan","ironborn","Greyjoy",?,"In 299 AC , at Winterfell",?
-"Drogo","dothraki",?,NaN,"In 298 AC , at Dothraki Sea","Khal"
-"Drowned God",?,?,?,?,?
-"Dryn","freefolk",?,?,?,?
-"Dudley",?,?,?,?,"Ser"
-"Dunaver",?,"Lannister",?,?,"Ser"
-"Duncan Targaryen",?,"Targaryen",NaN,"In 259 AC , at Summerhall","Prince"
-"Dunk",?,?,NaN,"In 259 AC , at Summerhall","SerLord Commander of the Kingsguard"
-"Dunsen",?,"Clegane",?,?,?
-"Dunstan Drumm","ironborn","Drumm",NaN,?,"Lord ofOld WykCaptain of the Thunderer"
-"Duram Bar Emmon",?,"Bar",NaN,?,"Lord of Sharp Point"
-"Durran",?,?,?,?,?
-"Dyah","freefolk",?,?,?,?
-"Dykk Harlaw",?,"Harlaw",?,"In 299 AC , at Winterfell",?
-"Dywen",?,?,?,?,?
-"Eastwatch-by-the-Sea",?,?,?,?,?
-"Easy",?,?,?,"In 300 AC , at Castle Black",?
-"Ebben",?,?,?,"In 299 AC , at Skirling Pass",?
-"Ebrose",?,?,?,?,"Archmaester"
-"Eddara Tallhart","northmen","Tallhart",NaN,?,"Lady of Torrhen's Square"
-"Eddard Karstark",?,"Karstark",?,"In 298 AC , at the Whispering Wood",?
-"Eddard Stark","northmen","Stark",NaN,"In 299 AC , at Great Sept of BaelorinKing's Landing","Lord of WinterfellWarden of the NorthHand of the KingProtector of the Realm"
-"Edderion Stark","northmen","Stark",?,?,"King in the NorthLord ofWinterfell"
-"Eddison Tollett",?,"Tollett",?,?,?
-"Eden Risley",?,"Risley",?,?,"Ser"
-"Edgerran Oakheart",?,"Oakheart",?,?,"Lord"
-"Edmund Ambrose",?,"Ambrose",?,?,"Ser"
-"Edmure Tully",?,"Tully",NaN,?,"SerLord ofRiverrun(lost toEmmon Frey)"
-"Edmyn Tully",?,"Tully",?,?,"Lord ofRiverrunLord Paramount of the TridentHand of the King"
-"Edric Dayne","dornish","Dayne",NaN,?,"Lord ofStarfall"
-"Edric Storm",?,"Baratheon",NaN,?,?
-"Edrick Stark","northmen","Stark",?,?,"King in the NorthLord ofWinterfell"
-"Edwyd Fossoway",?,"Fossoway",?,"In 299 AC , at Blackwater Rush","Ser"
-"Edwyle Stark","northmen","Stark",?,?,"Lord ofWinterfellWarden of the North"
-"Edwyn Frey",?,"Frey",NaN,?,?
-"Edwyn Osgrey",?,"Osgrey",?,"In 196 AC , at the Redgrass Field","Ser"
-"Edwyn Stark","northmen","Stark",?,?,"King in the NorthLord ofWinterfell"
-"Eggon",?,"Clegane",?,?,?
-"Eglantine",?,?,?,?,"Septa"
-"Egon Emeros","qaren",?,?,?,?
-"Elaena Targaryen","valyrian","Targaryen",NaN,?,?
-"Elbert Arryn",?,"Arryn",?,"In 282 AC , at King's Landing","Ser"
-"Elder Brother",?,?,NaN,?,"Elder Brother"
-"Eldiss","ironborn",?,?,?,?
-"Eldon Estermont",?,"Estermont",NaN,?,"Lord of Greenstone "
-"Eldred Codd","ironborn","Codd",?,?,?
-"Eleanor Mooton",?,"Mooton",NaN,?,?
-"Eleyna Westerling",?,"Westerling",NaN,?,?
-"Elia Martell",?,"Martell",NaN,"In 283 AC , at King's Landing","Princess"
-"Elia Sand","dornish","Martell",NaN,?,?
-"Elinor Tyrell",?,"Tyrell",NaN,?,?
-"Ellaria Sand","dornish","Uller",?,?,?
-"Ellery Vance",?,"Vance",?,?,"Ser"
-"Ellyn Tarbeck",?,?,?,?,?
-"Elmar Frey",?,"Frey",NaN,?,?
-"Elron",?,?,?,?,?
-"Elwood",?,"Tully",?,"In 299 AC , at Riverrun",?
-"Elwood Meadows",?,"Meadows",NaN,?,"Lord ofGrassy Vale"
-"Elyana Vypren",?,"Vypren",NaN,?,?
-"Elyas Willum",?,"Willum",?,?,?
-"Elyn Norridge",?,"Norridge",?,?,?
-"Elys Waynwood",?,"Waynwood",?,?,"Ser"
-"Elys Westerling",?,"Westerling",?,?,"Ser"
-"Elza",?,?,?,"In 294 AC , at Meereen",?
-"Emberlei Frey",?,"Frey",NaN,?,?
-"Emma",?,?,NaN,?,?
-"Emmon Cuy",?,"Cuy",?,"In 299 AC , at nearStorm's End","Ser"
-"Emmon Frey",?,"Frey",NaN,?,"Lord ofRiverrun"
-"Emmond","ironborn",?,?,?,?
-"Emphyria Vance",?,"Vance",?,?,?
-"Emrick",?,?,?,?,?
-"Endehar",?,?,?,?,?
-"Endrew Tarth",?,"Tarth",?,"In 299 AC , at Bridge of Skulls","Ser"
-"Enger",?,"Tully",?,?,?
-"Eon Hunter",?,"Hunter",NaN,"In +/-300 AC","Lord ofLongbow Hall"
-"Erena Glover",?,"Glover",NaN,?,?
-"Erik Ironmaker",?,"Ironmaker",NaN,?,"Lord Steward of the Iron IslandsCastellanofPyke"
-"Ermesande Hayford",?,"Hayford",NaN,?,"Lady ofHayford"
-"Eroeh",?,?,?,"In 298 AC , at Dothraki Sea",?
-"Erreck",?,?,?,?,"Maester"
-"Erreg",?,?,?,?,"King"
-"Erren Florent",?,"Florent",?,?,"Ser"
-"Errok","freefolk",?,?,?,?
-"Erryk",?,?,?,?,?
-"Erryk (Guard)",?,"Tyrell",?,?,?
-"Esgred",?,?,?,?,?
-"Ethan Glover",?,"Glover",?,"In 283 AC , at Tower of Joy",?
-"Euron Greyjoy","ironborn",?,NaN,?,?
-"Eustace (Braavos)",?,?,?,?,"Septon"
-"Eustace (Dance of the Dragons)",?,?,?,?,"Septon"
-"Eustace Brune",?,"Brune",?,?,"Lord of the Dyre Den"
-"Eustace Hunter",?,"Hunter",?,?,"Ser"
-"Eustace Osgrey",?,"Osgrey",?,?,"Knightand Master ofStandfastLord ofColdmoat"
-"Eyrie",?,?,?,?,?
-"Eyron Stark","northmen","Stark",?,?,"King in the NorthLord ofWinterfell"
-"Ezzara","ghiscari",?,?,?,"Blue Grace"
-"Ezzelyno","braavosi",?,?,?,"Red Priest"
-"Falena Stokeworth",?,"Stokeworth",NaN,?,"Lady ofHarrenhal"
-"Falia Flowers",?,"Hewett",NaN,?,?
-"Falyse Stokeworth",?,"Stokeworth",NaN,"In 300 AC , at the Black Cells,Red Keep,King's Landing",?
-"Farlen",?,"Stark",?,"In 299 AC , at Winterfell",?
-"Fearless Ithoke",?,?,?,?,?
-"Feastfires",?,?,?,?,?
-"Fern",?,?,?,?,?
-"Ferny","freefolk",?,?,?,?
-"Ferrego Antaryon","braavosi",?,?,?,"SealordofBraavos"
-"Ferret",?,?,?,?,?
-"Flement Brax",?,"Brax",?,?,"Ser"
-"Fogo","dothraki",?,?,"In 298 AC , at Dothraki Sea","Khalakka"
-"Forley Prester",?,"Prester",?,?,"Ser"
-"Fornio",?,?,?,?,?
-"Fralegg","ironborn",?,?,?,?
-"Franklyn Fowler",?,"Fowler",?,?,"Lord ofSkyreachWarden of the Prince's Pass"
-"Franklyn Frey",?,"Frey",?,?,"Ser"
-"Free Folk",?,?,?,?,?
-"Frenken",?,?,?,?,"Maester"
-"Frenya","freefolk",?,?,"In 300 AC , at Winterfell",?
-"Frozen Shore",?,?,?,?,?
-"Frynne",?,?,?,?,?
-"Gage",?,"Stark",?,?,?
-"Galazza Galare","ghiscari",?,NaN,?,"Green Grace"
-"Galbart Glover","northmen","Glover",?,?,"Master ofDeepwood Motte"
-"Galladon",?,?,?,?,"Ser"
-"Galladon of Tarth",?,"Tarth",NaN,"In either 284 AC or 285 AC ",?
-"Gallard",?,?,?,?,"Archmaester"
-"Galt","mountainclans",?,?,?,?
-"Galtry the Green",?,?,?,?,"Ser"
-"Galyeon of Cuy",?,?,?,?,?
-"Gared",?,?,NaN,"In 297 AC ",?
-"Gareth Clifton",?,"Clifton",?,?,"Ser"
-"Gareth the Grey",?,?,?,?,"Ser"
-"Garigus",?,?,?,"At King's Landing","Wisdom"
-"Garin (Orphans)",?,?,?,?,?
-"Garin (Prince)",?,?,?,?,?
-"Gariss",?,"Stark",?,?,?
-"Garizon",?,?,?,?,"Archmaester"
-"Garlan Tyrell",?,"Tyrell",NaN,?,"SerLord ofBrightwater Keep"
-"Garrett Flowers",?,"Tyrell",?,?,?
-"Garrett Paege",?,"Paege",?,?,?
-"Garrison Prester",?,"Prester",?,?,"Lord ofFeastfires"
-"Garse Flowers",?,"Tyrell",?,?,?
-"Garse Goodbrook",?,"Goodbrook",?,"In the Twins, at 299 AC","Ser"
-"Garth Gardener (Greenhand)",?,?,?,?,?
-"Garth Greenfield",?,"Greenfield",?,?,"Ser"
-"Garth Greyfeather",?,?,?,"In 300 AC , at Beyond the Wall",?
-"Garth Hightower",?,"Hightower",?,?,"Ser"
-"Garth Tyrell",?,"Tyrell",?,?,"Lord Seneschal"
-"Garth XII Gardener",?,?,?,?,?
-"Garth of Greenaway",?,?,?,"In 300 AC , at Beyond the Wall",?
-"Garth of Oldtown",?,?,?,"In 299 AC , at Craster's Keep",?
-"Gascoyne",?,"Martell",?,?,"Ser"
-"Gavin","freefolk",?,?,?,?
-"Gawen Glover",?,"Glover",NaN,?,?
-"Gawen Swann",?,"Swann",NaN,?,"Lord of Stonehelm"
-"Gawen Westerling",?,"Westerling",?,?,"Lord ofthe Crag"
-"Gawen Wylde",?,"Wylde",?,"In 283 AC , at Storm's End","Ser"
-"Gelmarr",?,"Greyjoy",?,"In 299 AC , at Winterfell",?
-"Gendel","freefolk",?,?,?,"King-Beyond-the-Wall"
-"Gendry",?,?,NaN,?,"Ser"
-"Genna Lannister",?,"Lannister",NaN,?,"Lady"
-"Gerald Gower",?,"Gower",?,?,"Ser"
-"Gerardys",?,?,?,"In 130 AC","Grand Maester"
-"Gergen",?,?,?,?,?
-"Gerion Lannister",?,"Lannister",NaN,"In circa 291 AC",?
-"Gerold Dayne",?,"Dayne",NaN,?,"SerKnight ofHigh Hermitage"
-"Gerold Grafton",?,"Grafton",?,?,"Lord of Gulltown"
-"Gerold Hightower",?,"Hightower",?,"In 283 AC , at Tower of Joy","SerLord Commander of the Kingsguard"
-"Gerold Lannister",?,"Lannister",?,"In 244 AC","Lord ofCasterly RockWarden of the West"
-"Gerren",?,?,?,?,?
-"Gerrick Kingsblood","freefolk","Redbeard",?,?,"King of the Wildings"
-"Gerris Drinkwater","dornish","Drinkwater",NaN,?,"Ser"
-"Gevin Harlaw","ironborn","Harlaw",?,"In 299 AC , at Winterfell",?
-"Ghael",?,?,?,?,"Lord"
-"Ghiscari Empire",?,?,?,?,?
-"Ghost of High Heart",?,?,?,?,?
-"Gilbert Farring",?,"Farring",?,?,"Ser"
-"Gillam",?,?,?,?,"Brother"
-"Gilly","freefolk",?,NaN,?,?
-"Gilwood Hunter",?,"Hunter",NaN,?,"SerLord ofLongbow Hall"
-"Gladden Wylde",?,"Wylde",?,"In 298 AC , at Mummer's Ford","Ser"
-"Glendon Flowers",?,?,NaN,?,"Ser"
-"Glendon Hewett",?,?,?,?,"Ser"
-"Goady",?,?,?,?,?
-"Godric Borrell",?,"Borrell",?,?,"Lord ofSweetsister"
-"Godry Farring",?,"Farring",?,?,"Ser"
-"Godwyn",?,"Lannister",?,?,?
-"Goghor the Giant",?,?,?,?,?
-"Golden Company",?,?,?,?,?
-"Goodwin",?,"Tarth",?,?,"Ser"
-"Gorghan of Old Ghis",?,?,?,?,?
-"Gormon Peake",?,"Peake",?,"In 211 AC , at Whitewalls","Lord ofStarpike"
-"Gormon Tyrell",?,?,?,?,"Maester"
-"Gormond Drumm",?,"Drumm",?,?,?
-"Gormond Goodbrother","ironborn","Goodbrother",NaN,?,?
-"Gorne","freefolk",?,?,?,"King-Beyond-the-Wall"
-"Gorold Goodbrother","ironborn","Goodbrother",?,?,"Lord of Hammerhorn"
-"Gowen Baratheon",?,"Baratheon",?,?,?
-"Gran Goodbrother","ironborn","Goodbrother",?,?,?
-"Grance Morrigen",?,"Morrigen",?,?,"Ser"
-"Grassy Vale",?,?,?,?,?
-"Grazdan",?,?,?,"In 299 AC , at Astapor","Good Master"
-"Grazdan (Great)",?,?,?,?,?
-"Grazdan mo Eraz",?,?,?,?,?
-"Grazdan mo Ullhor",?,?,?,"In 299 AC , at Astapor","Good Master"
-"Grazdan zo Galare",?,?,?,?,?
-"Grazdar zo Galare","ghiscari",?,?,?,"Cupbearer"
-"Great Walrus","freefolk",?,?,?,?
-"Greenbeard",?,?,?,?,?
-"Greenblood",?,?,?,?,?
-"Greenstone",?,?,?,?,?
-"Gregor Clegane",?,"Clegane",NaN,"In 300 AC","SerKnight ofClegane's Keep"
-"Grenn","westeros",?,NaN,?,?
-"Gretchel",?,"Arryn",?,?,?
-"Grey King","ironborn",?,?,?,?
-"Grey Worm",?,?,?,?,?
-"Greydon Goodbrother","ironborn","Goodbrother",?,?,?
-"Greyshield",?,?,?,?,?
-"Greywater Watch",?,?,?,?,?
-"Griffin King",?,?,?,?,?
-"Grigg","freefolk",?,?,?,?
-"Grisel",?,"Baelish",?,?,?
-"Grisella","freefolk",?,?,?,?
-"Groleo",?,"Targaryen",?,"In 300 AC , at Meereen","CaptainLord Admiral "
-"Grubbs",?,?,?,"In 300 AC , at Beyond the Wall",?
-"Grunt","northmen","Bolton",?,?,?
-"Gueren",?,?,?,?,?
-"Gulian",?,?,?,?,"Maester"
-"Gulian Qorgyle",?,"Qorgyle",?,?,"Ser"
-"Gulian Swann",?,"Swann",NaN,?,"Lord ofStonehelm"
-"Guncer Sunglass",?,"Sunglass",?,"In 299 AC , at Dragonstone","Lord ofSweetport Sound"
-"Gunthor",?,?,?,?,?
-"Gunthor Hightower",?,"Hightower",?,?,"Ser"
-"Gurn","mountainclans",?,?,?,?
-"Guthor Grimm",?,"Grimm",?,?,"Lord of Greyshield"
-"Guyard Morrigen",?,"Morrigen",NaN,"In 299 AC , at King's Landing","Ser"
-"Guyne",?,?,?,?,"Archmaester"
-"Gwayne Corbray",?,"Corbray",?,?,"Ser"
-"Gwayne Gaunt",?,"Gaunt",?,"At Duskendale","Ser"
-"Gwayne Hightower",?,"Hightower",NaN,"In 130 AC , at King's Landing","Ser"
-"Gwin Goodbrother","ironborn","Goodbrother",?,?,?
-"Gwynesse Harlaw",?,"Harlaw",?,?,?
-"Gylbert Farwynd",?,"Farwynd",?,?,"Lord of the Lonely Light"
-"Gyldayn",?,?,?,?,"Archmaester"
-"Gyleno Dothare","braavosi",?,?,?,?
-"Gyles",?,?,?,?,"Ser"
-"Gyles Farwynd","ironborn","Farwynd",?,?,?
-"Gyles Grafton",?,"Grafton",?,?,?
-"Gyles III Gardener",?,?,?,?,?
-"Gyles Rosby",?,"Rosby",?,"In 300 AC , at King's Landing","Lord of RosbyLord TreasurerMaster of Coin"
-"Gyloro Dothare","braavosi",?,?,?,?
-"Gynir",?,"Greyjoy",?,"In 299 AC , at Winterfell",?
-"Gysella Goodbrother","ironborn","Goodbrother",?,?,?
-"Haegon Blackfyre",?,"Blackfyre",NaN,"In 219 AC",?
-"Haggo","dothraki",?,?,"In 298 AC , at Dothraki Sea","Bloodriderof Khal Drogo"
-"Haggon","freefolk",?,?,?,?
-"Hairy Hal",?,?,?,"In 300 AC , at Beyond the Wall",?
-"Hake",?,?,?,"In 299 AC , at Fist of the First Men",?
-"Hal (Hog)",?,?,?,?,?
-"Halder",?,?,NaN,?,?
-"Haldon",?,"Targaryen",?,?,?
-"Hali",?,?,?,"In 298 AC , at the Wolfswood",?
-"Hallis Mollen","northmen","Mollen",?,?,"Captain of the guards forWinterfell"
-"Hallyne",?,?,?,?,"LordWisdom"
-"Halmon Paege",?,"Paege",?,?,"Ser"
-"Halys Hornwood",?,"Hornwood",?,"In 298 AC , at Green Fork of the riverTrident, the Riverlands","Lord of the Hornwood "
-"Hamish the Harper",?,?,?,"In 300 AC , at King's Landing",?
-"Harbert",?,"Baratheon",?,?,"Ser"
-"Harbert Paege",?,"Paege",?,?,"Ser"
-"Hareth (Maester)",?,?,?,?,?
-"Hareth (Mole's Town)",?,?,?,?,?
-"Harghaz","ghiscari",?,?,"In 300 AC , at Meereen",?
-"Harlan Grandison",?,"Grandison",?,"In 281 AC , at King's Landing","Ser"
-"Harlan Hunter",?,"Hunter",?,?,"Ser"
-"Harle the Handsome","freefolk",?,?,?,?
-"Harle the Huntsman","freefolk",?,?,?,?
-"Harlen Tyrell",?,"Tyrell",?,"In 5 AC , at Dorne","High Steward ofHighgardenLord ofHighgardenWarden of the SouthLord Paramount of the Mander"
-"Harlon Botley","ironborn","Botley",?,?,?
-"Harlon Greyjoy","ironborn","Greyjoy",?,"At Pyke",?
-"Harma",?,?,?,"In 300 AC , at The Wall",?
-"Harmen Uller",?,"Uller",?,?,"Lord of Hellholt"
-"Harmond Umber","northmen","Umber",?,?,"Lord of Last Hearth"
-"Harmund Sharp",?,"Sharp",?,?,?
-"Harmune",?,?,?,?,"Maester"
-"Harodon",?,?,?,?,"Archmaester"
-"Harra",?,"Whent",?,"In 299 AC , at Harrenhal",?
-"Harrag Hoare","ironborn",?,?,?,?
-"Harrag Sharp","ironborn","Sharp",?,"In 299 AC , at Winterfell",?
-"Harras Harlaw","ironborn","Harlaw",?,?,"SerLord of Greyshield"
-"Harren Botley","ironborn","Botley",?,"In 299 AC , at Moat Cailin",?
-"Harren Half-Hoare","ironborn",?,?,?,?
-"Harren Hoare","ironborn",?,?,?,?
-"Harrenhal",?,?,?,?,?
-"Harrion Karstark","northmen","Karstark",?,?,"Lord ofKarhold"
-"Harrold Hardyng",?,"Hardyng",NaN,?,"Ser"
-"Harrold Osgrey",?,"Osgrey",?,"At the Redgrass Field","Ser"
-"Harrold Westerling",?,"Westerling",?,"In 112 AC","SerLord Commander of the Kingsguard"
-"Harry Sawyer",?,"Sawyer",?,?,"Ser"
-"Harry Strickland",?,"Strickland",?,?,"Captain-General"
-"Harsley",?,?,?,"In 299 AC , at Pennytree",?
-"Harwin","northmen","Stark",NaN,?,?
-"Harwin Strong",?,"Strong",NaN,"In 120 AC , at Harrenhal","SerCaptain"
-"Harwood Fell",?,"Fell",?,"In 300 AC , at The North","Lord ofFelwood"
-"Harwood Stout","northmen","Stout",?,?,"Lord"
-"Harwyn Hoare",?,?,?,?,?
-"Harwyn Plumm",?,"Plumm",?,?,"Ser"
-"Harys Haigh",?,"Haigh",NaN,?,"Ser"
-"Harys Swyft",?,"Swyft",?,?,"SerHand of the KingMaster of coinLord treasurer"
-"Hayford",?,?,?,?,?
-"Hayhead","northmen","Stark",?,?,?
-"Hazrak zo Loraq","ghiscari",?,?,?,?
-"Hazzea","ghiscari",?,NaN,"In 300 AC , at plains outsideMeereen",?
-"Helaena Targaryen",?,"Targaryen",NaN,"In 130 AC , at King's Landing","Queen"
-"Helicent Uffering",?,"Uffering",NaN,?,?
-"Hellholt",?,?,?,?,?
-"Helliweg",?,?,?,?,"Maester"
-"Helly",?,?,?,?,?
-"Helman Tallhart","northmen","Tallhart",?,"In 299 AC , at Duskendale","SerMaster of Torrhen's Square"
-"Helya",?,"Greyjoy",?,?,?
-"Hendry Bracken",?,"Bracken",?,"In 299 AC , at Stone Hedge",?
-"Henk","freefolk",?,?,?,?
-"Henly (House Ashford)",?,"Ashford",?,?,?
-"Henly (Maester)",?,?,?,?,?
-"Herbert Bolling",?,"Bolling",?,?,"Ser"
-"Heward","northmen","Stark",?,"In 298 AC , at King's Landing",?
-"Hibald",?,?,?,?,?
-"High Sparrow",?,?,?,?,"High SeptonHis High HolinessFather of the FaithfulVoice of the Seven on Earth"
-"Hilmar Drumm",?,"Drumm",?,?,?
-"Hizdahr zo Loraq","ghiscari",?,?,?,?
-"Hoarfrost Umber",?,"Umber",?,?,"Lord ofLast Hearth"
-"Hobb",?,?,?,?,?
-"Hobber Redwyne",?,"Redwyne",?,?,"Ser"
-"Hod",?,?,?,?,?
-"Hodor",?,"Stark",?,?,?
-"Hoke",?,"Lannister",?,?,?
-"Holger",?,?,?,?,?
-"Holly","freefolk",?,NaN,"In 300 AC , at Winterfell",?
-"Hop-Robin",?,?,?,?,?
-"Horas Redwyne",?,"Redwyne",?,?,"Ser"
-"Horn Hill",?,?,?,?,?
-"Hornwood",?,?,?,?,?
-"Horton Redfort",?,"Redfort",?,?,"Lord ofRedfort"
-"Hosman Norcross",?,"Norcross",?,?,"Ser"
-"Hosteen Frey",?,"Frey",NaN,?,"Ser"
-"Hoster Frey",?,"Frey",NaN,?,?
-"Hoster Tully",?,"Tully",NaN,"In 299 AC , at Riverrun","Lord ofRiverrun"
-"Hot Pie",?,?,?,?,?
-"Hother Umber","northmen","Umber",NaN,?,"Castellan ofLast Hearth"
-"Hotho Harlaw","ironborn","Harlaw",?,?,"Master of the Tower of Glimmering"
-"House Farman",?,?,?,?,"Lord of Fair Isle"
-"House Fell",?,?,?,?,"Lord ofFelwood"
-"House Fossoway of Cider Hall",?,?,?,?,?
-"House Frey",?,?,?,?,"Lord ofthe Crossing"
-"House Harlaw",?,?,?,?,"Lord of Harlaw"
-"House Lannister",?,?,?,?,"King of the Rock(formerly)Lord ofCasterly RockShield ofLannisportWarden of the West"
-"House Martell",?,?,?,?,"Lord of the SandshipLord of SunspearPrince of Dorne"
-"House Targaryen",?,?,?,?,"Kingof the Seven KingdomsLord of the Andals, the Rhoynarand the First MenPrince of Dragonstone(heir apparent)Prince of Summerhall"
-"House Tully",?,?,?,?,"Lord ofRiverrun"
-"Howd Wanderer","freefolk",?,?,?,?
-"Howland Reed",?,"Reed",NaN,?,"Lord ofGreywater Watch"
-"Hubard Rambton",?,"Rambton",?,"In 299 AC , at Dragonstone","Ser"
-"Hugh",?,"Arryn",?,"In 298 AC , at King's Landing","Ser"
-"Hugh Beesbury",?,"Beesbury",?,?,"Ser"
-"Hugh Hammer",?,?,?,"In 130 AC , at Tumbleton","Ser"
-"Hugo Vance",?,"Vance",?,?,"Ser"
-"Hugo Wull","mountainclans","Wull",?,?,"Big BucketThe Wull"
-"Hugor of the Hill",?,?,?,?,"King of the Andals"
-"Hullen","northmen","Stark",?,"In 298 AC , at King's Landing","Master of horse atWinterfell"
-"Humfrey Beesbury",?,"Beesbury",?,"In 209 AC , at Ashford","Ser"
-"Humfrey Clifton",?,"Clifton",?,?,"Ser"
-"Ironmen",?,?,?,?,?
-"Jaehaerys I Targaryen",?,?,497,?,?
-"Jason Lannister (son of Gerold)",?,"Lannister",NaN,"In Bloodstone , at 260 AC",?
-"Khal",?,?,?,?,?
-"King's Landing",?,?,?,?,?
-"King-Beyond-the-Wall",?,?,?,?,?
-"Kingsguard",?,?,?,?,?
-"Kingship","westeros",?,?,?,"Your Grace, Your Radiance, Your Magnificence"
-"Knight",?,?,?,?,?
-"Last Hearth",?,?,?,?,?
-"Leafy Lake",?,?,?,?,?
-"Lemonwood",?,?,?,?,?
-"Lhazareen",?,?,?,?,?
-"Lonely Light",?,?,?,?,?
-"Longbow Hall",?,?,?,?,?
-"Lord Ashford",?,"Ashford",?,?,"Lord ofAshford"
-"Lord Cafferen",?,"Cafferen",?,"In 282 AC , at Ashford","Lord"
-"Lord Caswell",?,"Caswell",?,?,"Lord ofBitterbridgeDefender of the Fords"
-"Lord Commander Hoare",?,"Hoare",?,?,"Lord Commanderof the Night's Watch"
-"Lord Commander of the Kingsguard",?,?,?,?,?
-"Maekar I Targaryen",?,?,NaN,?,?
-"Maester Aemon",?,?,?,?,?
-"Maesters",?,?,?,?,?
-"Mance Rayder","freefolk",?,?,?,?
-"Mole's Town",?,?,?,?,?
-"Mountain clans",?,?,?,?,?
-"Mountains of the Moon",?,?,?,?,?
-"Night's Watch",?,?,?,?,?
-"Nightsong",?,?,?,?,?
-"Oldcastle",?,?,?,?,?
-"Pinkmaiden",?,?,?,?,?
-"Purple Wedding",?,?,?,?,?
-"Pyke",?,?,?,?,?
-"Quiet Isle",?,?,?,?,?
-"R'hllor",?,?,?,?,?
-"Rain House",?,?,?,?,?
-"Rainbow Guard",?,?,?,?,?
-"Ramsay Bolton",?,?,?,?,?
-"Red Keep",?,?,?,?,?
-"Redgrass Field",?,?,?,?,?
-"Rhaenyra Targaryen","valyrian","Targaryen",NaN,"In 130 AC , at Dragonstone","Princess ofDragonstoneQueen Regnant of the Andals, the Rhoynarand the First Men(claimant)Lady of the Seven Kingdoms(claimant)"
-"Riverlands",?,?,?,?,?
-"Riverrun",?,?,?,?,?
-"Rosby",?,?,?,?,?
-"Sack of King's Landing",?,?,?,?,?
-"Serwyn",?,?,?,?,"Ser(in songs and tales)"
-"Seven Kingdoms",?,?,?,?,?
-"Shadow Tower",?,?,?,?,?
-"Sharp Point",?,?,?,?,?
-"Spearwife",?,?,?,?,?
-"Stannis Baratheon",?,?,498,?,?
-"Starfall",?,?,?,?,?
-"Stokeworth",?,?,?,?,?
-"Stonehelm",?,?,?,?,?
-"Storm's End",?,?,?,?,?
-"Storm King",?,?,?,?,?
-"Stormcrows",?,?,?,?,?
-"Strongsong",?,?,?,?,?
-"Sunspear",?,?,?,?,?
-"Sweetport Sound",?,?,?,?,?
-"Sweetsister",?,?,?,?,?
-"The Crag",?,?,?,?,?
-"The Dreadfort",?,?,?,?,?
-"The Hedge Knight",?,?,?,?,?
-"The Reach",?,?,?,?,?
-"The Wall",?,?,?,?,?
-"Torrhen's Square",?,?,?,?,?
-"Tourney at Ashford Meadow",?,?,?,?,?
-"Tyrosh",?,?,?,?,?
-"Unsullied",?,?,?,?,?
-"Vale",?,?,?,?,?
-"Viserys I Targaryen",?,?,493,?,?
-"Walder Frey",?,"Frey",NaN,?,"Lord of the Crossing"
-"War of the Usurper",?,?,?,?,?
-"Westerlands",?,?,?,?,?
-"Whitewalls Tourney",?,?,?,?,?
-"Whitewalls tourney",?,?,?,?,?
-"Wildling",?,?,?,?,?
-"Winterfell",?,?,?,?,?
-"A Game of Thrones",?,?,?,?,?
-"Asshai",?,?,?,?,?
-"Brave Companions",?,?,?,?,?
-"Cinnamon Wind",?,?,?,?,?
-"Coldwater Burn",?,?,?,?,?
-"Crossroads Inn",?,?,?,?,?
-"Crows Nest",?,?,?,?,?
-"Dragonseed",?,?,?,?,?
-"Dreadfort",?,?,?,?,?
-"Faceless Men",?,?,?,?,?
-"Fair Isle",?,?,?,?,?
-"Free folk",?,?,?,?,?
-"Giants",?,?,?,?,?
-"Golden Tooth",?,?,?,?,?
-"Goldengrove",?,?,?,?,?
-"Greyjoy Rebellion",?,?,?,?,?
-"Griffin's Roost",?,?,?,?,?
-"Hand of the King",?,?,?,?,?
-"Happy Port",?,?,?,?,?
-"Hedge knight",?,?,?,?,?
-"Highgarden",?,?,?,?,?
-"Horn of Herrock",?,?,?,?,?
-"House Baratheon",?,?,?,?,"Lord ofStorm's End"
-"House Fossoway of New Barrel",?,?,?,?,"the Knight of New Barrel"
-"House Karstark",?,?,?,?,"Lord of Karhold"
-"House Lychester",?,?,?,?,?
-"House Osgrey",?,?,?,?,"Knight of StandfastMarshall of the Northmarch (pre-Conquest)Lord of Coldmoat (pre-Faith Militant uprising)"
-"House Payne",?,?,?,?,?
-"House Stark",?,?,?,?,"King in the NorthWarden of the NorthLord ofWinterfellKing of the Trident"
-"House Tarly",?,?,?,?,"Lord of Horn Hill"
-"House Templeton",?,?,?,?,"The Knight of Ninestars"
-"Humfrey Hardyng",?,"Hardyng",?,"In 209 AC , at Ashford","Ser"
-"Humfrey Hewett",?,"Hewett",?,?,"Lord ofOakenshield"
-"Humfrey Swyft",?,"Swyft",?,?,"Ser"
-"Humfrey Wagstaff",?,"Wagstaff",NaN,?,"Ser"
-"Husband",?,?,?,?,?
-"Hyle Hunt",?,"Hunt",?,?,"Ser"
-"Iggo","dothraki",?,?,"In 299 AC , at the Riverlands",?
-"Igon Vyrwel",?,"Vyrwel",?,?,?
-"Illifer",?,?,NaN,?,"Ser"
-"Illyrio Mopatis",?,"Targaryen",?,?,"Magisterof Pentos"
-"Ilyn Payne","westeros","Payne",?,?,"SerKing's Justice"
-"Imry Florent",?,"Florent",?,"In 299 AC , at Blackwater Rush","SerLord High Captain"
-"Inn of the Kneeling Man",?,?,?,?,?
-"Iron Emmett",?,?,?,?,?
-"Ironbelly",?,?,?,?,?
-"Irri","dothraki","Targaryen",NaN,?,?
-"Jacelyn Bywater",?,"Bywater",?,"In 299 AC , at King's Landing","SerLord Commander of the City Watch"
-"Jack-Be-Lucky",?,?,?,?,?
-"Jacks",?,"Stark",?,?,?
-"Jaehaera Targaryen","valyrian","Targaryen",NaN,"In 133 AC , at King's Landing","PrincessQueen"
-"Jaehaerys II Targaryen",?,?,498,?,?
-"Jaehaerys Targaryen (son of Aegon II)",?,"Targaryen",NaN,"In 129 AC , at the Tower of the HandatKing's Landing","Prince"
-"Jafer Flowers",?,?,?,"In 298 AC , at the Haunted Forest",?
-"Jaggot",?,?,?,?,?
-"Jaime Frey",?,"Frey",NaN,?,?
-"Jaime Lannister",?,"Lannister",NaN,?,"SerLord Commander of the KingsguardWarden of the East(formerly)"
-"Jalabhar Xho",?,?,?,?,"Prince of the Red Flower Vale"
-"Jammos Frey",?,"Frey",NaN,?,"Ser"
-"Janei Lannister",?,"Lannister",NaN,?,?
-"Janna Tyrell",?,"Tyrell",?,?,?
-"Janos Slynt",?,?,NaN,"In 300 AC , at Castle Black","Commander of the City WatchLord ofHarrenhal"
-"Jaqen H'ghar",?,?,?,?,?
-"Jared Frey",?,"Frey",NaN,"In 300 AC (suspected)","Ser"
-"Jaremy Rykker",?,?,?,"In 298 AC , at Castle Black","Ser"
-"Jarl","freefolk",?,?,"In 299 AC , at the Wall",?
-"Jarmen Buckwell",?,?,?,?,?
-"Jason Lannister",?,"Lannister",?,"In 130 AC , at Battle at the Red Fork","Lord ofCasterly RockWarden of the WestLord of the Westerlands"
-"Jason Mallister",?,"Mallister",?,?,"Lord ofSeagard"
-"Jasper Arryn",?,"Arryn",?,?,"Lord of the EyrieDefender of the ValeWarden of the East"
-"Jasper Redfort",?,"Redfort",?,?,"Ser"
-"Jasper Waynwood",?,"Waynwood",?,?,?
-"Jasper Wylde",?,"Wylde",?,"In 130 AC , at King's Landing","LordMaster of Laws"
-"Jate",?,?,?,?,?
-"Jate Blackberry",?,"Blackberry",?,?,?
-"Jayde",?,?,?,?,?
-"Jayne Bracken",?,"Bracken",?,?,?
-"Jeffory Mallister",?,"Mallister",?,"At King's Landing",?
-"Jeffory Norcross",?,"Norcross",?,?,"Ser"
-"Jenny (Oldstones)",?,?,?,?,?
-"Jeor Mormont","northmen",?,NaN,"In 299 AC , at Craster's Keep","Lord Commanderof the Night's Watch"
-"Jeren",?,?,?,?,?
-"Jeyne Arryn",?,"Arryn",?,"In 134  AC , at Gulltown","Lady of the EyrieDefender of the ValeWarden of the EastLady Regent"
-"Jeyne Beesbury",?,"Beesbury",?,?,?
-"Jeyne Darry","westeros","Darry",?,?,?
-"Jeyne Fossoway",?,"Fossoway",?,?,?
-"Jeyne Goodbrook",?,"Goodbrook",NaN,?,?
-"Jeyne Heddle",?,?,NaN,?,?
-"Jeyne Lothston",?,"Lothston",NaN,?,?
-"Jeyne Lydden",?,"Lydden",?,?,?
-"Jeyne Poole","northmen","Poole",?,?,?
-"Jeyne Rivers",?,"Frey",?,?,?
-"Jeyne Swann",?,"Swann",?,?,?
-"Jeyne Waters","westeros",?,?,?,?
-"Jeyne Westerling",?,"Stark",NaN,?,"Queen of the NorthLady ofWinterfell"
-"Jeyne Westerling (wife of Maegor I)",?,"Westerling",NaN,"In 47 AC or 48 AC ","QueenBlack Bride"
-"Jhaqo","dothraki",?,?,?,"KhalKo(formerly)"
-"Jhezane","ghiscari",?,?,?,"Cupbearer"
-"Jhiqui","dothraki","Targaryen",NaN,?,?
-"Jhogo","dothraki","Targaryen",NaN,?,"KoBloodrider"
-"Joanna Lannister",?,"Lannister",NaN,"In 273 AC ","Lady ofCasterly Rock"
-"Joanna Swyft",?,"Swyft",?,?,?
-"Jocelyn Swyft",?,"Swyft",?,?,?
-"Jodge",?,"Lannister",?,?,?
-"Joffrey Baratheon",?,?,498,?,?
-"Joffrey Caswell",?,"Caswell",NaN,?,"Lord ofBitterbridge"
-"Joffrey Lonmouth",?,"Lonmouth",NaN,"In 114 AC , at King's Landing","Ser"
-"Johanna Swann",?,"Swann",?,?,?
-"Jojen Reed",?,"Reed",NaN,?,?
-"Jommo","dothraki",?,?,?,"Khal"
-"Jommy",?,"Baratheon",?,?,?
-"Jon",?,?,?,?,?
-"Jon Arryn",?,"Arryn",NaN,"In 298 AC , at King's Landing","Lord of the EyrieDefender of the ValeWarden of the EastHand of the King"
-"Jon Bettley",?,"Bettley",?,?,"Ser"
-"Jon Brax",?,"Brax",NaN,?,?
-"Jon Bulwer",?,"Bulwer",?,?,"Lord ofBlackcrown"
-"Jon Connington","westeros","Connington",NaN,?,"Lord of Griffin's Roost "
-"Jon Cupps",?,"Cupps",?,?,"Ser"
-"Jon Fossoway",?,"Fossoway",?,?,"Serthe Knight of New Barrel"
-"Jon Heddle",?,?,?,?,"Ser"
-"Jon Hollard",?,"Hollard",?,?,"Ser"
-"Jon Lynderly",?,"Lynderly",?,?,"Lord of the Snakewood"
-"Jon Myre","ironborn","Myre",?,?,?
-"Jon Penny",?,?,?,?,?
-"Jon Penrose",?,"Penrose",?,?,"Ser"
-"Jon Pox",?,?,?,"At Stepstones",?
-"Jon Redfort",?,"Redfort",?,?,"Ser"
-"Jon Snow","northmen","Stark",NaN,?,"Lord Commander of the Night's Watch"
-"Jon Umber (Greatjon)",?,"Umber",?,?,"Lord ofLast Hearth"
-"Jon Umber (Smalljon)",?,"Umber",?,"In 299 AC , at the Twins",?
-"Jon Vance",?,?,?,?,"Maester"
-"Jon Waters",?,?,?,?,"Ser"
-"Jon Wylde",?,"Wylde",?,?,"Ser"
-"Jonella Cerwyn",?,?,?,?,?
-"Jonnel Stark",?,"Stark",?,?,"Lord ofWinterfell"
-"Jonos Bracken",?,"Bracken",?,?,"Lord of the Stone Hedge"
-"Jonos Frey",?,"Frey",NaN,?,?
-"Jonos Stark","northmen","Stark",?,?,"King in the NorthLord ofWinterfell"
-"Jonothor Darry",?,"Darry",?,"In 283 AC , at the Trident","Ser"
-"Jorah Mormont","northmen","Mormont",NaN,?,"SerLord ofBear Island(stripped)"
-"Jorah Stark","northmen","Stark",?,?,"King in the NorthLord ofWinterfell"
-"Joramun","freefolk",?,?,?,"King-Beyond-the-Wall"
-"Jorelle Mormont","northmen","Mormont",NaN,?,?
-"Jorgen",?,"Webber",?,?,?
-"Jorquen",?,?,?,?,"Septon"
-"Jory Cassel","northmen","Cassel",?,"In 298 AC , at King's Landing","Captain of the guard atWinterfell"
-"Joseran",?,?,?,?,"Maester"
-"Joseth",?,"Stark",?,?,?
-"Joseth Mallister",?,"Mallister",?,?,"Ser"
-"Josmyn Peckledon",?,"Peckledon",NaN,?,?
-"Joss",?,?,?,?,?
-"Joss Stilwood",?,"Clegane",?,?,?
-"Joss the Gloom","braavosi",?,?,?,?
-"Josua Willum",?,"Willum",?,?,?
-"Joth Quickbow",?,?,?,"At the Riverlands",?
-"Jothos Slynt",?,"Slynt",?,?,?
-"Joy Hill",?,"Lannister",NaN,?,?
-"Joyeuse Erenford",?,"Erenford",NaN,?,?
-"Jurne",?,?,?,?,"Maester"
-"Justin Massey",?,"Massey",?,?,"Ser"
-"Jyana",?,"Reed",?,?,?
-"Jyanna Frey",?,"Frey",?,?,?
-"Jyck",?,"Lannister",?,"In 298 AC , at Mountains of the Moon",?
-"Jynessa Blackmont","dornish","Blackmont",?,?,?
-"Jyzene",?,?,?,?,?
-"Kaeth",?,?,NaN,"In 257 AC or 258 AC , at King's Landing","Grand Maester"
-"Karhold",?,?,?,?,?
-"Karlon Stark","northmen","Stark",?,?,"Lord ofKarl's Hold"
-"Karyl Vance",?,"Vance",?,?,"SerLord ofWayfarer's Rest"
-"Kedge Whiteye",?,?,NaN,?,?
-"Kedry",?,?,?,"In 300 AC , at off the coast of the Disputed Lands","Maester"
-"Kegs",?,?,?,?,?
-"Kella",?,"Baelish",?,?,?
-"Kemmett Pyke","ironborn",?,?,?,?
-"Kenned","ironborn","Greyjoy",?,"In 299 AC , at Winterfell",?
-"Kennos of Kayce",?,"Kenning",?,?,"Ser"
-"Ketter",?,?,?,?,?
-"Kevan Lannister",?,"Lannister",NaN,"In 300 AC , at King's Landing","SerMaster of LawsLord RegentProtector of the Realm"
-"Kezmya","ghiscari",?,?,?,"Cupbearer"
-"Khorane Sathmantes",?,?,?,?,?
-"Khrazz","ghiscari",?,NaN,"In 300 AC , at Meereen",?
-"Kindly Man",?,?,?,?,?
-"King of the Rock",?,?,?,?,?
-"Kingdom of Sarnor",?,?,?,?,?
-"Kingswood Brotherhood",?,?,?,?,?
-"Kirby Pimm",?,?,?,?,"Ser"
-"Kirth Vance",?,"Vance",?,?,?
-"Kojja Mo",?,?,?,?,?
-"Koss",?,?,?,"In 299 AC , at Gods Eye",?
-"Kraznys mo Nakloz",?,?,?,"In 299 AC , at Astapor",?
-"Krazz",?,?,?,?,?
-"Kromm","ironborn","Greyjoy",?,"In 299 AC , at Winterfell",?
-"Kurleket",?,"Bracken",?,"In 298 AC , at Mountains of the Moon",?
-"Kurz",?,?,?,"In 299 AC , at Riverlands",?
-"Kyle",?,?,?,?,"Ser"
-"Kyle (Banners)",?,?,?,"In 299 AC , at Riverlands",?
-"Kyle Condon",?,"Condon",?,?,"Ser"
-"Kyle Royce",?,"Royce",?,"At King's Landing",?
-"Kyleg","freefolk",?,?,?,?
-"Kym",?,?,?,?,"Maester"
-"Kyra",?,"Stark",NaN,"In 300 AC , at Forests near the Dreadfort",?
-"Kyra Frey",?,"Frey",NaN,?,?
-"Lady of the Leaves",?,?,?,?,"Lady of the Leaves"
-"Laena Velaryon","valyrian","Velaryon",NaN,"In 120 AC , at Driftmark",?
-"Laenor Velaryon","valyrian","Velaryon",NaN,"In 120 AC , at Spicetown","Ser"
-"Lambert Turnberry",?,"Turnberry",?,?,"Ser"
-"Lamprey",?,"Baratheon",?,?,?
-"Lancel Lannister",?,"Lannister",NaN,?,"SerLord ofDarry"
-"Lancel V Lannister",?,?,?,?,?
-"Lann the Clever",?,"Lannister",?,?,?
-"Lanna",?,?,NaN,?,?
-"Lanna (Happy Port)","braavosi",?,NaN,?,?
-"Lanna Lannister",?,"Lannister",?,?,?
-"Larence Snow",?,"Hornwood",NaN,?,?
-"Lark",?,?,?,"In 299 AC , at Beyondthe Wall",?
-"Larra Blackmont","dornish","Blackmont",?,?,"Lady ofBlackmont"
-"Larraq","ghiscari",?,?,?,?
-"Larys Strong",?,"Strong",NaN,?,"Lord ofHarrenhalMaster of Whisperers"
-"Layna",?,?,NaN,?,?
-"Leana Frey",?,"Frey",NaN,?,?
-"Leathers",?,?,NaN,?,"Master-at-Arms"
-"Left Hand Lew",?,?,?,?,?
-"Lem",?,?,?,?,?
-"Lem (Standfast)",?,"Osgrey",NaN,?,?
-"Lenn","freefolk",?,?,?,?
-"Lennocks",?,?,?,?,?
-"Lenwood Tawney","ironborn","Tawney",?,?,?
-"Lenyl","freefolk",?,?,?,?
-"Leo Blackbar",?,"Blackbar",?,?,"Ser"
-"Leo Lefford",?,"Lefford",?,"In 299 AC , at Trident","Lord of the Golden Tooth"
-"Leo Tyrell",?,"Tyrell",?,?,?
-"Leo Tyrell (Longthorn)",?,"Tyrell",?,?,"Lord ofHighgardenDefender ofthe MarchesHigh Marshal ofthe ReachWarden of the South"
-"Leo Tyrell (son of Victor)",?,"Tyrell",?,?,"Ser"
-"Leobald Tallhart","northmen","Tallhart",?,"In 299 AC , at Winterfell",?
-"Leona Tyrell",?,"Tyrell",?,?,?
-"Leona Woolfield",?,"Woolfield",?,?,?
-"Leonella Lefford",?,"Lefford",?,?,?
-"Leonette Fossoway",?,"Fossoway",?,?,"Lady"
-"Leslyn Haigh",?,"Haigh",?,?,"Ser"
-"Lester",?,"Lannister",?,?,?
-"Lester Morrigen",?,"Morrigen",?,?,"Lord of Crows Nest"
-"Lew","northmen","Stark",?,?,?
-"Lew (Long)",?,"Tully",?,?,?
-"Lewis Lanster",?,?,?,?,?
-"Lewyn Martell","dornish","Martell",?,"In 283 AC , at the Trident","Prince ofDorneSer"
-"Lewys",?,"Baratheon",?,?,?
-"Lewys Lydden",?,"Lydden",?,?,"Lord of the Deep Den"
-"Lewys Piper",?,"Piper",?,?,?
-"Leyla Hightower",?,"Hightower",?,?,?
-"Leyton Hightower",?,"Hightower",?,?,"Voice of OldtownLord of the PortLord of the HightowerDefender of the CitadelBeacon of the South"
-"Lharys",?,"Bracken",?,"In 298 AC , at Mountains of the Moon",?
-"Lia Serry",?,"Serry",?,?,?
-"Liane Vance",?,"Vance",?,?,?
-"Likely Luke",?,?,?,?,?
-"Lister",?,?,?,?,?
-"Lives of Four Kings",?,?,?,?,?
-"Lollys Stokeworth",?,"Stokeworth",NaN,?,"Lady of Stokeworth"
-"Lomas Estermont",?,"Estermont",?,?,"Ser"
-"Lommy Greenhands",?,?,?,?,?
-"Lomys",?,?,?,?,"Maester"
-"Loras Tyrell",?,"Tyrell",NaN,?,"SerLord Commanderof the Rainbow Guard"
-"Lorcas",?,?,NaN,?,?
-"Lord Commander Qorgyle",?,"Qorgyle",?,"In 288 AC , at Castle Black","Lord Commanderof the Night's Watch"
-"Lordsport",?,?,?,?,?
-"Loren Lannister",?,?,?,?,?
-"Lorent Lorch",?,"Lorch",?,?,"Ser"
-"Lorent Marbrand",?,"Marbrand",?,"In 130 AC , at King's Landing","SerLord Commander of the Queensguard"
-"Lorent Tyrell",?,"Tyrell",?,?,?
-"Loreza Sand",?,"Martell",NaN,?,?
-"Lorimer",?,"Lefford",?,"In 298 AC , at Riverlands","Ser"
-"Lormelle",?,?,?,?,?
-"Lorren",?,?,?,"In 299 AC , at Winterfell",?
-"Lothar",?,?,?,?,"Maester"
-"Lothar Frey",?,"Frey",NaN,?,"Steward of the Twins"
-"Lothar Mallery",?,"Mallery",?,"In 298 AC , at Mummer's Ford","Lord"
-"Lotho Lornel","braavosi",?,?,?,?
-"Lothor Brune",?,"Baelish",?,?,"Ser"
-"Lucamore Strong",?,"Strong",?,?,"Ser"
-"Lucan",?,"Whent",?,"In 299 AC , at Harrenhal",?
-"Lucantine Woodwright",?,?,?,?,"Ser"
-"Lucas Blackwood",?,"Blackwood",?,"In 299 AC , at the Twins",?
-"Lucas Codd","ironborn","Codd",?,?,?
-"Lucas Corbray",?,"Corbray",?,?,"Ser"
-"Lucas Inchfield",?,"Inchfield",?,"In 211 AC , at the Chequy Water","Ser"
-"Lucas Lothston",?,?,?,?,?
-"Lucas Nayland",?,"Nayland",?,?,"Ser"
-"Lucas Roote",?,"Roote",?,"In 299 AC , at Riverlands",?
-"Lucas Tyrell",?,"Tyrell",?,?,?
-"Luceon Frey",?,?,NaN,?,"Septon"
-"Lucias Vypren",?,"Vypren",?,?,"Lord"
-"Lucifer Hardy",?,"Hardy",?,?,"Lord"
-"Lucimore Botley","ironborn","Botley",?,?,?
-"Lucion Lannister",?,"Lannister",?,?,"Ser"
-"Luco Prestayn",?,?,?,?,?
-"Lucos",?,?,?,?,"Septon"
-"Lucos Chyttering",?,"Chyttering",NaN,?,"Lord"
-"Luke of Longtown",?,?,?,?,?
-"Lum",?,"Lannister",?,?,?
-"Luthor Tyrell",?,"Tyrell",?,?,"Lord ofHighgardenDefender ofthe MarchesHigh Marshal ofthe ReachWarden of the South"
-"Luthor Tyrell (son of Moryn)",?,"Tyrell",?,?,"Ser"
-"Luthor Tyrell (son of Theodore)",?,"Tyrell",?,?,?
-"Luton","northmen","Bolton",?,"In 300 AC , at Winterfell",?
-"Luwin","westeros","Stark",?,"In 299 AC , at Winterfell",?
-"Lyanna Mormont","northmen","Mormont",NaN,?,?
-"Lyanna Stark","northmen","Stark",NaN,"In 283 AC , at Tower of Joy",?
-"Lyessa Flint","northmen","Flint",?,?,"Lady ofWidow's Watch"
-"Lyle Crakehall",?,"Crakehall",?,?,"Ser"
-"Lyman Beesbury",?,"Beesbury",NaN,"In 129 AC , at King's Landing","LordMaster of Coin"
-"Lyman Darry",?,"Darry",NaN,"In 299 AC , at Darry","Lord of Darry"
-"Lymond Goodbrook",?,"Goodbrook",?,?,"Lord"
-"Lymond Lychester",?,"Lychester",?,?,"Lord"
-"Lymond Mallister",?,"Mallister",?,?,"Lord ofSeagard"
-"Lymond Vikary",?,"Vikary",?,?,"Ser"
-"Lyn Corbray",?,"Corbray",?,?,"Ser"
-"Lync",?,?,?,?,?
-"Lynesse Hightower",?,"Hightower",?,?,?
-"Lyonel (knight)",?,?,?,?,"Ser"
-"Lyonel Baratheon",?,"Baratheon",?,?,"Ser"
-"Lyonel Bentley",?,?,?,"In 130 AC , at StokeworthandDuskendale","Ser"
-"Lyonel Corbray",?,"Corbray",NaN,?,"Lord ofHeart's Home"
-"Lyonel Frey",?,"Frey",NaN,?,"Ser"
-"Lyonel Selmy",?,"Selmy",?,?,"Serthe Knight ofHarvest Hall"
-"Lyonel Strong",?,"Strong",?,"In 120 AC , at Harrenhal","Lord ofHarrenhalHand of the KingMaster of laws"
-"Lyonel Tyrell (lord)",?,"Tyrell",?,"In 159 AC or 160 AC , at Sandstone","Lord ofHighgardenDefender ofthe MarchesHigh Marshal ofthe ReachWarden of the South"
-"Lyonel Tyrell (son of Leo)",?,"Tyrell",?,?,?
-"Lyra Mormont","northmen","Mormont",NaN,?,?
-"Lys",?,?,?,?,?
-"Lysa Meadows",?,"Meadows",?,?,?
-"Lysa Tully",?,"Arryn",NaN,"In 300 AC , at the Eyrie","Lady of the Vale"
-"Lysono Maar",?,?,?,?,?
-"Lythene Frey",?,"Frey",NaN,?,?
-"Mace Tyrell",?,"Tyrell",NaN,?,"Lord ofHighgardenDefender ofthe MarchesHigh Marshal ofthe ReachWarden of the SouthHand of the KingMaster of ships(formerly)"
-"Mad Huntsman",?,?,?,?,?
-"Maddy",?,"Arryn",?,?,?
-"Maege Mormont","northmen","Mormont",NaN,?,"Lady of Bear Island"
-"Maegelle Frey",?,"Frey",NaN,?,?
-"Maegor I Targaryen",?,?,499,?,?
-"Maekar I",?,?,?,?,?
-"Maekar Targaryen",?,?,?,?,?
-"Maelor Targaryen",?,"Targaryen",NaN,"In 130 AC","Prince"
-"Maelys Blackfyre",?,?,?,?,?
-"Maerie (Goodwife)",?,?,?,"At Riverlands","Goodwife"
-"Maerie (Whore)",?,?,?,"In 299 AC , at Riverlands",?
-"Mag Mar Tun Doh Weg",?,?,?,"In 300 AC , at Castle Black",?
-"Maggy",?,?,?,?,?
-"Mago","dothraki",?,?,?,"BloodriderofKhal Jhaqo"
-"Malcolm",?,?,?,?,"Ser"
-"Mallador Locke",?,?,?,"In 299 AC , at Fist of the First Men","Ser"
-"Malleon",?,?,?,?,"Grand Maester"
-"Malliard",?,?,?,?,"Wisdom"
-"Mallor",?,"Lannister",?,?,?
-"Mallor (Knight)",?,?,?,?,"Ser"
-"Malwyn Frey",?,"Frey",NaN,?,?
-"Mandon Moore",?,"Moore",?,"In 299 AC , at Blackwater Rush","Ser"
-"Manfred Dondarrion",?,"Dondarrion",?,?,"Ser"
-"Manfred Lothston",?,"Lothston",?,?,?
-"Manfred Swann",?,"Swann",?,?,"Ser"
-"Manfrey Martell","dornish","Martell",?,?,"SerCastellan ofSunspear"
-"Manfryd Lothston",?,"Lothston",?,?,?
-"Manfryd Yew",?,"Yew",?,?,"Ser"
-"Marei",?,?,NaN,?,?
-"Margaery Tyrell","westeros","Tyrell",NaN,?,"Queen of the Seven Kingdoms"
-"Marghaz zo Loraq","ghiscari",?,?,?,?
-"Margot Lannister",?,"Lannister",?,?,?
-"Marianne Vance",?,"Vance",NaN,?,?
-"Maric Seaworth",?,"Seaworth",?,"In 299 AC , at Blackwater Rush",?
-"Marillion",?,?,NaN,"In 300 AC , at the Eyrie",?
-"Maris","freefolk",?,?,?,?
-"Marissa Frey",?,"Frey",NaN,?,?
-"Mariya Darry","westeros","Darry",?,?,?
-"Mark Mullendore",?,"Mullendore",?,?,"Ser"
-"Mark Ryswell",?,"Ryswell",?,"In 283 AC , at Tower of Joy","Ser"
-"Marlon Manderly",?,"Manderly",?,?,"SerCommander of the garrison atWhite Harbor "
-"Maron Botley",?,"Botley",?,?,?
-"Maron Greyjoy","ironborn","Greyjoy",NaN,"In 289 AC , at Pyke",?
-"Maron Martell",?,"Martell",?,?,"Prince of Dorne"
-"Maron Volmark","ironborn","Volmark",NaN,?,"Lord ofVolmarkLord ofGreenshield"
-"Marq Grafton",?,"Grafton",?,"In 282 AC , at Gulltown",?
-"Marq Piper",?,"Piper",?,?,"Ser"
-"Marq Rankenfell",?,?,?,?,"Lord Commander of the Night's Watch"
-"Marsella Waynwood",?,"Waynwood",?,?,?
-"Martyn Cassel","northmen","Cassel",?,"In 284 AC , at Tower of Joy,Dorne",?
-"Martyn Lannister",?,"Lannister",?,?,?
-"Martyn Mullendore",?,"Mullendore",?,?,"Lord ofUplands"
-"Martyn Rivers",?,"Frey",?,?,?
-"Marwyn",?,?,?,?,"Archmaester"
-"Marwyn Belmore",?,"Belmore",?,?,"Ser"
-"Marya Seaworth",?,"Seaworth",?,?,"Lady"
-"Masha Heddle",?,?,?,"In 298 AC , at the Riverlands",?
-"Maslyn",?,?,?,"In 299 AC , at Fist of the First Men",?
-"Matarys Targaryen",?,"Targaryen",NaN,"In 209 AC , at King's Landing","Prince"
-"Mathis Frey",?,"Frey",NaN,?,?
-"Mathis Rowan",?,"Rowan",?,?,"Lord ofGoldengrove"
-"Mathos Mallarawan","qaren",?,?,?,?
-"Matrice",?,"Baratheon",?,?,?
-"Matt",?,?,?,"At the Riverlands",?
-"Matthar",?,?,?,?,?
-"Matthos Seaworth",?,"Seaworth",?,"In 299 AC , at Blackwater Rush",?
-"Mawney",?,?,?,"In 300 AC , at Beyond the Wall",?
-"Maynard",?,?,?,?,"Ser"
-"Maynard Plumm",?,"Plumm",?,?,"Ser"
-"Mazdhan zo Loraq","ghiscari",?,?,?,?
-"Mebble",?,?,?,?,?
-"Medgar Tully",?,"Tully",?,"In or between 209-211 AC","Lord ofRiverrun"
-"Medger Cerwyn","northmen","Cerwyn",?,"In 299 AC , at Harrenhal","Lord ofCerwyn"
-"Medwick Tyrell",?,?,?,?,"Maester"
-"Meera Reed",?,"Reed",NaN,?,?
-"Meg",?,?,?,?,?
-"Megga Tyrell",?,"Tyrell",NaN,?,?
-"Meha","freefolk",?,?,?,?
-"Meizo Mahr",?,?,?,?,?
-"Mela",?,"Arryn",?,?,?
-"Melaquin",?,?,?,?,"Maester"
-"Melara Crane",?,"Crane",?,?,?
-"Melara Hetherspoon",?,"Hetherspoon",NaN,"In 276 AC ",?
-"Meldred Merlyn","ironborn","Merlyn",?,?,"Lord of Pebbleton"
-"Melesa Crakehall",?,"Crakehall",?,?,?
-"Melessa Florent",?,"Florent",?,?,?
-"Meliana",?,?,?,?,?
-"Melicent",?,?,?,?,"Septa"
-"Melisandre",?,?,?,?,?
-"Melissa Blackwood",?,"Blackwood",NaN,?,?
-"Mellara Rivers",?,"Frey",?,?,?
-"Mellei",?,"Martell",?,?,?
-"Mellos",?,?,?,?,"Grand Maester"
-"Melly",?,?,?,?,?
-"Melwyn Sarsfield",?,"Sarsfield",?,?,"Ser"
-"Melwys Rivers",?,?,?,?,"Maester"
-"Meralyn","braavosi",?,?,?,?
-"Meredyth Crane",?,"Crane",?,?,?
-"Merianne Frey",?,"Frey",NaN,?,?
-"Meribald",?,?,NaN,?,"Septon"
-"Merling Queen","braavosi",?,?,?,?
-"Merlon Crakehall",?,"Crakehall",?,?,"Ser"
-"Mern Gardener",?,?,?,?,?
-"Mero","braavosi",?,?,"In 299 AC , at Meereen",?
-"Merrell Florent",?,"Florent",?,?,?
-"Merrett Frey",?,"Frey",NaN,"In 300 AC , at NearOldstones ",?
-"Merrit",?,?,?,?,?
-"Merry Meg",?,?,?,?,?
-"Meryn Trant",?,"Trant",?,?,"Ser"
-"Mezzara","ghiscari",?,?,?,"Cupbearer"
-"Michael Mertyns",?,"Mertyns",?,?,"Ser"
-"Mikken",?,"Stark",?,"In 299 AC , at Winterfell",?
-"Miklaz","ghiscari",?,?,?,"Cupbearer"
-"Mina Tyrell",?,"Tyrell",?,?,?
-"Minisa Whent",?,"Whent",?,"In After 273 AC , at Riverrun",?
-"Mirri Maz Duur",?,?,NaN,"In 299 AC , at Red Waste","GodswifeMaegi"
-"Missandei",?,"Targaryen",NaN,?,?
-"Moelle",?,?,?,?,"Septa"
-"Mohor",?,"Bracken",?,"In 298 AC , at Mountains of the Moon",?
-"Mollander",?,?,?,?,?
-"Mollos",?,?,?,?,"Archmaester"
-"Monford Velaryon",?,"Velaryon",?,"In 299 AC , at Blackwater Rush","Lord of the TidesMaster of Driftmark"
-"Monster","freefolk",?,NaN,?,?
-"Monterys Velaryon",?,"Velaryon",NaN,?,"Lord of the TidesMaster ofDriftmark"
-"Moon Boy",?,"Baratheon",?,?,?
-"Moonshadow",?,?,?,?,?
-"Moqorro",?,?,?,?,"Slave of R'hllor"
-"Mord",?,"Arryn",?,?,?
-"Mordane",?,"Stark",?,"In 298 AC , at King's Landing","Septa"
-"Moredo Prestayn","braavosi",?,?,?,"Tradesman-Captain"
-"Moreo Tumitis",?,?,NaN,?,?
-"Morgarth",?,"Baelish",?,?,"Ser"
-"Morgil",?,?,?,?,?
-"Moribald Chester",?,"Chester",?,?,"Lord ofGreenshield"
-"Morna White Mask","freefolk",?,?,?,?
-"Moro","dothraki",?,?,?,"Khal"
-"Morosh the Myrman",?,?,?,?,?
-"Morra",?,"Martell",?,?,?
-"Morrec",?,"Lannister",?,"In 298 AC , at Mountains of the Moon",?
-"Morros Slynt",?,"Slynt",?,?,"Lord"
-"Mors Manwoody",?,"Manwoody",?,?,?
-"Mors Martell",?,"Martell",?,?,"Lord of the SandshipPrince of Dorne"
-"Mors Martell (brother of Doran)",?,"Martell",NaN,"In 248 AC or 258 AC ",?
-"Mors Umber",?,"Umber",NaN,?,"Castellan ofLast Hearth"
-"Mortimer Boggs",?,"Boggs",?,?,"Ser"
-"Morton Waynwood",?,"Waynwood",?,?,"Ser"
-"Morya Frey",?,"Frey",NaN,?,"Lady"
-"Moryn Tyrell",?,"Tyrell",?,?,"SerLord Commander of the City Watch of Oldtown"
-"Most Devout",?,?,?,?,?
-"Mother Mole","freefolk",?,?,?,?
-"Mudge",?,"Osgrey",?,?,?
-"Mudge (miller)",?,?,?,"At Donnelwood",?
-"Mullin",?,?,?,?,"Maester"
-"Mully",?,?,?,?,?
-"Munciter",?,?,?,?,"Wisdom"
-"Munda","freefolk",?,?,?,?
-"Murch",?,?,?,?,?
-"Murch (Winterfell)","northmen","Stark",?,?,?
-"Murenmure",?,?,?,?,"Maester"
-"Murmison",?,?,?,"In 41 AC , at King's Landing","SeptonHand of the King"
-"Mushroom",?,"Targaryen",?,"In or after 136 AC ",?
-"Muttering Bill",?,?,?,"In 300 AC , at Beyond the Wall",?
-"Mya Stone",?,"Royce",NaN,?,?
-"Mycah","westeros",?,NaN,"In 298 AC , at Riverlands, near the Ruby Ford.",?
-"Mychel Redfort",?,"Redfort",?,?,"Ser"
-"Mylenda Caron",?,"Caron",NaN,?,?
-"Myles",?,"Martell",?,?,"Maester"
-"Myles (squire)",?,?,?,"In 299 AC , at Riverrun",?
-"Myles Manwoody",?,"Manwoody",?,?,"Ser"
-"Myles Mooton",?,"Mooton",?,"In 283 AC , at Stoney Sept","Ser"
-"Myles Smallwood",?,"Smallwood",?,?,"Hand of the King"
-"Myranda Royce",?,"Royce",NaN,?,?
-"Myrcella Baratheon",?,"Baratheon",NaN,?,"Princess"
-"Myria Jordayne",?,"Jordayne",?,?,?
-"Myriah Martell",?,?,?,?,?
-"Myrielle Lannister",?,"Lannister",?,?,?
-"Myrtle","freefolk",?,?,"In 300 AC , at Winterfell",?
-"Mysaria",?,?,?,?,"Mistress of whisperers"
-"Naerys Targaryen","valyrian","Targaryen",NaN,"In or between 179 AC and 184 AC , at King's Landing","PrincessQueen"
-"Nage",?,"Bolton",?,?,?
-"Nail",?,?,?,?,?
-"Nan",?,"Stark",?,?,?
-"Narbert",?,?,?,?,"Brother"
-"Narbo","braavosi",?,?,?,?
-"Ned (ferryman)",?,?,?,?,?
-"Ned Woods",?,"Woods",?,?,?
-"Nella","freefolk",?,?,?,?
-"Nestor Royce",?,"Royce",?,?,"Keeper of the Gates of the MoonHigh Steward of the Vale"
-"Nettles",?,?,NaN,?,?
-"Nightingale",?,?,?,?,?
-"Nissa Nissa",?,?,?,?,?
-"Noho Dimittis","braavosi",?,?,?,?
-"Nolla",?,?,?,"At Riverlands","Goodwife"
-"Norbert Vance",?,"Vance",?,?,"Lord of Atranta"
-"Norjen","ironmen",?,?,?,?
-"Normund Tyrell",?,?,?,?,"Maester"
-"Norne Goodbrother","ironborn","Goodbrother",?,?,"Lord ofShatterstone"
-"Norren",?,?,?,?,"Archmaester"
-"Notch",?,?,?,?,?
-"Nute","ironborn","Greyjoy",?,?,"Lord of Oakenshield"
-"Nymella Toland","dornish","Toland",?,?,"Lady ofGhost Hill"
-"Nymeria",?,"Martell",?,?,"PrincessQueen"
-"Nymeria Sand","dornish","Martell",NaN,?,?
-"Nymos",?,?,?,?,"Archmaester"
-"Nysterica",?,?,?,?,"Septa"
-"Obara Sand","dornish","Martell",NaN,?,?
-"Obella Sand","dornish","Martell",NaN,?,?
-"Oberyn Martell","dornish","Martell",NaN,"In 300 AC , at King's Landing","Prince of Dorne"
-"Ocley",?,?,?,?,"Archmaester"
-"Ogo","dothraki",?,?,"In 298 AC , at Dothraki Sea","Khal"
-"Old Crackbones",?,?,?,?,?
-"Old Grey Gull","ironborn",?,?,?,?
-"Old Henly",?,?,NaN,"In 299 AC , at Castle Black",?
-"Old Tattersalt",?,?,?,?,?
-"Oldtown",?,?,?,?,?
-"Olene Tyrell",?,"Tyrell",?,?,?
-"Olenna Redwyne",?,"Redwyne",NaN,?,"Dowager Lady ofHighgarden"
-"Ollidor",?,?,?,?,"Septon"
-"Ollo Lophand","tyroshi",?,?,"In 300 AC , at Beyond the Wall",?
-"Olymer Tyrell",?,"Tyrell",?,?,"Ser"
-"Olyvar Frey",?,"Frey",NaN,?,?
-"Olyvar Oakheart",?,"Oakheart",?,"In 161 AC","Ser"
-"Omer Blackberry",?,"Blackberry",?,?,?
-"Omer Florent",?,?,?,?,"Maester"
-"Ondrew Locke","northmen","Locke",?,?,"Lord of Oldcastle"
-"Orbelo","braavosi",?,?,?,?
-"Orbert Caswell",?,"Caswell",?,"At Castle Black","Lord Commander of the Night's Watch"
-"Ordello",?,?,?,"In 299 AC , at Pentos","Magister of Pentos"
-"Orell","freefolk",?,?,"In 299 AC , at Skirling Pass",?
-"Orivel",?,?,?,?,"Ser"
-"Orland of Oldtown",?,"Baratheon",?,?,?
-"Ormond",?,?,?,"In 299 AC , at Pennytree","Ser"
-"Ormond Osgrey",?,"Osgrey",?,?,"Lord ofColdmoat"
-"Ormund Wylde",?,"Wylde",?,?,"Ser"
-"Oro Tendyris","braavosi",?,?,?,?
-"Orphan Oss",?,?,?,"In 300 AC , at Beyond the Wall",?
-"Orton Merryweather",?,"Merryweather",?,?,"Lord of LongtableJusticiarMaster of LawsHand of the King"
-"Orwyle",?,?,?,?,"Grand Maester"
-"Orys Baratheon",?,"Baratheon",?,"In 38 AC","Lord ofStorm's EndLord of the Stormlands Hand of the King"
-"Osbert Serry",?,"Serry",?,?,"Lord of Southshield"
-"Osfryd Kettleblack",?,"Kettleblack",?,?,"SerCommander of the City Watch of King's Landing"
-"Osha","freefolk","Stark",?,?,?
-"Osmund Frey",?,"Frey",NaN,?,?
-"Osmund Kettleblack",?,"Kettleblack",?,?,"Ser"
-"Osmynd",?,?,?,?,"Septon"
-"Osney Kettleblack",?,"Kettleblack",?,?,"Ser"
-"Ossifer Plumm",?,"Plumm",?,?,"Lord"
-"Ossy",?,"Royce",?,?,?
-"Oswell Kettleblack",?,"Kettleblack",?,?,?
-"Oswell Whent",?,"Whent",?,"In 283 AC , at Tower of Joy","Ser"
-"Oswyn",?,?,?,?,?
-"Othell Yarwyck",?,?,?,?,"First Builder"
-"Otho Bracken",?,"Bracken",?,?,"Ser"
-"Othor",?,?,?,"In 298 AC , at the haunted forest",?
-"Otter Gimpknee",?,?,?,?,?
-"Otto Hightower",?,"Hightower",?,"In 130 AC , at King's Landing","SerHand of the King"
-"Ottomore",?,?,?,?,?
-"Ottyn Wythers",?,"Wythers",NaN,"In 299 AC , at Fist of the First Men,Beyond the Wall","Ser"
-"Owen",?,?,?,?,?
-"Owen (brother of Meribald)",?,?,?,"At Stepstones",?
-"Owen Inchfield",?,"Inchfield",?,?,"Ser"
-"Owen Norrey","mountainclans","Norrey",?,"In 299 AC , at the Twins",?
-"Oznak zo Pahl",?,?,?,"In 299 AC , at Meereen",?
-"Palla","northmen","Stark",?,?,?
-"Parmen Crane",?,"Crane",?,?,"Ser"
-"Patchface",?,"Baratheon",?,?,?
-"Pate",?,?,?,?,?
-"Pate (King's Landing)",?,"Baratheon",NaN,?,?
-"Pate (Lancewood)",?,?,?,"At the Riverlands",?
-"Pate (Mory)",?,?,?,"At the Riverlands",?
-"Pate (Night's Watch)",?,?,?,?,?
-"Pate (Old)",?,?,?,"At Riverlands",?
-"Pate (Pinchbottom)",?,?,?,"In 209 AC , at Little Dosk",?
-"Pate (Shermer's Grove)",?,?,?,"At the Riverlands",?
-"Pate (Standfast)",?,"Osgrey",NaN,?,?
-"Pate of the Blue Fork",?,"Frey",?,"In 299 AC , at Riverlands","Ser"
-"Patrek Mallister",?,"Mallister",?,?,?
-"Patrek Vance",?,"Vance",NaN,?,?
-"Paxter Redwyne",?,"Redwyne",?,?,"Lord of the ArborGrand AdmiralMaster of Ships"
-"Pearse Caron",?,"Caron",?,?,"Lord of the Marches"
-"Pebbleton",?,?,?,?,?
-"Penny",?,?,NaN,?,?
-"Penny Jenny",?,?,?,"At King's Landing",?
-"Pentos",?,?,?,?,?
-"Perra Frey",?,"Frey",NaN,?,?
-"Perriane Frey",?,"Haigh",NaN,?,?
-"Perros Blackmont","dornish","Blackmont",?,?,?
-"Perwyn Frey",?,"Frey",NaN,?,"Ser"
-"Perwyn Osgrey",?,"Osgrey",?,?,"Lord of Coldmoat"
-"Peter Plumm",?,"Plumm",?,?,"Ser"
-"Petyr Baelish","westeros","Baelish",NaN,?,"Lord Paramount of the TridentLord ofHarrenhalLord Protector of the ValeMaster of Coin(formerly)"
-"Petyr Frey",?,"Frey",NaN,"In 300 AC , at Oldstones ",?
-"Philip Foote",?,"Foote",?,?,"SerLord ofNightsongLord of the Marches"
-"Philip Plumm",?,"Plumm",?,?,"Lord"
-"Pia",?,"Whent",?,?,?
-"Plummer",?,"Ashford",?,?,"Steward ofAshford"
-"Podrick Payne",?,"Payne",NaN,?,?
-"Poetess",?,?,?,?,?
-"Pollitor",?,?,?,?,"Wisdom"
-"Polliver",?,"Clegane",?,"In 300 AC , at Inn at the Crossroads","Castellan of Harrenhal"
-"Pono","dothraki",?,?,?,"KhalKo(formerly)"
-"Porridge",?,"Baratheon",?,?,?
-"Porther","northmen","Stark",?,?,?
-"Portifer Woodwright",?,?,?,?,"Ser"
-"Poul Pemford",?,"Tully",?,"In 299 AC , at Riverrun",?
-"Poxy Tym","northmen","Stark",?,"In 299 AC , at Winterfell",?
-"Praed",?,?,?,"In 299 AC , at the Crownlands",?
-"Prendahl na Ghezn","ghiscari",?,?,"In 299 AC , at Yunkai",?
-"Preston Greenfield",?,"Greenfield",?,"In 299 AC , at King's Landing","Ser"
-"Puckens",?,"Lannister",?,?,?
-"Pudding",?,?,?,?,?
-"Puddingfoot",?,?,?,?,?
-"Pyat Pree",?,?,?,?,"Warlock"
-"Pycelle",?,?,NaN,"In 300 AC , at the Red Keep,King's Landing","Grand Maester"
-"Pyg",?,?,?,"In 300 AC , at Whispers",?
-"Pylos",?,?,NaN,?,"Maester"
-"Pypar",?,?,?,?,?
-"Qalen",?,"Greyjoy",?,"In before 299","Maester"
-"Qarl Correy",?,"Velaryon",?,?,"Ser"
-"Qarl Kenning","ironborn","Kenning",?,?,?
-"Qarl Quickaxe","ironmen",?,?,?,?
-"Qarl Shepherd","ironborn","Shepherd",?,?,?
-"Qarl the Maid","ironborn",?,?,?,?
-"Qarl the Thrall","ironborn",?,?,?,?
-"Qarlton Chelsted",?,"Chelsted",?,"At King's Landing","LordHand of the King"
-"Qarro Volentin","braavosi",?,?,?,"First Sword of Braavos"
-"Qezza","ghiscari",?,?,?,"Cupbearer"
-"Qhorin Halfhand",?,?,?,"In 299 AC , at Skirling Pass",?
-"Qos",?,?,?,?,"Captain"
-"Qotho","dothraki",?,?,"In 298 AC , at Dothraki Sea","Bloodriderof Khal Drogo"
-"Quaithe",?,?,?,?,?
-"Quaro","dothraki",?,?,"In 298 AC , at Dothraki Sea",?
-"Quellon Botley","ironborn","Botley",?,?,?
-"Quellon Greyjoy","ironborn","Greyjoy",?,"In 283 AC , at the mouth of the Mander","Lord of the Iron IslandsLord Reaper of Pyke"
-"Quellon Humble","ironborn","Humble",?,?,?
-"Quence","braavosi",?,?,?,?
-"Quent","northmen","Stark",?,?,?
-"Quenten Banefort",?,"Banefort",?,?,"Lord of Banefort"
-"Quentin Tyrell",?,"Tyrell",?,"At Ashford","Ser"
-"Quenton Greyjoy","ironborn","Greyjoy",?,?,?
-"Quenton Hightower",?,"Hightower",?,"At Oldtown","Voice of OldtownLord of the Port"
-"Quentyn Ball",?,"Ball",?,"At NearRedgrass Field","Ser"
-"Quentyn Blackwood",?,"Blackwood",?,"In 205 AC , at King's Landing","Lord"
-"Quentyn Martell","dornish","Martell",NaN,"In 300 AC , at Meereen","Prince"
-"Quentyn Qorgyle",?,"Qorgyle",?,?,"Lord ofSandstone"
-"Quhuru Mo",?,?,?,?,?
-"Quickfinger",?,"Blackfyre",?,?,?
-"Quill","braavosi",?,?,?,?
-"Quincy Cox",?,"Cox",?,?,"Serthe Knight of Saltpans"
-"Quort",?,?,NaN,"In +/-299 AC , at Castle Black",?
-"Qyburn",?,"Lannister",NaN,?,"Master of whisperers"
-"Qyle",?,?,?,"In 299 AC , at Gods Eye",?
-"Racallio Ryndoon","tyroshi",?,?,?,?
-"Rafe",?,?,?,?,?
-"Rafford",?,"Clegane",?,"In 300 AC , at Braavos",?
-"Ragnor Pyke","ironborn","Greyjoy",?,?,?
-"Ragwyle","freefolk",?,?,?,?
-"Rainbow Knight",?,?,?,?,?
-"Rakharo","dothraki","Targaryen",?,?,"KoBloodriderof Daenerys Targaryen"
-"Ralf (Limper)",?,?,?,?,?
-"Ralf (Lordsport)",?,?,?,?,?
-"Ralf (Shepherd)",?,?,?,?,?
-"Ralf Kenning","ironborn","Kenning",?,"In 300 AC , at Moat Cailin","CastellanCommander"
-"Ralf Stonehouse","ironborn","Stonehouse",?,?,"Captain ofRed Jester"
-"Ramsay Snow",?,"Bolton",NaN,?,"Lord of the HornwoodLord ofWinterfellCastellanofthe Dreadfort"
-"Randa",?,?,?,"At the Riverlands",?
-"Randyll Tarly",?,"Tarly",?,?,"Lord ofHorn HillJusticiarMaster of laws"
-"Rast",?,?,?,"In +/-299 AC , at Castle Black",?
-"Rat Cook",?,?,?,?,?
-"Rattleshirt",?,?,?,?,?
-"Ravella Swann",?,"Swann",?,?,"Lady ofAcorn Hall"
-"Raventree Hall",?,?,?,?,?
-"Rawney",?,?,?,?,"Brother"
-"Raymar Royce",?,"Royce",?,?,"Lord"
-"Raymond Nayland",?,"Nayland",?,?,"Ser"
-"Raymun","freefolk",?,?,"In 226 AC , at Long Lake","King-Beyond-the-Wall"
-"Raymun Darry",?,"Darry",?,"In 298 AC , at Mummer's Ford","Lord ofDarry"
-"Raymun Fossoway",?,"Fossoway",?,?,"Ser"
-"Raymund Frey",?,"Frey",NaN,?,"Ser"
-"Raymund Tyrell",?,"Tyrell",?,?,?
-"Raynald Westerling",?,"Westerling",?,"In 299 AC (supposedly), at the Twins","Ser"
-"Raynard",?,?,?,?,"Septon"
-"Raynard Ruttiger",?,"Ruttiger",?,?,"Ser"
-"Red Alyn of the Rosewood",?,?,?,"In 300 AC , at Castle Black",?
-"Red Oarsman","ironborn",?,?,?,?
-"Red Rolfe",?,"Greyjoy",?,"In 299 AC , at Winterfell",?
-"Redtusk",?,?,?,?,?
-"Redwyn",?,?,?,?,?
-"Reek",?,"Bolton",?,"In 299 AC , at the North",?
-"Regenard Estren",?,"Estren",?,?,"Lord ofWyndhall"
-"Renfred Rykker",?,"Rykker",?,?,"Lord ofDuskendale"
-"Renly Baratheon",?,"Baratheon",NaN,"In 299 AC , at NearStorm's End","Lord ofStorm's EndMaster of lawsKing of the Seven Kingdoms"
-"Renly Norcross",?,"Norcross",NaN,?,?
-"Rennifer Longwaters",?,"Baratheon",?,?,"Chief Undergaoler"
-"Reynard Webber",?,"Webber",?,?,"Lord of Coldmoat"
-"Reysen",?,?,?,?,?
-"Reznak mo Reznak","ghiscari","Targaryen",?,?,"Seneschal"
-"Rhae Targaryen",?,"Targaryen",NaN,?,"Princess"
-"Rhaegar Frey",?,"Frey",NaN,"In 300 AC (suspected)",?
-"Rhaegar Targaryen","valyrian","Targaryen",NaN,"In 283 AC , at the Trident","Prince ofDragonstoneSer"
-"Rhaegel Targaryen",?,"Targaryen",NaN,"In 215 AC ","Prince"
-"Rhaego",?,"Targaryen",NaN,"In 298 AC , at Lhazar",?
-"Rhaella Targaryen",?,"Targaryen",NaN,"In 284 AC ","PrincessQueenDowager Queen"
-"Rhaelle Targaryen",?,"Targaryen",NaN,?,"Princess"
-"Rhaena Targaryen (daughter of Aegon III)",?,"Targaryen",NaN,?,"Septa"
-"Rhaena Targaryen (daughter of Daemon)",?,"Targaryen",NaN,?,"Lady"
-"Rhaenys Targaryen","valyrian","Targaryen",NaN,"In 10 AC , at Hellholt","Queen"
-"Rhaenys Targaryen (daughter of Aemon)","valyrian","Targaryen",NaN,"In 129 AC , at Rook's Rest ","Princess"
-"Rhaenys Targaryen (daughter of Rhaegar)",?,"Targaryen",NaN,"In 283 AC , at King's Landing",?
-"Rhea Florent",?,"Florent",?,?,?
-"Rhea Royce",?,"Royce",?,"In 115 AC , at TheVale","Lady of Runestone"
-"Rhialta Vance",?,"Vance",?,?,?
-"Rhogoro","dothraki",?,?,?,"Khalakka"
-"Rhonda Rowan",?,"Rowan",?,?,?
-"Ricasso",?,"Martell",?,?,?
-"Richard Farrow",?,?,?,"In 299 AC , at the Battle of the Blackwater","Ser"
-"Richard Horpe",?,"Horpe",?,?,"Ser"
-"Richard Lonmouth",?,"Lonmouth",?,?,"Ser"
-"Rickard Karstark","northmen","Karstark",?,"In 299 AC , at Riverrun(executed)","Lord ofKarhold"
-"Rickard Ryswell","northmen","Ryswell",?,?,?
-"Rickard Stark","northmen","Stark",NaN,"In 282 AC , at King's Landing","Lord ofWinterfellWarden of the North"
-"Rickard Stark (King)",?,?,?,?,?
-"Rickard Thorne",?,"Thorne",?,?,"Ser"
-"Rickard Tyrell",?,"Tyrell",?,?,?
-"Rickard Wylde",?,"Wylde",NaN,?,?
-"Rickon Stark","northmen","Stark",NaN,?,"Prince of WinterfellHeir to Winterfell"
-"Rigney",?,?,?,?,"Archmaester"
-"Rills",?,?,?,?,?
-"Rob",?,"Osgrey",?,?,?
-"Robar Royce",?,"Royce",NaN,"In 299 AC , at NearStorm's End","Ser"
-"Robb Reyne",?,"Reyne",?,?,"Ser"
-"Robb Stark",?,?,498,?,?
-"Robert Arryn",?,"Arryn",NaN,?,"Lord of the EyrieDefender ofthe ValeWarden of the East"
-"Robert Ashford",?,"Ashford",?,?,"Ser"
-"Robert Baratheon",?,?,?,?,?
-"Robert Brax",?,"Brax",?,"In 299 AC , at Riverlands","Ser"
-"Robert Brax (son of Flement)",?,"Brax",NaN,?,?
-"Robert Flowers",?,?,?,?,"SerLord Commander of the Kingsguard"
-"Robert Frey",?,"Frey",NaN,?,?
-"Robert Frey (son of Raymund)",?,"Frey",NaN,?,?
-"Robert Paege",?,"Paege",?,?,"Ser"
-"Robett Glover","northmen","Glover",?,?,?
-"Robin",?,?,?,"At Stepstones",?
-"Robin Flint",?,"Flint",?,"In 299 AC , at the Twins",?
-"Robin Greyjoy","ironborn","Greyjoy",?,"At Pyke",?
-"Robin Hill",?,?,?,?,"Lord Commander of the Night's Watch"
-"Robin Hollard",?,"Hollard",?,?,?
-"Robin Moreland",?,"Moreland",?,?,"Lord"
-"Robin Potter",?,"Potter",?,?,"Ser"
-"Robin Ryger",?,"Ryger",NaN,?,"Ser"
-"Robyn Rhysling",?,"Rhysling",?,?,"Ser"
-"Rodrik Cassel",?,"Cassel",?,"In 299 AC , at Winterfell","Ser"
-"Rodrik Flint",?,?,?,?,"Lord Commander of the Night's Watch"
-"Rodrik Freeborn","ironborn",?,?,?,?
-"Rodrik Greyjoy","ironborn","Greyjoy",NaN,"In 289 AC , at Seagard",?
-"Rodrik Harlaw","ironborn","Harlaw",?,?,"Lord of the Ten TowersLord of HarlawThe Harlaw of HarlawCaptain of the Sea Song"
-"Rodrik Ryswell","northmen","Ryswell",?,?,"Lord of the Rills"
-"Rodrik Stark","northmen","Stark",?,?,"King in the North"
-"Rodrik Stark (son of Beron)","northmen","Stark",?,?,?
-"Rodwell Stark","northmen","Stark",?,?,"Lord ofWinterfell"
-"Roelle",?,?,?,?,"Septa"
-"Roger Hogg",?,"Hogg",?,?,"SerKnight ofSow's Horn"
-"Roger Ryswell","northmen","Ryswell",?,?,?
-"Roger of Pennytree",?,?,?,"In 194 AC , at the Redgrass Field",?
-"Roggo","braavosi",?,?,?,?
-"Rohanne Webber",?,"Webber",NaN,?,"Lady ofColdmoatLady ofStandfastLady ofCasterly Rock"
-"Roland Crakehall (Kingsguard)",?,"Crakehall",?,?,"Ser"
-"Roland Crakehall (Lord)",?,"Crakehall",?,?,"Lord of Crakehall"
-"Rolder",?,"Lannister",?,?,?
-"Rolfe",?,?,?,?,?
-"Rollam Westerling",?,"Westerling",NaN,?,?
-"Rolland Darklyn",?,"Darklyn",?,?,"Ser"
-"Rolland Longthorpe",?,"Longthorpe",?,?,"Lord ofLongsister"
-"Rolland Storm",?,"Caron",?,?,"SerLord of the MarchesLord ofNightsong"
-"Rolland Uffering",?,"Uffering",?,?,"Ser"
-"Rolley",?,?,?,"In 299 AC , at Craster's Keep",?
-"Rolly Duckfield",?,"Targaryen",?,?,"Ser"
-"Rolph Spicer",?,"Spicer",?,?,"SerCastellanofthe CragLord ofCastamere"
-"Romny Weaver","ironborn","Weaver",?,?,?
-"Ronald Connington",?,"Connington",?,?,"Serthe Knight of Griffin's Roost"
-"Ronald Storm",?,"Connington",?,?,?
-"Ronald Vance",?,"Vance",?,?,"Ser"
-"Ronel Rivers",?,"Frey",?,?,?
-"Ronnel Arryn",?,?,?,?,?
-"Ronnel Harclay",?,"Harclay",?,?,?
-"Ronnel Stout",?,"Stout",?,?,?
-"Ronnet Connington",?,"Connington",NaN,?,"SerKnight ofGriffin's Roost"
-"Roone",?,?,NaN,?,?
-"Roone (maester)",?,?,?,?,"Maester"
-"Roose Bolton","northmen","Bolton",NaN,?,"Lord ofthe DreadfortWarden of the North"
-"Roose Ryswell","northmen","Ryswell",?,?,?
-"Rorge",?,?,?,"In 300 AC , at the inn at the crossroads",?
-"Roro Uhoris","tyroshi",?,?,"At Eastwatch-by-the-sea",?
-"Roryn Drumm","ironborn","Drumm",?,?,?
-"Rosamund Lannister",?,"Lannister",?,?,?
-"Rosey",?,?,NaN,?,?
-"Roslin Frey",?,"Frey",NaN,?,?
-"Rossart",?,?,?,"In 283 AC , at King's Landing","Grand MasterWisdomLordHand of the King"
-"Rowan","freefolk",?,?,"In 300 AC , at Winterfell",?
-"Royce Coldwater",?,"Coldwater",?,?,"Lord ofColdwater Burn"
-"Ruby Ford",?,?,?,?,?
-"Rudge",?,?,?,?,?
-"Rufus Leek",?,"Rykker",?,?,"Ser"
-"Rugen",?,?,?,?,"Undergaoler"
-"Runcel Hightower",?,"Hightower",?,?,"Lord Commander of the Night's Watch"
-"Runciter",?,?,?,"In 112 AC","Grand Maester"
-"Runestone",?,?,?,?,?
-"Rupert Brax",?,"Brax",?,"In 299 AC , at Oxcross","Ser"
-"Rupert Crabb",?,"Crabb",?,?,"Ser"
-"Rus","ironmen",?,?,?,?
-"Rusty Flowers",?,?,?,?,?
-"Ryam",?,?,?,?,"Archmaester"
-"Ryam Florent",?,"Florent",?,?,"Ser"
-"Ryam Redwyne",?,"Redwyne",?,"In 105 AC , at King's Landing","SerLord Commander of the KingsguardHand of the King"
-"Rycherd Crane",?,"Crane",?,?,"Ser"
-"Ryella Frey",?,"Frey",NaN,?,?
-"Ryella Royce",?,"Royce",?,?,?
-"Ryger Rivers",?,"Frey",?,?,?
-"Ryk",?,?,?,?,?
-"Rylene Florent",?,"Florent",?,?,?
-"Ryles",?,?,?,"In +/-299 AC , at Beyondthe Wall",?
-"Ryman Frey",?,"Frey",NaN,"In 300 AC , at nearthe Twins","Ser"
-"Rymolf",?,?,?,?,?
-"Rymund the Rhymer",?,?,?,?,?
-"Ryon Allyrion","dornish","Allyrion",?,?,"Ser"
-"S'vrone","braavosi",?,?,?,?
-"Saathos",?,?,?,?,?
-"Saera Targaryen","valyrian","Targaryen",?,?,"Princess"
-"Sailor's Wife",?,?,?,?,?
-"Salladhor Saan",?,"Baratheon",?,?,"Prince of the Narrow SeaLord ofBlackwater Bay"
-"Sallei Paege",?,"Paege",?,?,?
-"Sallor","qaren",?,?,"In +/-299 AC , at Yunkai",?
-"Salloreon",?,?,?,?,?
-"Sam Stoops",?,"Osgrey",?,?,?
-"Samwell Spicer",?,"Spicer",?,?,"Ser"
-"Samwell Stone",?,"Royce",?,?,"Ser"
-"Samwell Tarly","westeros",?,NaN,?,?
-"Sandor Clegane",?,"Clegane",NaN,"In 300 AC (supposedly)",?
-"Sandor Frey",?,"Frey",NaN,?,?
-"Sansa Stark","northmen","Stark",NaN,?,"Princess ofWinterfell"
-"Sarella Sand","dornish","Martell",NaN,?,?
-"Sargon Botley","ironborn","Botley",?,?,?
-"Sarra Frey",?,"Frey",NaN,?,?
-"Sarya Whent",?,"Whent",?,?,"Lady"
-"Satin",?,?,NaN,?,?
-"Sawane Botley","ironborn","Botley",?,"In 299 AC , at Pyke","Lord ofLordsportCaptain ofSwiftfin"
-"Sawwood",?,?,?,?,?
-"Scarb",?,?,?,"At Meereen",?
-"Scolera",?,?,?,?,"Septa"
-"Seagard",?,?,?,?,?
-"Sebaston Farman",?,"Farman",?,?,"Lord ofFair Isle"
-"Second Sons",?,?,?,?,?
-"Sedgekins",?,?,?,?,?
-"Sefton Staunton",?,"Staunton",?,?,"Septon"
-"Selmond Stackspear",?,"Stackspear",?,?,"Lord"
-"Selwyn Tarth",?,"Tarth",NaN,?,"Lord of Evenfall"
-"Selyse Florent",?,"Florent",?,?,"LadyQueen"
-"Senelle",?,"Lannister",?,"In 300 AC",?
-"Serala",?,"Darklyn",?,?,?
-"Serra",?,?,?,"At Pentos",?
-"Serra Frey",?,"Frey",NaN,?,?
-"Shadrick",?,?,?,?,?
-"Shae",?,?,NaN,"In 300 AC , at King's Landing",?
-"Shagga","mountainclans",?,?,?,?
-"Shagwell",?,?,?,"In 300 AC , at near the Whispers",?
-"Sharna",?,?,?,?,?
-"Sheepstealer",?,?,?,?,?
-"Shella",?,?,?,?,?
-"Shella Whent",?,"Whent",?,"In +/-300 AC","Lady ofHarrenhal"
-"Sherrit",?,?,?,?,"King"
-"Shiera Crakehall",?,"Crakehall",?,?,?
-"Shiera Seastar","westeros","Targaryen",NaN,?,?
-"Shierle Swyft",?,"Swyft",?,?,?
-"Shireen Baratheon",?,"Baratheon",NaN,?,"Princess"
-"Shirei Frey",?,"Frey",NaN,?,?
-"Shortear",?,"Lannister",?,?,?
-"Shyra","northmen","Stark",?,?,?
-"Shyra Errol",?,"Errol",?,?,"Lady ofHaystack Hall"
-"Sigfry Stonetree","ironborn","Stonetree",?,?,?
-"Sigfryd Harlaw","ironborn","Harlaw",?,?,"Master of Harlaw Hall"
-"Sigrin",?,"Greyjoy",?,?,?
-"Simon Leygood",?,"Leygood",?,?,"Ser"
-"Simon Staunton",?,"Staunton",?,?,"Ser"
-"Simon Toyne",?,?,?,"In 281 AC , at TheKingswood",?
-"Skahaz mo Kandaq","ghiscari","Targaryen",?,?,?
-"Skinner",?,"Bolton",?,?,?
-"Skittrick","northmen","Stark",?,?,?
-"Sky Blue Su",?,?,?,?,?
-"Skyte","ironborn","Greyjoy",?,?,?
-"Snakewood",?,?,?,?,?
-"Southshield",?,?,?,?,?
-"Squinty Jeyne",?,"Osgrey",?,?,?
-"Standfast",?,?,?,?,?
-"Stone Hedge",?,?,?,?,?
-"Summer Islands",?,?,?,?,?
-"Tarth",?,?,?,?,?
-"The Great Spring Sickness",?,?,?,?,?
-"The Red Lamb",?,"Targaryen",?,?,"Ser"
-"Theodore Tyrell",?,"Tyrell",?,?,"Ser"
-"Tor",?,?,?,?,?
-"Tyrion Lannister",?,"Lannister",NaN,?,"ActingHand of the King(former)Master of Coin(former)Lord of Casterly Rock (by birth)Shield ofLannisport(by birth)Warden of the West(by birth)Lord ofthe Westerlands(by birth)"
-"Vixen",?,?,?,?,?
-"Wayfarer's Rest",?,?,?,?,?
-"Widow's Watch",?,?,?,?,?
-"Windblown",?,?,?,?,?
-"Woods witch",?,?,?,?,?
-"Acorn Hall",?,?,?,?,?
-"Big Walder Frey",?,"Frey",NaN,?,?
-"Black Walder Frey",?,"Frey",NaN,?,?
-"Blue Bard",?,"Tyrell",?,?,?
-"Fair Walda Frey",?,"Frey",NaN,?,?
-"Fat Walda Frey",?,"Frey",NaN,?,?
-"First Sword of Braavos",?,?,?,?,?
-"Grey Glen",?,?,?,?,?
-"House Stokeworth",?,?,?,?,"Lord of Stokeworth"
-"Ibben",?,?,?,?,?
-"Iron Fleet",?,?,?,?,?
-"Iron Islands",?,?,?,?,?
-"Little Walder Frey",?,"Frey",NaN,"In 300 AC , at Winterfell",?
-"Lord Staunton",?,"Staunton",?,"In 129 AC , at Rook's Rest","Lord ofRook's Rest"
-"Myr",?,?,?,?,?
-"Qarth",?,?,?,?,?
-"Qohor",?,?,?,?,?
-"Red Walder Frey",?,"Frey",NaN,?,?
-"Salt Shore",?,?,?,?,?
-"Sealskin Point",?,?,?,?,?
-"Sleepy Jack",?,?,?,?,?
-"Sloey","braavosi",?,?,?,?
-"Small Paul",?,?,?,"In 299 AC , at Beyond the Wall",?
-"Smiling Knight",?,?,?,?,?
-"Softfoot",?,?,?,"In 299 AC , at Beyond the Wall",?
-"Soren Shieldbreaker",?,?,?,?,?
-"Sour Alyn",?,"Bolton",?,?,?
-"Spare Boot",?,?,?,?,?
-"Spotted Cat","ghiscari",?,?,?,?
-"Spotted Pate of Maidenpool",?,?,?,"In 299 AC , at Castle Black",?
-"Spottswood",?,?,?,?,?
-"Squint",?,"Greyjoy",?,"In 299 AC , at Winterfell",?
-"Squirrel","freefolk",?,?,"In 300 AC , at Winterfell",?
-"Stafford Lannister",?,"Lannister",?,"In 299 AC , at Oxcross",?
-"Stalwart Shield",?,?,?,"In 300 AC , at Meereen",?
-"Stalwart Shields",?,?,?,?,?
-"Stannis Seaworth",?,"Seaworth",NaN,?,?
-"Steelskin","ghiscari",?,?,?,?
-"Steely Pate",?,?,?,?,?
-"Steffarion Sparr","ironborn","Sparr",?,?,?
-"Steffon Baratheon",?,"Baratheon",NaN,"In 278 AC ","Lord of Storm's End"
-"Steffon Darklyn",?,"Darklyn",?,"In 129 AC , at Dragonstone","SerLord Commander of the Queensguard"
-"Steffon Fossoway",?,"Fossoway",?,?,"Ser"
-"Steffon Frey",?,"Frey",NaN,?,?
-"Steffon Hollard",?,"Hollard",?,?,"Ser"
-"Steffon Seaworth",?,"Seaworth",NaN,?,?
-"Steffon Stackspear",?,"Stackspear",?,?,"Ser"
-"Steffon Swyft",?,"Swyft",?,?,"Ser"
-"Steffon Varner",?,"Varner",?,?,"Lord"
-"Stevron Frey",?,"Frey",NaN,"In 299 AC , at Oxcross","Ser"
-"Stiv",?,?,?,"In 298 AC , at the Wolfswood",?
-"Stone Thumbs","freefolk",?,?,"In 299 AC , at Castle Black",?
-"Stonehand","ironborn",?,?,?,?
-"Stonesnake",?,?,NaN,?,?
-"Stygg",?,"Greyjoy",?,?,?
-"Styr","freefolk",?,?,"In 300 AC , at Castle Black","Magnarof Thenn"
-"Sumner Crakehall",?,"Crakehall",?,?,"Lord ofCrakehall"
-"Sybassion",?,?,?,?,?
-"Sybell Spicer",?,"Spicer",?,?,"Lady of the Crag"
-"Sybelle Glover","northmen","Locke",?,?,"Lady ofDeepwood Motte"
-"Sylas",?,"Greyjoy",?,"In 294 AC",?
-"Sylas Flatnose","ironborn",?,?,?,"Iron KingKing of the Iron Islands"
-"Sylva Santagar","dornish","Santagar",NaN,?,"Lady ofGreenstone"
-"Sylwa Paege",?,"Paege",?,?,?
-"Symeon Star-Eyes",?,?,?,?,?
-"Symon Hollard",?,"Hollard",?,"At Duskendale","SerMaster-at-arms at the Dun Fort"
-"Symon Santagar",?,"Santagar",?,?,"SerKnight ofSpottswood"
-"Symon Silver Tongue",?,?,?,"In 299 AC , at King's Landing",?
-"Symon Stripeback",?,"Targaryen",?,?,?
-"Symond Botley","ironborn","Botley",?,?,?
-"Symond Frey",?,"Frey",NaN,"In 300 AC (suspected), at The North",?
-"Symond Templeton",?,"Templeton",?,?,"SerThe Knight ofNinestars"
-"Syrio Forel","braavosi","Stark",?,"In 298 AC , at King's Landing","First Sword to the Sealord ofBraavosWater Dancer"
-"Taena of Myr",?,"Merryweather",NaN,?,?
-"Tagganaro","braavosi",?,?,?,?
-"Tal Toraq",?,"Targaryen",?,?,?
-"Talea","braavosi",?,?,?,?
-"Talla Tarly",?,"Tarly",?,?,?
-"Tallad",?,"Baratheon",?,?,"Ser"
-"Tanda Stokeworth",?,"Stokeworth",?,"In 300 AC , at Stokeworth","Lady ofStokeworth"
-"Tanselle",?,?,?,?,?
-"Tansy",?,?,?,?,?
-"Tansy (orphan)",?,?,?,?,?
-"Tanton Fossoway",?,"Fossoway",?,?,"Ser"
-"Tarber",?,?,?,?,?
-"Tarle","ironborn",?,?,?,?
-"Temmo","dothraki",?,?,"In Century of Blood, at the gates ofQohor","Khal"
-"Ternesio Terys","braavosi",?,?,?,"Captain"
-"Terrance Lynderly",?,"Lynderly",?,?,?
-"Terrence Kenning",?,"Kenning",?,?,"Lord ofKayce"
-"Terrence Toyne",?,"Toyne",?,"In 178 AC ","Ser"
-"Terro","braavosi",?,?,?,?
-"The Twins",?,?,?,?,?
-"Thenn",?,?,?,?,?
-"Theo Frey",?,"Frey",?,?,"Ser"
-"Theo Wull","mountainclans","Wull",?,"In 283 AC , at Tower of Joy",?
-"Theobald",?,?,?,?,"ArchmaesterSeneschal"
-"Theodan Wells",?,"Wellsofthe",?,?,"Ser"
-"Theomar Smallwood",?,"Smallwood",?,?,"Lord ofAcorn Hall"
-"Theomore",?,?,?,?,?
-"Theomore Harlaw",?,"Harlaw",?,?,"Lord of the Ten TowersLord Harlaw of HarlawHarlaw of Harlaw"
-"Theon Greyjoy","ironmen","Greyjoy",NaN,?,"Prince of WinterfellCaptain ofSea BitchLord of the Iron Islands (by law of the green lands)"
-"Theon Stark","northmen",?,?,?,?
-"Thistle","freefolk",?,?,"In 300 AC , at Beyond the Wall",?
-"Thoren Smallwood",?,?,?,"In 299 AC , at Fist of the First Men",?
-"Thormor Ironmaker","ironborn","Ironmaker",?,?,?
-"Thoros of Myr",?,?,?,?,?
-"Three-Tooth","ironborn","Harlaw",?,?,?
-"Three Sisters",?,?,?,?,?
-"Three Toes",?,?,?,?,?
-"Tickler",?,"Clegane",?,"In 300 AC , at Inn at the Crossroads",?
-"Tim Stone",?,?,?,?,?
-"Tim Tangletongue",?,?,?,?,?
-"Timeon","dornish",?,?,"In 300 AC , at Whispers",?
-"Timett","mountainclans",?,NaN,?,"Red Hand"
-"Timett (father)","mountainclans",?,?,?,?
-"Timon",?,?,?,?,"Ser"
-"Timoth",?,"Martell",?,?,?
-"Tion Frey",?,"Frey",NaN,"In 299 AC , at Riverrun",?
-"Titus Peake",?,"Peake",?,?,"Lord ofStarpike"
-"Tobbot",?,"Clegane",?,?,?
-"Tobho Mott",?,?,?,?,?
-"Todder",?,?,?,?,?
-"Todric",?,?,?,"In 299 AC , at the Stony Shore",?
-"Toefinger","freefolk",?,?,?,?
-"Togg Joth",?,?,?,?,?
-"TomToo","northmen","Stark",?,?,?
-"Tom Costayne",?,"Costayne",?,?,"Ser"
-"Tom of Sevenstreams",?,?,NaN,?,?
-"Tomard","northmen","Stark",NaN,"In 298 AC , at King's Landing",?
-"Tommard Heddle",?,?,?,"In 211 AC , at Whitewalls","Ser"
-"Tommen Baratheon",?,?,498,?,?
-"Tommen Costayne",?,"Costayne",?,?,"Lord of the Three Towers"
-"Torbert",?,?,?,?,"Septon"
-"Toregg","freefolk",?,?,?,?
-"Tormund","freefolk",?,?,?,"Tall-talker, Horn-blower and Breaker of Ice, Husband to Bears, the Mead-king ofRuddy Hall, Speaker to Gods and Father of Hosts"
-"Torrek",?,?,?,?,?
-"Torren Liddle","mountainclans","Liddle",?,?,"The LiddleLord Liddle"
-"Torrhen Karstark","northmen","Karstark",?,"In 298 AC , at the Whispering Wood",?
-"Torrhen Stark","northmen",?,?,?,?
-"Torwold Browntooth","ironborn",?,?,?,?
-"Torwynd","freefolk",?,?,"In 300 AC",?
-"Tothmure",?,?,?,"In 299 AC , at Harrenhal","Maester"
-"Trebor Jordayne",?,"Jordayne",?,?,"Lord of the Tor"
-"Tregar",?,"Lannister",?,"In 298 AC , at King's Landing",?
-"Tregar Ormollen",?,?,?,?,?
-"Tremond Gargalen",?,"Gargalen",?,?,"Lord of Salt Shore"
-"Tristan Mudd",?,"Mudd",?,?,"Lord Commander of the Night's Watch"
-"Tristan Ryger",?,"Ryger",?,?,?
-"Tristifer Botley","ironborn","Botley",?,?,"Heir toLordsport"
-"Tristifer IV Mudd",?,?,?,?,?
-"Tristifer V Mudd",?,?,?,?,?
-"Tristimun",?,?,?,?,"Ser"
-"Triston Farwynd","ironborn","Farwynd",?,?,"Lord of Sealskin Point"
-"Triston Sunderland",?,"Sunderland",?,?,"Lord of the Three Sisters"
-"Triston of Tally Hill",?,?,?,?,"Ser"
-"Trystane Martell","dornish","Martell",NaN,?,"Prince"
-"Tuffleberry",?,?,?,?,?
-"Tumberjon",?,?,?,?,?
-"Tumco Lho","ghiscari",?,?,?,"Ser"
-"Turnip","northmen","Stark",?,?,?
-"Turquin",?,?,?,?,"Maester"
-"Tya Lannister",?,"Baratheon",?,?,?
-"Tyana Wylde",?,"Wylde",?,?,?
-"Tybero Istarion",?,?,?,?,?
-"Tybolt Crakehall",?,"Crakehall",?,?,"Ser"
-"Tybolt Hetherspoon",?,"Hetherspoon",?,?,"Ser"
-"Tybolt Lannister",?,"Lannister",?,"In 212 AC","SerLord ofCasterly RockWarden of the WestLord ofthe Westerlands"
-"Tycho Nestoris","braavosi",?,?,?,?
-"Tyene Sand","dornish","Martell",NaN,?,?
-"Tygett Lannister",?,"Lannister",?,"In after 285 AC ","Ser"
-"Tyland Lannister",?,"Lannister",?,"In 133 AC . ","SerMaster of ShipsMaster of CoinHand of the King"
-"Tymor",?,"Greyjoy",?,?,?
-"Tyrek Lannister",?,"Lannister",NaN,"In 299 AC (allegedly) ",?
-"Tyrion Tanner",?,"Stokeworth",NaN,?,?
-"Tysane Frey",?,"Frey",NaN,?,?
-"Tysha",?,?,NaN,?,?
-"Tyta Frey",?,"Frey",NaN,?,?
-"Tytos Blackwood",?,"Blackwood",?,?,"Lord ofRaventree Hall"
-"Tytos Brax",?,"Brax",?,?,"SerLord of Hornvale"
-"Tytos Frey",?,"Frey",NaN,"In 299 AC , at the Twins","Ser"
-"Tytos Lannister",?,"Lannister",NaN,"In 267 AC , at Casterly Rock","Lord ofCasterly RockShield ofLannisportWarden of the West"
-"Tywin Frey",?,"Frey",NaN,?,?
-"Tywin Frey (son of Raymund)",?,"Frey",NaN,?,?
-"Tywin Lannister",?,"Lannister",NaN,"In 300 AC , at King's Landing","Lord ofCasterly RockShield ofLannisportWarden of the WestHand of the KingSavior of the City(of King's Landing)"
-"Ulf son of Umar","mountainclans",?,?,"In 298 AC , at the Green Fork",?
-"Ulf the Ill","ironborn","Greyjoy",?,"In 299 AC , at Winterfell",?
-"Ulf the White",?,?,?,"In 130 AC , at Tumbleton","SerLord ofBitterbridge"
-"Uller","ironborn","Greyjoy",?,?,?
-"Ulmer",?,?,?,?,?
-"Ulrick Dayne","dornish","Dayne",?,?,"SerSword of the Morning"
-"Ulwyck Uller",?,"Uller",?,?,"Ser"
-"Umar","mountainclans",?,?,?,?
-"Umfred",?,"Baelish",?,?,?
-"Umma",?,?,?,?,?
-"Unella",?,?,?,?,"Septa"
-"Urek Ironmaker","ironborn","Ironmaker",?,?,?
-"Urras Ironfoot",?,?,?,?,?
-"Urrathon","qaren",?,?,?,?
-"Urreg",?,?,?,?,?
-"Urrigon Greyjoy","ironborn","Greyjoy",NaN,"At Pyke",?
-"Urron Greyiron","ironborn",?,?,?,?
-"Urswyck",?,?,?,?,?
-"Urzen","ironborn","Greyjoy",?,?,?
-"Utherydes Wayn",?,"Wayn",NaN,?,"Steward"
-"Uthor Tollett",?,"Tollett",?,?,"Lord of the Grey Glen"
-"Uthor Underleaf",?,?,NaN,?,"Ser"
-"Utt",?,?,?,"In 299 AC","Septon"
-"Vaellyn",?,?,?,?,"Archmaester"
-"Vaemond Velaryon","valyrian","Velaryon",?,"In 126 AC","Ser"
-"Val","freefolk",?,?,?,?
-"Valaena Velaryon","valyrian","Targaryen",?,?,"Lady ofDragonstone"
-"Valarr Targaryen","valyrian","Targaryen",NaN,"In 209 AC , at King's Landing","PrinceHand of the King(possibly) "
-"Varamyr","freefolk",?,?,?,?
-"Vardis Egen",?,"Egen",NaN,"In 298 AC , at Eyrie","SerCaptain of the Guards"
-"Vargo Hoat",?,?,?,"In 300 AC , at Harrenhal","Lord of Harrenhal"
-"Varly","northmen","Stark",?,"In 298 AC , at King's Landing",?
-"Varys",?,?,?,?,"Master of Whisperers"
-"Vayon Poole",?,"Poole",?,"In 298 AC , at King's Landing","Steward ofWinterfell"
-"Veiled Lady","braavosi",?,?,?,?
-"Vickon Botley","ironborn","Botley",?,?,?
-"Vickon Greyjoy",?,"Greyjoy",?,?,"Lord of the Iron IslandsLord Reaper of Pyke"
-"Victaria Tyrell",?,"Tyrell",?,?,?
-"Victarion Greyjoy","ironborn","Greyjoy",NaN,?,"Lord Captain of the Iron FleetMaster of the Iron Victory"
-"Victor Tyrell",?,"Tyrell",?,?,"Ser"
-"Violet",?,?,?,?,?
-"Visenya Targaryen","valyrian","Targaryen",NaN,"In 44 AC","Queen"
-"Viserys II Targaryen",?,?,499,?,?
-"Viserys Plumm",?,"Plumm",NaN,?,"Lord"
-"Viserys Targaryen","valyrian","Targaryen",NaN,"In 298 AC , at Vaes Dothrak","King of the Andals, the Rhoynar and the First Men, Lord of the Seven Kingdoms and Protector of the Realm"
-"Vortimer Crane",?,"Crane",?,?,"Ser"
-"Vulture King",?,?,?,?,?
-"Vylarr",?,"Lannister",?,?,"Captain of Lannister household guard"
-"Vyman",?,?,?,?,"Maester"
-"Waif",?,?,NaN,?,?
-"Walda Frey (daughter of Edwyn)",?,"Frey",NaN,?,?
-"Walda Frey (daughter of Lothar)",?,"Frey",NaN,?,?
-"Walda Rivers",?,"Frey",NaN,?,?
-"Walda Rivers (daughter of Aemon)",?,"Frey",NaN,?,?
-"Walder Brax",?,"Brax",NaN,?,?
-"Walder Goodbrook",?,"Goodbrook",NaN,?,?
-"Walder Haigh",?,"Haigh",NaN,?,?
-"Walder Rivers",?,"Frey",?,?,"Ser"
-"Walder Vance",?,"Vance",NaN,?,?
-"Waldon Wynch",?,"Wynch",?,?,"Lord of Iron Holt"
-"Walgrave",?,?,?,?,"Archmaester"
-"Wallace Waynwood",?,"Waynwood",?,?,?
-"Wallen",?,?,?,"In 298 AC , at Wolfswood",?
-"Walton",?,"Bolton",?,?,?
-"Walton Frey",?,"Frey",NaN,?,?
-"Walton Stark",?,"Stark",?,?,"King in the NorthLord ofWinterfell"
-"Waltyr Frey",?,"Frey",NaN,?,?
-"Walys Flowers",?,?,?,"In before 283 AC","Maester"
-"Warren",?,?,?,?,?
-"Warryn Beesbury",?,"Beesbury",?,?,"Lord of Honeyholt"
-"Wat",?,?,?,?,?
-"Wat (Barleycorn)",?,"Osgrey",?,?,?
-"Wat (Standfast)",?,"Osgrey",?,?,?
-"Wat (Wet)",?,"Osgrey",?,?,?
-"Wat (Whitesmile)",?,?,?,?,?
-"Wat (orphan)",?,?,?,?,?
-"Wat (sailor)",?,?,?,?,?
-"Wate",?,"Targaryen",?,?,?
-"Watt",?,?,?,"In 299 AC , at Bridge of Skulls",?
-"Watty",?,?,?,?,?
-"Waymar Royce",?,"Royce",NaN,"In 297 AC , at the Haunted Forest,Beyond the Wall","Ser"
-"Wayn (guard)","northmen","Stark",?,?,?
-"Weasel",?,?,NaN,?,?
-"Weeper","freefolk",?,?,?,?
-"Weese",?,"Whent",?,"In 299 AC , at Harrenhal",?
-"Wenda",?,?,?,?,?
-"Wendamyr","ironborn","Greyjoy",?,?,"Maester"
-"Wendel Frey",?,"Frey",NaN,?,?
-"Wendel Manderly",?,"Manderly",NaN,"In 299 AC , at the Twins","Ser"
-"Wendell Webber",?,"Webber",?,?,"Ser"
-"Wendello Qar Deeth","qaren",?,?,?,?
-"Werlag","ironborn","Greyjoy",?,?,?
-"Wex Pyke","ironborn","Botley",NaN,?,?
-"Whalen Frey",?,"Frey",NaN,?,"Ser"
-"White Harbor",?,?,?,?,?
-"White Walda Frey",?,"Frey",NaN,?,?
-"Wilbert",?,?,?,"In 298 AC","Ser"
-"Wilbert Osgrey",?,"Osgrey",?,?,"Ser"
-"Will",?,?,?,"In 297 AC ",?
-"Will (Fletcher)",?,?,?,?,?
-"Will (Hookface)",?,?,?,?,?
-"Will (Standfast)",?,"Osgrey",?,?,?
-"Will (Stork)",?,?,?,?,?
-"Will (Treb)",?,"Osgrey",?,?,?
-"Will (orphan)",?,?,?,?,?
-"Will (squire)",?,?,?,?,?
-"Will Humble","ironborn","Humble",?,?,?
-"Willam",?,?,?,"At Stepstones",?
-"Willam Dustin","northmen","Dustin",?,"In 283 AC , at Tower of Joy,Red Mountains,Dorne","Lord of Barrowton"
-"Willam Stark","northmen","Stark",?,"In 226 AC , at Long Lake","Lord ofWinterfell"
-"Willam Wells",?,"Wells",?,"In 300 AC , at Disputed Lands","Ser"
-"Willam Wythers",?,"Wythers",?,?,"SerCaptain of the Guards"
-"Willamen Frey",?,?,NaN,?,"Maester"
-"Willas Tyrell",?,"Tyrell",NaN,?,?
-"Willem Darry",?,"Darry",?,"In 289 AC or 290 AC (roughly) , at Braavos","Ser"
-"Willem Frey",?,"Frey",NaN,?,?
-"Willem Lannister",?,"Lannister",NaN,"In 299 AC , at Riverrun",?
-"Willem Wylde",?,"Wylde",?,?,"Ser"
-"William Mooton",?,"Mooton",?,?,"Lord ofMaidenpool"
-"Willifer",?,?,?,?,"Archmaester"
-"Willis Fell",?,"Fell",?,?,"Ser"
-"Willis Wode",?,"Wode",?,?,"Ser"
-"Willit",?,"Swyft",?,?,?
-"Willow Heddle",?,?,NaN,?,?
-"Willow Witch-eye","freefolk",?,?,"In 300 AC , at Winterfell",?
-"Willum",?,?,?,?,"Ser"
-"Wolmer",?,"Webber",?,?,?
-"Woth",?,?,?,"In 299 AC , at Gods Eye",?
-"Wulfe","ironborn","Greyjoy",?,?,?
-"Wun Weg Wun Dar Wun",?,?,?,?,?
-"Wyl (guard)","northmen","Stark",?,"In 298 AC , at King's Landing",?
-"Wyl Waynwood",?,"Waynwood",?,"In 194 AC , at the Redgrass Field",?
-"Wyl the Whittler",?,?,?,"At Riverlands",?
-"Wylis Manderly",?,"Manderly",NaN,?,"Ser"
-"Wylla",?,"Dayne",?,?,?
-"Wylla Manderly",?,"Manderly",NaN,?,?
-"Wyman Manderly",?,"Manderly",NaN,?,"Lord ofWhite HarborWarden of the White KnifeShield of the FaithDefender of the DispossessedLord Marshal of the ManderKnight of the Order of the Green Hand"
-"Wynafrei Whent",?,"Whent",?,?,?
-"Wynafryd Manderly",?,"Manderly",NaN,?,?
-"Wynton Stout",?,"Stout",NaN,?,"Ser"
-"Xaro Xhoan Daxos","qaren",?,?,?,?
-"Xhondo",?,?,?,?,?
-"Yandry",?,"Targaryen",?,?,?
-"Yellow Dick","westeros","Bolton",?,"In 300 AC , at Winterfell",?
-"Ygon Farwynd",?,"Farwynd",?,?,?
-"Ygon Oldfather","freefolk",?,?,?,?
-"Ygritte",?,?,NaN,"In 299 AC , at Castle Black",?
-"Yna",?,?,?,?,?
-"Yohn Farwynd","ironborn","Farwynd",?,?,?
-"Yohn Royce",?,"Royce",?,?,"Lord ofRunestone"
-"Yoren","westeros",?,?,"In 299 AC , at Gods Eye",?
-"Yorkel",?,"Targaryen",?,?,?
-"Yorko Terys","braavosi",?,?,?,?
-"Yormwell",?,?,?,?,"Maester"
-"Young Henly",?,?,NaN,"In 299 AC , at Castle Black",?
-"Ysilla",?,?,?,?,?
-"Ysilla Royce",?,"Royce",?,?,?
-"Zachery Frey",?,"Frey",NaN,?,?
-"Zarabelo",?,?,?,?,"Archmaester"
-"Zei",?,?,?,?,?
-"Zekko","dothraki",?,?,?,"Khal"
-"Zharaq zo Loraq","ghiscari",?,?,?,?
-"Zhoe Blanetree",?,"Blanetree",?,?,?
-"Zia Frey",?,"Frey",NaN,?,?
-"Zollo","dothraki",?,?,?,?
+"Abelar Hightower",?,"Hightower",?,"Ser","alive"
+"Addam",?,?,?,"Ser","alive"
+"Addam Frey",?,"Frey",?,"Ser","alive"
+"Addam Marbrand",?,"Marbrand",?,"King","alive"
+"Addam Osgrey",?,"Osgrey",NaN,?,"dead"
+"Addam Velaryon","valyrian","Velaryon",NaN,?,"dead"
+"Addison Hill",?,"Swyft",?,"King","alive"
+"Aegon Blackfyre",?,"Blackfyre",NaN,?,"dead"
+"Aegon Frey (Bloodborn)",?,"Frey",NaN,?,"alive"
+"Aegon Frey (Jinglebell)",?,"Frey",NaN,?,"dead"
+"Aegon III Targaryen","valyrian",?,499,"King","dead"
+"Aegon II Targaryen",?,?,499,"King","dead"
+"Aegon IV",?,?,?,?,"alive"
+"Aegon IV Targaryen",?,?,499,"King","dead"
+"Aegon I Targaryen",?,?,498,"King","dead"
+"Aegon Targaryen","valyrian","Targaryen",NaN,?,"dead"
+"Aegon V",?,?,?,?,"alive"
+"Aegon V Targaryen",?,?,498,"King","dead"
+"Aegor Rivers",?,"Bracken",NaN,"Ser","dead"
+"Aelinor Penrose","valyrian","Penrose",?,"Queen","alive"
+"Aemma Arryn",?,"Arryn",NaN,"Queen","dead"
+"Aemon Blackfyre",?,"Blackfyre",NaN,?,"dead"
+"Aemon Costayne",?,"Costayne",?,?,"alive"
+"Aemon Estermont",?,"Estermont",?,"Ser","alive"
+"Aemon Rivers",?,"Frey",?,"Ser","alive"
+"Aemon Targaryen",?,?,?,?,"alive"
+"Aemond Targaryen","valyrian","Targaryen",NaN,"Prince","dead"
+"Aenys Frey",?,"Frey",NaN,"Ser","dead"
+"Aenys I Targaryen",?,?,493,"King","dead"
+"Aerion Targaryen","valyrian","Targaryen",NaN,"Prince","dead"
+"Aeron Greyjoy","ironmen","Greyjoy",NaN,"Captain","alive"
+"Aerys II Targaryen",?,?,498,"King","dead"
+"Aerys I Targaryen",?,?,NaN,"King","dead"
+"Aethan",?,?,?,?,"alive"
+"Aethelmure",?,?,?,"Grand Maester","alive"
+"Aggar",?,"Greyjoy",?,?,"dead"
+"Aggo","dothraki","Targaryen",?,"Bloodrider","alive"
+"Aglantine",?,?,?,"Septa","alive"
+"Agrivane",?,?,?,"Archmaester","alive"
+"Aladale Wynch",?,"Wynch",?,"Ser","dead"
+"Alan",?,?,?,?,"alive"
+"Alannys Harlaw","ironborn","Greyjoy",?,"Queen","alive"
+"Alaric of Eysen",?,?,?,?,"alive"
+"Alayaya",?,?,NaN,?,"alive"
+"Albar Royce",?,"Royce",?,"Ser","alive"
+"Albett",?,?,?,?,"alive"
+"Alchemists' Guild",?,?,?,?,"alive"
+"Alebelly","northmen","Stark",?,?,"dead"
+"Alekyne Florent",?,"Florent",?,"Lord","alive"
+"Alequo Adarys","tyroshi",?,?,?,"alive"
+"Alerie Hightower",?,"Hightower",NaN,"Lady","alive"
+"Alesander Frey",?,"Frey",NaN,?,"alive"
+"Alesander Staedmon",?,"Staedmon",?,"Lord","alive"
+"Alesander Torrent",?,?,?,?,"alive"
+"Alester Florent",?,"Florent",?,"Hand of the King","dead"
+"Alester Norcross",?,"Norcross",NaN,?,"alive"
+"Alester Oakheart",?,"Oakheart",?,?,"dead"
+"Alfyn",?,?,?,?,"alive"
+"Alia",?,?,?,?,"alive"
+"Alicent Hightower",?,"Hightower",NaN,"Queen","dead"
+"All-for-Joffrey",?,?,?,?,"dead"
+"Alla Tyrell",?,"Tyrell",NaN,?,"alive"
+"Allaquo","braavosi",?,?,?,"alive"
+"Allar Deem",?,?,?,?,"dead"
+"Allard Seaworth",?,"Seaworth",?,?,"dead"
+"Alliser Thorne",?,?,NaN,"Ser","alive"
+"Allyria Dayne",?,"Dayne",?,?,"alive"
+"Alvyn Sharp","ironborn","Sharp",?,?,"alive"
+"Alyce",?,?,?,?,"alive"
+"Alyce Graceford",?,"Graceford",?,"Lady","alive"
+"Alyn",?,"Stark",?,?,"dead"
+"Alyn Ambrose",?,"Ambrose",?,?,"alive"
+"Alyn Cockshaw",?,"Cockshaw",?,"Lord","alive"
+"Alyn Connington",?,"Connington",?,"King","alive"
+"Alyn Estermont",?,"Estermont",?,"Ser","alive"
+"Alyn Frey",?,"Frey",NaN,?,"alive"
+"Alyn Haigh",?,"Haigh",NaN,?,"alive"
+"Alyn Hunt",?,"Hunt",?,"Ser","alive"
+"Alyn Stackspear",?,"Stackspear",?,"Ser","alive"
+"Alyn Velaryon",?,"Velaryon",NaN,"Admiral","alive"
+"Alys Arryn",?,"Arryn",?,?,"alive"
+"Alys Frey",?,"Frey",?,?,"alive"
+"Alys Karstark","northmen","Karstark",NaN,?,"alive"
+"Alysane Mormont","northmen","Mormont",NaN,?,"alive"
+"Alysanne Bracken",?,"Bracken",?,?,"alive"
+"Alysanne Bulwer",?,"Bulwer",NaN,"Lady","alive"
+"Alysanne Hightower",?,"Hightower",?,?,"alive"
+"Alysanne Lefford",?,"Lefford",?,"Lady","alive"
+"Alysanne Osgrey",?,"Osgrey",NaN,?,"dead"
+"Alysanne Targaryen",?,?,497,"Queen","dead"
+"Alysanne of Tarth",?,"Tarth",?,?,"alive"
+"Alyssa Arryn",?,"Arryn",?,?,"alive"
+"Alyssa Blackwood",?,"Blackwood",NaN,"Lady","dead"
+"Alyx Frey",?,"Frey",NaN,?,"alive"
+"Amabel",?,"Whent",?,?,"alive"
+"Amarei Crakehall",?,"Crakehall",NaN,?,"dead"
+"Ambrode",?,?,?,?,"alive"
+"Ambrose Butterwell",?,"Butterwell",NaN,"Hand of the King","alive"
+"Amerei Frey",?,"Frey",NaN,"Lady","alive"
+"Amory Lorch",?,"Lorch",?,"Castellan","dead"
+"Andals",?,?,?,?,"alive"
+"Andar Royce",?,"Royce",?,"Ser","alive"
+"Anders Yronwood",?,"Yronwood",?,"Lord","alive"
+"Andrew Estermont",?,"Estermont",?,"Ser","alive"
+"Andrey Charlton",?,"Charlton",?,"Ser","dead"
+"Andrey Dalt","dornish","Dalt",?,"Ser","alive"
+"Andrik","ironborn","Drumm",?,"Lord","alive"
+"Andros Brax",?,"Brax",?,"Lord","dead"
+"Androw Ashford",?,"Ashford",?,"Ser","alive"
+"Androw Frey",?,"Frey",NaN,?,"alive"
+"Anguy",?,?,?,?,"alive"
+"Annara Farring",?,"Farring",?,"Lady","alive"
+"Antario Jast",?,"Jast",?,"Lord","alive"
+"Anvil Ryn",?,?,?,?,"dead"
+"Anya Waynwood",?,"Waynwood",?,"Lady","alive"
+"Arbor",?,?,?,?,"alive"
+"Archibald Yronwood",?,"Yronwood",?,"Ser","alive"
+"Ardrian Celtigar",?,"Celtigar",NaN,"Lord","alive"
+"Areo Hotah",?,"Martell",NaN,"Captain","alive"
+"Argilac",?,?,?,?,"alive"
+"Argrave the Defiant",?,"Butterwell",?,"Ser","alive"
+"Arianne Martell","dornish","Martell",NaN,"Princess","alive"
+"Arianne of Tarth",?,"Tarth",?,?,"alive"
+"Arlan of Pennytree",?,?,NaN,"Ser","dead"
+"Armen",?,?,?,?,"alive"
+"Armond Caswell",?,"Caswell",?,"Lord","alive"
+"Arneld",?,?,?,"Ser","alive"
+"Arnell",?,?,?,"Ser","alive"
+"Arnolf Karstark","northmen","Karstark",?,"Castellan","alive"
+"Aron Santagar","dornish","Santagar",?,"Master","dead"
+"Arrec",?,?,?,?,"alive"
+"Arron",?,?,?,?,"alive"
+"Arron Qorgyle",?,"Qorgyle",?,"Ser","alive"
+"Arryk",?,?,?,?,"alive"
+"Arryk (Guard)",?,"Tyrell",?,?,"alive"
+"Arson","freefolk",?,?,?,"alive"
+"Arthor Karstark","northmen","Karstark",?,?,"alive"
+"Arthur Ambrose",?,"Ambrose",?,"Lord","alive"
+"Arthur Dayne",?,"Dayne",?,"Sword","dead"
+"Artos Stark","northmen","Stark",?,?,"alive"
+"Artys Arryn",?,?,?,"King","alive"
+"Arwood Frey",?,"Frey",NaN,"Ser","alive"
+"Arwyn Frey",?,"Frey",NaN,?,"alive"
+"Arwyn Oakheart",?,"Oakheart",?,"Lady","alive"
+"Arya Stark","northmen","Stark",NaN,"Princess","alive"
+"Arys Oakheart",?,"Oakheart",?,"Ser","dead"
+"Asha Greyjoy","ironborn","Greyjoy",NaN,"Captain","alive"
+"Ashara Dayne","westeros","Dayne",?,?,"dead"
+"Ashford Tourney",?,?,?,?,"alive"
+"Assadora of Ibben",?,?,?,?,"alive"
+"Aubrey Ambrose",?,"Ambrose",?,"Ser","alive"
+"Aurane Waters",?,"Velaryon",NaN,"Master","alive"
+"Axell Florent",?,"Florent",?,"Queen","alive"
+"Ayrmidon","valyrian",?,?,?,"alive"
+"Azor Ahai",?,?,?,?,"alive"
+"Azzak","ghiscari",?,?,"Cupbearer","alive"
+"Bael","freefolk",?,?,"King","alive"
+"Baela Targaryen","valyrian","Targaryen",NaN,"Lady","alive"
+"Baelon Targaryen (son of Aerys)","valyrian","Targaryen",?,?,"alive"
+"Baelon Targaryen (son of Viserys I)","valyrian","Targaryen",NaN,"Prince","dead"
+"Baelor Blacktyde",?,"Blacktyde",?,"Captain","dead"
+"Baelor Hightower",?,"Hightower",?,"Ser","alive"
+"Baelor I Targaryen",?,?,499,"King","dead"
+"Baelor Targaryen (son of Daeron II)",?,"Targaryen",NaN,"Hand of the King","dead"
+"Ballabar",?,?,?,"Maester","alive"
+"Balman Byrch",?,"Byrch",?,"Ser","dead"
+"Balon Botley","ironborn","Botley",?,?,"alive"
+"Balon Greyjoy",?,?,?,"Iron King","dead"
+"Balon Swann",?,"Swann",?,"Ser","alive"
+"Bandy","northmen","Stark",?,?,"alive"
+"Bannen",?,?,?,?,"dead"
+"Barba Bracken",?,"Bracken",NaN,?,"alive"
+"Barbara Bracken",?,"Bracken",?,?,"alive"
+"Barbrey Dustin","northmen","Ryswell",?,"Lady","alive"
+"Barra",?,?,NaN,?,"dead"
+"Barre",?,?,?,"Septon","alive"
+"Barristan Selmy","westeros","Selmy",NaN,"Lord Commander","alive"
+"Barsena Blackhair",?,?,?,?,"alive"
+"Barth",?,?,?,"Hand of the King","alive"
+"Barth (brewer)",?,"Stark",?,?,"alive"
+"Barthogan Stark",?,"Stark",?,"Lord","alive"
+"Bass",?,?,?,?,"alive"
+"Bastard's Boys",?,?,?,?,"alive"
+"Bayard Norcross",?,"Norcross",?,"Ser","alive"
+"Bear Island",?,?,?,?,"alive"
+"Bearded Ben",?,?,?,?,"alive"
+"Beardless Dick",?,?,?,?,"alive"
+"Becca",?,"Arryn",?,?,"alive"
+"Becca the Baker",?,?,?,?,"dead"
+"Beck",?,?,NaN,?,"dead"
+"Bedwyck",?,?,?,?,"alive"
+"Belandra",?,"Martell",?,?,"alive"
+"Belaquo Bonebreaker",?,?,?,?,"alive"
+"Beldecar",?,?,?,?,"alive"
+"Belgrave",?,?,?,"Lord","alive"
+"Belis",?,?,?,"Wisdom","dead"
+"Bella",?,?,NaN,?,"alive"
+"Bellegere Otherys","braavosi",?,?,?,"alive"
+"Bellegere Otherys (Courtesan)",?,?,?,?,"alive"
+"Bellena Hawick",?,"Hawick",?,?,"alive"
+"Bellonara Otherys","braavosi",?,?,?,"alive"
+"Belwas",?,"Targaryen",?,?,"alive"
+"Ben",?,?,NaN,?,"alive"
+"Ben (Big Belly)",?,?,?,?,"alive"
+"Ben Blackthumb",?,"Whent",?,?,"alive"
+"Ben Bones",?,"Bolton",?,?,"alive"
+"Ben Bushy",?,"Bushy",?,"Ser","dead"
+"Ben Plumm",?,?,?,"Commander","alive"
+"Benedar Belmore",?,"Belmore",?,"Lord","alive"
+"Benedict",?,?,?,"Archmaester","alive"
+"Benedict Broom",?,"Broom",?,"Master","alive"
+"Benfred Tallhart","northmen","Tallhart",NaN,?,"dead"
+"Benfrey Frey",?,"Frey",NaN,"Ser","dead"
+"Benjen Stark","northmen",?,NaN,?,"alive"
+"Benjen Stark (Bitter)",?,"Stark",?,"King in the North","alive"
+"Benjen Stark (Sweet)","northmen","Stark",?,"King in the North","alive"
+"Bennard Brune",?,"Brune",?,"Knight","alive"
+"Bennarion Botley","ironborn","Botley",?,?,"alive"
+"Bennet",?,?,?,"Septon","alive"
+"Bennis",?,"Osgrey",?,"Ser","alive"
+"Beqqo","braavosi",?,?,?,"alive"
+"Beren Tallhart","northmen","Tallhart",NaN,?,"alive"
+"Berena Hornwood","northmen","Hornwood",?,?,"alive"
+"Beric Dondarrion",?,"Dondarrion",NaN,"Lord","dead"
+"Beron Blacktyde",?,"Blacktyde",?,?,"alive"
+"Beron Stark","northmen","Stark",?,"Lord","alive"
+"Bertram Beesbury",?,"Beesbury",?,"Ser","alive"
+"Bess Bracken",?,"Bracken",?,?,"alive"
+"Bessa",?,?,?,?,"dead"
+"Bessa (Winterfell)",?,?,?,?,"alive"
+"Beth Cassel","northmen","Cassel",?,?,"alive"
+"Bethany (Blushing Bethany)","braavosi",?,?,?,"alive"
+"Bethany Bolton","northmen","Bolton",?,"Lady","alive"
+"Bethany Bracken",?,"Bracken",NaN,?,"dead"
+"Bethany Fair-Fingers",?,?,?,?,"alive"
+"Bethany Redwyne",?,"Redwyne",?,?,"alive"
+"Bethany Rosby",?,"Rosby",NaN,"Lady","dead"
+"Betharios of Braavos",?,"Frey",?,?,"alive"
+"Bhakaz zo Loraq","ghiscari",?,?,"Cupbearer","alive"
+"Bharbo","dothraki",?,?,"Khal","alive"
+"Big Boil","freefolk",?,?,?,"alive"
+"Biter",?,?,?,?,"dead"
+"Bitterbridge",?,?,?,?,"alive"
+"Black Bernarr",?,?,?,?,"alive"
+"Black Jack Bulwer",?,?,?,?,"alive"
+"Blackfyre Rebellion",?,?,?,?,"alive"
+"Blackhaven",?,?,?,?,"alive"
+"Blane",?,?,?,?,"alive"
+"Bloodbeard",?,?,?,?,"alive"
+"Bloodrider",?,?,?,?,"alive"
+"Bloody Gate",?,?,?,?,"alive"
+"Bluetooth","ironborn","Greyjoy",?,?,"alive"
+"Bodger","freefolk",?,?,?,"alive"
+"Bonifer Hasty",?,"Hasty",?,"Castellan","alive"
+"Borcas",?,?,?,?,"alive"
+"Boremund Harlaw","ironborn","Harlaw",?,"Master","alive"
+"Boros Blount",?,"Blount",?,"Ser","alive"
+"Borroq","freefolk",?,?,?,"alive"
+"Bors",?,"Martell",?,?,"alive"
+"Bowen Marsh",?,?,?,"Lord","alive"
+"Boy",?,?,NaN,?,"alive"
+"Braavos",?,?,?,?,"alive"
+"Bradamar Frey",?,"Frey",NaN,?,"alive"
+"Bran Stark","northmen","Stark",NaN,"Prince","alive"
+"Bran the Builder",?,"Stark",?,"King","alive"
+"Brandon Norrey","mountainclans","Norrey",?,"Lord","alive"
+"Brandon Stark","northmen","Stark",NaN,?,"dead"
+"Brandon Stark (Bad)","northmen","Stark",?,"King in the North","alive"
+"Brandon Stark (Burner)","northmen","Stark",?,"King in the North","alive"
+"Brandon Stark (Shipwright)","northmen","Stark",?,"King in the North","alive"
+"Brandon Stark (son of Cregan)","northmen","Stark",?,"Lord","alive"
+"Brandon Stark (the daughterless)",?,"Stark",?,"Lord","alive"
+"Brandon Tallhart","northmen","Tallhart",NaN,?,"alive"
+"Branston Cuy",?,"Cuy",?,"Lord","alive"
+"Brea","braavosi",?,?,?,"alive"
+"Brella",?,"Baratheon",?,?,"alive"
+"Brenett",?,"Frey",?,"Maester","alive"
+"Briar","freefolk",?,?,?,"alive"
+"Brienne of Tarth",?,"Tarth",NaN,?,"alive"
+"Brogg","freefolk",?,?,?,"alive"
+"Bronn",?,"Stokeworth",NaN,"Lord","alive"
+"Brotherhood without banners",?,?,?,?,"alive"
+"Brown Bernarr",?,?,?,?,"dead"
+"Brusco","braavosi",?,?,?,"alive"
+"Bryan Fossoway",?,"Fossoway",?,"Ser","dead"
+"Bryan Frey",?,"Frey",NaN,?,"alive"
+"Bryan of Oldtown",?,?,?,?,"alive"
+"Bryce Caron",?,"Caron",?,"Lord","dead"
+"Bryen",?,"Baelish",NaN,?,"alive"
+"Bryen Caron",?,"Caron",?,"Lord","dead"
+"Bryen Farring",?,"Farring",?,?,"dead"
+"Brynden Rivers",?,"Targaryen",NaN,"Hand of the King","dead"
+"Brynden Tully",?,"Tully",NaN,"Knight","alive"
+"Buford Bulwer",?,"Bulwer",?,"Ser","alive"
+"Bump","freefolk",?,?,?,"alive"
+"Burton Crakehall",?,"Crakehall",?,"Ser","dead"
+"Butterbumps",?,"Tyrell",?,?,"alive"
+"Buu",?,?,?,?,"alive"
+"Byam Flint",?,?,?,"Ser","dead"
+"Byan Votyris",?,?,?,?,"alive"
+"Byren Flowers",?,?,?,?,"alive"
+"Byron",?,"Baelish",?,"Ser","alive"
+"Cadwyl","ironborn","Greyjoy",?,?,"alive"
+"Cadwyn",?,"Lannister",?,"Ser","alive"
+"Caleotte",?,"Martell",?,"Maester","alive"
+"Calon","northmen","Stark",?,?,"alive"
+"Camarron of the Count",?,?,?,?,"alive"
+"Canker Jeyne","braavosi",?,?,?,"alive"
+"Carellen Smallwood",?,"Smallwood",?,?,"alive"
+"Carolei Waynwood",?,"Waynwood",?,?,"alive"
+"Carrot",?,"Royce",?,?,"alive"
+"Cass",?,?,?,?,"alive"
+"Cassana Estermont",?,"Estermont",?,?,"dead"
+"Cassella Vaith","dornish","Vaith",?,"Lady","alive"
+"Casterly Rock",?,?,?,?,"alive"
+"Castle Black",?,?,?,?,"alive"
+"Castos",?,?,?,"Archmaester","alive"
+"Catelyn Bracken",?,"Bracken",?,?,"alive"
+"Catelyn Tully",?,"Stark",NaN,"Lady","dead"
+"Cayn","northmen","Stark",?,?,"dead"
+"Cedra",?,"Martell",?,?,"alive"
+"Cedric Payne",?,"Payne",?,"Ser","dead"
+"Cedrik Storm",?,"Buckler",?,?,"alive"
+"Cellador",?,?,?,"Septon","alive"
+"Cerenna Lannister",?,"Lannister",?,?,"alive"
+"Cerrick","ironborn",?,?,"Maester","alive"
+"Cersei Frey",?,"Frey",NaN,?,"alive"
+"Cersei Lannister",?,"Lannister",NaN,"Queen","alive"
+"Cetheres",?,?,?,"Archmaester","alive"
+"Chataya",?,?,?,?,"alive"
+"Chayle",?,?,?,"Septon","dead"
+"Chella","mountainclans",?,?,?,"alive"
+"Chett",?,?,?,?,"dead"
+"Cheyk",?,?,?,?,"alive"
+"Chiggen",?,?,?,?,"dead"
+"Chiswyck",?,"Clegane",?,?,"dead"
+"Citadel",?,?,?,?,"alive"
+"Clarence Charlton",?,"Charlton",?,"Ser","alive"
+"Clarence Crabb",?,"Crabb",?,"Ser","alive"
+"Clarence Crabb (Short)",?,"Crabb",?,"Ser","alive"
+"Clarent Crakehall",?,"Crakehall",?,"Ser","dead"
+"Clayton Suggs",?,"Baratheon",?,"Ser","alive"
+"Clement",?,?,NaN,?,"alive"
+"Clement Crabb",?,"Crabb",?,"Ser","alive"
+"Clement Piper",?,"Piper",?,"Lord","alive"
+"Cleon",?,?,?,"King","dead"
+"Cleos Frey",?,"Frey",NaN,"Ser","dead"
+"Cletus Yronwood",?,"Yronwood",?,"Ser","dead"
+"Cley Cerwyn","northmen","Cerwyn",NaN,"Lord","dead"
+"Cleyton Caswell",?,"Caswell",?,"Ser","alive"
+"Clifford Conklyn",?,"Conklyn",?,"Ser","alive"
+"Clubfoot Karl",?,?,?,?,"dead"
+"Clydas",?,?,NaN,?,"alive"
+"Cohollo","dothraki",?,?,"Khal","dead"
+"Coldhands",?,?,?,?,"alive"
+"Coldmoat",?,?,?,?,"alive"
+"Colemon",?,"Arryn",?,"Maester","alive"
+"Colen of Greenpools",?,"Baratheon",?,"Ser","alive"
+"Colin Florent",?,"Florent",?,"Ser","alive"
+"Collio Quaynis","tyroshi",?,?,?,"alive"
+"Colmar Frey",?,"Frey",NaN,?,"alive"
+"Company of the Cat",?,?,?,?,"alive"
+"Conn",?,?,?,?,"dead"
+"Conwy",?,?,?,?,"alive"
+"Coratt",?,?,?,?,"alive"
+"Corliss Penny",?,"Baratheon",?,"Ser","alive"
+"Corlys Velaryon","valyrian","Velaryon",NaN,"Queen","dead"
+"Cortnay Penrose",?,"Penrose",?,"Castellan","dead"
+"Cosgrove",?,"Butterwell",?,"Steward","alive"
+"Cossomo","braavosi",?,?,?,"alive"
+"Cotter Pyke","ironborn",?,?,"Commander","alive"
+"Courtenay Greenhill",?,?,?,"Ser","alive"
+"Craghas Drahar",?,?,?,?,"dead"
+"Cragorn",?,"Greyjoy",?,?,"dead"
+"Craster","freefolk",?,?,?,"dead"
+"Crawn","mountainclans",?,?,?,"alive"
+"Cregan Karstark","northmen","Karstark",NaN,?,"alive"
+"Cregan Stark","northmen","Stark",?,"Hand of the King","alive"
+"Creighton Longbough",?,?,NaN,"Ser","alive"
+"Creighton Redfort",?,"Redfort",?,"Ser","alive"
+"Cressen",?,?,NaN,"Maester","dead"
+"Criston Cole",?,"Cole",NaN,"Hand of the King","dead"
+"Crownlands",?,?,?,?,"alive"
+"Cuger",?,?,?,?,"alive"
+"Cutjack",?,?,?,?,"alive"
+"Cynthea Frey",?,"Frey",NaN,?,"alive"
+"Cyrenna Swann",?,"Swann",NaN,?,"dead"
+"Daario Naharis","tyroshi",?,?,?,"alive"
+"Dacey Mormont","northmen","Mormont",NaN,?,"dead"
+"Dacks",?,"Redfort",?,?,"alive"
+"Daegon Shepherd","ironborn","Shepherd",?,?,"alive"
+"Daella Targaryen (daughter of Jaehaerys I)",?,"Targaryen",NaN,"Princess","alive"
+"Daella Targaryen (daughter of Maekar I)","valyrian","Targaryen",NaN,"Princess","alive"
+"Daemon Blackfyre",?,"Blackfyre",NaN,"Ser","dead"
+"Daemon II Blackfyre",?,"Blackfyre",NaN,"King","alive"
+"Daemon Sand","dornish","Allyrion",NaN,"Ser","alive"
+"Daemon Targaryen","valyrian","Targaryen",NaN,"King","dead"
+"Daena Targaryen","valyrian","Targaryen",NaN,?,"alive"
+"Daenerys Targaryen","valyrian","Targaryen",NaN,"King","alive"
+"Daenerys Targaryen (daughter of Aegon IV)",?,"Targaryen",NaN,"Princess","alive"
+"Daeron II Targaryen",?,?,499,"King","dead"
+"Daeron I Targaryen",?,?,499,"King","dead"
+"Daeron Targaryen (son of Maekar I)",?,"Targaryen",NaN,"Prince","dead"
+"Daeron Targaryen (son of Viserys I)",?,"Targaryen",NaN,"Prince","dead"
+"Daeron Vaith",?,"Vaith",?,"Lord","alive"
+"Daeryssa",?,?,?,"Princess","alive"
+"Dafyn Vance",?,"Vance",?,"Ser","alive"
+"Dagmer","ironborn","Greyjoy",?,"Captain","alive"
+"Dagon Greyjoy",?,"Greyjoy",?,"Lord","alive"
+"Dagon Ironmaker","ironborn","Ironmaker",?,?,"alive"
+"Dagos Manwoody",?,"Manwoody",?,"King","alive"
+"Dake",?,"Osgrey",?,?,"dead"
+"Dake (Guard)",?,?,?,?,"alive"
+"Dalbridge",?,?,NaN,?,"dead"
+"Dale Drumm",?,"Drumm",?,?,"alive"
+"Dale Seaworth",?,"Seaworth",?,?,"dead"
+"Dalla","freefolk",?,?,?,"dead"
+"Dalla (Dragonstone)",?,"Baratheon",?,?,"alive"
+"Damion Lannister",?,"Lannister",?,"Castellan","alive"
+"Damon Dance-for-Me",?,"Bolton",?,?,"alive"
+"Damon Lannister (Lord)",?,?,?,?,"alive"
+"Damon Lannister (son of Jason)",?,"Lannister",NaN,?,"alive"
+"Damon Paege",?,"Paege",?,"Ser","alive"
+"Damon Shett",?,"Shett",?,"Knight","alive"
+"Damon Vypren",?,"Vypren",NaN,"Ser","alive"
+"Dan","freefolk",?,?,?,"alive"
+"Dance of the Dragons",?,?,?,?,"alive"
+"Dancy",?,?,?,?,"alive"
+"Danelle Lothston",?,"Lothston",?,"Lady","alive"
+"Danny Flint",?,?,?,?,"alive"
+"Danos Slynt",?,"Slynt",?,?,"alive"
+"Danwell Frey",?,"Frey",NaN,"Ser","alive"
+"Dareon",?,?,?,?,"dead"
+"Darla Deddings",?,"Deddings",?,"Lady","alive"
+"Darlessa Marbrand",?,"Marbrand",?,?,"alive"
+"Daryn Hornwood",?,"Hornwood",?,?,"dead"
+"Daughter of the Dusk","braavosi",?,?,?,"alive"
+"Daven Lannister",?,"Lannister",NaN,"Ser","alive"
+"Davos Seaworth","westeros","Seaworth",NaN,"Hand of the King","alive"
+"Deana Hardyng",?,"Hardyng",?,?,"alive"
+"Deepwood Motte",?,?,?,?,"alive"
+"Del","freefolk",?,NaN,?,"dead"
+"Delena Florent",?,"Florent",?,?,"alive"
+"Della Frey",?,"Frey",NaN,?,"alive"
+"Delonne Allyrion","dornish","Allyrion",?,"Lady","alive"
+"Delp",?,"Tully",?,?,"dead"
+"Denestan",?,?,?,"Maester","alive"
+"Dennet",?,?,?,?,"alive"
+"Dennis Plumm",?,"Plumm",?,"Ser","alive"
+"Denyo Terys","braavosi",?,NaN,?,"alive"
+"Denys Arryn",?,"Arryn",?,"Ser","dead"
+"Denys Darklyn",?,"Darklyn",?,"Lord","alive"
+"Denys Drumm","ironborn","Drumm",?,?,"alive"
+"Denys Mallister",?,"Mallister",NaN,"Ser","alive"
+"Denys Redwyne",?,"Redwyne",?,?,"alive"
+"Denyse Hightower",?,"Hightower",?,?,"alive"
+"Dermot",?,?,?,"Ser","alive"
+"Desmond",?,"Stark",?,?,"dead"
+"Desmond Grell",?,"Grell",NaN,"Ser","alive"
+"Desmond Redwyne",?,"Redwyne",?,"Ser","alive"
+"Devan Seaworth",?,"Seaworth",NaN,?,"alive"
+"Devyn Sealskinner","freefolk",?,?,?,"alive"
+"Deziel Dalt",?,"Dalt",?,"Knight","alive"
+"Dhazzar","ghiscari",?,?,"Cupbearer","alive"
+"Dick",?,?,?,?,"alive"
+"Dick Crabb",?,"Crabb",?,?,"dead"
+"Dick Follard",?,?,?,?,"dead"
+"Dickon Frey",?,"Frey",NaN,?,"alive"
+"Dickon Manwoody",?,"Manwoody",?,?,"alive"
+"Dickon Tarly",?,"Tarly",NaN,?,"alive"
+"Dirk",?,?,?,?,"dead"
+"Dobber",?,?,?,?,"dead"
+"Dolf",?,?,?,?,"alive"
+"Domeric Bolton",?,"Bolton",NaN,?,"dead"
+"Donal Noye",?,"Baratheon",NaN,?,"dead"
+"Donel Greyjoy","ironborn","Greyjoy",?,?,"alive"
+"Donella Hornwood",?,"Hornwood",NaN,"Lady","dead"
+"Donnel Drumm","ironborn","Drumm",?,?,"alive"
+"Donnel Haigh",?,"Haigh",NaN,"Ser","alive"
+"Donnel Hill",?,?,?,?,"alive"
+"Donnel Locke",?,"Locke",?,"Ser","dead"
+"Donnel Waynwood",?,"Waynwood",NaN,"Knight","alive"
+"Donnel of Duskendale",?,?,?,"Ser","alive"
+"Donnis","northmen","Stark",?,?,"alive"
+"Donnor Stark","northmen","Stark",?,"Lord","alive"
+"Dontos Hollard",?,"Hollard",NaN,"Ser","dead"
+"Donyse",?,?,?,"Septa","alive"
+"Doran Martell","dornish","Nymeros",NaN,"Prince","alive"
+"Dorcas",?,"Lannister",?,?,"alive"
+"Dorea Sand","dornish","Martell",NaN,?,"alive"
+"Doreah",?,"Targaryen",NaN,?,"dead"
+"Dormund","freefolk",?,?,?,"dead"
+"Dorne",?,?,?,?,"alive"
+"Dornish Dilly",?,?,?,?,"dead"
+"Dorren Stark",?,"Stark",?,"King in the North","alive"
+"Doss","freefolk",?,?,?,"alive"
+"Dothraki",?,?,?,?,"alive"
+"Dragonstone",?,?,?,?,"alive"
+"Draqaz","ghiscari",?,?,"Cupbearer","alive"
+"Drennan","ironborn","Greyjoy",?,?,"dead"
+"Drogo","dothraki",?,NaN,"Khal","dead"
+"Drowned God",?,?,?,?,"alive"
+"Dryn","freefolk",?,?,?,"alive"
+"Dudley",?,?,?,"Ser","alive"
+"Dunaver",?,"Lannister",?,"Ser","alive"
+"Duncan Targaryen",?,"Targaryen",NaN,"Prince","dead"
+"Dunk",?,?,NaN,"King","dead"
+"Dunsen",?,"Clegane",?,?,"alive"
+"Dunstan Drumm","ironborn","Drumm",NaN,"Captain","alive"
+"Duram Bar Emmon",?,"Bar",NaN,"Lord","alive"
+"Durran",?,?,?,"King","alive"
+"Dyah","freefolk",?,?,?,"alive"
+"Dykk Harlaw",?,"Harlaw",?,?,"dead"
+"Dywen",?,?,?,?,"alive"
+"Eastwatch-by-the-Sea",?,?,?,?,"alive"
+"Easy",?,?,?,?,"dead"
+"Ebben",?,?,?,?,"dead"
+"Ebrose",?,?,?,"Archmaester","alive"
+"Eddara Tallhart","northmen","Tallhart",NaN,"Lady","alive"
+"Eddard Karstark",?,"Karstark",?,?,"dead"
+"Eddard Stark","northmen","Stark",NaN,"Hand of the King","dead"
+"Edderion Stark","northmen","Stark",?,"King in the North","alive"
+"Eddison Tollett",?,"Tollett",?,?,"alive"
+"Eden Risley",?,"Risley",?,"Ser","alive"
+"Edgerran Oakheart",?,"Oakheart",?,"Lord","alive"
+"Edmund Ambrose",?,"Ambrose",?,"Ser","alive"
+"Edmure Tully",?,"Tully",NaN,"Lord","alive"
+"Edmyn Tully",?,"Tully",?,"Hand of the King","alive"
+"Edric Dayne","dornish","Dayne",NaN,"Lord","alive"
+"Edric Storm",?,"Baratheon",NaN,?,"alive"
+"Edrick Stark","northmen","Stark",?,"King in the North","alive"
+"Edwyd Fossoway",?,"Fossoway",?,"Ser","dead"
+"Edwyle Stark","northmen","Stark",?,"Lord","alive"
+"Edwyn Frey",?,"Frey",NaN,?,"alive"
+"Edwyn Osgrey",?,"Osgrey",?,"Ser","dead"
+"Edwyn Stark","northmen","Stark",?,"King in the North","alive"
+"Eggon",?,"Clegane",?,?,"alive"
+"Eglantine",?,?,?,"Septa","alive"
+"Egon Emeros","qaren",?,?,?,"alive"
+"Elaena Targaryen","valyrian","Targaryen",NaN,?,"alive"
+"Elbert Arryn",?,"Arryn",?,"Ser","dead"
+"Elder Brother",?,?,NaN,?,"alive"
+"Eldiss","ironborn",?,?,?,"alive"
+"Eldon Estermont",?,"Estermont",NaN,"Lord","alive"
+"Eldred Codd","ironborn","Codd",?,?,"alive"
+"Eleanor Mooton",?,"Mooton",NaN,?,"alive"
+"Eleyna Westerling",?,"Westerling",NaN,?,"alive"
+"Elia Martell",?,"Martell",NaN,"Princess","dead"
+"Elia Sand","dornish","Martell",NaN,?,"alive"
+"Elinor Tyrell",?,"Tyrell",NaN,?,"alive"
+"Ellaria Sand","dornish","Uller",?,?,"alive"
+"Ellery Vance",?,"Vance",?,"Ser","alive"
+"Ellyn Tarbeck",?,?,?,?,"alive"
+"Elmar Frey",?,"Frey",NaN,?,"alive"
+"Elron",?,?,?,?,"alive"
+"Elwood",?,"Tully",?,?,"dead"
+"Elwood Meadows",?,"Meadows",NaN,"Lord","alive"
+"Elyana Vypren",?,"Vypren",NaN,?,"alive"
+"Elyas Willum",?,"Willum",?,?,"alive"
+"Elyn Norridge",?,"Norridge",?,?,"alive"
+"Elys Waynwood",?,"Waynwood",?,"Ser","alive"
+"Elys Westerling",?,"Westerling",?,"Ser","alive"
+"Elza",?,?,?,?,"dead"
+"Emberlei Frey",?,"Frey",NaN,?,"alive"
+"Emma",?,?,NaN,?,"alive"
+"Emmon Cuy",?,"Cuy",?,"Ser","dead"
+"Emmon Frey",?,"Frey",NaN,"Lord","alive"
+"Emmond","ironborn",?,?,?,"alive"
+"Emphyria Vance",?,"Vance",?,?,"alive"
+"Emrick",?,?,?,?,"alive"
+"Endehar",?,?,?,?,"alive"
+"Endrew Tarth",?,"Tarth",?,"Ser","dead"
+"Enger",?,"Tully",?,?,"alive"
+"Eon Hunter",?,"Hunter",NaN,"Lord","dead"
+"Erena Glover",?,"Glover",NaN,?,"alive"
+"Erik Ironmaker",?,"Ironmaker",NaN,"Lord","alive"
+"Ermesande Hayford",?,"Hayford",NaN,"Lady","alive"
+"Eroeh",?,?,?,?,"dead"
+"Erreck",?,?,?,"Maester","alive"
+"Erreg",?,?,?,"King","alive"
+"Erren Florent",?,"Florent",?,"Ser","alive"
+"Errok","freefolk",?,?,?,"alive"
+"Erryk",?,?,?,?,"alive"
+"Erryk (Guard)",?,"Tyrell",?,?,"alive"
+"Esgred",?,?,?,?,"alive"
+"Ethan Glover",?,"Glover",?,?,"dead"
+"Euron Greyjoy","ironborn",?,NaN,"Iron King","alive"
+"Eustace (Braavos)",?,?,?,"Septon","alive"
+"Eustace (Dance of the Dragons)",?,?,?,"Septon","alive"
+"Eustace Brune",?,"Brune",?,"Lord","alive"
+"Eustace Hunter",?,"Hunter",?,"Ser","alive"
+"Eustace Osgrey",?,"Osgrey",?,"Knight","alive"
+"Eyrie",?,?,?,?,"alive"
+"Eyron Stark","northmen","Stark",?,"King in the North","alive"
+"Ezzara","ghiscari",?,?,?,"alive"
+"Ezzelyno","braavosi",?,?,?,"alive"
+"Falena Stokeworth",?,"Stokeworth",NaN,"Lady","alive"
+"Falia Flowers",?,"Hewett",NaN,?,"alive"
+"Falyse Stokeworth",?,"Stokeworth",NaN,?,"dead"
+"Farlen",?,"Stark",?,?,"dead"
+"Fearless Ithoke",?,?,?,?,"alive"
+"Feastfires",?,?,?,?,"alive"
+"Fern",?,?,?,?,"alive"
+"Ferny","freefolk",?,?,?,"alive"
+"Ferrego Antaryon","braavosi",?,?,?,"alive"
+"Ferret",?,?,?,?,"alive"
+"Flement Brax",?,"Brax",?,"Ser","alive"
+"Fogo","dothraki",?,?,"Khal","dead"
+"Forley Prester",?,"Prester",?,"Ser","alive"
+"Fornio",?,?,?,?,"alive"
+"Fralegg","ironborn",?,?,?,"alive"
+"Franklyn Fowler",?,"Fowler",?,"Prince","alive"
+"Franklyn Frey",?,"Frey",?,"Ser","alive"
+"Free Folk",?,?,?,?,"alive"
+"Frenken",?,?,?,"Maester","alive"
+"Frenya","freefolk",?,?,?,"dead"
+"Frozen Shore",?,?,?,?,"alive"
+"Frynne",?,?,?,?,"alive"
+"Gage",?,"Stark",?,?,"alive"
+"Galazza Galare","ghiscari",?,NaN,?,"alive"
+"Galbart Glover","northmen","Glover",?,"Master","alive"
+"Galladon",?,?,?,"Ser","alive"
+"Galladon of Tarth",?,"Tarth",NaN,?,"dead"
+"Gallard",?,?,?,"Archmaester","alive"
+"Galt","mountainclans",?,?,?,"alive"
+"Galtry the Green",?,?,?,"Ser","alive"
+"Galyeon of Cuy",?,?,?,?,"alive"
+"Gared",?,?,NaN,?,"dead"
+"Gareth Clifton",?,"Clifton",?,"Ser","alive"
+"Gareth the Grey",?,?,?,"Ser","alive"
+"Garigus",?,?,?,"Wisdom","dead"
+"Garin (Orphans)",?,?,?,?,"alive"
+"Garin (Prince)",?,?,?,?,"alive"
+"Gariss",?,"Stark",?,?,"alive"
+"Garizon",?,?,?,"Archmaester","alive"
+"Garlan Tyrell",?,"Tyrell",NaN,"Lord","alive"
+"Garrett Flowers",?,"Tyrell",?,?,"alive"
+"Garrett Paege",?,"Paege",?,?,"alive"
+"Garrison Prester",?,"Prester",?,"Lord","alive"
+"Garse Flowers",?,"Tyrell",?,?,"alive"
+"Garse Goodbrook",?,"Goodbrook",?,"Ser","dead"
+"Garth Gardener (Greenhand)",?,?,?,?,"alive"
+"Garth Greenfield",?,"Greenfield",?,"Ser","alive"
+"Garth Greyfeather",?,?,?,?,"dead"
+"Garth Hightower",?,"Hightower",?,"Ser","alive"
+"Garth Tyrell",?,"Tyrell",?,"Lord","alive"
+"Garth XII Gardener",?,?,?,"King","alive"
+"Garth of Greenaway",?,?,?,?,"dead"
+"Garth of Oldtown",?,?,?,?,"dead"
+"Gascoyne",?,"Martell",?,"Ser","alive"
+"Gavin","freefolk",?,?,?,"alive"
+"Gawen Glover",?,"Glover",NaN,?,"alive"
+"Gawen Swann",?,"Swann",NaN,"Lord","alive"
+"Gawen Westerling",?,"Westerling",?,"Lord","alive"
+"Gawen Wylde",?,"Wylde",?,"Ser","dead"
+"Gelmarr",?,"Greyjoy",?,?,"dead"
+"Gendel","freefolk",?,?,"King","alive"
+"Gendry",?,?,NaN,"Ser","alive"
+"Genna Lannister",?,"Lannister",NaN,"Lady","alive"
+"Gerald Gower",?,"Gower",?,"Ser","alive"
+"Gerardys",?,?,?,"Grand Maester","dead"
+"Gergen",?,?,?,?,"alive"
+"Gerion Lannister",?,"Lannister",NaN,?,"dead"
+"Gerold Dayne",?,"Dayne",NaN,"Knight","alive"
+"Gerold Grafton",?,"Grafton",?,"Lord","alive"
+"Gerold Hightower",?,"Hightower",?,"King","dead"
+"Gerold Lannister",?,"Lannister",?,"Lord","dead"
+"Gerren",?,?,?,?,"alive"
+"Gerrick Kingsblood","freefolk","Redbeard",?,"King","alive"
+"Gerris Drinkwater","dornish","Drinkwater",NaN,"Ser","alive"
+"Gevin Harlaw","ironborn","Harlaw",?,?,"dead"
+"Ghael",?,?,?,"Lord","alive"
+"Ghiscari Empire",?,?,?,?,"alive"
+"Ghost of High Heart",?,?,?,?,"alive"
+"Gilbert Farring",?,"Farring",?,"Ser","alive"
+"Gillam",?,?,?,?,"alive"
+"Gilly","freefolk",?,NaN,?,"alive"
+"Gilwood Hunter",?,"Hunter",NaN,"Lord","alive"
+"Gladden Wylde",?,"Wylde",?,"Ser","dead"
+"Glendon Flowers",?,?,NaN,"Ser","alive"
+"Glendon Hewett",?,?,?,"Ser","alive"
+"Goady",?,?,?,?,"alive"
+"Godric Borrell",?,"Borrell",?,"Lord","alive"
+"Godry Farring",?,"Farring",?,"Ser","alive"
+"Godwyn",?,"Lannister",?,?,"alive"
+"Goghor the Giant",?,?,?,?,"alive"
+"Golden Company",?,?,?,?,"alive"
+"Goodwin",?,"Tarth",?,"Ser","alive"
+"Gorghan of Old Ghis",?,?,?,?,"alive"
+"Gormon Peake",?,"Peake",?,"Lord","dead"
+"Gormon Tyrell",?,?,?,"Maester","alive"
+"Gormond Drumm",?,"Drumm",?,?,"alive"
+"Gormond Goodbrother","ironborn","Goodbrother",NaN,?,"alive"
+"Gorne","freefolk",?,?,"King","alive"
+"Gorold Goodbrother","ironborn","Goodbrother",?,"Lord","alive"
+"Gowen Baratheon",?,"Baratheon",?,?,"alive"
+"Gran Goodbrother","ironborn","Goodbrother",?,?,"alive"
+"Grance Morrigen",?,"Morrigen",?,"Ser","alive"
+"Grassy Vale",?,?,?,?,"alive"
+"Grazdan",?,?,?,"Master","dead"
+"Grazdan (Great)",?,?,?,?,"alive"
+"Grazdan mo Eraz",?,?,?,?,"alive"
+"Grazdan mo Ullhor",?,?,?,"Master","dead"
+"Grazdan zo Galare",?,?,?,?,"alive"
+"Grazdar zo Galare","ghiscari",?,?,"Cupbearer","alive"
+"Great Walrus","freefolk",?,?,?,"alive"
+"Greenbeard",?,?,?,?,"alive"
+"Greenblood",?,?,?,?,"alive"
+"Greenstone",?,?,?,?,"alive"
+"Gregor Clegane",?,"Clegane",NaN,"Knight","dead"
+"Grenn","westeros",?,NaN,?,"alive"
+"Gretchel",?,"Arryn",?,?,"alive"
+"Grey King","ironborn",?,?,"King","alive"
+"Grey Worm",?,?,?,?,"alive"
+"Greydon Goodbrother","ironborn","Goodbrother",?,?,"alive"
+"Greyshield",?,?,?,?,"alive"
+"Greywater Watch",?,?,?,?,"alive"
+"Griffin King",?,?,?,"King","alive"
+"Grigg","freefolk",?,?,?,"alive"
+"Grisel",?,"Baelish",?,?,"alive"
+"Grisella","freefolk",?,?,?,"alive"
+"Groleo",?,"Targaryen",?,"Captain","dead"
+"Grubbs",?,?,?,?,"dead"
+"Grunt","northmen","Bolton",?,?,"alive"
+"Gueren",?,?,?,?,"alive"
+"Gulian",?,?,?,"Maester","alive"
+"Gulian Qorgyle",?,"Qorgyle",?,"Ser","alive"
+"Gulian Swann",?,"Swann",NaN,"Lord","alive"
+"Guncer Sunglass",?,"Sunglass",?,"Lord","dead"
+"Gunthor",?,?,?,?,"alive"
+"Gunthor Hightower",?,"Hightower",?,"Ser","alive"
+"Gurn","mountainclans",?,?,?,"alive"
+"Guthor Grimm",?,"Grimm",?,"Lord","alive"
+"Guyard Morrigen",?,"Morrigen",NaN,"Ser","dead"
+"Guyne",?,?,?,"Archmaester","alive"
+"Gwayne Corbray",?,"Corbray",?,"Ser","alive"
+"Gwayne Gaunt",?,"Gaunt",?,"Ser","dead"
+"Gwayne Hightower",?,"Hightower",NaN,"Ser","dead"
+"Gwin Goodbrother","ironborn","Goodbrother",?,?,"alive"
+"Gwynesse Harlaw",?,"Harlaw",?,?,"alive"
+"Gylbert Farwynd",?,"Farwynd",?,"Lord","alive"
+"Gyldayn",?,?,?,"Archmaester","alive"
+"Gyleno Dothare","braavosi",?,?,?,"alive"
+"Gyles",?,?,?,"Ser","alive"
+"Gyles Farwynd","ironborn","Farwynd",?,?,"alive"
+"Gyles Grafton",?,"Grafton",?,?,"alive"
+"Gyles III Gardener",?,?,?,"King","alive"
+"Gyles Rosby",?,"Rosby",?,"Master","dead"
+"Gyloro Dothare","braavosi",?,?,?,"alive"
+"Gynir",?,"Greyjoy",?,?,"dead"
+"Gysella Goodbrother","ironborn","Goodbrother",?,?,"alive"
+"Haegon Blackfyre",?,"Blackfyre",NaN,?,"dead"
+"Haggo","dothraki",?,?,"Khal","dead"
+"Haggon","freefolk",?,?,?,"alive"
+"Hairy Hal",?,?,?,?,"dead"
+"Hake",?,?,?,?,"dead"
+"Hal (Hog)",?,?,?,?,"alive"
+"Halder",?,?,NaN,?,"alive"
+"Haldon",?,"Targaryen",?,?,"alive"
+"Hali",?,?,?,?,"dead"
+"Hallis Mollen","northmen","Mollen",?,"Captain","alive"
+"Hallyne",?,?,?,"Lord","alive"
+"Halmon Paege",?,"Paege",?,"Ser","alive"
+"Halys Hornwood",?,"Hornwood",?,"Lord","dead"
+"Hamish the Harper",?,?,?,?,"dead"
+"Harbert",?,"Baratheon",?,"Ser","alive"
+"Harbert Paege",?,"Paege",?,"Ser","alive"
+"Hareth (Maester)",?,?,?,?,"alive"
+"Hareth (Mole's Town)",?,?,?,?,"alive"
+"Harghaz","ghiscari",?,?,?,"dead"
+"Harlan Grandison",?,"Grandison",?,"Ser","dead"
+"Harlan Hunter",?,"Hunter",?,"Ser","alive"
+"Harle the Handsome","freefolk",?,?,?,"alive"
+"Harle the Huntsman","freefolk",?,?,?,"alive"
+"Harlen Tyrell",?,"Tyrell",?,"Lord","dead"
+"Harlon Botley","ironborn","Botley",?,?,"alive"
+"Harlon Greyjoy","ironborn","Greyjoy",?,?,"dead"
+"Harma",?,?,?,?,"dead"
+"Harmen Uller",?,"Uller",?,"Lord","alive"
+"Harmond Umber","northmen","Umber",?,"Lord","alive"
+"Harmund Sharp",?,"Sharp",?,?,"alive"
+"Harmune",?,?,?,"Maester","alive"
+"Harodon",?,?,?,"Archmaester","alive"
+"Harra",?,"Whent",?,?,"dead"
+"Harrag Hoare","ironborn",?,?,"Iron King","alive"
+"Harrag Sharp","ironborn","Sharp",?,?,"dead"
+"Harras Harlaw","ironborn","Harlaw",?,"Lord","alive"
+"Harren Botley","ironborn","Botley",?,?,"dead"
+"Harren Half-Hoare","ironborn",?,?,?,"alive"
+"Harren Hoare","ironborn",?,?,"King","dead"
+"Harrenhal",?,?,?,?,"alive"
+"Harrion Karstark","northmen","Karstark",?,"Lord","alive"
+"Harrold Hardyng",?,"Hardyng",NaN,"Ser","alive"
+"Harrold Osgrey",?,"Osgrey",?,"Ser","dead"
+"Harrold Westerling",?,"Westerling",?,"King","dead"
+"Harry Sawyer",?,"Sawyer",?,"Ser","alive"
+"Harry Strickland",?,"Strickland",?,"Captain","alive"
+"Harsley",?,?,?,?,"dead"
+"Harwin","northmen","Stark",NaN,?,"alive"
+"Harwin Strong",?,"Strong",NaN,"Captain","dead"
+"Harwood Fell",?,"Fell",?,"Lord","dead"
+"Harwood Stout","northmen","Stout",?,"Lord","alive"
+"Harwyn Hoare",?,?,?,"King","alive"
+"Harwyn Plumm",?,"Plumm",?,"Ser","alive"
+"Harys Haigh",?,"Haigh",NaN,"Ser","alive"
+"Harys Swyft",?,"Swyft",?,"Hand of the King","alive"
+"Hayford",?,?,?,?,"alive"
+"Hayhead","northmen","Stark",?,?,"alive"
+"Hazrak zo Loraq","ghiscari",?,?,?,"alive"
+"Hazzea","ghiscari",?,NaN,?,"dead"
+"Helaena Targaryen",?,"Targaryen",NaN,"Queen","dead"
+"Helicent Uffering",?,"Uffering",NaN,?,"alive"
+"Hellholt",?,?,?,?,"alive"
+"Helliweg",?,?,?,"Maester","alive"
+"Helly",?,?,?,?,"alive"
+"Helman Tallhart","northmen","Tallhart",?,"Master","dead"
+"Helya",?,"Greyjoy",?,?,"alive"
+"Hendry Bracken",?,"Bracken",?,?,"dead"
+"Henk","freefolk",?,?,?,"alive"
+"Henly (House Ashford)",?,"Ashford",?,?,"alive"
+"Henly (Maester)",?,?,?,?,"alive"
+"Herbert Bolling",?,"Bolling",?,"Ser","alive"
+"Heward","northmen","Stark",?,?,"dead"
+"Hibald",?,?,?,?,"alive"
+"High Sparrow",?,?,?,"Septon","alive"
+"Hilmar Drumm",?,"Drumm",?,?,"alive"
+"Hizdahr zo Loraq","ghiscari",?,?,"King","alive"
+"Hoarfrost Umber",?,"Umber",?,"Lord","alive"
+"Hobb",?,?,?,?,"alive"
+"Hobber Redwyne",?,"Redwyne",?,"Ser","alive"
+"Hod",?,?,?,?,"alive"
+"Hodor",?,"Stark",?,?,"alive"
+"Hoke",?,"Lannister",?,?,"alive"
+"Holger",?,?,?,?,"alive"
+"Holly","freefolk",?,NaN,?,"dead"
+"Hop-Robin",?,?,?,?,"alive"
+"Horas Redwyne",?,"Redwyne",?,"Ser","alive"
+"Horn Hill",?,?,?,?,"alive"
+"Hornwood",?,?,?,?,"alive"
+"Horton Redfort",?,"Redfort",?,"Lord","alive"
+"Hosman Norcross",?,"Norcross",?,"Ser","alive"
+"Hosteen Frey",?,"Frey",NaN,"Ser","alive"
+"Hoster Frey",?,"Frey",NaN,?,"alive"
+"Hoster Tully",?,"Tully",NaN,"Lord","dead"
+"Hot Pie",?,?,?,?,"alive"
+"Hother Umber","northmen","Umber",NaN,"Castellan","alive"
+"Hotho Harlaw","ironborn","Harlaw",?,"Master","alive"
+"House Farman",?,?,?,"Lord","alive"
+"House Fell",?,?,?,"Lord","alive"
+"House Fossoway of Cider Hall",?,?,?,?,"alive"
+"House Frey",?,?,?,"Lord","alive"
+"House Harlaw",?,?,?,"Lord","alive"
+"House Lannister",?,?,?,"King","alive"
+"House Martell",?,?,?,"Prince","alive"
+"House Targaryen",?,?,?,"King","alive"
+"House Tully",?,?,?,"Lord","alive"
+"Howd Wanderer","freefolk",?,?,?,"alive"
+"Howland Reed",?,"Reed",NaN,"Lord","alive"
+"Hubard Rambton",?,"Rambton",?,"Ser","dead"
+"Hugh",?,"Arryn",?,"Ser","dead"
+"Hugh Beesbury",?,"Beesbury",?,"Ser","alive"
+"Hugh Hammer",?,?,?,"Ser","dead"
+"Hugo Vance",?,"Vance",?,"Ser","alive"
+"Hugo Wull","mountainclans","Wull",?,?,"alive"
+"Hugor of the Hill",?,?,?,"King","alive"
+"Hullen","northmen","Stark",?,"Master","dead"
+"Humfrey Beesbury",?,"Beesbury",?,"Ser","dead"
+"Humfrey Clifton",?,"Clifton",?,"Ser","alive"
+"Ironmen",?,?,?,?,"alive"
+"Jaehaerys I Targaryen",?,?,497,"King","dead"
+"Jason Lannister (son of Gerold)",?,"Lannister",NaN,?,"dead"
+"Khal",?,?,?,?,"alive"
+"King's Landing",?,?,?,?,"alive"
+"King-Beyond-the-Wall",?,?,?,?,"alive"
+"Kingsguard",?,?,?,?,"alive"
+"Kingship","westeros",?,?,?,"alive"
+"Knight",?,?,?,?,"alive"
+"Last Hearth",?,?,?,?,"alive"
+"Leafy Lake",?,?,?,?,"alive"
+"Lemonwood",?,?,?,?,"alive"
+"Lhazareen",?,?,?,?,"alive"
+"Lonely Light",?,?,?,?,"alive"
+"Longbow Hall",?,?,?,?,"alive"
+"Lord Ashford",?,"Ashford",?,"Lord","alive"
+"Lord Cafferen",?,"Cafferen",?,"Lord","dead"
+"Lord Caswell",?,"Caswell",?,"Lord","alive"
+"Lord Commander Hoare",?,"Hoare",?,"Lord Commander","alive"
+"Lord Commander of the Kingsguard",?,?,?,?,"alive"
+"Maekar I Targaryen",?,?,NaN,"King","dead"
+"Maester Aemon",?,?,?,?,"alive"
+"Maesters",?,?,?,?,"alive"
+"Mance Rayder","freefolk",?,?,"King","alive"
+"Mole's Town",?,?,?,?,"alive"
+"Mountain clans",?,?,?,?,"alive"
+"Mountains of the Moon",?,?,?,?,"alive"
+"Night's Watch",?,?,?,?,"alive"
+"Nightsong",?,?,?,?,"alive"
+"Oldcastle",?,?,?,?,"alive"
+"Pinkmaiden",?,?,?,?,"alive"
+"Purple Wedding",?,?,?,?,"alive"
+"Pyke",?,?,?,?,"alive"
+"Quiet Isle",?,?,?,?,"alive"
+"R'hllor",?,?,?,?,"alive"
+"Rain House",?,?,?,?,"alive"
+"Rainbow Guard",?,?,?,?,"alive"
+"Ramsay Bolton",?,?,?,?,"alive"
+"Red Keep",?,?,?,?,"alive"
+"Redgrass Field",?,?,?,?,"alive"
+"Rhaenyra Targaryen","valyrian","Targaryen",NaN,"King","dead"
+"Riverlands",?,?,?,?,"alive"
+"Riverrun",?,?,?,?,"alive"
+"Rosby",?,?,?,?,"alive"
+"Sack of King's Landing",?,?,?,?,"alive"
+"Serwyn",?,?,?,"Ser","alive"
+"Seven Kingdoms",?,?,?,?,"alive"
+"Shadow Tower",?,?,?,?,"alive"
+"Sharp Point",?,?,?,?,"alive"
+"Spearwife",?,?,?,?,"alive"
+"Stannis Baratheon",?,?,498,"King","alive"
+"Starfall",?,?,?,?,"alive"
+"Stokeworth",?,?,?,?,"alive"
+"Stonehelm",?,?,?,?,"alive"
+"Storm's End",?,?,?,?,"alive"
+"Storm King",?,?,?,?,"alive"
+"Stormcrows",?,?,?,?,"alive"
+"Strongsong",?,?,?,?,"alive"
+"Sunspear",?,?,?,?,"alive"
+"Sweetport Sound",?,?,?,?,"alive"
+"Sweetsister",?,?,?,?,"alive"
+"The Crag",?,?,?,?,"alive"
+"The Dreadfort",?,?,?,?,"alive"
+"The Hedge Knight",?,?,?,?,"alive"
+"The Reach",?,?,?,?,"alive"
+"The Wall",?,?,?,?,"alive"
+"Torrhen's Square",?,?,?,?,"alive"
+"Tourney at Ashford Meadow",?,?,?,?,"alive"
+"Tyrosh",?,?,?,?,"alive"
+"Unsullied",?,?,?,?,"alive"
+"Vale",?,?,?,?,"alive"
+"Viserys I Targaryen",?,?,493,"King","dead"
+"Walder Frey",?,"Frey",NaN,"Lord","alive"
+"War of the Usurper",?,?,?,?,"alive"
+"Westerlands",?,?,?,?,"alive"
+"Whitewalls Tourney",?,?,?,?,"alive"
+"Whitewalls tourney",?,?,?,?,"alive"
+"Wildling",?,?,?,?,"alive"
+"Winterfell",?,?,?,?,"alive"
+"A Game of Thrones",?,?,?,?,"alive"
+"Asshai",?,?,?,?,"alive"
+"Brave Companions",?,?,?,?,"alive"
+"Cinnamon Wind",?,?,?,?,"alive"
+"Coldwater Burn",?,?,?,?,"alive"
+"Crossroads Inn",?,?,?,?,"alive"
+"Crows Nest",?,?,?,?,"alive"
+"Dragonseed",?,?,?,?,"alive"
+"Dreadfort",?,?,?,?,"alive"
+"Faceless Men",?,?,?,?,"alive"
+"Fair Isle",?,?,?,?,"alive"
+"Free folk",?,?,?,?,"alive"
+"Giants",?,?,?,?,"alive"
+"Golden Tooth",?,?,?,?,"alive"
+"Goldengrove",?,?,?,?,"alive"
+"Greyjoy Rebellion",?,?,?,?,"alive"
+"Griffin's Roost",?,?,?,?,"alive"
+"Hand of the King",?,?,?,?,"alive"
+"Happy Port",?,?,?,?,"alive"
+"Hedge knight",?,?,?,?,"alive"
+"Highgarden",?,?,?,?,"alive"
+"Horn of Herrock",?,?,?,?,"alive"
+"House Baratheon",?,?,?,"Lord","alive"
+"House Fossoway of New Barrel",?,?,?,"Knight","alive"
+"House Karstark",?,?,?,"Lord","alive"
+"House Lychester",?,?,?,?,"alive"
+"House Osgrey",?,?,?,"Knight","alive"
+"House Payne",?,?,?,?,"alive"
+"House Stark",?,?,?,"King in the North","alive"
+"House Tarly",?,?,?,"Lord","alive"
+"House Templeton",?,?,?,"Knight","alive"
+"Humfrey Hardyng",?,"Hardyng",?,"Ser","dead"
+"Humfrey Hewett",?,"Hewett",?,"Lord","alive"
+"Humfrey Swyft",?,"Swyft",?,"Ser","alive"
+"Humfrey Wagstaff",?,"Wagstaff",NaN,"Ser","alive"
+"Husband",?,?,?,?,"alive"
+"Hyle Hunt",?,"Hunt",?,"Ser","alive"
+"Iggo","dothraki",?,?,?,"dead"
+"Igon Vyrwel",?,"Vyrwel",?,?,"alive"
+"Illifer",?,?,NaN,"Ser","alive"
+"Illyrio Mopatis",?,"Targaryen",?,?,"alive"
+"Ilyn Payne","westeros","Payne",?,"King","alive"
+"Imry Florent",?,"Florent",?,"Captain","dead"
+"Inn of the Kneeling Man",?,?,?,?,"alive"
+"Iron Emmett",?,?,?,?,"alive"
+"Ironbelly",?,?,?,?,"alive"
+"Irri","dothraki","Targaryen",NaN,?,"alive"
+"Jacelyn Bywater",?,"Bywater",?,"Lord Commander","dead"
+"Jack-Be-Lucky",?,?,?,?,"alive"
+"Jacks",?,"Stark",?,?,"alive"
+"Jaehaera Targaryen","valyrian","Targaryen",NaN,"Princess","dead"
+"Jaehaerys II Targaryen",?,?,498,"King","dead"
+"Jaehaerys Targaryen (son of Aegon II)",?,"Targaryen",NaN,"Prince","dead"
+"Jafer Flowers",?,?,?,?,"dead"
+"Jaggot",?,?,?,?,"alive"
+"Jaime Frey",?,"Frey",NaN,?,"alive"
+"Jaime Lannister",?,"Lannister",NaN,"King","alive"
+"Jalabhar Xho",?,?,?,"Prince","alive"
+"Jammos Frey",?,"Frey",NaN,"Ser","alive"
+"Janei Lannister",?,"Lannister",NaN,?,"alive"
+"Janna Tyrell",?,"Tyrell",?,?,"alive"
+"Janos Slynt",?,?,NaN,"Commander","dead"
+"Jaqen H'ghar",?,?,?,?,"alive"
+"Jared Frey",?,"Frey",NaN,"Ser","dead"
+"Jaremy Rykker",?,?,?,"Ser","dead"
+"Jarl","freefolk",?,?,?,"dead"
+"Jarmen Buckwell",?,?,?,?,"alive"
+"Jason Lannister",?,"Lannister",?,"Lord","dead"
+"Jason Mallister",?,"Mallister",?,"Lord","alive"
+"Jasper Arryn",?,"Arryn",?,"Lord","alive"
+"Jasper Redfort",?,"Redfort",?,"Ser","alive"
+"Jasper Waynwood",?,"Waynwood",?,?,"alive"
+"Jasper Wylde",?,"Wylde",?,"Master","dead"
+"Jate",?,?,?,?,"alive"
+"Jate Blackberry",?,"Blackberry",?,?,"alive"
+"Jayde",?,?,?,?,"alive"
+"Jayne Bracken",?,"Bracken",?,?,"alive"
+"Jeffory Mallister",?,"Mallister",?,?,"dead"
+"Jeffory Norcross",?,"Norcross",?,"Ser","alive"
+"Jenny (Oldstones)",?,?,?,?,"alive"
+"Jeor Mormont","northmen",?,NaN,"Lord Commander","dead"
+"Jeren",?,?,?,?,"alive"
+"Jeyne Arryn",?,"Arryn",?,"Lady","dead"
+"Jeyne Beesbury",?,"Beesbury",?,?,"alive"
+"Jeyne Darry","westeros","Darry",?,?,"alive"
+"Jeyne Fossoway",?,"Fossoway",?,?,"alive"
+"Jeyne Goodbrook",?,"Goodbrook",NaN,?,"alive"
+"Jeyne Heddle",?,?,NaN,?,"alive"
+"Jeyne Lothston",?,"Lothston",NaN,?,"alive"
+"Jeyne Lydden",?,"Lydden",?,?,"alive"
+"Jeyne Poole","northmen","Poole",?,?,"alive"
+"Jeyne Rivers",?,"Frey",?,?,"alive"
+"Jeyne Swann",?,"Swann",?,?,"alive"
+"Jeyne Waters","westeros",?,?,?,"alive"
+"Jeyne Westerling",?,"Stark",NaN,"Queen","alive"
+"Jeyne Westerling (wife of Maegor I)",?,"Westerling",NaN,"Queen","dead"
+"Jhaqo","dothraki",?,?,"Khal","alive"
+"Jhezane","ghiscari",?,?,"Cupbearer","alive"
+"Jhiqui","dothraki","Targaryen",NaN,?,"alive"
+"Jhogo","dothraki","Targaryen",NaN,"Bloodrider","alive"
+"Joanna Lannister",?,"Lannister",NaN,"Lady","dead"
+"Joanna Swyft",?,"Swyft",?,?,"alive"
+"Jocelyn Swyft",?,"Swyft",?,?,"alive"
+"Jodge",?,"Lannister",?,?,"alive"
+"Joffrey Baratheon",?,?,498,"King","dead"
+"Joffrey Caswell",?,"Caswell",NaN,"Lord","alive"
+"Joffrey Lonmouth",?,"Lonmouth",NaN,"Ser","dead"
+"Johanna Swann",?,"Swann",?,?,"alive"
+"Jojen Reed",?,"Reed",NaN,?,"alive"
+"Jommo","dothraki",?,?,"Khal","alive"
+"Jommy",?,"Baratheon",?,?,"alive"
+"Jon",?,?,?,?,"alive"
+"Jon Arryn",?,"Arryn",NaN,"Hand of the King","dead"
+"Jon Bettley",?,"Bettley",?,"Ser","alive"
+"Jon Brax",?,"Brax",NaN,?,"alive"
+"Jon Bulwer",?,"Bulwer",?,"Lord","alive"
+"Jon Connington","westeros","Connington",NaN,"King","alive"
+"Jon Cupps",?,"Cupps",?,"Ser","alive"
+"Jon Fossoway",?,"Fossoway",?,"Knight","alive"
+"Jon Heddle",?,?,?,"Ser","alive"
+"Jon Hollard",?,"Hollard",?,"Ser","alive"
+"Jon Lynderly",?,"Lynderly",?,"Lord","alive"
+"Jon Myre","ironborn","Myre",?,?,"alive"
+"Jon Penny",?,?,?,?,"alive"
+"Jon Penrose",?,"Penrose",?,"Ser","alive"
+"Jon Pox",?,?,?,?,"dead"
+"Jon Redfort",?,"Redfort",?,"Ser","alive"
+"Jon Snow","northmen","Stark",NaN,"Lord Commander","alive"
+"Jon Umber (Greatjon)",?,"Umber",?,"Lord","alive"
+"Jon Umber (Smalljon)",?,"Umber",?,?,"dead"
+"Jon Vance",?,?,?,"Maester","alive"
+"Jon Waters",?,?,?,"Ser","alive"
+"Jon Wylde",?,"Wylde",?,"Ser","alive"
+"Jonella Cerwyn",?,?,?,?,"alive"
+"Jonnel Stark",?,"Stark",?,"Lord","alive"
+"Jonos Bracken",?,"Bracken",?,"Lord","alive"
+"Jonos Frey",?,"Frey",NaN,?,"alive"
+"Jonos Stark","northmen","Stark",?,"King in the North","alive"
+"Jonothor Darry",?,"Darry",?,"Ser","dead"
+"Jorah Mormont","northmen","Mormont",NaN,"Lord","alive"
+"Jorah Stark","northmen","Stark",?,"King in the North","alive"
+"Joramun","freefolk",?,?,"King","alive"
+"Jorelle Mormont","northmen","Mormont",NaN,?,"alive"
+"Jorgen",?,"Webber",?,?,"alive"
+"Jorquen",?,?,?,"Septon","alive"
+"Jory Cassel","northmen","Cassel",?,"Captain","dead"
+"Joseran",?,?,?,"Maester","alive"
+"Joseth",?,"Stark",?,?,"alive"
+"Joseth Mallister",?,"Mallister",?,"Ser","alive"
+"Josmyn Peckledon",?,"Peckledon",NaN,?,"alive"
+"Joss",?,?,?,?,"alive"
+"Joss Stilwood",?,"Clegane",?,?,"alive"
+"Joss the Gloom","braavosi",?,?,?,"alive"
+"Josua Willum",?,"Willum",?,?,"alive"
+"Joth Quickbow",?,?,?,?,"dead"
+"Jothos Slynt",?,"Slynt",?,?,"alive"
+"Joy Hill",?,"Lannister",NaN,?,"alive"
+"Joyeuse Erenford",?,"Erenford",NaN,?,"alive"
+"Jurne",?,?,?,"Maester","alive"
+"Justin Massey",?,"Massey",?,"Ser","alive"
+"Jyana",?,"Reed",?,?,"alive"
+"Jyanna Frey",?,"Frey",?,?,"alive"
+"Jyck",?,"Lannister",?,?,"dead"
+"Jynessa Blackmont","dornish","Blackmont",?,?,"alive"
+"Jyzene",?,?,?,?,"alive"
+"Kaeth",?,?,NaN,"Grand Maester","dead"
+"Karhold",?,?,?,?,"alive"
+"Karlon Stark","northmen","Stark",?,"Lord","alive"
+"Karyl Vance",?,"Vance",?,"Lord","alive"
+"Kedge Whiteye",?,?,NaN,?,"alive"
+"Kedry",?,?,?,"Maester","dead"
+"Kegs",?,?,?,?,"alive"
+"Kella",?,"Baelish",?,?,"alive"
+"Kemmett Pyke","ironborn",?,?,?,"alive"
+"Kenned","ironborn","Greyjoy",?,?,"dead"
+"Kennos of Kayce",?,"Kenning",?,"Ser","alive"
+"Ketter",?,?,?,?,"alive"
+"Kevan Lannister",?,"Lannister",NaN,"Master","dead"
+"Kezmya","ghiscari",?,?,"Cupbearer","alive"
+"Khorane Sathmantes",?,?,?,?,"alive"
+"Khrazz","ghiscari",?,NaN,?,"dead"
+"Kindly Man",?,?,?,?,"alive"
+"King of the Rock",?,?,?,?,"alive"
+"Kingdom of Sarnor",?,?,?,?,"alive"
+"Kingswood Brotherhood",?,?,?,?,"alive"
+"Kirby Pimm",?,?,?,"Ser","alive"
+"Kirth Vance",?,"Vance",?,?,"alive"
+"Kojja Mo",?,?,?,?,"alive"
+"Koss",?,?,?,?,"dead"
+"Kraznys mo Nakloz",?,?,?,?,"dead"
+"Krazz",?,?,?,?,"alive"
+"Kromm","ironborn","Greyjoy",?,?,"dead"
+"Kurleket",?,"Bracken",?,?,"dead"
+"Kurz",?,?,?,?,"dead"
+"Kyle",?,?,?,"Ser","alive"
+"Kyle (Banners)",?,?,?,?,"dead"
+"Kyle Condon",?,"Condon",?,"Ser","alive"
+"Kyle Royce",?,"Royce",?,?,"dead"
+"Kyleg","freefolk",?,?,?,"alive"
+"Kym",?,?,?,"Maester","alive"
+"Kyra",?,"Stark",NaN,?,"dead"
+"Kyra Frey",?,"Frey",NaN,?,"alive"
+"Lady of the Leaves",?,?,?,"Lady","alive"
+"Laena Velaryon","valyrian","Velaryon",NaN,?,"dead"
+"Laenor Velaryon","valyrian","Velaryon",NaN,"Ser","dead"
+"Lambert Turnberry",?,"Turnberry",?,"Ser","alive"
+"Lamprey",?,"Baratheon",?,?,"alive"
+"Lancel Lannister",?,"Lannister",NaN,"Lord","alive"
+"Lancel V Lannister",?,?,?,"King","alive"
+"Lann the Clever",?,"Lannister",?,?,"alive"
+"Lanna",?,?,NaN,?,"alive"
+"Lanna (Happy Port)","braavosi",?,NaN,?,"alive"
+"Lanna Lannister",?,"Lannister",?,?,"alive"
+"Larence Snow",?,"Hornwood",NaN,?,"alive"
+"Lark",?,?,?,?,"dead"
+"Larra Blackmont","dornish","Blackmont",?,"Lady","alive"
+"Larraq","ghiscari",?,?,?,"alive"
+"Larys Strong",?,"Strong",NaN,"Master","alive"
+"Layna",?,?,NaN,?,"alive"
+"Leana Frey",?,"Frey",NaN,?,"alive"
+"Leathers",?,?,NaN,"Master","alive"
+"Left Hand Lew",?,?,?,?,"alive"
+"Lem",?,?,?,?,"alive"
+"Lem (Standfast)",?,"Osgrey",NaN,?,"alive"
+"Lenn","freefolk",?,?,?,"alive"
+"Lennocks",?,?,?,?,"alive"
+"Lenwood Tawney","ironborn","Tawney",?,?,"alive"
+"Lenyl","freefolk",?,?,?,"alive"
+"Leo Blackbar",?,"Blackbar",?,"Ser","alive"
+"Leo Lefford",?,"Lefford",?,"Lord","dead"
+"Leo Tyrell",?,"Tyrell",?,?,"alive"
+"Leo Tyrell (Longthorn)",?,"Tyrell",?,"Lord","alive"
+"Leo Tyrell (son of Victor)",?,"Tyrell",?,"Ser","alive"
+"Leobald Tallhart","northmen","Tallhart",?,?,"dead"
+"Leona Tyrell",?,"Tyrell",?,?,"alive"
+"Leona Woolfield",?,"Woolfield",?,?,"alive"
+"Leonella Lefford",?,"Lefford",?,?,"alive"
+"Leonette Fossoway",?,"Fossoway",?,"Lady","alive"
+"Leslyn Haigh",?,"Haigh",?,"Ser","alive"
+"Lester",?,"Lannister",?,?,"alive"
+"Lester Morrigen",?,"Morrigen",?,"Lord","alive"
+"Lew","northmen","Stark",?,?,"alive"
+"Lew (Long)",?,"Tully",?,?,"alive"
+"Lewis Lanster",?,?,?,?,"alive"
+"Lewyn Martell","dornish","Martell",?,"Prince","dead"
+"Lewys",?,"Baratheon",?,?,"alive"
+"Lewys Lydden",?,"Lydden",?,"Lord","alive"
+"Lewys Piper",?,"Piper",?,?,"alive"
+"Leyla Hightower",?,"Hightower",?,?,"alive"
+"Leyton Hightower",?,"Hightower",?,"Lord","alive"
+"Lharys",?,"Bracken",?,?,"dead"
+"Lia Serry",?,"Serry",?,?,"alive"
+"Liane Vance",?,"Vance",?,?,"alive"
+"Likely Luke",?,?,?,?,"alive"
+"Lister",?,?,?,?,"alive"
+"Lives of Four Kings",?,?,?,?,"alive"
+"Lollys Stokeworth",?,"Stokeworth",NaN,"Lady","alive"
+"Lomas Estermont",?,"Estermont",?,"Ser","alive"
+"Lommy Greenhands",?,?,?,?,"alive"
+"Lomys",?,?,?,"Maester","alive"
+"Loras Tyrell",?,"Tyrell",NaN,"Lord Commander","alive"
+"Lorcas",?,?,NaN,?,"alive"
+"Lord Commander Qorgyle",?,"Qorgyle",?,"Lord Commander","dead"
+"Lordsport",?,?,?,?,"alive"
+"Loren Lannister",?,?,?,?,"alive"
+"Lorent Lorch",?,"Lorch",?,"Ser","alive"
+"Lorent Marbrand",?,"Marbrand",?,"Lord Commander","dead"
+"Lorent Tyrell",?,"Tyrell",?,?,"alive"
+"Loreza Sand",?,"Martell",NaN,?,"alive"
+"Lorimer",?,"Lefford",?,"Ser","dead"
+"Lormelle",?,?,?,?,"alive"
+"Lorren",?,?,?,?,"dead"
+"Lothar",?,?,?,"Maester","alive"
+"Lothar Frey",?,"Frey",NaN,"Steward","alive"
+"Lothar Mallery",?,"Mallery",?,"Lord","dead"
+"Lotho Lornel","braavosi",?,?,?,"alive"
+"Lothor Brune",?,"Baelish",?,"Ser","alive"
+"Lucamore Strong",?,"Strong",?,"Ser","alive"
+"Lucan",?,"Whent",?,?,"dead"
+"Lucantine Woodwright",?,?,?,"Ser","alive"
+"Lucas Blackwood",?,"Blackwood",?,?,"dead"
+"Lucas Codd","ironborn","Codd",?,?,"alive"
+"Lucas Corbray",?,"Corbray",?,"Ser","alive"
+"Lucas Inchfield",?,"Inchfield",?,"Ser","dead"
+"Lucas Lothston",?,?,?,?,"alive"
+"Lucas Nayland",?,"Nayland",?,"Ser","alive"
+"Lucas Roote",?,"Roote",?,?,"dead"
+"Lucas Tyrell",?,"Tyrell",?,?,"alive"
+"Luceon Frey",?,?,NaN,"Septon","alive"
+"Lucias Vypren",?,"Vypren",?,"Lord","alive"
+"Lucifer Hardy",?,"Hardy",?,"Lord","alive"
+"Lucimore Botley","ironborn","Botley",?,?,"alive"
+"Lucion Lannister",?,"Lannister",?,"Ser","alive"
+"Luco Prestayn",?,?,?,?,"alive"
+"Lucos",?,?,?,"Septon","alive"
+"Lucos Chyttering",?,"Chyttering",NaN,"Lord","alive"
+"Luke of Longtown",?,?,?,?,"alive"
+"Lum",?,"Lannister",?,?,"alive"
+"Luthor Tyrell",?,"Tyrell",?,"Lord","alive"
+"Luthor Tyrell (son of Moryn)",?,"Tyrell",?,"Ser","alive"
+"Luthor Tyrell (son of Theodore)",?,"Tyrell",?,?,"alive"
+"Luton","northmen","Bolton",?,?,"dead"
+"Luwin","westeros","Stark",?,?,"dead"
+"Lyanna Mormont","northmen","Mormont",NaN,?,"alive"
+"Lyanna Stark","northmen","Stark",NaN,?,"dead"
+"Lyessa Flint","northmen","Flint",?,"Lady","alive"
+"Lyle Crakehall",?,"Crakehall",?,"Ser","alive"
+"Lyman Beesbury",?,"Beesbury",NaN,"Master","dead"
+"Lyman Darry",?,"Darry",NaN,"Lord","dead"
+"Lymond Goodbrook",?,"Goodbrook",?,"Lord","alive"
+"Lymond Lychester",?,"Lychester",?,"Lord","alive"
+"Lymond Mallister",?,"Mallister",?,"Lord","alive"
+"Lymond Vikary",?,"Vikary",?,"Ser","alive"
+"Lyn Corbray",?,"Corbray",?,"Ser","alive"
+"Lync",?,?,?,?,"alive"
+"Lynesse Hightower",?,"Hightower",?,?,"alive"
+"Lyonel (knight)",?,?,?,"Ser","alive"
+"Lyonel Baratheon",?,"Baratheon",?,"Ser","alive"
+"Lyonel Bentley",?,?,?,"Ser","dead"
+"Lyonel Corbray",?,"Corbray",NaN,"Lord","alive"
+"Lyonel Frey",?,"Frey",NaN,"Ser","alive"
+"Lyonel Selmy",?,"Selmy",?,"Knight","alive"
+"Lyonel Strong",?,"Strong",?,"Hand of the King","dead"
+"Lyonel Tyrell (lord)",?,"Tyrell",?,"Lord","dead"
+"Lyonel Tyrell (son of Leo)",?,"Tyrell",?,?,"alive"
+"Lyra Mormont","northmen","Mormont",NaN,?,"alive"
+"Lys",?,?,?,?,"alive"
+"Lysa Meadows",?,"Meadows",?,?,"alive"
+"Lysa Tully",?,"Arryn",NaN,"Lady","dead"
+"Lysono Maar",?,?,?,?,"alive"
+"Lythene Frey",?,"Frey",NaN,?,"alive"
+"Mace Tyrell",?,"Tyrell",NaN,"Hand of the King","alive"
+"Mad Huntsman",?,?,?,?,"alive"
+"Maddy",?,"Arryn",?,?,"alive"
+"Maege Mormont","northmen","Mormont",NaN,"Lady","alive"
+"Maegelle Frey",?,"Frey",NaN,?,"alive"
+"Maegor I Targaryen",?,?,499,"Hand of the King","dead"
+"Maekar I",?,?,?,?,"alive"
+"Maekar Targaryen",?,?,?,?,"alive"
+"Maelor Targaryen",?,"Targaryen",NaN,"Prince","dead"
+"Maelys Blackfyre",?,?,?,?,"alive"
+"Maerie (Goodwife)",?,?,?,?,"dead"
+"Maerie (Whore)",?,?,?,?,"dead"
+"Mag Mar Tun Doh Weg",?,?,?,?,"dead"
+"Maggy",?,?,?,?,"alive"
+"Mago","dothraki",?,?,"Khal","alive"
+"Malcolm",?,?,?,"Ser","alive"
+"Mallador Locke",?,?,?,"Ser","dead"
+"Malleon",?,?,?,"Grand Maester","alive"
+"Malliard",?,?,?,"Wisdom","alive"
+"Mallor",?,"Lannister",?,?,"alive"
+"Mallor (Knight)",?,?,?,"Ser","alive"
+"Malwyn Frey",?,"Frey",NaN,?,"alive"
+"Mandon Moore",?,"Moore",?,"Ser","dead"
+"Manfred Dondarrion",?,"Dondarrion",?,"Ser","alive"
+"Manfred Lothston",?,"Lothston",?,?,"alive"
+"Manfred Swann",?,"Swann",?,"Ser","alive"
+"Manfrey Martell","dornish","Martell",?,"Castellan","alive"
+"Manfryd Lothston",?,"Lothston",?,?,"alive"
+"Manfryd Yew",?,"Yew",?,"Ser","alive"
+"Marei",?,?,NaN,?,"alive"
+"Margaery Tyrell","westeros","Tyrell",NaN,"King","alive"
+"Marghaz zo Loraq","ghiscari",?,?,?,"alive"
+"Margot Lannister",?,"Lannister",?,?,"alive"
+"Marianne Vance",?,"Vance",NaN,?,"alive"
+"Maric Seaworth",?,"Seaworth",?,?,"dead"
+"Marillion",?,?,NaN,?,"dead"
+"Maris","freefolk",?,?,?,"alive"
+"Marissa Frey",?,"Frey",NaN,?,"alive"
+"Mariya Darry","westeros","Darry",?,?,"alive"
+"Mark Mullendore",?,"Mullendore",?,"Ser","alive"
+"Mark Ryswell",?,"Ryswell",?,"Ser","dead"
+"Marlon Manderly",?,"Manderly",?,"Commander","alive"
+"Maron Botley",?,"Botley",?,?,"alive"
+"Maron Greyjoy","ironborn","Greyjoy",NaN,?,"dead"
+"Maron Martell",?,"Martell",?,"Prince","alive"
+"Maron Volmark","ironborn","Volmark",NaN,"Lord","alive"
+"Marq Grafton",?,"Grafton",?,?,"dead"
+"Marq Piper",?,"Piper",?,"Ser","alive"
+"Marq Rankenfell",?,?,?,"Lord Commander","alive"
+"Marsella Waynwood",?,"Waynwood",?,?,"alive"
+"Martyn Cassel","northmen","Cassel",?,?,"dead"
+"Martyn Lannister",?,"Lannister",?,?,"alive"
+"Martyn Mullendore",?,"Mullendore",?,"Lord","alive"
+"Martyn Rivers",?,"Frey",?,?,"alive"
+"Marwyn",?,?,?,"Archmaester","alive"
+"Marwyn Belmore",?,"Belmore",?,"Ser","alive"
+"Marya Seaworth",?,"Seaworth",?,"Lady","alive"
+"Masha Heddle",?,?,?,?,"dead"
+"Maslyn",?,?,?,?,"dead"
+"Matarys Targaryen",?,"Targaryen",NaN,"Prince","dead"
+"Mathis Frey",?,"Frey",NaN,?,"alive"
+"Mathis Rowan",?,"Rowan",?,"Lord","alive"
+"Mathos Mallarawan","qaren",?,?,?,"alive"
+"Matrice",?,"Baratheon",?,?,"alive"
+"Matt",?,?,?,?,"dead"
+"Matthar",?,?,?,?,"alive"
+"Matthos Seaworth",?,"Seaworth",?,?,"dead"
+"Mawney",?,?,?,?,"dead"
+"Maynard",?,?,?,"Ser","alive"
+"Maynard Plumm",?,"Plumm",?,"Ser","alive"
+"Mazdhan zo Loraq","ghiscari",?,?,?,"alive"
+"Mebble",?,?,?,?,"alive"
+"Medgar Tully",?,"Tully",?,"Lord","dead"
+"Medger Cerwyn","northmen","Cerwyn",?,"Lord","dead"
+"Medwick Tyrell",?,?,?,"Maester","alive"
+"Meera Reed",?,"Reed",NaN,?,"alive"
+"Meg",?,?,?,?,"alive"
+"Megga Tyrell",?,"Tyrell",NaN,?,"alive"
+"Meha","freefolk",?,?,?,"alive"
+"Meizo Mahr",?,?,?,?,"alive"
+"Mela",?,"Arryn",?,?,"alive"
+"Melaquin",?,?,?,"Maester","alive"
+"Melara Crane",?,"Crane",?,?,"alive"
+"Melara Hetherspoon",?,"Hetherspoon",NaN,?,"dead"
+"Meldred Merlyn","ironborn","Merlyn",?,"Lord","alive"
+"Melesa Crakehall",?,"Crakehall",?,?,"alive"
+"Melessa Florent",?,"Florent",?,?,"alive"
+"Meliana",?,?,?,?,"alive"
+"Melicent",?,?,?,"Septa","alive"
+"Melisandre",?,?,?,?,"alive"
+"Melissa Blackwood",?,"Blackwood",NaN,?,"alive"
+"Mellara Rivers",?,"Frey",?,?,"alive"
+"Mellei",?,"Martell",?,?,"alive"
+"Mellos",?,?,?,"Grand Maester","alive"
+"Melly",?,?,?,?,"alive"
+"Melwyn Sarsfield",?,"Sarsfield",?,"Ser","alive"
+"Melwys Rivers",?,?,?,"Maester","alive"
+"Meralyn","braavosi",?,?,?,"alive"
+"Meredyth Crane",?,"Crane",?,?,"alive"
+"Merianne Frey",?,"Frey",NaN,?,"alive"
+"Meribald",?,?,NaN,"Septon","alive"
+"Merling Queen","braavosi",?,?,?,"alive"
+"Merlon Crakehall",?,"Crakehall",?,"Ser","alive"
+"Mern Gardener",?,?,?,?,"alive"
+"Mero","braavosi",?,?,?,"dead"
+"Merrell Florent",?,"Florent",?,?,"alive"
+"Merrett Frey",?,"Frey",NaN,?,"dead"
+"Merrit",?,?,?,?,"alive"
+"Merry Meg",?,?,?,?,"alive"
+"Meryn Trant",?,"Trant",?,"Ser","alive"
+"Mezzara","ghiscari",?,?,"Cupbearer","alive"
+"Michael Mertyns",?,"Mertyns",?,"Ser","alive"
+"Mikken",?,"Stark",?,?,"dead"
+"Miklaz","ghiscari",?,?,"Cupbearer","alive"
+"Mina Tyrell",?,"Tyrell",?,?,"alive"
+"Minisa Whent",?,"Whent",?,?,"dead"
+"Mirri Maz Duur",?,?,NaN,?,"dead"
+"Missandei",?,"Targaryen",NaN,?,"alive"
+"Moelle",?,?,?,"Septa","alive"
+"Mohor",?,"Bracken",?,?,"dead"
+"Mollander",?,?,?,?,"alive"
+"Mollos",?,?,?,"Archmaester","alive"
+"Monford Velaryon",?,"Velaryon",?,"Master","dead"
+"Monster","freefolk",?,NaN,?,"alive"
+"Monterys Velaryon",?,"Velaryon",NaN,"Master","alive"
+"Moon Boy",?,"Baratheon",?,?,"alive"
+"Moonshadow",?,?,?,?,"alive"
+"Moqorro",?,?,?,?,"alive"
+"Mord",?,"Arryn",?,?,"alive"
+"Mordane",?,"Stark",?,"Septa","dead"
+"Moredo Prestayn","braavosi",?,?,"Captain","alive"
+"Moreo Tumitis",?,?,NaN,?,"alive"
+"Morgarth",?,"Baelish",?,"Ser","alive"
+"Morgil",?,?,?,?,"alive"
+"Moribald Chester",?,"Chester",?,"Lord","alive"
+"Morna White Mask","freefolk",?,?,?,"alive"
+"Moro","dothraki",?,?,"Khal","alive"
+"Morosh the Myrman",?,?,?,?,"alive"
+"Morra",?,"Martell",?,?,"alive"
+"Morrec",?,"Lannister",?,?,"dead"
+"Morros Slynt",?,"Slynt",?,"Lord","alive"
+"Mors Manwoody",?,"Manwoody",?,?,"alive"
+"Mors Martell",?,"Martell",?,"Prince","alive"
+"Mors Martell (brother of Doran)",?,"Martell",NaN,?,"dead"
+"Mors Umber",?,"Umber",NaN,"Castellan","alive"
+"Mortimer Boggs",?,"Boggs",?,"Ser","alive"
+"Morton Waynwood",?,"Waynwood",?,"Ser","alive"
+"Morya Frey",?,"Frey",NaN,"Lady","alive"
+"Moryn Tyrell",?,"Tyrell",?,"Lord Commander","alive"
+"Most Devout",?,?,?,?,"alive"
+"Mother Mole","freefolk",?,?,?,"alive"
+"Mudge",?,"Osgrey",?,?,"alive"
+"Mudge (miller)",?,?,?,?,"dead"
+"Mullin",?,?,?,"Maester","alive"
+"Mully",?,?,?,?,"alive"
+"Munciter",?,?,?,"Wisdom","alive"
+"Munda","freefolk",?,?,?,"alive"
+"Murch",?,?,?,?,"alive"
+"Murch (Winterfell)","northmen","Stark",?,?,"alive"
+"Murenmure",?,?,?,"Maester","alive"
+"Murmison",?,?,?,"Hand of the King","dead"
+"Mushroom",?,"Targaryen",?,?,"dead"
+"Muttering Bill",?,?,?,?,"dead"
+"Mya Stone",?,"Royce",NaN,?,"alive"
+"Mycah","westeros",?,NaN,?,"dead"
+"Mychel Redfort",?,"Redfort",?,"Ser","alive"
+"Mylenda Caron",?,"Caron",NaN,?,"alive"
+"Myles",?,"Martell",?,"Maester","alive"
+"Myles (squire)",?,?,?,?,"dead"
+"Myles Manwoody",?,"Manwoody",?,"Ser","alive"
+"Myles Mooton",?,"Mooton",?,"Ser","dead"
+"Myles Smallwood",?,"Smallwood",?,"Hand of the King","alive"
+"Myranda Royce",?,"Royce",NaN,?,"alive"
+"Myrcella Baratheon",?,"Baratheon",NaN,"Princess","alive"
+"Myria Jordayne",?,"Jordayne",?,?,"alive"
+"Myriah Martell",?,?,?,?,"alive"
+"Myrielle Lannister",?,"Lannister",?,?,"alive"
+"Myrtle","freefolk",?,?,?,"dead"
+"Mysaria",?,?,?,?,"alive"
+"Naerys Targaryen","valyrian","Targaryen",NaN,"Princess","dead"
+"Nage",?,"Bolton",?,?,"alive"
+"Nail",?,?,?,?,"alive"
+"Nan",?,"Stark",?,?,"alive"
+"Narbert",?,?,?,?,"alive"
+"Narbo","braavosi",?,?,?,"alive"
+"Ned (ferryman)",?,?,?,?,"alive"
+"Ned Woods",?,"Woods",?,?,"alive"
+"Nella","freefolk",?,?,?,"alive"
+"Nestor Royce",?,"Royce",?,"Steward","alive"
+"Nettles",?,?,NaN,?,"alive"
+"Nightingale",?,?,?,?,"alive"
+"Nissa Nissa",?,?,?,?,"alive"
+"Noho Dimittis","braavosi",?,?,?,"alive"
+"Nolla",?,?,?,?,"dead"
+"Norbert Vance",?,"Vance",?,"Lord","alive"
+"Norjen","ironmen",?,?,?,"alive"
+"Normund Tyrell",?,?,?,"Maester","alive"
+"Norne Goodbrother","ironborn","Goodbrother",?,"Lord","alive"
+"Norren",?,?,?,"Archmaester","alive"
+"Notch",?,?,?,?,"alive"
+"Nute","ironborn","Greyjoy",?,"Lord","alive"
+"Nymella Toland","dornish","Toland",?,"Lady","alive"
+"Nymeria",?,"Martell",?,"Princess","alive"
+"Nymeria Sand","dornish","Martell",NaN,?,"alive"
+"Nymos",?,?,?,"Archmaester","alive"
+"Nysterica",?,?,?,"Septa","alive"
+"Obara Sand","dornish","Martell",NaN,?,"alive"
+"Obella Sand","dornish","Martell",NaN,?,"alive"
+"Oberyn Martell","dornish","Martell",NaN,"Prince","dead"
+"Ocley",?,?,?,"Archmaester","alive"
+"Ogo","dothraki",?,?,"Khal","dead"
+"Old Crackbones",?,?,?,?,"alive"
+"Old Grey Gull","ironborn",?,?,?,"alive"
+"Old Henly",?,?,NaN,?,"dead"
+"Old Tattersalt",?,?,?,?,"alive"
+"Oldtown",?,?,?,?,"alive"
+"Olene Tyrell",?,"Tyrell",?,?,"alive"
+"Olenna Redwyne",?,"Redwyne",NaN,"Lady","alive"
+"Ollidor",?,?,?,"Septon","alive"
+"Ollo Lophand","tyroshi",?,?,?,"dead"
+"Olymer Tyrell",?,"Tyrell",?,"Ser","alive"
+"Olyvar Frey",?,"Frey",NaN,?,"alive"
+"Olyvar Oakheart",?,"Oakheart",?,"Ser","dead"
+"Omer Blackberry",?,"Blackberry",?,?,"alive"
+"Omer Florent",?,?,?,"Maester","alive"
+"Ondrew Locke","northmen","Locke",?,"Lord","alive"
+"Orbelo","braavosi",?,?,?,"alive"
+"Orbert Caswell",?,"Caswell",?,"Lord Commander","dead"
+"Ordello",?,?,?,?,"dead"
+"Orell","freefolk",?,?,?,"dead"
+"Orivel",?,?,?,"Ser","alive"
+"Orland of Oldtown",?,"Baratheon",?,?,"alive"
+"Ormond",?,?,?,"Ser","dead"
+"Ormond Osgrey",?,"Osgrey",?,"Lord","alive"
+"Ormund Wylde",?,"Wylde",?,"Ser","alive"
+"Oro Tendyris","braavosi",?,?,?,"alive"
+"Orphan Oss",?,?,?,?,"dead"
+"Orton Merryweather",?,"Merryweather",?,"Hand of the King","alive"
+"Orwyle",?,?,?,"Grand Maester","alive"
+"Orys Baratheon",?,"Baratheon",?,"Hand of the King","dead"
+"Osbert Serry",?,"Serry",?,"Lord","alive"
+"Osfryd Kettleblack",?,"Kettleblack",?,"King","alive"
+"Osha","freefolk","Stark",?,?,"alive"
+"Osmund Frey",?,"Frey",NaN,?,"alive"
+"Osmund Kettleblack",?,"Kettleblack",?,"Ser","alive"
+"Osmynd",?,?,?,"Septon","alive"
+"Osney Kettleblack",?,"Kettleblack",?,"Ser","alive"
+"Ossifer Plumm",?,"Plumm",?,"Lord","alive"
+"Ossy",?,"Royce",?,?,"alive"
+"Oswell Kettleblack",?,"Kettleblack",?,?,"alive"
+"Oswell Whent",?,"Whent",?,"Ser","dead"
+"Oswyn",?,?,?,?,"alive"
+"Othell Yarwyck",?,?,?,?,"alive"
+"Otho Bracken",?,"Bracken",?,"Ser","alive"
+"Othor",?,?,?,?,"dead"
+"Otter Gimpknee",?,?,?,?,"alive"
+"Otto Hightower",?,"Hightower",?,"Hand of the King","dead"
+"Ottomore",?,?,?,?,"alive"
+"Ottyn Wythers",?,"Wythers",NaN,"Ser","dead"
+"Owen",?,?,?,?,"alive"
+"Owen (brother of Meribald)",?,?,?,?,"dead"
+"Owen Inchfield",?,"Inchfield",?,"Ser","alive"
+"Owen Norrey","mountainclans","Norrey",?,?,"dead"
+"Oznak zo Pahl",?,?,?,?,"dead"
+"Palla","northmen","Stark",?,?,"alive"
+"Parmen Crane",?,"Crane",?,"Ser","alive"
+"Patchface",?,"Baratheon",?,?,"alive"
+"Pate",?,?,?,?,"alive"
+"Pate (King's Landing)",?,"Baratheon",NaN,?,"alive"
+"Pate (Lancewood)",?,?,?,?,"dead"
+"Pate (Mory)",?,?,?,?,"dead"
+"Pate (Night's Watch)",?,?,?,?,"alive"
+"Pate (Old)",?,?,?,?,"dead"
+"Pate (Pinchbottom)",?,?,?,?,"dead"
+"Pate (Shermer's Grove)",?,?,?,?,"dead"
+"Pate (Standfast)",?,"Osgrey",NaN,?,"alive"
+"Pate of the Blue Fork",?,"Frey",?,"Ser","dead"
+"Patrek Mallister",?,"Mallister",?,?,"alive"
+"Patrek Vance",?,"Vance",NaN,?,"alive"
+"Paxter Redwyne",?,"Redwyne",?,"Master","alive"
+"Pearse Caron",?,"Caron",?,"Lord","alive"
+"Pebbleton",?,?,?,?,"alive"
+"Penny",?,?,NaN,?,"alive"
+"Penny Jenny",?,?,?,?,"dead"
+"Pentos",?,?,?,?,"alive"
+"Perra Frey",?,"Frey",NaN,?,"alive"
+"Perriane Frey",?,"Haigh",NaN,?,"alive"
+"Perros Blackmont","dornish","Blackmont",?,?,"alive"
+"Perwyn Frey",?,"Frey",NaN,"Ser","alive"
+"Perwyn Osgrey",?,"Osgrey",?,"Lord","alive"
+"Peter Plumm",?,"Plumm",?,"Ser","alive"
+"Petyr Baelish","westeros","Baelish",NaN,"Master","alive"
+"Petyr Frey",?,"Frey",NaN,?,"dead"
+"Philip Foote",?,"Foote",?,"Lord","alive"
+"Philip Plumm",?,"Plumm",?,"Lord","alive"
+"Pia",?,"Whent",?,?,"alive"
+"Plummer",?,"Ashford",?,"Steward","alive"
+"Podrick Payne",?,"Payne",NaN,?,"alive"
+"Poetess",?,?,?,?,"alive"
+"Pollitor",?,?,?,"Wisdom","alive"
+"Polliver",?,"Clegane",?,"Castellan","dead"
+"Pono","dothraki",?,?,"Khal","alive"
+"Porridge",?,"Baratheon",?,?,"alive"
+"Porther","northmen","Stark",?,?,"alive"
+"Portifer Woodwright",?,?,?,"Ser","alive"
+"Poul Pemford",?,"Tully",?,?,"dead"
+"Poxy Tym","northmen","Stark",?,?,"dead"
+"Praed",?,?,?,?,"dead"
+"Prendahl na Ghezn","ghiscari",?,?,?,"dead"
+"Preston Greenfield",?,"Greenfield",?,"Ser","dead"
+"Puckens",?,"Lannister",?,?,"alive"
+"Pudding",?,?,?,?,"alive"
+"Puddingfoot",?,?,?,?,"alive"
+"Pyat Pree",?,?,?,?,"alive"
+"Pycelle",?,?,NaN,"Grand Maester","dead"
+"Pyg",?,?,?,?,"dead"
+"Pylos",?,?,NaN,"Maester","alive"
+"Pypar",?,?,?,?,"alive"
+"Qalen",?,"Greyjoy",?,"Maester","dead"
+"Qarl Correy",?,"Velaryon",?,"Ser","alive"
+"Qarl Kenning","ironborn","Kenning",?,?,"alive"
+"Qarl Quickaxe","ironmen",?,?,?,"alive"
+"Qarl Shepherd","ironborn","Shepherd",?,?,"alive"
+"Qarl the Maid","ironborn",?,?,?,"alive"
+"Qarl the Thrall","ironborn",?,?,?,"alive"
+"Qarlton Chelsted",?,"Chelsted",?,"Hand of the King","dead"
+"Qarro Volentin","braavosi",?,?,"Sword","alive"
+"Qezza","ghiscari",?,?,"Cupbearer","alive"
+"Qhorin Halfhand",?,?,?,?,"dead"
+"Qos",?,?,?,"Captain","alive"
+"Qotho","dothraki",?,?,"Khal","dead"
+"Quaithe",?,?,?,?,"alive"
+"Quaro","dothraki",?,?,?,"dead"
+"Quellon Botley","ironborn","Botley",?,?,"alive"
+"Quellon Greyjoy","ironborn","Greyjoy",?,"Lord","dead"
+"Quellon Humble","ironborn","Humble",?,?,"alive"
+"Quence","braavosi",?,?,?,"alive"
+"Quent","northmen","Stark",?,?,"alive"
+"Quenten Banefort",?,"Banefort",?,"Lord","alive"
+"Quentin Tyrell",?,"Tyrell",?,"Ser","dead"
+"Quenton Greyjoy","ironborn","Greyjoy",?,?,"alive"
+"Quenton Hightower",?,"Hightower",?,"Lord","dead"
+"Quentyn Ball",?,"Ball",?,"Ser","dead"
+"Quentyn Blackwood",?,"Blackwood",?,"Lord","dead"
+"Quentyn Martell","dornish","Martell",NaN,"Prince","dead"
+"Quentyn Qorgyle",?,"Qorgyle",?,"Lord","alive"
+"Quhuru Mo",?,?,?,?,"alive"
+"Quickfinger",?,"Blackfyre",?,?,"alive"
+"Quill","braavosi",?,?,?,"alive"
+"Quincy Cox",?,"Cox",?,"Knight","alive"
+"Quort",?,?,NaN,?,"dead"
+"Qyburn",?,"Lannister",NaN,"Master","alive"
+"Qyle",?,?,?,?,"dead"
+"Racallio Ryndoon","tyroshi",?,?,?,"alive"
+"Rafe",?,?,?,?,"alive"
+"Rafford",?,"Clegane",?,?,"dead"
+"Ragnor Pyke","ironborn","Greyjoy",?,?,"alive"
+"Ragwyle","freefolk",?,?,?,"alive"
+"Rainbow Knight",?,?,?,?,"alive"
+"Rakharo","dothraki","Targaryen",?,"Bloodrider","alive"
+"Ralf (Limper)",?,?,?,?,"alive"
+"Ralf (Lordsport)",?,?,?,?,"alive"
+"Ralf (Shepherd)",?,?,?,?,"alive"
+"Ralf Kenning","ironborn","Kenning",?,"Commander","dead"
+"Ralf Stonehouse","ironborn","Stonehouse",?,"Captain","alive"
+"Ramsay Snow",?,"Bolton",NaN,"Lord","alive"
+"Randa",?,?,?,?,"dead"
+"Randyll Tarly",?,"Tarly",?,"Master","alive"
+"Rast",?,?,?,?,"dead"
+"Rat Cook",?,?,?,?,"alive"
+"Rattleshirt",?,?,?,?,"alive"
+"Ravella Swann",?,"Swann",?,"Lady","alive"
+"Raventree Hall",?,?,?,?,"alive"
+"Rawney",?,?,?,?,"alive"
+"Raymar Royce",?,"Royce",?,"Lord","alive"
+"Raymond Nayland",?,"Nayland",?,"Ser","alive"
+"Raymun","freefolk",?,?,"King","dead"
+"Raymun Darry",?,"Darry",?,"Lord","dead"
+"Raymun Fossoway",?,"Fossoway",?,"Ser","alive"
+"Raymund Frey",?,"Frey",NaN,"Ser","alive"
+"Raymund Tyrell",?,"Tyrell",?,?,"alive"
+"Raynald Westerling",?,"Westerling",?,"Ser","dead"
+"Raynard",?,?,?,"Septon","alive"
+"Raynard Ruttiger",?,"Ruttiger",?,"Ser","alive"
+"Red Alyn of the Rosewood",?,?,?,?,"dead"
+"Red Oarsman","ironborn",?,?,?,"alive"
+"Red Rolfe",?,"Greyjoy",?,?,"dead"
+"Redtusk",?,?,?,?,"alive"
+"Redwyn",?,?,?,?,"alive"
+"Reek",?,"Bolton",?,?,"dead"
+"Regenard Estren",?,"Estren",?,"Lord","alive"
+"Renfred Rykker",?,"Rykker",?,"Lord","alive"
+"Renly Baratheon",?,"Baratheon",NaN,"King","dead"
+"Renly Norcross",?,"Norcross",NaN,?,"alive"
+"Rennifer Longwaters",?,"Baratheon",?,?,"alive"
+"Reynard Webber",?,"Webber",?,"Lord","alive"
+"Reysen",?,?,?,?,"alive"
+"Reznak mo Reznak","ghiscari","Targaryen",?,?,"alive"
+"Rhae Targaryen",?,"Targaryen",NaN,"Princess","alive"
+"Rhaegar Frey",?,"Frey",NaN,?,"dead"
+"Rhaegar Targaryen","valyrian","Targaryen",NaN,"Prince","dead"
+"Rhaegel Targaryen",?,"Targaryen",NaN,"Prince","dead"
+"Rhaego",?,"Targaryen",NaN,?,"dead"
+"Rhaella Targaryen",?,"Targaryen",NaN,"Princess","dead"
+"Rhaelle Targaryen",?,"Targaryen",NaN,"Princess","alive"
+"Rhaena Targaryen (daughter of Aegon III)",?,"Targaryen",NaN,"Septa","alive"
+"Rhaena Targaryen (daughter of Daemon)",?,"Targaryen",NaN,"Lady","alive"
+"Rhaenys Targaryen","valyrian","Targaryen",NaN,"Queen","dead"
+"Rhaenys Targaryen (daughter of Aemon)","valyrian","Targaryen",NaN,"Princess","dead"
+"Rhaenys Targaryen (daughter of Rhaegar)",?,"Targaryen",NaN,?,"dead"
+"Rhea Florent",?,"Florent",?,?,"alive"
+"Rhea Royce",?,"Royce",?,"Lady","dead"
+"Rhialta Vance",?,"Vance",?,?,"alive"
+"Rhogoro","dothraki",?,?,"Khal","alive"
+"Rhonda Rowan",?,"Rowan",?,?,"alive"
+"Ricasso",?,"Martell",?,?,"alive"
+"Richard Farrow",?,?,?,"Ser","dead"
+"Richard Horpe",?,"Horpe",?,"Ser","alive"
+"Richard Lonmouth",?,"Lonmouth",?,"Ser","alive"
+"Rickard Karstark","northmen","Karstark",?,"Lord","dead"
+"Rickard Ryswell","northmen","Ryswell",?,?,"alive"
+"Rickard Stark","northmen","Stark",NaN,"Lord","dead"
+"Rickard Stark (King)",?,?,?,?,"alive"
+"Rickard Thorne",?,"Thorne",?,"Ser","alive"
+"Rickard Tyrell",?,"Tyrell",?,?,"alive"
+"Rickard Wylde",?,"Wylde",NaN,?,"alive"
+"Rickon Stark","northmen","Stark",NaN,"Prince","alive"
+"Rigney",?,?,?,"Archmaester","alive"
+"Rills",?,?,?,?,"alive"
+"Rob",?,"Osgrey",?,?,"alive"
+"Robar Royce",?,"Royce",NaN,"Ser","dead"
+"Robb Reyne",?,"Reyne",?,"Ser","alive"
+"Robb Stark",?,?,498,"King in the North","dead"
+"Robert Arryn",?,"Arryn",NaN,"Lord","alive"
+"Robert Ashford",?,"Ashford",?,"Ser","alive"
+"Robert Baratheon",?,?,?,?,"alive"
+"Robert Brax",?,"Brax",?,"Ser","dead"
+"Robert Brax (son of Flement)",?,"Brax",NaN,?,"alive"
+"Robert Flowers",?,?,?,"King","alive"
+"Robert Frey",?,"Frey",NaN,?,"alive"
+"Robert Frey (son of Raymund)",?,"Frey",NaN,?,"alive"
+"Robert Paege",?,"Paege",?,"Ser","alive"
+"Robett Glover","northmen","Glover",?,?,"alive"
+"Robin",?,?,?,?,"dead"
+"Robin Flint",?,"Flint",?,?,"dead"
+"Robin Greyjoy","ironborn","Greyjoy",?,?,"dead"
+"Robin Hill",?,?,?,"Lord Commander","alive"
+"Robin Hollard",?,"Hollard",?,?,"alive"
+"Robin Moreland",?,"Moreland",?,"Lord","alive"
+"Robin Potter",?,"Potter",?,"Ser","alive"
+"Robin Ryger",?,"Ryger",NaN,"Ser","alive"
+"Robyn Rhysling",?,"Rhysling",?,"Ser","alive"
+"Rodrik Cassel",?,"Cassel",?,"Ser","dead"
+"Rodrik Flint",?,?,?,"Lord Commander","alive"
+"Rodrik Freeborn","ironborn",?,?,?,"alive"
+"Rodrik Greyjoy","ironborn","Greyjoy",NaN,?,"dead"
+"Rodrik Harlaw","ironborn","Harlaw",?,"Captain","alive"
+"Rodrik Ryswell","northmen","Ryswell",?,"Lord","alive"
+"Rodrik Stark","northmen","Stark",?,"King in the North","alive"
+"Rodrik Stark (son of Beron)","northmen","Stark",?,?,"alive"
+"Rodwell Stark","northmen","Stark",?,"Lord","alive"
+"Roelle",?,?,?,"Septa","alive"
+"Roger Hogg",?,"Hogg",?,"Knight","alive"
+"Roger Ryswell","northmen","Ryswell",?,?,"alive"
+"Roger of Pennytree",?,?,?,?,"dead"
+"Roggo","braavosi",?,?,?,"alive"
+"Rohanne Webber",?,"Webber",NaN,"Lady","alive"
+"Roland Crakehall (Kingsguard)",?,"Crakehall",?,"Ser","alive"
+"Roland Crakehall (Lord)",?,"Crakehall",?,"Lord","alive"
+"Rolder",?,"Lannister",?,?,"alive"
+"Rolfe",?,?,?,?,"alive"
+"Rollam Westerling",?,"Westerling",NaN,?,"alive"
+"Rolland Darklyn",?,"Darklyn",?,"Ser","alive"
+"Rolland Longthorpe",?,"Longthorpe",?,"Lord","alive"
+"Rolland Storm",?,"Caron",?,"Lord","alive"
+"Rolland Uffering",?,"Uffering",?,"Ser","alive"
+"Rolley",?,?,?,?,"dead"
+"Rolly Duckfield",?,"Targaryen",?,"Ser","alive"
+"Rolph Spicer",?,"Spicer",?,"Lord","alive"
+"Romny Weaver","ironborn","Weaver",?,?,"alive"
+"Ronald Connington",?,"Connington",?,"Knight","alive"
+"Ronald Storm",?,"Connington",?,?,"alive"
+"Ronald Vance",?,"Vance",?,"Ser","alive"
+"Ronel Rivers",?,"Frey",?,?,"alive"
+"Ronnel Arryn",?,?,?,?,"alive"
+"Ronnel Harclay",?,"Harclay",?,?,"alive"
+"Ronnel Stout",?,"Stout",?,?,"alive"
+"Ronnet Connington",?,"Connington",NaN,"Knight","alive"
+"Roone",?,?,NaN,?,"alive"
+"Roone (maester)",?,?,?,"Maester","alive"
+"Roose Bolton","northmen","Bolton",NaN,"Lord","alive"
+"Roose Ryswell","northmen","Ryswell",?,?,"alive"
+"Rorge",?,?,?,?,"dead"
+"Roro Uhoris","tyroshi",?,?,?,"dead"
+"Roryn Drumm","ironborn","Drumm",?,?,"alive"
+"Rosamund Lannister",?,"Lannister",?,?,"alive"
+"Rosey",?,?,NaN,?,"alive"
+"Roslin Frey",?,"Frey",NaN,?,"alive"
+"Rossart",?,?,?,"Hand of the King","dead"
+"Rowan","freefolk",?,?,?,"dead"
+"Royce Coldwater",?,"Coldwater",?,"Lord","alive"
+"Ruby Ford",?,?,?,?,"alive"
+"Rudge",?,?,?,?,"alive"
+"Rufus Leek",?,"Rykker",?,"Ser","alive"
+"Rugen",?,?,?,?,"alive"
+"Runcel Hightower",?,"Hightower",?,"Lord Commander","alive"
+"Runciter",?,?,?,"Grand Maester","dead"
+"Runestone",?,?,?,?,"alive"
+"Rupert Brax",?,"Brax",?,"Ser","dead"
+"Rupert Crabb",?,"Crabb",?,"Ser","alive"
+"Rus","ironmen",?,?,?,"alive"
+"Rusty Flowers",?,?,?,?,"alive"
+"Ryam",?,?,?,"Archmaester","alive"
+"Ryam Florent",?,"Florent",?,"Ser","alive"
+"Ryam Redwyne",?,"Redwyne",?,"Hand of the King","dead"
+"Rycherd Crane",?,"Crane",?,"Ser","alive"
+"Ryella Frey",?,"Frey",NaN,?,"alive"
+"Ryella Royce",?,"Royce",?,?,"alive"
+"Ryger Rivers",?,"Frey",?,?,"alive"
+"Ryk",?,?,?,?,"alive"
+"Rylene Florent",?,"Florent",?,?,"alive"
+"Ryles",?,?,?,?,"dead"
+"Ryman Frey",?,"Frey",NaN,"Ser","dead"
+"Rymolf",?,?,?,?,"alive"
+"Rymund the Rhymer",?,?,?,?,"alive"
+"Ryon Allyrion","dornish","Allyrion",?,"Ser","alive"
+"S'vrone","braavosi",?,?,?,"alive"
+"Saathos",?,?,?,?,"alive"
+"Saera Targaryen","valyrian","Targaryen",?,"Princess","alive"
+"Sailor's Wife",?,?,?,?,"alive"
+"Salladhor Saan",?,"Baratheon",?,"Prince","alive"
+"Sallei Paege",?,"Paege",?,?,"alive"
+"Sallor","qaren",?,?,?,"dead"
+"Salloreon",?,?,?,?,"alive"
+"Sam Stoops",?,"Osgrey",?,?,"alive"
+"Samwell Spicer",?,"Spicer",?,"Ser","alive"
+"Samwell Stone",?,"Royce",?,"Ser","alive"
+"Samwell Tarly","westeros",?,NaN,?,"alive"
+"Sandor Clegane",?,"Clegane",NaN,?,"dead"
+"Sandor Frey",?,"Frey",NaN,?,"alive"
+"Sansa Stark","northmen","Stark",NaN,"Princess","alive"
+"Sarella Sand","dornish","Martell",NaN,?,"alive"
+"Sargon Botley","ironborn","Botley",?,?,"alive"
+"Sarra Frey",?,"Frey",NaN,?,"alive"
+"Sarya Whent",?,"Whent",?,"Lady","alive"
+"Satin",?,?,NaN,?,"alive"
+"Sawane Botley","ironborn","Botley",?,"Captain","dead"
+"Sawwood",?,?,?,?,"alive"
+"Scarb",?,?,?,?,"dead"
+"Scolera",?,?,?,"Septa","alive"
+"Seagard",?,?,?,?,"alive"
+"Sebaston Farman",?,"Farman",?,"Lord","alive"
+"Second Sons",?,?,?,?,"alive"
+"Sedgekins",?,?,?,?,"alive"
+"Sefton Staunton",?,"Staunton",?,"Septon","alive"
+"Selmond Stackspear",?,"Stackspear",?,"Lord","alive"
+"Selwyn Tarth",?,"Tarth",NaN,"Lord","alive"
+"Selyse Florent",?,"Florent",?,"Queen","alive"
+"Senelle",?,"Lannister",?,?,"dead"
+"Serala",?,"Darklyn",?,?,"alive"
+"Serra",?,?,?,?,"dead"
+"Serra Frey",?,"Frey",NaN,?,"alive"
+"Shadrick",?,?,?,?,"alive"
+"Shae",?,?,NaN,?,"dead"
+"Shagga","mountainclans",?,?,?,"alive"
+"Shagwell",?,?,?,?,"dead"
+"Sharna",?,?,?,?,"alive"
+"Sheepstealer",?,?,?,?,"alive"
+"Shella",?,?,?,?,"alive"
+"Shella Whent",?,"Whent",?,"Lady","dead"
+"Sherrit",?,?,?,"King","alive"
+"Shiera Crakehall",?,"Crakehall",?,?,"alive"
+"Shiera Seastar","westeros","Targaryen",NaN,?,"alive"
+"Shierle Swyft",?,"Swyft",?,?,"alive"
+"Shireen Baratheon",?,"Baratheon",NaN,"Princess","alive"
+"Shirei Frey",?,"Frey",NaN,?,"alive"
+"Shortear",?,"Lannister",?,?,"alive"
+"Shyra","northmen","Stark",?,?,"alive"
+"Shyra Errol",?,"Errol",?,"Lady","alive"
+"Sigfry Stonetree","ironborn","Stonetree",?,?,"alive"
+"Sigfryd Harlaw","ironborn","Harlaw",?,"Master","alive"
+"Sigrin",?,"Greyjoy",?,?,"alive"
+"Simon Leygood",?,"Leygood",?,"Ser","alive"
+"Simon Staunton",?,"Staunton",?,"Ser","alive"
+"Simon Toyne",?,?,?,?,"dead"
+"Skahaz mo Kandaq","ghiscari","Targaryen",?,?,"alive"
+"Skinner",?,"Bolton",?,?,"alive"
+"Skittrick","northmen","Stark",?,?,"alive"
+"Sky Blue Su",?,?,?,?,"alive"
+"Skyte","ironborn","Greyjoy",?,?,"alive"
+"Snakewood",?,?,?,?,"alive"
+"Southshield",?,?,?,?,"alive"
+"Squinty Jeyne",?,"Osgrey",?,?,"alive"
+"Standfast",?,?,?,?,"alive"
+"Stone Hedge",?,?,?,?,"alive"
+"Summer Islands",?,?,?,?,"alive"
+"Tarth",?,?,?,?,"alive"
+"The Great Spring Sickness",?,?,?,?,"alive"
+"The Red Lamb",?,"Targaryen",?,"Ser","alive"
+"Theodore Tyrell",?,"Tyrell",?,"Ser","alive"
+"Tor",?,?,?,?,"alive"
+"Tyrion Lannister",?,"Lannister",NaN,"Hand of the King","alive"
+"Vixen",?,?,?,?,"alive"
+"Wayfarer's Rest",?,?,?,?,"alive"
+"Widow's Watch",?,?,?,?,"alive"
+"Windblown",?,?,?,?,"alive"
+"Woods witch",?,?,?,?,"alive"
+"Acorn Hall",?,?,?,?,"alive"
+"Big Walder Frey",?,"Frey",NaN,?,"alive"
+"Black Walder Frey",?,"Frey",NaN,?,"alive"
+"Blue Bard",?,"Tyrell",?,?,"alive"
+"Fair Walda Frey",?,"Frey",NaN,?,"alive"
+"Fat Walda Frey",?,"Frey",NaN,?,"alive"
+"First Sword of Braavos",?,?,?,?,"alive"
+"Grey Glen",?,?,?,?,"alive"
+"House Stokeworth",?,?,?,"Lord","alive"
+"Ibben",?,?,?,?,"alive"
+"Iron Fleet",?,?,?,?,"alive"
+"Iron Islands",?,?,?,?,"alive"
+"Little Walder Frey",?,"Frey",NaN,?,"dead"
+"Lord Staunton",?,"Staunton",?,"Lord","dead"
+"Myr",?,?,?,?,"alive"
+"Qarth",?,?,?,?,"alive"
+"Qohor",?,?,?,?,"alive"
+"Red Walder Frey",?,"Frey",NaN,?,"alive"
+"Salt Shore",?,?,?,?,"alive"
+"Sealskin Point",?,?,?,?,"alive"
+"Sleepy Jack",?,?,?,?,"alive"
+"Sloey","braavosi",?,?,?,"alive"
+"Small Paul",?,?,?,?,"dead"
+"Smiling Knight",?,?,?,?,"alive"
+"Softfoot",?,?,?,?,"dead"
+"Soren Shieldbreaker",?,?,?,?,"alive"
+"Sour Alyn",?,"Bolton",?,?,"alive"
+"Spare Boot",?,?,?,?,"alive"
+"Spotted Cat","ghiscari",?,?,?,"alive"
+"Spotted Pate of Maidenpool",?,?,?,?,"dead"
+"Spottswood",?,?,?,?,"alive"
+"Squint",?,"Greyjoy",?,?,"dead"
+"Squirrel","freefolk",?,?,?,"dead"
+"Stafford Lannister",?,"Lannister",?,?,"dead"
+"Stalwart Shield",?,?,?,?,"dead"
+"Stalwart Shields",?,?,?,?,"alive"
+"Stannis Seaworth",?,"Seaworth",NaN,?,"alive"
+"Steelskin","ghiscari",?,?,?,"alive"
+"Steely Pate",?,?,?,?,"alive"
+"Steffarion Sparr","ironborn","Sparr",?,?,"alive"
+"Steffon Baratheon",?,"Baratheon",NaN,"Lord","dead"
+"Steffon Darklyn",?,"Darklyn",?,"Lord Commander","dead"
+"Steffon Fossoway",?,"Fossoway",?,"Ser","alive"
+"Steffon Frey",?,"Frey",NaN,?,"alive"
+"Steffon Hollard",?,"Hollard",?,"Ser","alive"
+"Steffon Seaworth",?,"Seaworth",NaN,?,"alive"
+"Steffon Stackspear",?,"Stackspear",?,"Ser","alive"
+"Steffon Swyft",?,"Swyft",?,"Ser","alive"
+"Steffon Varner",?,"Varner",?,"Lord","alive"
+"Stevron Frey",?,"Frey",NaN,"Ser","dead"
+"Stiv",?,?,?,?,"dead"
+"Stone Thumbs","freefolk",?,?,?,"dead"
+"Stonehand","ironborn",?,?,?,"alive"
+"Stonesnake",?,?,NaN,?,"alive"
+"Stygg",?,"Greyjoy",?,?,"alive"
+"Styr","freefolk",?,?,?,"dead"
+"Sumner Crakehall",?,"Crakehall",?,"Lord","alive"
+"Sybassion",?,?,?,?,"alive"
+"Sybell Spicer",?,"Spicer",?,"Lady","alive"
+"Sybelle Glover","northmen","Locke",?,"Lady","alive"
+"Sylas",?,"Greyjoy",?,?,"dead"
+"Sylas Flatnose","ironborn",?,?,"Iron King","alive"
+"Sylva Santagar","dornish","Santagar",NaN,"Lady","alive"
+"Sylwa Paege",?,"Paege",?,?,"alive"
+"Symeon Star-Eyes",?,?,?,?,"alive"
+"Symon Hollard",?,"Hollard",?,"Master","dead"
+"Symon Santagar",?,"Santagar",?,"Knight","alive"
+"Symon Silver Tongue",?,?,?,?,"dead"
+"Symon Stripeback",?,"Targaryen",?,?,"alive"
+"Symond Botley","ironborn","Botley",?,?,"alive"
+"Symond Frey",?,"Frey",NaN,?,"dead"
+"Symond Templeton",?,"Templeton",?,"Knight","alive"
+"Syrio Forel","braavosi","Stark",?,"Sword","dead"
+"Taena of Myr",?,"Merryweather",NaN,?,"alive"
+"Tagganaro","braavosi",?,?,?,"alive"
+"Tal Toraq",?,"Targaryen",?,?,"alive"
+"Talea","braavosi",?,?,?,"alive"
+"Talla Tarly",?,"Tarly",?,?,"alive"
+"Tallad",?,"Baratheon",?,"Ser","alive"
+"Tanda Stokeworth",?,"Stokeworth",?,"Lady","dead"
+"Tanselle",?,?,?,?,"alive"
+"Tansy",?,?,?,?,"alive"
+"Tansy (orphan)",?,?,?,?,"alive"
+"Tanton Fossoway",?,"Fossoway",?,"Ser","alive"
+"Tarber",?,?,?,?,"alive"
+"Tarle","ironborn",?,?,?,"alive"
+"Temmo","dothraki",?,?,"Khal","dead"
+"Ternesio Terys","braavosi",?,?,"Captain","alive"
+"Terrance Lynderly",?,"Lynderly",?,?,"alive"
+"Terrence Kenning",?,"Kenning",?,"Lord","alive"
+"Terrence Toyne",?,"Toyne",?,"Ser","dead"
+"Terro","braavosi",?,?,?,"alive"
+"The Twins",?,?,?,?,"alive"
+"Thenn",?,?,?,?,"alive"
+"Theo Frey",?,"Frey",?,"Ser","alive"
+"Theo Wull","mountainclans","Wull",?,?,"dead"
+"Theobald",?,?,?,"Archmaester","alive"
+"Theodan Wells",?,"Wellsofthe",?,"Ser","alive"
+"Theomar Smallwood",?,"Smallwood",?,"Lord","alive"
+"Theomore",?,?,?,?,"alive"
+"Theomore Harlaw",?,"Harlaw",?,"Lord","alive"
+"Theon Greyjoy","ironmen","Greyjoy",NaN,"Prince","alive"
+"Theon Stark","northmen",?,?,"King","alive"
+"Thistle","freefolk",?,?,?,"dead"
+"Thoren Smallwood",?,?,?,?,"dead"
+"Thormor Ironmaker","ironborn","Ironmaker",?,?,"alive"
+"Thoros of Myr",?,?,?,?,"alive"
+"Three-Tooth","ironborn","Harlaw",?,?,"alive"
+"Three Sisters",?,?,?,?,"alive"
+"Three Toes",?,?,?,?,"alive"
+"Tickler",?,"Clegane",?,?,"dead"
+"Tim Stone",?,?,?,?,"alive"
+"Tim Tangletongue",?,?,?,?,"alive"
+"Timeon","dornish",?,?,?,"dead"
+"Timett","mountainclans",?,NaN,?,"alive"
+"Timett (father)","mountainclans",?,?,?,"alive"
+"Timon",?,?,?,"Ser","alive"
+"Timoth",?,"Martell",?,?,"alive"
+"Tion Frey",?,"Frey",NaN,?,"dead"
+"Titus Peake",?,"Peake",?,"Lord","alive"
+"Tobbot",?,"Clegane",?,?,"alive"
+"Tobho Mott",?,?,?,?,"alive"
+"Todder",?,?,?,?,"alive"
+"Todric",?,?,?,?,"dead"
+"Toefinger","freefolk",?,?,?,"alive"
+"Togg Joth",?,?,?,?,"alive"
+"TomToo","northmen","Stark",?,?,"alive"
+"Tom Costayne",?,"Costayne",?,"Ser","alive"
+"Tom of Sevenstreams",?,?,NaN,?,"alive"
+"Tomard","northmen","Stark",NaN,?,"dead"
+"Tommard Heddle",?,?,?,"Ser","dead"
+"Tommen Baratheon",?,?,498,"King","alive"
+"Tommen Costayne",?,"Costayne",?,"Lord","alive"
+"Torbert",?,?,?,"Septon","alive"
+"Toregg","freefolk",?,?,?,"alive"
+"Tormund","freefolk",?,?,?,"alive"
+"Torrek",?,?,?,?,"alive"
+"Torren Liddle","mountainclans","Liddle",?,"Lord","alive"
+"Torrhen Karstark","northmen","Karstark",?,?,"dead"
+"Torrhen Stark","northmen",?,?,"King in the North","alive"
+"Torwold Browntooth","ironborn",?,?,?,"alive"
+"Torwynd","freefolk",?,?,?,"dead"
+"Tothmure",?,?,?,"Maester","dead"
+"Trebor Jordayne",?,"Jordayne",?,"Lord","alive"
+"Tregar",?,"Lannister",?,?,"dead"
+"Tregar Ormollen",?,?,?,?,"alive"
+"Tremond Gargalen",?,"Gargalen",?,"Lord","alive"
+"Tristan Mudd",?,"Mudd",?,"Lord Commander","alive"
+"Tristan Ryger",?,"Ryger",?,?,"alive"
+"Tristifer Botley","ironborn","Botley",?,"Lord","alive"
+"Tristifer IV Mudd",?,?,?,?,"alive"
+"Tristifer V Mudd",?,?,?,"King","alive"
+"Tristimun",?,?,?,"Ser","alive"
+"Triston Farwynd","ironborn","Farwynd",?,"Lord","alive"
+"Triston Sunderland",?,"Sunderland",?,"Lord","alive"
+"Triston of Tally Hill",?,?,?,"Ser","alive"
+"Trystane Martell","dornish","Martell",NaN,"Prince","alive"
+"Tuffleberry",?,?,?,?,"alive"
+"Tumberjon",?,?,?,?,"alive"
+"Tumco Lho","ghiscari",?,?,"Ser","alive"
+"Turnip","northmen","Stark",?,?,"alive"
+"Turquin",?,?,?,"Maester","alive"
+"Tya Lannister",?,"Baratheon",?,?,"alive"
+"Tyana Wylde",?,"Wylde",?,?,"alive"
+"Tybero Istarion",?,?,?,?,"alive"
+"Tybolt Crakehall",?,"Crakehall",?,"Ser","alive"
+"Tybolt Hetherspoon",?,"Hetherspoon",?,"Ser","alive"
+"Tybolt Lannister",?,"Lannister",?,"Lord","dead"
+"Tycho Nestoris","braavosi",?,?,?,"alive"
+"Tyene Sand","dornish","Martell",NaN,?,"alive"
+"Tygett Lannister",?,"Lannister",?,"Ser","dead"
+"Tyland Lannister",?,"Lannister",?,"Hand of the King","dead"
+"Tymor",?,"Greyjoy",?,?,"alive"
+"Tyrek Lannister",?,"Lannister",NaN,?,"dead"
+"Tyrion Tanner",?,"Stokeworth",NaN,?,"alive"
+"Tysane Frey",?,"Frey",NaN,?,"alive"
+"Tysha",?,?,NaN,?,"alive"
+"Tyta Frey",?,"Frey",NaN,?,"alive"
+"Tytos Blackwood",?,"Blackwood",?,"Lord","alive"
+"Tytos Brax",?,"Brax",?,"Lord","alive"
+"Tytos Frey",?,"Frey",NaN,"Ser","dead"
+"Tytos Lannister",?,"Lannister",NaN,"Lord","dead"
+"Tywin Frey",?,"Frey",NaN,?,"alive"
+"Tywin Frey (son of Raymund)",?,"Frey",NaN,?,"alive"
+"Tywin Lannister",?,"Lannister",NaN,"Hand of the King","dead"
+"Ulf son of Umar","mountainclans",?,?,?,"dead"
+"Ulf the Ill","ironborn","Greyjoy",?,?,"dead"
+"Ulf the White",?,?,?,"Lord","dead"
+"Uller","ironborn","Greyjoy",?,?,"alive"
+"Ulmer",?,?,?,?,"alive"
+"Ulrick Dayne","dornish","Dayne",?,"Sword","alive"
+"Ulwyck Uller",?,"Uller",?,"Ser","alive"
+"Umar","mountainclans",?,?,?,"alive"
+"Umfred",?,"Baelish",?,?,"alive"
+"Umma",?,?,?,?,"alive"
+"Unella",?,?,?,"Septa","alive"
+"Urek Ironmaker","ironborn","Ironmaker",?,?,"alive"
+"Urras Ironfoot",?,?,?,?,"alive"
+"Urrathon","qaren",?,?,?,"alive"
+"Urreg",?,?,?,?,"alive"
+"Urrigon Greyjoy","ironborn","Greyjoy",NaN,?,"dead"
+"Urron Greyiron","ironborn",?,?,"Iron King","alive"
+"Urswyck",?,?,?,?,"alive"
+"Urzen","ironborn","Greyjoy",?,?,"alive"
+"Utherydes Wayn",?,"Wayn",NaN,"Steward","alive"
+"Uthor Tollett",?,"Tollett",?,"Lord","alive"
+"Uthor Underleaf",?,?,NaN,"Ser","alive"
+"Utt",?,?,?,"Septon","dead"
+"Vaellyn",?,?,?,"Archmaester","alive"
+"Vaemond Velaryon","valyrian","Velaryon",?,"Ser","dead"
+"Val","freefolk",?,?,?,"alive"
+"Valaena Velaryon","valyrian","Targaryen",?,"Lady","alive"
+"Valarr Targaryen","valyrian","Targaryen",NaN,"Hand of the King","dead"
+"Varamyr","freefolk",?,?,?,"alive"
+"Vardis Egen",?,"Egen",NaN,"Captain","dead"
+"Vargo Hoat",?,?,?,"Lord","dead"
+"Varly","northmen","Stark",?,?,"dead"
+"Varys",?,?,?,"Master","alive"
+"Vayon Poole",?,"Poole",?,"Steward","dead"
+"Veiled Lady","braavosi",?,?,?,"alive"
+"Vickon Botley","ironborn","Botley",?,?,"alive"
+"Vickon Greyjoy",?,"Greyjoy",?,"Lord","alive"
+"Victaria Tyrell",?,"Tyrell",?,?,"alive"
+"Victarion Greyjoy","ironborn","Greyjoy",NaN,"Captain","alive"
+"Victor Tyrell",?,"Tyrell",?,"Ser","alive"
+"Violet",?,?,?,?,"alive"
+"Visenya Targaryen","valyrian","Targaryen",NaN,"Queen","dead"
+"Viserys II Targaryen",?,?,499,"Hand of the King","dead"
+"Viserys Plumm",?,"Plumm",NaN,"Lord","alive"
+"Viserys Targaryen","valyrian","Targaryen",NaN,"King","dead"
+"Vortimer Crane",?,"Crane",?,"Ser","alive"
+"Vulture King",?,?,?,?,"alive"
+"Vylarr",?,"Lannister",?,"Captain","alive"
+"Vyman",?,?,?,"Maester","alive"
+"Waif",?,?,NaN,?,"alive"
+"Walda Frey (daughter of Edwyn)",?,"Frey",NaN,?,"alive"
+"Walda Frey (daughter of Lothar)",?,"Frey",NaN,?,"alive"
+"Walda Rivers",?,"Frey",NaN,?,"alive"
+"Walda Rivers (daughter of Aemon)",?,"Frey",NaN,?,"alive"
+"Walder Brax",?,"Brax",NaN,?,"alive"
+"Walder Goodbrook",?,"Goodbrook",NaN,?,"alive"
+"Walder Haigh",?,"Haigh",NaN,?,"alive"
+"Walder Rivers",?,"Frey",?,"Ser","alive"
+"Walder Vance",?,"Vance",NaN,?,"alive"
+"Waldon Wynch",?,"Wynch",?,"Lord","alive"
+"Walgrave",?,?,?,"Archmaester","alive"
+"Wallace Waynwood",?,"Waynwood",?,?,"alive"
+"Wallen",?,?,?,?,"dead"
+"Walton",?,"Bolton",?,?,"alive"
+"Walton Frey",?,"Frey",NaN,?,"alive"
+"Walton Stark",?,"Stark",?,"King in the North","alive"
+"Waltyr Frey",?,"Frey",NaN,?,"alive"
+"Walys Flowers",?,?,?,"Maester","dead"
+"Warren",?,?,?,?,"alive"
+"Warryn Beesbury",?,"Beesbury",?,"Lord","alive"
+"Wat",?,?,?,?,"alive"
+"Wat (Barleycorn)",?,"Osgrey",?,?,"alive"
+"Wat (Standfast)",?,"Osgrey",?,?,"alive"
+"Wat (Wet)",?,"Osgrey",?,?,"alive"
+"Wat (Whitesmile)",?,?,?,?,"alive"
+"Wat (orphan)",?,?,?,?,"alive"
+"Wat (sailor)",?,?,?,?,"alive"
+"Wate",?,"Targaryen",?,?,"alive"
+"Watt",?,?,?,?,"dead"
+"Watty",?,?,?,?,"alive"
+"Waymar Royce",?,"Royce",NaN,"Ser","dead"
+"Wayn (guard)","northmen","Stark",?,?,"alive"
+"Weasel",?,?,NaN,?,"alive"
+"Weeper","freefolk",?,?,?,"alive"
+"Weese",?,"Whent",?,?,"dead"
+"Wenda",?,?,?,?,"alive"
+"Wendamyr","ironborn","Greyjoy",?,"Maester","alive"
+"Wendel Frey",?,"Frey",NaN,?,"alive"
+"Wendel Manderly",?,"Manderly",NaN,"Ser","dead"
+"Wendell Webber",?,"Webber",?,"Ser","alive"
+"Wendello Qar Deeth","qaren",?,?,?,"alive"
+"Werlag","ironborn","Greyjoy",?,?,"alive"
+"Wex Pyke","ironborn","Botley",NaN,?,"alive"
+"Whalen Frey",?,"Frey",NaN,"Ser","alive"
+"White Harbor",?,?,?,?,"alive"
+"White Walda Frey",?,"Frey",NaN,?,"alive"
+"Wilbert",?,?,?,"Ser","dead"
+"Wilbert Osgrey",?,"Osgrey",?,"Ser","alive"
+"Will",?,?,?,?,"dead"
+"Will (Fletcher)",?,?,?,?,"alive"
+"Will (Hookface)",?,?,?,?,"alive"
+"Will (Standfast)",?,"Osgrey",?,?,"alive"
+"Will (Stork)",?,?,?,?,"alive"
+"Will (Treb)",?,"Osgrey",?,?,"alive"
+"Will (orphan)",?,?,?,?,"alive"
+"Will (squire)",?,?,?,?,"alive"
+"Will Humble","ironborn","Humble",?,?,"alive"
+"Willam",?,?,?,?,"dead"
+"Willam Dustin","northmen","Dustin",?,"Lord","dead"
+"Willam Stark","northmen","Stark",?,"Lord","dead"
+"Willam Wells",?,"Wells",?,"Ser","dead"
+"Willam Wythers",?,"Wythers",?,"Captain","alive"
+"Willamen Frey",?,?,NaN,"Maester","alive"
+"Willas Tyrell",?,"Tyrell",NaN,?,"alive"
+"Willem Darry",?,"Darry",?,"Ser","dead"
+"Willem Frey",?,"Frey",NaN,?,"alive"
+"Willem Lannister",?,"Lannister",NaN,?,"dead"
+"Willem Wylde",?,"Wylde",?,"Ser","alive"
+"William Mooton",?,"Mooton",?,"Lord","alive"
+"Willifer",?,?,?,"Archmaester","alive"
+"Willis Fell",?,"Fell",?,"Ser","alive"
+"Willis Wode",?,"Wode",?,"Ser","alive"
+"Willit",?,"Swyft",?,?,"alive"
+"Willow Heddle",?,?,NaN,?,"alive"
+"Willow Witch-eye","freefolk",?,?,?,"dead"
+"Willum",?,?,?,"Ser","alive"
+"Wolmer",?,"Webber",?,?,"alive"
+"Woth",?,?,?,?,"dead"
+"Wulfe","ironborn","Greyjoy",?,?,"alive"
+"Wun Weg Wun Dar Wun",?,?,?,?,"alive"
+"Wyl (guard)","northmen","Stark",?,?,"dead"
+"Wyl Waynwood",?,"Waynwood",?,?,"dead"
+"Wyl the Whittler",?,?,?,?,"dead"
+"Wylis Manderly",?,"Manderly",NaN,"Ser","alive"
+"Wylla",?,"Dayne",?,?,"alive"
+"Wylla Manderly",?,"Manderly",NaN,?,"alive"
+"Wyman Manderly",?,"Manderly",NaN,"Knight","alive"
+"Wynafrei Whent",?,"Whent",?,?,"alive"
+"Wynafryd Manderly",?,"Manderly",NaN,?,"alive"
+"Wynton Stout",?,"Stout",NaN,"Ser","alive"
+"Xaro Xhoan Daxos","qaren",?,?,?,"alive"
+"Xhondo",?,?,?,?,"alive"
+"Yandry",?,"Targaryen",?,?,"alive"
+"Yellow Dick","westeros","Bolton",?,?,"dead"
+"Ygon Farwynd",?,"Farwynd",?,?,"alive"
+"Ygon Oldfather","freefolk",?,?,?,"alive"
+"Ygritte",?,?,NaN,?,"dead"
+"Yna",?,?,?,?,"alive"
+"Yohn Farwynd","ironborn","Farwynd",?,?,"alive"
+"Yohn Royce",?,"Royce",?,"Lord","alive"
+"Yoren","westeros",?,?,?,"dead"
+"Yorkel",?,"Targaryen",?,?,"alive"
+"Yorko Terys","braavosi",?,?,?,"alive"
+"Yormwell",?,?,?,"Maester","alive"
+"Young Henly",?,?,NaN,?,"dead"
+"Ysilla",?,?,?,?,"alive"
+"Ysilla Royce",?,"Royce",?,?,"alive"
+"Zachery Frey",?,"Frey",NaN,?,"alive"
+"Zarabelo",?,?,?,"Archmaester","alive"
+"Zei",?,?,?,?,"alive"
+"Zekko","dothraki",?,?,"Khal","alive"
+"Zharaq zo Loraq","ghiscari",?,?,?,"alive"
+"Zhoe Blanetree",?,"Blanetree",?,?,"alive"
+"Zia Frey",?,"Frey",NaN,?,"alive"
+"Zollo","dothraki",?,?,?,"alive"
