@@ -17,10 +17,10 @@ function convertToARFF(json){
 		var died = "?";
 
 		if(element["Born"] !== undefined){
-			born = '"'+bornconv.convert_born(filterData(element["Born"]))+'"';
+			born = bornconv.convert_born(filterData(element["Born"]));
 			//console.log(born);
 		} else if (element["Born in"] !== undefined){
-			born = '"'+bornconv.convert_born(filterData(element["Born in"]))+'"';
+			born = bornconv.convert_born(filterData(element["Born in"]));
 			//console.log(born);
 		}
 

@@ -3,7 +3,9 @@ module.exports ={
 		if (date.search(/\d/) < 0){
 			return "?";
 		}
-		var born = (date.search(/AC/)<date.search(/BC/))?(500+parseInt(date)):(500-parseInt(date));
+		int end = (date.search(/AC/)<date.search(/BC/))?(date.search(/AC/)):(date.search(/BC/);
+		date = date.slice(date.search(/\d/),end);
+		var born = (date.search(/AC/)>=0)?(500+parseInt(date)):(500-parseInt(date));
 		return born;
 	}
 }
