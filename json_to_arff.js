@@ -1,5 +1,6 @@
 const fs = require("fs");
 const cultureconv = require("./culture");
+const bornconv = require("./born");
 fs.readFile('charachters_details.txt', function (err, data) {
     if (err) {
         return console.error(err);
@@ -16,7 +17,7 @@ function convertToARFF(json){
 		var died = "?";
 
 		if(element["Born"] !== undefined){
-			born = '"'+filterData(element["Born"])+'"';
+			born = '"'+bornconv.convert_born(filterData(element["Born"]))+'"';
 			//console.log(born);
 		}
 		if(element["Died"] !== undefined){
