@@ -15,7 +15,7 @@ module.exports ={
     },
 
     alltitles: function(){
-        return alltitles.toString();
+        return '"'+alltitles.join('" , "')+'"';
     }
 
 }

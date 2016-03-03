@@ -13,7 +13,7 @@ module.exports ={
 	},
 
 	allcultures: function(){
-		return allcultures.toString();
+		return '"'+allcultures.join('" , "')+'"';
 	}
 
 }
