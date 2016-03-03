@@ -273,8 +273,8 @@ getAllegiance: function (data){
 			return "?";
 		}
 		
-	}
-	function getAllAllegiances(){
+	},
+	allAllegiances: function(){
 		return '"'+allAllegiances.join(',')+'"';
 	}
 }
