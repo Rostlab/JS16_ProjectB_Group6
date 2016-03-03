@@ -1,4 +1,4 @@
-var allAllegiances = [ 
+var allAllegiances = [
    'Allyrion',
    'Ambrose',
    'Arryn',
@@ -262,20 +262,20 @@ var allAllegiances = [
    'Yew',
    'Yronwood' ];
 module.exports ={
-getAllegiance: function (data){
-		if(data.search(/^House/) < 0){
-			return "?";
-		}
-		if(data.match(/House ([A-Z][a-z]+)/)){
-			var ally = (data.match(/House ([A-Z][a-z]+)/))[1];
-				return ally+'"';
-		}else{
-			return "?";
-		}
-		
-	},
-	etAllAllegiances: function(){
- +		return '"'+allAllegiances.join('","')+'"';
- +	}
+   getAllegiance: function (data){
+      if(data.search(/^House/) < 0){
+         return "?";
+      }
+      if(data.match(/House ([A-Z][a-z]+)/)){
+         var ally = (data.match(/House ([A-Z][a-z]+)/))[1];
+         return ally;
+      }else{
+         return "?";
+      }
+
+   },
+   allAllegiances: function(){
+      return '"'+allAllegiances.join('","')+'"';
+   }
 }
 
