@@ -1,4 +1,4 @@
-var allAllegiances = [ '?',
+var allAllegiances = [
   'Allyrion',
   'Ambrose',
   'Arryn',
@@ -273,6 +273,9 @@ getAllegiance: function (data){
 			return "?";
 		}
 		
+	}
+	function getAllAllegiances(){
+		return '"'+allAllegiances.join(',')+'"';
 	}
 }
 

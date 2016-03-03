@@ -35,22 +35,11 @@ function convertToARFF(json){
 		var culture = (element["Culture"] !== undefined)?(cultureconv.convert_culture(filterData(element["Culture"]))):"?";
 		//console.log(culture);
 		var allegiance = (element["Allegiance"] !== undefined)?(allegianceconv.getAllegiance(filterData(element["Allegiance"]))):"?";
-		houses.push(allegiance);
+		//houses.push(allegiance);
 		var title = (element["Title"] !== undefined)?(titleconv.convert_title(element["Title"])):((element["Other Titles"] !== undefined) && (element["Title"] == undefined))?(titleconv.convert_title(element["Other Titles"])):"?";
 		//console.log(title);
 		arff += name+','+culture+','+allegiance+','+born+','+title+','+isAlive+'\n';
 	});
-	function unique(a) {
-    	var temp = {};
-    	for (var i = 0; i < a.length; i++)
-        	temp[a[i]] = true;
-    	var r = [];
-    	for (var k in temp)
-        	r.push(k);
-    	return r;
-	}
-	houses = unique(houses).sort();
-	console.log(houses);
 
 	var header = "@RELATION characters\n@ATTRIBUTE name  STRING\n@ATTRIBUTE culture  {"+cultureconv.allcultures()+"}\n@ATTRIBUTE allegiance  STRING\n@ATTRIBUTE born  NUMERIC\n@ATTRIBUTE title  {"+titleconv.alltitles()+"}\n@ATTRIBUTE isAlive {'dead','alive'}\n";
 
