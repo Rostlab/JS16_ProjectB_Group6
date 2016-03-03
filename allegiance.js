@@ -275,7 +275,7 @@ getAllegiance: function (data){
 		
 	},
 	allAllegiances: function(){
-		return '"'+allAllegiances.join(',')+'"';
+		return '"'+allAllegiances.join('","')+'"';
 	}
 }
 
