@@ -43,7 +43,7 @@ function convertToARFF(json){
 		arff += name+','+culture+','+allegiance+','+born+','+title+','+books.toString()+','+isAlive+'\n';
 	});
 
-	var header = "@RELATION characters\n@ATTRIBUTE name  STRING\n@ATTRIBUTE culture  {"+cultureconv.allcultures()+"}\n@ATTRIBUTE allegiance  STRING\n@ATTRIBUTE born  STRING\n@ATTRIBUTE title  {"+titleconv.alltitles()+"}\n@ATTRIBUTE isAlive {'dead','alive'}\n";
+	var header = "@RELATION characters\n@ATTRIBUTE name  STRING\n@ATTRIBUTE culture  {"+cultureconv.allcultures()+"}\n@ATTRIBUTE allegiance  STRING\n@ATTRIBUTE born  STRING\n@ATTRIBUTE title  {"+titleconv.alltitles()+"}\n@ATTRIBUTE book1 NUMERIC\n@ATTRIBUTE book2 NUMERIC\n@ATTRIBUTE book3 NUMERIC\n@ATTRIBUTE book4 NUMERIC\n@ATTRIBUTE book5 NUMERIC\n@ATTRIBUTE isAlive {'dead','alive'}\n";
 
 	var filestring = header+arff;
 	fs.writeFile("characters.arff",filestring,function (err, data) {
