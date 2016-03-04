@@ -14,31 +14,31 @@ module.exports ={
         var bookMentions = [0,0,0,0,0];
         for(var i=0;i<book1.length;i++) {
             if (bookstring.toLowerCase().indexOf(book1[i]) >= 0) {
-                bookMentions[0] = i+1;
+                bookMentions[0] = 1;
                 break;
             }
         }
         for(var i=0;i<book2.length;i++) {
             if (bookstring.toLowerCase().indexOf(book2[i]) >= 0) {
-                bookMentions[1] = i+1;
+                bookMentions[1] = 1;
                 break;
             }
         }
         for(var i=0;i<book3.length;i++) {
             if (bookstring.toLowerCase().indexOf(book3[i]) >= 0) {
-                bookMentions[2] = i+1;
+                bookMentions[2] = 1;
                 break;
             }
         }
         for(var i=0;i<book4.length;i++) {
             if (bookstring.toLowerCase().indexOf(book4[i]) >= 0) {
-                bookMentions[3] = i+1;
+                bookMentions[3] = 1;
                 break;
             }
         }
         for(var i=0;i<book5.length;i++) {
             if (bookstring.toLowerCase().indexOf(book5[i]) >= 0) {
-                bookMentions[4] = i+1;
+                bookMentions[4] = 1;
                 break;
             }
         }
