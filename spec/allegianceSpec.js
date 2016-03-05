@@ -1,11 +1,14 @@
 var allegiance = require("../allegiance.js");
+var aegon = require("./mockChars.js");
 
 describe("Allegiance converter", function() {
-    it("should find allegiance of book character", function() {
-        expect(true).toBe(true);
+    it("should find allegiance of Aegon", function() {
+        expect(allegiance.getAllegiance(aegon.Allegiance)).toEqual(
+            "Targaryen");
     });
 
     it("should return '?' indicating failure", function() {
-        expect(true).toBe(true);
+        expect(allegiance.getAllegiance("notACharacter")).toEqual(
+            "?");
     });
 });
