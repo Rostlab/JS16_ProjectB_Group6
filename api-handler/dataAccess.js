@@ -9,7 +9,7 @@ module.exports = {
 		https.get('https://got-api.bruck.me/api/houses/', function(res) {
 			console.log(`Got response: ${res.statusCode}`);
 			res.on('data', function(d){
-				var allegiances = all.getAllAllegiances(res);
+				var allegiances = all.getAllAllegiances(d);
 				console.log(allegiances);
 			});
   			// consume response body
@@ -52,7 +52,7 @@ module.exports = {
 		https.get('https://got-api.bruck.me/api/characters/', function(res) {
 			console.log(`Got response: ${res.statusCode}`);
 			res.on('data', function(d){
-				var titles = tit.getAllTitles(res);
+				var titles = tit.getAllTitles(d);
 				console.log(titles);
 			});
   			// consume response body
