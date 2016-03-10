@@ -3,6 +3,7 @@ const cultureconv = require("./culture");
 const bornconv = require("./born");
 const allegianceconv = require("./allegiance");
 const titleconv = require("./title");
+const booksconv = require("./books");
 fs.readFile('charachters_details.txt', function (err, data) {
     if (err) {
         return console.error(err);
@@ -38,10 +39,16 @@ function convertToARFF(json){
 		//houses.push(allegiance);
 		var title = (element["Title"] !== undefined)?(titleconv.convert_title(element["Title"])):((element["Other Titles"] !== undefined) && (element["Title"] == undefined))?(titleconv.convert_title(element["Other Titles"])):"?";
 		//console.log(title);
-		arff += name+','+culture+','+allegiance+','+born+','+title+','+isAlive+'\n';
+		var books = (element["Book(s)"] !== undefined)?(booksconv.convert_books(element["Book(s)"])):"0,0,0,0,0";
+
+		arff += name+','+culture+','+allegiance+','+born+','+title+','+books.toString()+','+isAlive+'\n';
 	});
 
+<<<<<<< HEAD
 	var header = "@RELATION characters\n@ATTRIBUTE name  STRING\n@ATTRIBUTE culture  {"+cultureconv.allcultures()+"}\n@ATTRIBUTE allegiance  {"+allegianceconv.allAllegiances()+"}\n@ATTRIBUTE born  NUMERIC\n@ATTRIBUTE title  {"+titleconv.alltitles()+"}\n@ATTRIBUTE isAlive {'dead','alive'}\n";
+=======
+	var header = "@RELATION characters\n@ATTRIBUTE name  STRING\n@ATTRIBUTE culture  {"+cultureconv.allcultures()+"}\n@ATTRIBUTE allegiance  {"+allegianceconv.allAllegiances()+"}\n@ATTRIBUTE born  NUMERIC\n@ATTRIBUTE title  {"+titleconv.alltitles()+"}\n@ATTRIBUTE book1 NUMERIC\n@ATTRIBUTE book2 NUMERIC\n@ATTRIBUTE book3 NUMERIC\n@ATTRIBUTE book4 NUMERIC\n@ATTRIBUTE book5 NUMERIC\n@ATTRIBUTE isAlive {'dead','alive'}\n";
+>>>>>>> fd505ab9ad3dd6a828b2fe763be1d6e13f72fd59
 
 	var filestring = header+arff;
 	fs.writeFile("characters.arff",filestring,function (err, data) {
