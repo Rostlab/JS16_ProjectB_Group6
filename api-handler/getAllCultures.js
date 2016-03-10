@@ -2,13 +2,10 @@ module.exports={
 	getAllCultures: function(json){
 		var cultures = [];
 		json.forEach(function(element,index){
-			if(element["name"] != undefined){
+			if(element["name"] != undefined && cultures.indexOf(element["name"]) == -1){
 				cultures.push(element["name"]);
-			} else {
-				cultures.push('?');
 			}
 		});
-		cultures = json.parse(cultures);
-		return cultures;
+		return cultures.sort();
 	}
 }

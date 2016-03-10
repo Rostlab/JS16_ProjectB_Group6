@@ -7,12 +7,9 @@ module.exports = {
                     house = element["name"];
                     house = house.replace("House ", '');
                     allegiances.push(house);
-                } else {
-                    allegiances.push('?');
                 }
 
             });
-            allegiances = json.parse(allegiances);
             return allegiances;
         }
 }
