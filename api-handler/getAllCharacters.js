@@ -1,7 +1,7 @@
 module.exports={
 	getAllCharacters: function(json){
 	var characters = [];
-	characters = json.parse(json);
+	characters = JSON.parse(json);
 			return characters;
 	}
 }

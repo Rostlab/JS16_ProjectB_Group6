@@ -1,5 +1,6 @@
 module.exports = {
         getAllAllegiances: function(json) {
+            json = JSON.parse(json);
             var allegiances = [];
             var house = '?';
             json.forEach(function(element, index) {
