@@ -1,57 +1,42 @@
 const https = require("https");
-const all = require("./getAllAllegiances");
+
 const cha = require("./getAllCharacters");
 const cul = require("./getAllCultures");
+const hou = require("./getAllHouses");
 const tit = require("./getAllTitles");
 
 module.exports = {
-	allegiances: function(){
-		https.get('https://got-api.bruck.me/api/houses/', function(res) {
-			console.log(`Got response: ${res.statusCode}`);
-			var data = "";
-			res.on('data', function(d){
-				data += d;
-			});
-			res.on('end', function(){
-				var allegiances = all.getAllAllegiances(data);
-				console.log(allegiances);
-			});
-  			// consume response body
-  			res.resume();
-		}).on('error', function(e) {
-  			console.log(`Got error: ${e.message}`);
-		});
-	},
-
-	characters: function(){
+	
+	characters: function(callback){
 		https.get('https://got-api.bruck.me/api/characters/', function(res) {
-			console.log(`Got response: ${res.statusCode}`);
+			//console.log(`Got response: ${res.statusCode}`);
 			var data = "";
 			res.on('data', function(d){
 				data += d;
 			});
 			res.on('end', function(){
-				var characters = cha.getAllCharacters(data);
-				console.log(characters);
+				//var characters = '"'+(cha.getAllCharacters(data)).join('" , "')+'"';
+				//console.log(cha.getAllCharacters(data));
+				callback(cha.getAllCharacters(data));
+
 			});
-			
   			// consume response body
   			res.resume();
 		}).on('error', function(e) {
   			console.log(`Got error: ${e.message}`);
 		});
+		
 	},
 
-	cultures: function() {
+	cultures: function(callback) {
 		https.get('https://got-api.bruck.me/api/cultures/', function(res) {
-			console.log(`Got response: ${res.statusCode}`);
+			//console.log(`Got response: ${res.statusCode}`);
 			var data = "";
 			res.on('data', function(d){
 				data += d;
 			});
 			res.on('end', function(){
-				var cultures = cul.getAllCultures(data);
-				console.log(cultures);
+				callback(cul.getAllCultures(data));
 			});
   			// consume response body
   			res.resume();
@@ -60,16 +45,36 @@ module.exports = {
 		});
 	},
 
-	titles: function() {
-		https.get('https://got-api.bruck.me/api/characters/', function(res) {
-			console.log(`Got response: ${res.statusCode}`);
+	houses: function(callback){
+		https.get('https://got-api.bruck.me/api/houses/', function(res) {
+			//console.log(`Got response: ${res.statusCode}`);
 			var data = "";
 			res.on('data', function(d){
 				data += d;
 			});
 			res.on('end', function(){
-				var titles = tit.getAllTitles(data);
-				console.log(titles);
+				callback(hou.getAllHouses(data));
+			});
+  			// consume response body
+  			res.resume();
+		}).on('error', function(e) {
+  			console.log(`Got error: ${e.message}`);
+		});
+	},
+
+	places: function(callback){
+		callback("undefined");
+	},
+
+	titles: function(callback) {
+		https.get('https://got-api.bruck.me/api/characters/', function(res) {
+			//console.log(`Got response: ${res.statusCode}`);
+			var data = "";
+			res.on('data', function(d){
+				data += d;
+			});
+			res.on('end', function(){
+				callback(tit.getAllTitles(data));
 			});
   			// consume response body
   			res.resume();
