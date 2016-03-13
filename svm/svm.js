@@ -58,7 +58,7 @@ function initializeSVM(){
         nu:	[0.01,0.125,0.5,1],
     
         // kernels parameters
-        kernelType: 'POLY', 
+        kernelType: 'RBF', 
         degree:	[2,3,4],
         gamma: [0.03125, 0.125, 0.5, 2, 8],
         r:	[0.125,0.5,0,1],
@@ -75,12 +75,13 @@ function initializeSVM(){
     });
     
     clf.train(data).progress(function(rate){
-        console.log(parseFloat(rate).toFixed(2)+"%");
+        console.log(parseFloat(rate*100).toFixed(2)+"%");
     }).done(function () {
         // predict things
         data.forEach(function(ex,index){
-            var prediction = clf.predictSync(ex[0]);
-            console.log('%s => %d', names[index], prediction);
+            //console.log(ex);
+            var prediction = clf.predictProbabilitiesSync(ex[0]);
+            console.log('%s => %d', names[index], prediction["0"]);
         });
     });
     
