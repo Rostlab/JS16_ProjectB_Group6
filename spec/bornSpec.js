@@ -1,4 +1,4 @@
-var bornConv = require("../born.js");
+var bornConv = require("../weka/born.js");
 var aegon = require("./mockChars.js");
 
 describe("Born converter", function() {

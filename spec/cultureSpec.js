@@ -1,4 +1,4 @@
-var cultureConv = require("../culture.js");
+var cultureConv = require("../weka/culture.js");
 var aegon = require("./mockChars.js");
 
 describe("Culture converter", function() {

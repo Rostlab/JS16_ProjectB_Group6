@@ -96,7 +96,7 @@ function initializeSVM(){
 
         // kernels parameters
         kernelType: 'POLY',
-        degree:	[''],
+        degree:	['2'],
         gamma: [0.001, 0.01, 0.5],
         r:	[0.125,0.5,0,1],
 

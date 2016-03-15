@@ -1,4 +1,4 @@
-var bookConv = require("../books.js");
+var bookConv = require("../weka/books.js");
 var aegon = require("./mockChars.js");
 
 describe("Book converter", function() {
