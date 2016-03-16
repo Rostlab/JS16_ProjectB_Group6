@@ -1,4 +1,4 @@
-var titleConv = require("../title.js");
+var titleConv = require("../weka/title.js");
 var aegon = require("./mockChars.js");
 
 describe("Title converter", function() {

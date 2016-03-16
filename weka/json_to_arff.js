@@ -44,11 +44,9 @@ function convertToARFF(json){
 		arff += name+','+culture+','+allegiance+','+born+','+title+','+books.toString()+','+isAlive+'\n';
 	});
 
-<<<<<<< HEAD
-	var header = "@RELATION characters\n@ATTRIBUTE name  STRING\n@ATTRIBUTE culture  {"+cultureconv.allcultures()+"}\n@ATTRIBUTE allegiance  {"+allegianceconv.allAllegiances()+"}\n@ATTRIBUTE born  NUMERIC\n@ATTRIBUTE title  {"+titleconv.alltitles()+"}\n@ATTRIBUTE isAlive {'dead','alive'}\n";
-=======
+	//var header = "@RELATION characters\n@ATTRIBUTE name  STRING\n@ATTRIBUTE culture  {"+cultureconv.allcultures()+"}\n@ATTRIBUTE allegiance  {"+allegianceconv.allAllegiances()+"}\n@ATTRIBUTE born  NUMERIC\n@ATTRIBUTE title  {"+titleconv.alltitles()+"}\n@ATTRIBUTE isAlive {'dead','alive'}\n";
 	var header = "@RELATION characters\n@ATTRIBUTE name  STRING\n@ATTRIBUTE culture  {"+cultureconv.allcultures()+"}\n@ATTRIBUTE allegiance  {"+allegianceconv.allAllegiances()+"}\n@ATTRIBUTE born  NUMERIC\n@ATTRIBUTE title  {"+titleconv.alltitles()+"}\n@ATTRIBUTE book1 NUMERIC\n@ATTRIBUTE book2 NUMERIC\n@ATTRIBUTE book3 NUMERIC\n@ATTRIBUTE book4 NUMERIC\n@ATTRIBUTE book5 NUMERIC\n@ATTRIBUTE isAlive {'dead','alive'}\n";
->>>>>>> fd505ab9ad3dd6a828b2fe763be1d6e13f72fd59
+
 
 	var filestring = header+arff;
 	fs.writeFile("characters.arff",filestring,function (err, data) {

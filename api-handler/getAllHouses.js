@@ -6,8 +6,10 @@ module.exports = {
             json.forEach(function(element, index) {
                 if (element["name"] != undefined) {
                     house = element["name"];
-                    house = house.replace("House ", '');
-                    houses.push(house);
+                    //house = house.replace("House ", '');
+                    if (houses.indexOf(house) == -1) {
+                        houses.push(house);
+                    }
                 }
 
             });

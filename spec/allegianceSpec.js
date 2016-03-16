@@ -1,4 +1,4 @@
-var allegiance = require("../allegiance.js");
+var allegiance = require("../weka/allegiance.js");
 var aegon = require("./mockChars.js");
 
 describe("Allegiance converter", function() {
