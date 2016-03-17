@@ -2,6 +2,8 @@ const fs = require("fs");
 const data = require("./dataAccess");
 const promise = require("promise")
 
+const time_reference = 305;
+
 var arff = "";
 var header = "";
 var allCha;
@@ -9,6 +11,7 @@ var allCul;
 var allHou;
 var allReg;
 var allTit;
+var deadCharacters = [];
 
 to_arff();
 
@@ -34,9 +37,16 @@ function proCharacters(){
 	return new promise(function (fulfill, reject){
     	data.characters(function (res){
     		arff = "@DATA\n";
-			res.forEach(function(element,index){
-
-				var name = (element["name"] !== undefined)?('"'+element["name"]+'"'):"?";
+    		res.forEach(function(element,index){
+    			if(deadCharacters.indexOf(element["name"]) == -1){
+    				if(element["dateOfDeath"] !== undefined || element["placeOfDeath"] !== undefined || (time_reference - element["dateOfBirth"] >= 100) ){
+						deadCharacters.push(element["name"]);
+					}
+				}	
+    		});
+    		res.forEach(function(element,index){
+    		  if(filter(element["name"])){
+				var name = '"'+element["name"]+'"';
 				//console.log(name);
 				var title = (element["title"] !== undefined)?(element["title"]):"?";
 				//console.log(title);
@@ -46,6 +56,9 @@ function proCharacters(){
 				//console.log(culture);
 				var dateOfBirth = (element["dateOfBirth"] !== undefined)?(element["dateOfBirth"]):"?";
 				//console.log(dateOfBirth);
+
+				arff += name+','+title+','+male+','+culture+','+dateOfBirth;
+
 				var dateOfDeath = (element["dateOfDeath"] !== undefined)?(element["dateOfDeath"]):"?";
 				//console.log(dateOfDeath);
 				var mother = (element["mother"] !== undefined)?('"'+element["mother"]+'"'):"?";
@@ -56,6 +69,9 @@ function proCharacters(){
 				//console.log(heir);
 				var placeOfBirth = (element["placeOfBirth"] !== undefined)?(element["placeOfBirth"]):"?";
 				//console.log(placeOfBirth);
+
+				arff += ','+dateOfDeath+','+mother+','+father+','+heir+','+placeOfBirth;
+
 				var placeOfDeath = (element["placeOfDeath"] !== undefined)?(element["placeOfDeath"]):"?";
 				//console.log(placeOfDeath);
 				var house = (element["house"] !== undefined)?(element["house"]):"?";
@@ -66,19 +82,35 @@ function proCharacters(){
 				//console.log(allegiance);
 				var characterPopularity = (element["characterPopularity"] !== undefined)?(element["characterPopularity"]):"?";
 				//console.log(characterPopularity);
+
+				arff +=	','+placeOfDeath+','+house+','+spouse+','+allegiance+','+characterPopularity;
+
 				var parents = (element["parents"] !== undefined)?(element["parents"]):"?";
 				//console.log(parents);
 				var books = (element["books"] !== undefined)?(element["books"]):"?";
 				//console.log(books);
 				var placeOfLastVisit = (element["placeOfLastVisit"] !== undefined)?(element["placeOfLastVisit"]):"?";
 				//console.log(placeOfLastVisit);
-				var isAlive = (element["dateOfDeath"] == undefined && element["placeOfDeath"] == undefined)?(1):(0);
+				var isAlive = (deadCharacters.indexOf(element["name"] == -1))?(1):(0);
 				//console.log(isAlive);		
+				
+				arff += ','+parents+','+books+','+placeOfLastVisit+','+isAlive;
 
-				arff += name+','+title+','+male+','+culture+','+dateOfBirth+','
-					+dateOfDeath+','+mother+','+father+','+heir+','+placeOfBirth+','
-					+placeOfDeath+','+house+','+spouse+','+allegiance+','+characterPopularity+','
-					+parents+','+books+','+placeOfLastVisit+','+isAlive+'\n';
+				var isAliveMother = (element["mother"] !== undefined)?((deadCharacters.indexOf(element["mother"]) == -1)?(1):(0)):"?";
+				var isAliveFather = (element["father"] !== undefined)?((deadCharacters.indexOf(element["father"]) == -1)?(1):(0)):"?";
+				var isAliveHeir = (element["heir"] !== undefined)?((deadCharacters.indexOf(element["heir"]) == -1)?(1):(0)):"?";
+				var isAliveSpouse = (element["spouse"] !== undefined)?((deadCharacters.indexOf(element["spouse"]) == -1)?(1):(0)):"?";
+				var isAliveAllegiance = (element["allegiance"] !== undefined)?((deadCharacters.indexOf(element["allegiance"]) == -1)?(1):(0)):"?";
+				var isAliveParents = (element["parents"] !== undefined)?((deadCharacters.indexOf(element["parents"]) == -1)?(1):(0)):"?";
+
+				arff += ','+isAliveMother+','+isAliveFather+','+isAliveHeir+','+isAliveSpouse+','+isAliveParents+','+isAliveAllegiance;
+
+				var isMarried = (element["spouse"] !== undefined)?(1):(0);
+
+				arff += ','+isMarried;
+
+				arff += '\n';
+			  }
 			});
 			fulfill(arff);
   		});
@@ -150,5 +182,16 @@ function head(allCha, allCul, allHou, allReg, allTit){
 		+"@ATTRIBUTE parents {"+allCha+"}\n"
 		+"@ATTRIBUTE books STRING\n"
 		+"@ATTRIBUTE placeOfLastVisit {"+allReg+"}\n"
-		+"@ATTRIBUTE isAlive NUMERIC\n";
+		+"@ATTRIBUTE isAlive NUMERIC\n"
+		+"@ATTRIBUTE isAliveMother NUMERIC\n"
+		+"@ATTRIBUTE isAliveFather NUMERIC\n"
+		+"@ATTRIBUTE isAliveHeir NUMERIC\n"
+		+"@ATTRIBUTE isAliveSpouse NUMERIC\n"
+		+"@ATTRIBUTE isAliveAllegiance NUMERIC\n"
+		+"@ATTRIBUTE isAliveParents NUMERIC\n"
+		+"@ATTRIBUTE isMarried NUMERIC\n";
+}
+
+function filter(name){
+	return true && (name !== undefined) && (name.search(/House/) !== 0);
 }
