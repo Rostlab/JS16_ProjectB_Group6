@@ -51,7 +51,7 @@ function proCharacters(){
 				//console.log(name);
 				var title = (element["title"] !== undefined)?('"'+element["title"]+'"'):"?";
 				//console.log(title);
-				var male = (element["male"] !== undefined)?(element["male"]):"?";
+				var male = (element["male"] !== undefined)?((element["male"])?(1):(0)):"?";
 				//console.log(male);
 				var culture = (element["culture"] !== undefined)?('"'+element["culture"]+'"'):"?";
 				//console.log(culture);
