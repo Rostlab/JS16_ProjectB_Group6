@@ -1,100 +1,154 @@
 const fs = require("fs");
 const data = require("./dataAccess");
+const promise = require("promise")
+
+var arff = "";
+var header = "";
+var allCha;
+var allCul;
+var allHou;
+var allReg;
+var allTit;
 
 to_arff();
 
 function to_arff(){
-	data.characters(process);
+	var proCha = proCharacters();
+	var proCul = proCultures();
+	var proHou = proHouses();
+	var proNam = proNames();
+	var proReg = proRegions();
+	var proTit = proTitles();
+	promise.all([proCha, proCul, proHou, proNam, proReg, proTit]).then(function(v){
+		head(allCha, allCul, allHou, allReg, allTit);
+		fs.writeFile("characters.arff", header+arff, function (err, data) {
+	   		if (err) {
+	       		return console.error(err);
+	   		}
+	   		console.log("FILE SAVED.");
+		});
+	});
 }
 
-function process(res){
-	var arff = "@DATA\n";
-	res.forEach(function(element,index){
+function proCharacters(){
+	return new promise(function (fulfill, reject){
+    	data.characters(function (res){
+    		arff = "@DATA\n";
+			res.forEach(function(element,index){
 
-		var name = (element["name"] !== undefined)?('"'+element["name"]+'"'):"?";
-		//console.log(name);
-		var title = (element["title"] !== undefined)?(element["title"]):"?";
-		//console.log(title);
-		var male = (element["male"] !== undefined)?(element["male"]):"?";
-		//console.log(male);
-		var culture = (element["culture"] !== undefined)?(element["culture"]):"?";
-		//console.log(culture);
-		var dateOfBirth = (element["dateOfBirth"] !== undefined)?(element["dateOfBirth"]):"?";
-		//console.log(dateOfBirth);
-		var mother = (element["mother"] !== undefined)?('"'+element["mother"]+'"'):"?";
-		//console.log(mother);
-		var father = (element["father"] !== undefined)?('"'+element["father"]+'"'):"?";
-		//console.log(father);
-		var heir = (element["heir"] !== undefined)?('"'+element["heir"]+'"'):"?";
-		//console.log(heir);
-		var placeOfBirth = (element["placeOfBirth"] !== undefined)?(element["placeOfBirth"]):"?";
-		//console.log(placeOfBirth);
-		var skills = (element["skills"] !== undefined)?(element["skills"]):"?";
-		//console.log(skills);
-		var house = (element["house"] !== undefined)?(element["house"]):"?";
-		//console.log(house);
-		var isAlive = (element["dateOfDeath"] == undefined && element["placeOfDeath"] == undefined)?(1):(0);
-		//console.log(isAlive);
+				var name = (element["name"] !== undefined)?('"'+element["name"]+'"'):"?";
+				//console.log(name);
+				var title = (element["title"] !== undefined)?(element["title"]):"?";
+				//console.log(title);
+				var male = (element["male"] !== undefined)?(element["male"]):"?";
+				//console.log(male);
+				var culture = (element["culture"] !== undefined)?(element["culture"]):"?";
+				//console.log(culture);
+				var dateOfBirth = (element["dateOfBirth"] !== undefined)?(element["dateOfBirth"]):"?";
+				//console.log(dateOfBirth);
+				var dateOfDeath = (element["dateOfDeath"] !== undefined)?(element["dateOfDeath"]):"?";
+				//console.log(dateOfDeath);
+				var mother = (element["mother"] !== undefined)?('"'+element["mother"]+'"'):"?";
+				//console.log(mother);
+				var father = (element["father"] !== undefined)?('"'+element["father"]+'"'):"?";
+				//console.log(father);
+				var heir = (element["heir"] !== undefined)?('"'+element["heir"]+'"'):"?";
+				//console.log(heir);
+				var placeOfBirth = (element["placeOfBirth"] !== undefined)?(element["placeOfBirth"]):"?";
+				//console.log(placeOfBirth);
+				var placeOfDeath = (element["placeOfDeath"] !== undefined)?(element["placeOfDeath"]):"?";
+				//console.log(placeOfDeath);
+				var house = (element["house"] !== undefined)?(element["house"]):"?";
+				//console.log(house);
+				var spouse = (element["spouse"] !== undefined)?(element["spouse"]):"?";
+				//console.log(spouse);
+				var allegiance = (element["allegiance"] !== undefined)?(element["allegiance"]):"?";
+				//console.log(allegiance);
+				var characterPopularity = (element["characterPopularity"] !== undefined)?(element["characterPopularity"]):"?";
+				//console.log(characterPopularity);
+				var parents = (element["parents"] !== undefined)?(element["parents"]):"?";
+				//console.log(parents);
+				var books = (element["books"] !== undefined)?(element["books"]):"?";
+				//console.log(books);
+				var placeOfLastVisit = (element["placeOfLastVisit"] !== undefined)?(element["placeOfLastVisit"]):"?";
+				//console.log(placeOfLastVisit);
+				var isAlive = (element["dateOfDeath"] == undefined && element["placeOfDeath"] == undefined)?(1):(0);
+				//console.log(isAlive);		
 
-		arff += name+','+title+','+male+','+culture+','+dateOfBirth+','
-			+mother+','+father+','+heir+','+placeOfBirth+','+skills+','
-			+house+','+isAlive+'\n';
+				arff += name+','+title+','+male+','+culture+','+dateOfBirth+','
+					+dateOfDeath+','+mother+','+father+','+heir+','+placeOfBirth+','
+					+placeOfDeath+','+house+','+spouse+','+allegiance+','+characterPopularity+','
+					+parents+','+books+','+placeOfLastVisit+','+isAlive+'\n';
+			});
+			fulfill(arff);
+  		});
 	});
-	
-	
-	var filestring = "@RELATION characters\n@ATTRIBUTE name  STRING\n@ATTRIBUTE title  {";
-	fs.writeFile("characters.arff",filestring,function (err, data) {
-	   	if (err) {
-	       return console.error(err);
-	   	}
-	   	titles();
-	   	console.log("FILE SAVED.");
+}
+
+function proCultures(){
+	return new promise(function (fulfill, reject){
+    	data.cultures(function (res){
+    		allCul = res;
+    		fulfill(res);
+		});
 	});
+}
 
-	function titles(){
-	   	data.titles(function(res){
-	   		res+="}\n@ATTRIBUTE male NUMERIC\n@ATTRIBUTE culture  {";
-	   		fs.appendFile("characters.arff",res,function (err, data) {
-	   			if (err) {
-	    	   		return console.error(err);
-	   			}
-	   			cultures();
-			});
+function proHouses(){
+	return new promise(function (fulfill, reject){
+    	data.houses(function (res){
+    		allHou = res;
+    		fulfill(res);
 		});
-	}
+	});
+}
 
-	function cultures(){
-	   	data.cultures(function(res){
-	   		res+="}\n@ATTRIBUTE dateOfBirth  NUMERIC\n@ATTRIBUTE mother STRING\n@ATTRIBUTE father STRING\n@ATTRIBUTE heir STRING\n@ATTRIBUTE placeOfBirth {";
-	   		fs.appendFile("characters.arff",res,function (err, data) {
-	   			if (err) {
-	    	   		return console.error(err);
-	   			}
-	   			places();
-			});
+function proNames(){
+	return new promise(function (fulfill, reject){
+    	data.names(function (res){
+    		allCha = res;
+    		fulfill(res);
 		});
-	}
+	});
+}
 
-	function places(){
-	   	data.places(function(res){
-	   		res+="}\n@ATTRIBUTE skills STRING\n@ATTRIBUTE house  {";
-	   		fs.appendFile("characters.arff",res,function (err, data) {
-	   			if (err) {
-	    	   		return console.error(err);
-	   			}
-	   			houses();
-			});
+function proRegions(){
+	return new promise(function (fulfill, reject){
+    	data.regions(function (res){
+    		allReg = res;
+    		fulfill(res);
 		});
-	}
+	});
+}
+	
+function proTitles(){
+	return new promise(function (fulfill, reject){
+   		data.titles(function (res){
+   			allTit = res;
+   			fulfill(res);
+   		});
+	});
+}
 
-	function houses(){
-	   	data.houses(function(res){
-	   		res+="}\n@ATTRIBUTE isAlive NUMERIC\n"+arff;
-	   		fs.appendFile("characters.arff",res,function (err, data) {
-	   			if (err) {
-	    	   		return console.error(err);
-	   			}
-			});
-		});
-	}
+function head(allCha, allCul, allHou, allReg, allTit){
+	header = "@RELATION characters\n"
+		+"@ATTRIBUTE name  {"+allCha+"}\n"
+		+"@ATTRIBUTE title  {"+allTit+"}\n"
+		+"@ATTRIBUTE male NUMERIC\n"
+		+"@ATTRIBUTE culture  {"+allCul+"}\n"
+		+"@ATTRIBUTE dateOfBirth  NUMERIC\n"
+		+"@ATTRIBUTE dateOfDeath  NUMERIC\n"
+		+"@ATTRIBUTE mother {"+allCha+"}\n"
+		+"@ATTRIBUTE father {"+allCha+"}\n"
+		+"@ATTRIBUTE heir {"+allCha+"}\n"
+		+"@ATTRIBUTE placeOfBirth {"+allReg+"}\n"
+		+"@ATTRIBUTE placeOfDeath {"+allReg+"}\n"
+		+"@ATTRIBUTE house  {"+allHou+"}\n"
+		+"@ATTRIBUTE spouse {"+allCha+"}\n"
+		+"@ATTRIBUTE allegiance {"+allCha+"}\n"
+		+"@ATTRIBUTE characterPopularity NUMERIC\n"
+		+"@ATTRIBUTE parents {"+allCha+"}\n"
+		+"@ATTRIBUTE books STRING\n"
+		+"@ATTRIBUTE placeOfLastVisit {"+allReg+"}\n"
+		+"@ATTRIBUTE isAlive NUMERIC\n";
 }
