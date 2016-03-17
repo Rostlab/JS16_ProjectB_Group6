@@ -49,11 +49,11 @@ function proCharacters(){
     		  if(filter(element["name"])){
 				var name = '"'+element["name"]+'"';
 				//console.log(name);
-				var title = (element["title"] !== undefined)?(element["title"]):"?";
+				var title = (element["title"] !== undefined)?('"'+element["title"]+'"'):"?";
 				//console.log(title);
 				var male = (element["male"] !== undefined)?(element["male"]):"?";
 				//console.log(male);
-				var culture = (element["culture"] !== undefined)?(element["culture"]):"?";
+				var culture = (element["culture"] !== undefined)?('"'+element["culture"]+'"'):"?";
 				//console.log(culture);
 				var dateOfBirth = (element["dateOfBirth"] !== undefined)?(element["dateOfBirth"]):"?";
 				//console.log(dateOfBirth);
@@ -68,29 +68,29 @@ function proCharacters(){
 				//console.log(father);
 				var heir = (element["heir"] !== undefined)?('"'+element["heir"]+'"'):"?";
 				//console.log(heir);
-				var placeOfBirth = (element["placeOfBirth"] !== undefined)?(element["placeOfBirth"]):"?";
+				var placeOfBirth = (element["placeOfBirth"] !== undefined)?('"'+element["placeOfBirth"]+'"'):"?";
 				//console.log(placeOfBirth);
 
 				arff += ','+dateOfDeath+','+mother+','+father+','+heir+','+placeOfBirth;
 
-				var placeOfDeath = (element["placeOfDeath"] !== undefined)?(element["placeOfDeath"]):"?";
+				var placeOfDeath = (element["placeOfDeath"] !== undefined)?('"'+element["placeOfDeath"]+'"'):"?";
 				//console.log(placeOfDeath);
-				var house = (element["house"] !== undefined)?(element["house"]):"?";
+				var house = (element["house"] !== undefined)?('"'+element["house"]+'"'):"?";
 				//console.log(house);
-				var spouse = (element["spouse"] !== undefined)?(element["spouse"]):"?";
+				var spouse = (element["spouse"] !== undefined)?('"'+element["spouse"]+'"'):"?";
 				//console.log(spouse);
-				var allegiance = (element["allegiance"] !== undefined)?(element["allegiance"]):"?";
+				var allegiance = (element["allegiance"] !== undefined)?('"'+element["allegiance"]+'"'):"?";
 				//console.log(allegiance);
 				var characterPopularity = (element["characterPopularity"] !== undefined)?(element["characterPopularity"]):"?";
 				//console.log(characterPopularity);
 
 				arff +=	','+placeOfDeath+','+house+','+spouse+','+allegiance+','+characterPopularity;
 
-				var parents = (element["parents"] !== undefined)?(element["parents"]):"?";
+				var parents = (element["parents"] !== undefined)?('"'+element["parents"]+'"'):"?";
 				//console.log(parents);
-				var books = (element["books"] !== undefined)?(element["books"]):"?";
+				var books = (element["books"] !== undefined)?('"'+element["books"]+'"'):"?";
 				//console.log(books);
-				var placeOfLastVisit = (element["placeOfLastVisit"] !== undefined)?(element["placeOfLastVisit"]):"?";
+				var placeOfLastVisit = (element["placeOfLastVisit"] !== undefined)?('"'+element["placeOfLastVisit"]+'"'):"?";
 				//console.log(placeOfLastVisit);
 				var isAlive = (deadCharacters.indexOf(element["name"] == -1))?(1):(0);
 				//console.log(isAlive);		
