@@ -7,8 +7,8 @@ module.exports = {
                 if (element["name"] != undefined) {
                     house = element["name"];
                     //house = house.replace("House ", '');
-                    if (houses.indexOf(house) == -1) {
-                        houses.push(house);
+                    if (houses.indexOf('"'+house+'"') == -1) {
+                        houses.push('"'+house+'"');
                     }
                 }
 

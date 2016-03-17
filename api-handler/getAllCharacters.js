@@ -11,8 +11,8 @@ module.exports={
 		json = JSON.parse(json);
 		var names = [];
 		json.forEach(function(element,index){
-			if(element["name"] != undefined && names.indexOf(element["name"]) == -1){
-				names.push(element["name"]);
+			if(element["name"] != undefined && names.indexOf('"'+element["name"]+'"') == -1){
+				names.push('"'+element["name"]+'"');
 			}
 		});
 		return names.sort();
