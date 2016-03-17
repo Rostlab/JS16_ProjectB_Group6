@@ -22,11 +22,4 @@ module.exports = {
 	getPopularity : getPopularity
 };
 
-getPopularity("Addam Frey",function(success,result){
-	if(success){
-		console.log(result);
-	}else{
-		console.log(success);
-	}
-});
 
