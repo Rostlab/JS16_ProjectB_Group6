@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 module.exports={
 	getAllCharacters: function(json){
 		var characters = [];
@@ -16,3 +18,4 @@ module.exports={
 		return names.sort();
 	}
 }
+

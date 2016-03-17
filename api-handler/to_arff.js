@@ -44,10 +44,9 @@ function proCharacters(){
 					}
 				}	
     		});
-    		console.log(deadCharacters);
     		res.forEach(function(element,index){
-
-				var name = (element["name"] !== undefined)?('"'+element["name"]+'"'):"?";
+    		  if(filter(element["name"])){
+				var name = '"'+element["name"]+'"';
 				//console.log(name);
 				var title = (element["title"] !== undefined)?(element["title"]):"?";
 				//console.log(title);
@@ -111,6 +110,7 @@ function proCharacters(){
 				arff += ','+isMarried;
 
 				arff += '\n';
+			  }
 			});
 			fulfill(arff);
   		});
@@ -190,4 +190,8 @@ function head(allCha, allCul, allHou, allReg, allTit){
 		+"@ATTRIBUTE isAliveAllegiance NUMERIC\n"
 		+"@ATTRIBUTE isAliveParents NUMERIC\n"
 		+"@ATTRIBUTE isMarried NUMERIC\n";
+}
+
+function filter(name){
+	return true && (name !== undefined) && (name.search(/House/) !== 0);
 }
