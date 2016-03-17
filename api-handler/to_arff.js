@@ -2,6 +2,8 @@ const fs = require("fs");
 const data = require("./dataAccess");
 const promise = require("promise")
 
+const time_reference = 305;
+
 var arff = "";
 var header = "";
 var allCha;
@@ -36,10 +38,13 @@ function proCharacters(){
     	data.characters(function (res){
     		arff = "@DATA\n";
     		res.forEach(function(element,index){
-    			if((element["dateOfDeath"] !== undefined || element["placeOfDeath"] !== undefined) && deadCharacters.indexOf(element["name"]) == -1){
-					deadCharacters.push(element["name"]);
-				}
+    			if(deadCharacters.indexOf(element["name"]) == -1){
+    				if(element["dateOfDeath"] !== undefined || element["placeOfDeath"] !== undefined || (time_reference - element["dateOfBirth"] >= 100) ){
+						deadCharacters.push(element["name"]);
+					}
+				}	
     		});
+    		console.log(deadCharacters);
     		res.forEach(function(element,index){
 
 				var name = (element["name"] !== undefined)?('"'+element["name"]+'"'):"?";
