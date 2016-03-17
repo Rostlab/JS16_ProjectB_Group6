@@ -39,7 +39,8 @@ function proCharacters(){
     		arff = "@DATA\n";
     		res.forEach(function(element,index){
     			if(deadCharacters.indexOf(element["name"]) == -1){
-    				if(element["dateOfDeath"] !== undefined || element["placeOfDeath"] !== undefined || (time_reference - element["dateOfBirth"] >= 100) ){
+    				if(element["dateOfDeath"] !== undefined || element["placeOfDeath"] !== undefined
+    					|| (time_reference - element["dateOfBirth"] >= 100) ){
 						deadCharacters.push(element["name"]);
 					}
 				}	
@@ -106,8 +107,18 @@ function proCharacters(){
 				arff += ','+isAliveMother+','+isAliveFather+','+isAliveHeir+','+isAliveSpouse+','+isAliveParents+','+isAliveAllegiance;
 
 				var isMarried = (element["spouse"] !== undefined)?(1):(0);
-
-				arff += ','+isMarried;
+				var age = "?";
+				if(element["dateOfBirth"] !== undefined){
+					if(element["dateOfDeath"] !== undefined){
+						age = element["dateOfDeath"] - element["dateOfBirth"];
+					}else if(time_reference - element["dateOfBirth"] < 100){
+						age = time_reference - element["dateOfBirth"];
+					}else if(time_reference - element["dateOfBirth"] >= 100){
+						age = 100;
+					}
+				};
+				
+				arff += ','+isMarried+','+age;
 
 				arff += '\n';
 			  }
@@ -189,7 +200,8 @@ function head(allCha, allCul, allHou, allReg, allTit){
 		+"@ATTRIBUTE isAliveSpouse NUMERIC\n"
 		+"@ATTRIBUTE isAliveAllegiance NUMERIC\n"
 		+"@ATTRIBUTE isAliveParents NUMERIC\n"
-		+"@ATTRIBUTE isMarried NUMERIC\n";
+		+"@ATTRIBUTE isMarried NUMERIC\n"
+		+"@ATTRIBUTE age NUMERIC\n";
 }
 
 function filter(name){
