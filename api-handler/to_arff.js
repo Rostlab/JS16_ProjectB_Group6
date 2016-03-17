@@ -113,6 +113,8 @@ function proCharacters(){
 						age = element["dateOfDeath"] - element["dateOfBirth"];
 					}else if(time_reference - element["dateOfBirth"] < 100){
 						age = time_reference - element["dateOfBirth"];
+					}else if(time_reference - element["dateOfBirth"] >= 100){
+						age = 100;
 					}
 				};
 				
