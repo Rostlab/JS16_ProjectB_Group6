@@ -47,7 +47,7 @@ function proCharacters(){
     		});
     		res.forEach(function(element,index){
     		  if(filter(element["name"])){
-				var name = element["name"];
+				var name = '"'+element["name"]+'"';
 				//console.log(name);
 				var title = (element["title"] !== undefined)?(element["title"]):"?";
 				//console.log(title);
