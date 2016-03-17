@@ -58,7 +58,7 @@ function proCharacters(){
 				var dateOfBirth = (element["dateOfBirth"] !== undefined)?(element["dateOfBirth"]):"?";
 				//console.log(dateOfBirth);
 
-				arff += name+','+title+','+male+','+culture+','+dateOfBirth+',';
+				arff += name+','+title+','+male+','+culture+','+dateOfBirth;
 
 				var dateOfDeath = (element["dateOfDeath"] !== undefined)?(element["dateOfDeath"]):"?";
 				//console.log(dateOfDeath);
@@ -71,7 +71,7 @@ function proCharacters(){
 				var placeOfBirth = (element["placeOfBirth"] !== undefined)?(element["placeOfBirth"]):"?";
 				//console.log(placeOfBirth);
 
-				arff += dateOfDeath+','+mother+','+father+','+heir+','+placeOfBirth+',';
+				arff += ','+dateOfDeath+','+mother+','+father+','+heir+','+placeOfBirth;
 
 				var placeOfDeath = (element["placeOfDeath"] !== undefined)?(element["placeOfDeath"]):"?";
 				//console.log(placeOfDeath);
@@ -84,7 +84,7 @@ function proCharacters(){
 				var characterPopularity = (element["characterPopularity"] !== undefined)?(element["characterPopularity"]):"?";
 				//console.log(characterPopularity);
 
-				arff +=	placeOfDeath+','+house+','+spouse+','+allegiance+','+characterPopularity+',';
+				arff +=	','+placeOfDeath+','+house+','+spouse+','+allegiance+','+characterPopularity;
 
 				var parents = (element["parents"] !== undefined)?(element["parents"]):"?";
 				//console.log(parents);
@@ -95,7 +95,7 @@ function proCharacters(){
 				var isAlive = (deadCharacters.indexOf(element["name"] == -1))?(1):(0);
 				//console.log(isAlive);		
 				
-				arff += parents+','+books+','+placeOfLastVisit+','+isAlive+',';
+				arff += ','+parents+','+books+','+placeOfLastVisit+','+isAlive;
 
 				var isAliveMother = (element["mother"] !== undefined)?((deadCharacters.indexOf(element["mother"]) == -1)?(1):(0)):"?";
 				var isAliveFather = (element["father"] !== undefined)?((deadCharacters.indexOf(element["father"]) == -1)?(1):(0)):"?";
@@ -104,7 +104,13 @@ function proCharacters(){
 				var isAliveAllegiance = (element["allegiance"] !== undefined)?((deadCharacters.indexOf(element["allegiance"]) == -1)?(1):(0)):"?";
 				var isAliveParents = (element["parents"] !== undefined)?((deadCharacters.indexOf(element["parents"]) == -1)?(1):(0)):"?";
 
-				arff += isAliveMother+','+isAliveFather+','+isAliveHeir+','+isAliveSpouse+','+isAliveParents+','+isAliveAllegiance+'\n';
+				arff += ','+isAliveMother+','+isAliveFather+','+isAliveHeir+','+isAliveSpouse+','+isAliveParents+','+isAliveAllegiance;
+
+				var isMarried = (element["spouse"] !== undefined)?(1):(0);
+
+				arff += ','+isMarried;
+
+				arff += '\n';
 			});
 			fulfill(arff);
   		});
@@ -182,5 +188,6 @@ function head(allCha, allCul, allHou, allReg, allTit){
 		+"@ATTRIBUTE isAliveHeir NUMERIC\n"
 		+"@ATTRIBUTE isAliveSpouse NUMERIC\n"
 		+"@ATTRIBUTE isAliveAllegiance NUMERIC\n"
-		+"@ATTRIBUTE isAliveParents NUMERIC\n";
+		+"@ATTRIBUTE isAliveParents NUMERIC\n"
+		+"@ATTRIBUTE isMarried NUMERIC\n";
 }
