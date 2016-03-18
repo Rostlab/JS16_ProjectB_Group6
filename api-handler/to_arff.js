@@ -11,6 +11,9 @@ var allCul;
 var allHou;
 var allReg;
 var allTit;
+var allCul1 = [];
+var allHou1 = [];
+var allReg1 = [];
 var deadCharacters = [];
 
 to_arff();
@@ -23,6 +26,16 @@ function to_arff(){
 	var proReg = proRegions();
 	var proTit = proTitles();
 	promise.all([proCha, proCul, proHou, proNam, proReg, proTit]).then(function(v){
+		allCul1.forEach(function(element, index){
+			if(allCul.indexOf(element) == -1 && element !== ""){
+				allCul.push(element);
+			}
+		});
+		allHou1.forEach(function(element, index){
+			if(allHou.indexOf(element) == -1 && element !== ""){
+				allHou.push(element);
+			}
+		});
 		head(allCha, allCul, allHou, allReg, allTit);
 		fs.writeFile("characters.arff", header+arff, function (err, data) {
 	   		if (err) {
@@ -47,13 +60,14 @@ function proCharacters(){
     		});
     		res.forEach(function(element,index){
     		  if(filter(element["name"])){
-				var name = '"'+element["name"]+'"';
+				var name = '"'+foo(element["name"])+'"';
 				//console.log(name);
 				var title = (element["title"] !== undefined)?('"'+element["title"]+'"'):"?";
 				//console.log(title);
 				var male = (element["male"] !== undefined)?((element["male"])?(1):(0)):"?";
 				//console.log(male);
 				var culture = (element["culture"] !== undefined)?('"'+element["culture"]+'"'):"?";
+				allCul1.push((element["culture"] !== undefined)?('"'+element["culture"]+'"'):"");
 				//console.log(culture);
 				var dateOfBirth = (element["dateOfBirth"] !== undefined)?(element["dateOfBirth"]):"?";
 				//console.log(dateOfBirth);
@@ -62,11 +76,11 @@ function proCharacters(){
 
 				var dateOfDeath = (element["dateOfDeath"] !== undefined)?(element["dateOfDeath"]):"?";
 				//console.log(dateOfDeath);
-				var mother = (element["mother"] !== undefined)?('"'+element["mother"]+'"'):"?";
+				var mother = (element["mother"] !== undefined)?('"'+foo(element["mother"])+'"'):"?";
 				//console.log(mother);
-				var father = (element["father"] !== undefined)?('"'+element["father"]+'"'):"?";
+				var father = (element["father"] !== undefined)?('"'+foo(element["father"])+'"'):"?";
 				//console.log(father);
-				var heir = (element["heir"] !== undefined)?('"'+element["heir"]+'"'):"?";
+				var heir = (element["heir"] !== undefined)?('"'+foo(element["heir"])+'"'):"?";
 				//console.log(heir);
 				var placeOfBirth = (element["placeOfBirth"] !== undefined)?('"'+element["placeOfBirth"]+'"'):"?";
 				//console.log(placeOfBirth);
@@ -76,17 +90,18 @@ function proCharacters(){
 				var placeOfDeath = (element["placeOfDeath"] !== undefined)?('"'+element["placeOfDeath"]+'"'):"?";
 				//console.log(placeOfDeath);
 				var house = (element["house"] !== undefined)?('"'+element["house"]+'"'):"?";
+				allHou1.push((element["house"] !== undefined)?('"'+element["house"]+'"'):"?");
 				//console.log(house);
-				var spouse = (element["spouse"] !== undefined)?('"'+element["spouse"]+'"'):"?";
+				var spouse = (element["spouse"] !== undefined)?('"'+foo(element["spouse"])+'"'):"?";
 				//console.log(spouse);
-				var allegiance = (element["allegiance"] !== undefined)?('"'+element["allegiance"]+'"'):"?";
+				var allegiance = (element["allegiance"] !== undefined)?('"'+foo(element["allegiance"])+'"'):"?";
 				//console.log(allegiance);
 				var characterPopularity = (element["characterPopularity"] !== undefined)?(element["characterPopularity"]):"?";
 				//console.log(characterPopularity);
 
 				arff +=	','+placeOfDeath+','+house+','+spouse+','+allegiance+','+characterPopularity;
 
-				var parents = (element["parents"] !== undefined)?('"'+element["parents"]+'"'):"?";
+				var parents = (element["parents"] !== undefined)?('"'+foo(element["parents"])+'"'):"?";
 				//console.log(parents);
 				var books = (element["books"] !== undefined)?('"'+element["books"]+'"'):"?";
 				//console.log(books);
@@ -206,4 +221,8 @@ function head(allCha, allCul, allHou, allReg, allTit){
 
 function filter(name){
 	return true && (name !== undefined) && (name.search(/House/) !== 0);
+}
+
+function foo(data){
+	return data.toString().replace(/"/g,"'");
 }
