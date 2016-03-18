@@ -1,5 +1,5 @@
 {
-  "name": "projectb_g6",
+  "name": "gotplod",
   "version": "0.0.1",
   "description": "Game of Thrones characters are always in danger of being eliminated. The challenge in this assignment is to see at what risk are the characters that are still alive of being eliminated. The goal of this project is to rank characters by their Percentage Likelihood of Death (PLOD). You will assign a PLOD using machine learning approaches.",
   "scripts": {
@@ -9,8 +9,8 @@
     "type": "git",
     "url": "git+https://github.com/Rostlab/JS16_ProjectB_Group6.git"
   },
-  "author": "Group 6",
-  "license": "ISC",
+  "author": "Subburam Rajaram, Thuy Tran, Anna Sesselmann, George Gar",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Rostlab/JS16_ProjectB_Group6/issues"
   },
@@ -24,7 +24,5 @@
     "jshint": "^2.9.1",
     "jshint-stylish": "^2.1.0"
   },
-  "dependencies": {
-    "node-svm": "^2.1.7"
-  }
+  "dependencies": {}
 }

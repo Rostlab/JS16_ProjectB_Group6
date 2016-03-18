@@ -1,16 +1,23 @@
 language: node_js
 sudo: false
-env:
-  CXX=g++-4.8
+env: CXX=g++-4.8
 node_js:
-    - "stable"
+- stable
 before_script:
-    - npm install -g gulp
+- npm install -g gulp
 script:
-    - gulp test
+- gulp test
 addons:
   apt:
     sources:
     - ubuntu-toolchain-r-test
     packages:
     - g++-4.8
+deploy:
+  on:
+    tags: true
+    branch:master
+  provider: npm
+  email: salahov.cavid@gmail.com
+  api_key:
+    secure: Hy3lpeAuZ+ozJS2/a6qHNGVsjC/m7Cs+ItM/Y/fB11357WKifujZEeJOk5ck6uhWCvctAi36oGciwvI7RXLejkgCEEru7ArNxOk5Q9ukSFCyabjrZg5A31YcuHwppiIoCD4c/6AnSBR76/bTMJuzyZqUN9Dx8qtxGNTYFGdKYBizdW7RJjCD86TUFk6XmjEFRuvh5LeFQCjWa9GYcTax2GCJSR0tI4QvbrBlK0Rskbz/PsPvbw9taV3fZw4UfSSMwiWiF+ti+1Hbb4BArLRZ+WtBURM/TOZjez7vnIPpw20wa+PC+Jbje8uRaykOnEFecwZnTrTdeXWtat3TxDe2cUG5mPTMbsQhZSbDkHREXX6x4/EI1fq7NQHeFFTUgU3rn0UP/rp+Z78FPyk4aSBp75UnobQ78M/CpN9HnZNyxr/KjlHH5aXpm/aNN2Y6VnpXQ8bVNkZM5z98ZPGOsOtLSSn/ZE4PNV6Uu0Gh5eDYSJmjlVMkmuRWbrVpDw2k20NOiF4wDEnG4SHANsfDsbv2hFWgKdD6bWOk0sWKXTbqllgnlIhtpRj14LEil962+V9+3wdL4d/ZJd/gN7HHJnX5M4OVkDA6Gc1vI/wR6bsgLm0X3LwlqJFcnw/cq5s2TA8qTRRnicRN2CT2vd+X5Hdi156zYwUVSYhfogt55Fog71E=
