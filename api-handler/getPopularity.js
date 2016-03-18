@@ -65,9 +65,36 @@ function normalizePopularity(callback){
 	});
 }
 
+/*
+	callback(success,data,err)
+*/
+
+function isPopular(charactername,callback){
+	if(allChars.length === 0){
+		normalizePopularity(function(success,err){
+			if(success){
+				isPopular(charactername,callback);
+			}else{
+				callback(false,undefined,err);
+			}
+		});
+	}else{
+		var scoreObj = allChars.filter(function(character){
+			return character.name === charactername;
+		})[0]; 
+		if(scoreObj !== undefined){
+			var popular = scoreObj.score > 0.34;
+			callback(true,popular);
+		}else{
+			callback(false,undefined,"This character has no popularity");
+		}
+	}	
+}
+
 module.exports = {
 	getPopularity : getPopularity,
-	normalizePopularity: normalizePopularity
+	normalizePopularity: normalizePopularity,
+	isPopular:isPopular
 };
 
 
