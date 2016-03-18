@@ -14,9 +14,10 @@ var allTit;
 var allCul1 = [];
 var allHou1 = [];
 var allReg1 = [];
-var deadCharacters = [];
+var deadCharacters = ["Aegon III Targaryen","Aegon II Targaryen","Aegon IV Targaryen","Aegon I Targaryen","Aegon V Targaryen","Aenys I Targaryen","Aerys II Targaryen","Aerys I Targaryen","Alysanne Targaryen","Baelor I Targaryen","Balon Greyjoy","Daeron II Targaryen","Daeron I Targaryen","Harren Hoare","Jaehaerys I Targaryen","Maekar I Targaryen","Viserys I Targaryen","Jaehaerys II Targaryen","Joffrey Baratheon","Maegor I Targaryen","Robb Stark","Tristifer IV Mudd","Viserys II Targaryen"];
 var smallFolk = ["Septon", "Septa", "Khal", "Bloodrider"];
 var charBookMentions = JSON.parse(require('fs').readFileSync('char_book_mentions.json', 'utf8'));
+
 to_arff();
 
 function to_arff(){
