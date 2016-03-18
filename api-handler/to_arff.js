@@ -15,7 +15,7 @@ var allCul1 = [];
 var allHou1 = [];
 var allReg1 = [];
 var deadCharacters = [];
-
+var smallFolk = ["Septon", "Septa", "Khal", "Bloodrider"];
 to_arff();
 
 function to_arff(){
@@ -166,7 +166,7 @@ function proCharacters(){
 				arff += ','+isAliveMother+','+isAliveFather+','+isAliveHeir+','+isAliveSpouse+','+isAliveParents+','+isAliveAllegiance;
 
 				var isMarried = (element["spouse"] !== undefined)?(1):(0);
-				var isNoble = (element["title"] !== undefined)?1:0;
+				var isNoble = (element["title"] !== undefined && smallFolk.indexOf(element["title"])== -1)?1:0;
 				var age = "?";
 				if(element["dateOfBirth"] !== undefined){
 					if(element["dateOfDeath"] !== undefined){
