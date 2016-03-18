@@ -219,7 +219,7 @@ function head(allCha, allCul, allHou, allReg, allTit){
 		+"@ATTRIBUTE isMarried NUMERIC\n"
 		+"@ATTRIBUTE isNoble NUMERIC \n"
 		+"@ATTRIBUTE age NUMERIC\n"
-		+"@ATTRIBUTE isAlive NUMERIC\n";
+		+"@ATTRIBUTE isAlive \n";
 }
 
 function filter(name){
