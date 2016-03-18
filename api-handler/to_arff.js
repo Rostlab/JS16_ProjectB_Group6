@@ -13,6 +13,53 @@ var allReg;
 var allTit;
 var deadCharacters = [];
 
+
+function proCultures(){
+	return new promise(function (fulfill, reject){
+    	data.cultures(function (res){
+    		allCul = res;
+    		fulfill(res);
+		});
+	});
+}
+
+function proHouses(){
+	return new promise(function (fulfill, reject){
+    	data.houses(function (res){
+    		allHou = res;
+    		fulfill(res);
+		});
+	});
+}
+
+function proNames(){
+	return new promise(function (fulfill, reject){
+    	data.names(function (res){
+    		allCha = res;
+    		fulfill(res);
+		});
+	});
+}
+
+function proRegions(){
+	return new promise(function (fulfill, reject){
+    	data.regions(function (res){
+    		allReg = res;
+    		fulfill(res);
+		});
+	});
+}
+	
+function proTitles(){
+	return new promise(function (fulfill, reject){
+   		data.titles(function (res){
+   			allTit = res;
+   			fulfill(res);
+   		});
+	});
+}
+
+
 to_arff();
 
 function to_arff(){
@@ -107,6 +154,7 @@ function proCharacters(){
 				arff += ','+isAliveMother+','+isAliveFather+','+isAliveHeir+','+isAliveSpouse+','+isAliveParents+','+isAliveAllegiance;
 
 				var isMarried = (element["spouse"] !== undefined)?(1):(0);
+				var isNoble = (element["title"] !== undefined)?1:0;
 				var age = "?";
 				if(element["dateOfBirth"] !== undefined){
 					if(element["dateOfDeath"] !== undefined){
@@ -118,58 +166,13 @@ function proCharacters(){
 					}
 				};
 				
-				arff += ','+isMarried+','+age;
+				arff += ','+isMarried+','+isNoble+','+age;
 
 				arff += '\n';
 			  }
 			});
 			fulfill(arff);
   		});
-	});
-}
-
-function proCultures(){
-	return new promise(function (fulfill, reject){
-    	data.cultures(function (res){
-    		allCul = res;
-    		fulfill(res);
-		});
-	});
-}
-
-function proHouses(){
-	return new promise(function (fulfill, reject){
-    	data.houses(function (res){
-    		allHou = res;
-    		fulfill(res);
-		});
-	});
-}
-
-function proNames(){
-	return new promise(function (fulfill, reject){
-    	data.names(function (res){
-    		allCha = res;
-    		fulfill(res);
-		});
-	});
-}
-
-function proRegions(){
-	return new promise(function (fulfill, reject){
-    	data.regions(function (res){
-    		allReg = res;
-    		fulfill(res);
-		});
-	});
-}
-	
-function proTitles(){
-	return new promise(function (fulfill, reject){
-   		data.titles(function (res){
-   			allTit = res;
-   			fulfill(res);
-   		});
 	});
 }
 
@@ -201,6 +204,7 @@ function head(allCha, allCul, allHou, allReg, allTit){
 		+"@ATTRIBUTE isAliveAllegiance NUMERIC\n"
 		+"@ATTRIBUTE isAliveParents NUMERIC\n"
 		+"@ATTRIBUTE isMarried NUMERIC\n"
+		+"@ATTRIBUTE isNoble NUMERIC\n"
 		+"@ATTRIBUTE age NUMERIC\n";
 }
 
