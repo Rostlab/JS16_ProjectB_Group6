@@ -11,9 +11,13 @@ module.exports={
 		json = JSON.parse(json);
 		var names = [];
 		json.forEach(function(element,index){
-			if(element["name"] != undefined && names.indexOf('"'+element["name"]+'"') == -1){
-				names.push('"'+element["name"]+'"');
-			}
+			var chars = ["name", "mother", "father", "heir", "spouse", "allegiance", "parents"];
+			chars.forEach(function(element1, index1){
+				if(element[element1] !== undefined && names.indexOf('"'+element[element1]+'"') == -1){
+					var name = (element[element1]).toString().replace(/"/g, "'");
+					names.push('"'+name+'"');
+				};
+			});
 		});
 		return names.sort();
 	}
