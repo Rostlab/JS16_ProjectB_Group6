@@ -16,6 +16,7 @@ var allHou1 = [];
 var allReg1 = [];
 var deadCharacters = [];
 var smallFolk = ["Septon", "Septa", "Khal", "Bloodrider"];
+var charBookMentions = JSON.parse(require('fs').readFileSync('char_book_mentions.json', 'utf8'));
 to_arff();
 
 function to_arff(){
@@ -145,8 +146,9 @@ function proCharacters(){
 
 				arff +=	','+placeOfDeath+','+house+','+spouse+','+allegiance+','+characterPopularity;
 
-				var books = (element["books"] !== undefined)?('"'+element["books"]+'"'):"?";
-				//console.log(books);
+				//var books = (element["books"] !== undefined)?('"'+element["books"]+'"'):"?";
+				var books = (charBookMentions[name.replace(/['"]+/g, '')] !== undefined)?charBookMentions[name.replace(/['"]+/g, '')]:'0,0,0,0,0';
+
 				var placeOfLastVisit = (element["placeOfLastVisit"] !== undefined)?('"'+element["placeOfLastVisit"]+'"'):"?";
 				//console.log(placeOfLastVisit);
 				
@@ -203,7 +205,11 @@ function head(allCha, allCul, allHou, allReg, allTit){
 		+"@ATTRIBUTE spouse {"+allCha+"}\n"
 		+"@ATTRIBUTE allegiance {"+allCha+"}\n"
 		+"@ATTRIBUTE characterPopularity NUMERIC\n"
-		+"@ATTRIBUTE books STRING\n"
+		+"@ATTRIBUTE book1 NUMERIC\n"
+		+"@ATTRIBUTE book2 NUMERIC\n"
+		+"@ATTRIBUTE book3 NUMERIC\n"
+		+"@ATTRIBUTE book4 NUMERIC\n"
+		+"@ATTRIBUTE book5 NUMERIC\n"
 		+"@ATTRIBUTE placeOfLastVisit {"+allReg+"}\n"
 		+"@ATTRIBUTE isAliveMother NUMERIC\n"
 		+"@ATTRIBUTE isAliveFather NUMERIC\n"
