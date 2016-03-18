@@ -93,7 +93,6 @@ function isPopular(charactername,callback){
 
 module.exports = {
 	getPopularity : getPopularity,
-	normalizePopularity: normalizePopularity,
 	isPopular:isPopular
 };
 
