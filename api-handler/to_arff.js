@@ -178,10 +178,10 @@ function proCharacters(){
 				};
 				var numDeadRelations = (charDeadRelations[name.replace(/['"]+/g, '')]  !== undefined)?charDeadRelations[name.replace(/['"]+/g, '')]:0;
 				//console.log(numDeadRelations);
-				var boolDeadRelations = (numDeadRelations != 0)?1:0;
-				//console.log(boolDeadRelations);
-				var isAlive = (deadCharacters.indexOf(element["name"]) == -1)?(1):(0);
 
+				var isAlive = (deadCharacters.indexOf(element["name"]) == -1)?(1):(0);
+				var boolDeadRelations = (numDeadRelations != 0 || isAlive == 0)?1:0;
+				//console.log(boolDeadRelations);
 				//console.log(isAlive);
 				
 				arff += ','+isMarried+','+isNoble+','+age+','+numDeadRelations+','+boolDeadRelations+','+isAlive;
