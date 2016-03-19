@@ -14,8 +14,10 @@ var allTit;
 var allCul1 = [];
 var allHou1 = [];
 var allReg1 = [];
-var deadCharacters = [];
+var deadCharacters = ["Aegon III Targaryen","Aegon II Targaryen","Aegon IV Targaryen","Aegon I Targaryen","Aegon V Targaryen","Aenys I Targaryen","Aerys II Targaryen","Aerys I Targaryen","Alysanne Targaryen","Baelor I Targaryen","Balon Greyjoy","Daeron II Targaryen","Daeron I Targaryen","Harren Hoare","Jaehaerys I Targaryen","Maekar I Targaryen","Viserys I Targaryen","Jaehaerys II Targaryen","Joffrey Baratheon","Maegor I Targaryen","Robb Stark","Tristifer IV Mudd","Viserys II Targaryen"];
 var smallFolk = ["Septon", "Septa", "Khal", "Bloodrider"];
+var charBookMentions = JSON.parse(require('fs').readFileSync('char_book_mentions.json', 'utf8'));
+
 to_arff();
 
 function to_arff(){
@@ -145,8 +147,9 @@ function proCharacters(){
 
 				arff +=	','+placeOfDeath+','+house+','+spouse+','+allegiance+','+characterPopularity;
 
-				var books = (element["books"] !== undefined)?('"'+element["books"]+'"'):"?";
-				//console.log(books);
+				//var books = (element["books"] !== undefined)?('"'+element["books"]+'"'):"?";
+				var books = (charBookMentions[name.replace(/['"]+/g, '')] !== undefined)?charBookMentions[name.replace(/['"]+/g, '')]:'0,0,0,0,0';
+
 				var placeOfLastVisit = (element["placeOfLastVisit"] !== undefined)?('"'+element["placeOfLastVisit"]+'"'):"?";
 				//console.log(placeOfLastVisit);
 				
@@ -203,7 +206,11 @@ function head(allCha, allCul, allHou, allReg, allTit){
 		+"@ATTRIBUTE spouse {"+allCha+"}\n"
 		+"@ATTRIBUTE allegiance {"+allCha+"}\n"
 		+"@ATTRIBUTE characterPopularity NUMERIC\n"
-		+"@ATTRIBUTE books STRING\n"
+		+"@ATTRIBUTE book1 NUMERIC\n"
+		+"@ATTRIBUTE book2 NUMERIC\n"
+		+"@ATTRIBUTE book3 NUMERIC\n"
+		+"@ATTRIBUTE book4 NUMERIC\n"
+		+"@ATTRIBUTE book5 NUMERIC\n"
 		+"@ATTRIBUTE placeOfLastVisit {"+allReg+"}\n"
 		+"@ATTRIBUTE isAliveMother NUMERIC\n"
 		+"@ATTRIBUTE isAliveFather NUMERIC\n"
@@ -213,7 +220,7 @@ function head(allCha, allCul, allHou, allReg, allTit){
 		+"@ATTRIBUTE isMarried NUMERIC\n"
 		+"@ATTRIBUTE isNoble NUMERIC \n"
 		+"@ATTRIBUTE age NUMERIC\n"
-		+"@ATTRIBUTE isAlive NUMERIC\n";
+		+"@ATTRIBUTE isAlive \n";
 }
 
 function filter(name){
