@@ -16,8 +16,9 @@ var allHou1 = [];
 var allReg1 = [];
 var deadCharacters = ["Aegon III Targaryen","Aegon II Targaryen","Aegon IV Targaryen","Aegon I Targaryen","Aegon V Targaryen","Aenys I Targaryen","Aerys II Targaryen","Aerys I Targaryen","Alysanne Targaryen","Baelor I Targaryen","Balon Greyjoy","Daeron II Targaryen","Daeron I Targaryen","Harren Hoare","Jaehaerys I Targaryen","Maekar I Targaryen","Viserys I Targaryen","Jaehaerys II Targaryen","Joffrey Baratheon","Maegor I Targaryen","Robb Stark","Tristifer IV Mudd","Viserys II Targaryen"];
 var smallFolk = ["Septon", "Septa", "Khal", "Bloodrider"];
-var charBookMentions = JSON.parse(require('fs').readFileSync('char_book_mentions.json', 'utf8'));
-
+var charBookMentions = JSON.parse(require('fs').readFileSync('support/char_book_mentions.json', 'utf8'));
+var charDeadRelations = JSON.parse(require('fs').readFileSync('support/char_dead_relations.json', 'utf8'));
+//console.log(charDeadRelations);
 to_arff();
 
 function to_arff(){
@@ -102,7 +103,7 @@ function proCharacters(){
     					|| (time_reference - element["dateOfBirth"] >= 100) ){
 						deadCharacters.push(element["name"]);
 					}
-				}	
+				}
     		});
     		res.forEach(function(element,index){
     		  if(filter(element["name"])){
@@ -175,10 +176,15 @@ function proCharacters(){
 						age = 100;
 					}
 				};
+				var numDeadRelations = (charDeadRelations[name.replace(/['"]+/g, '')]  !== undefined)?charDeadRelations[name.replace(/['"]+/g, '')]:0;
+				//console.log(numDeadRelations);
+				var boolDeadRelations = (numDeadRelations != 0)?1:0;
+				//console.log(boolDeadRelations);
 				var isAlive = (deadCharacters.indexOf(element["name"]) == -1)?(1):(0);
-				//console.log(isAlive);	
+
+				//console.log(isAlive);
 				
-				arff += ','+isMarried+','+isNoble+','+age+','+isAlive;
+				arff += ','+isMarried+','+isNoble+','+age+','+numDeadRelations+','+boolDeadRelations+','+isAlive;
 
 				arff += '\n';
 			  }
@@ -220,7 +226,9 @@ function head(allCha, allCul, allHou, allReg, allTit){
 		+"@ATTRIBUTE isMarried NUMERIC\n"
 		+"@ATTRIBUTE isNoble NUMERIC \n"
 		+"@ATTRIBUTE age NUMERIC\n"
-		+"@ATTRIBUTE isAlive \n";
+		+"@ATTRIBUTE numDeadRelations NUMERIC\n"
+		+"@ATTRIBUTE boolDeadRelations NUMERIC\n"
+		+"@ATTRIBUTE isAlive {1,0}\n"
 }
 
 function filter(name){
