@@ -1,6 +1,4 @@
 language: node_js
-sudo: false
-env: CXX=g++-4.8
 node_js:
 - stable
 before_script:
@@ -8,11 +6,6 @@ before_script:
 script:
 - gulp test
 addons:
-  apt:
-    sources:
-    - ubuntu-toolchain-r-test
-    packages:
-    - g++-4.8
 deploy:
   on:
     tags: true
