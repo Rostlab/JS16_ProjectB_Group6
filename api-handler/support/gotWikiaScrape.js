@@ -10,52 +10,55 @@ var characterLinks = [];
 var charRelations = new Object;
 var promises = [];
 
-for (var i=0;i< deadCharacters.length;i++) {
-     var deadchar = deadCharacters[i];
-     characterLinks.push(rootUrl + deadCharacters[i].replace(/[\ ]/g, '_'));
-}
+/*
+    callback(success,data,err)
+*/
+function getDeadRelations(callback){
+    for (var i=0;i< deadCharacters.length;i++) {
+         var deadchar = deadCharacters[i];
+         characterLinks.push(rootUrl + deadCharacters[i].replace(/[\ ]/g, '_'));
+    }
 
-for (var i = 0; i < deadCharacters.length ; i++) {
-    var char = "";
-    promises.push(new promise(function(fulfill,reject){
-        var j = i;
-        request(characterLinks[i], function (error, response, html) {
-            if (!error && response.statusCode == 200) {
-                var $ = cheerio.load(html);
-                $('h2.pi-item.pi-item-spacing.pi-title').each(function(i, element){
-                    char = $(this).text();
-                });
-                $('h3.pi-data-label.pi-secondary-font:contains(Family)').each(function(i, element){
-                    var a = $(this).next().children();
-                    a.map(function(idx, el) {
-                        if(el.name === "a"){
-                            var relations = (el.attribs.title);
-                            if(charRelations[char] === undefined){
-                                charRelations[char] = [];
-                            }
-                            if(charRelations[char].indexOf(relations) === -1){
-                                charRelations[char].push(relations);
-                            }
-                        }
+    for (var i = 0; i < deadCharacters.length ; i++) {
+        var char = "";
+        promises.push(new promise(function(fulfill,reject){
+            var j = i;
+            request(characterLinks[i], function (error, response, html) {
+                if (!error && response.statusCode == 200) {
+                    var $ = cheerio.load(html);
+                    $('h2.pi-item.pi-item-spacing.pi-title').each(function(i, element){
+                        char = $(this).text();
                     });
-                });
-                fulfill(char);
-            }else{
-                fulfill(deadCharacters[j]+" "+error+" "+response.statusCode);
-            }
-        });
-    }));
+                    $('h3.pi-data-label.pi-secondary-font:contains(Family)').each(function(i, element){
+                        var a = $(this).next().children();
+                        a.map(function(idx, el) {
+                            if(el.name === "a"){
+                                var relations = (el.attribs.title);
+                                if(charRelations[char] === undefined){
+                                    charRelations[char] = [];
+                                }
+                                if(charRelations[char].indexOf(relations) === -1){
+                                    charRelations[char].push(relations);
+                                }
+                            }
+                        });
+                    });
+                    fulfill(char);
+                }else{
+                    fulfill(deadCharacters[j]+" "+error+" "+response.statusCode);
+                }
+            });
+        }));
 
+    }
+
+    promise.all(promises).then(function(values){
+        callback(true,charRelations);
+    }).catch(function(error){
+        callback(false,undefined,error);
+    });
 }
 
-promise.all(promises).then(function(values){
-    fs.writeFile("wiki_char_relations.json",JSON.stringify(charRelations),function(err){
-        if(err){
-            console.log(err);
-        }else{
-            console.log("Character realations saved.");
-        }
-    });
-}).catch(function(error){
-    console.log(error);
-});
+module.exports = {
+    getDeadRelations : getDeadRelations
+}
