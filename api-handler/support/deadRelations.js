@@ -47,5 +47,5 @@ function getNumRelatedDead(callback){
 }
 
 module.exports = {
-    getNumRealtedDead : getNumRelatedDead
+    getNumRelatedDead : getNumRelatedDead
 };
