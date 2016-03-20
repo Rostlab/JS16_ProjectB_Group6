@@ -179,17 +179,10 @@ function proCharacters(){
 				//console.log(numDeadRelations);
 
 				var isAlive = (deadCharacters.indexOf(element["name"]) == -1)?(1):(0);
-
-				// dead character not in got wikia - numDeadRelations= 0
-				//var numDeadRelations = (charDeadRelations[name.replace(/['"]+/g, '')]  !== undefined)?charDeadRelations[name.replace(/['"]+/g, '')]:0;
-
-				// dead character not in got wikia - numDeadRelations = 1
-				var numDeadRelation = (charDeadRelations[name.replace(/['"]+/g, '')]  !== undefined)?charDeadRelations[name.replace(/['"]+/g, '')]:0;
-				dead = (isAlive == 0)?1:0;
-				var numDeadRelations = (numDeadRelation >= dead)?numDeadRelation:dead;
-				var boolDeadRelations = (numDeadRelations != 0 || isAlive == 0)?1:0;
-				//console.log(boolDeadRelations);
-				//console.log(isAlive);
+				  
+				//for each (deadCharacter in got wikia) if (char isRelatedTo deadCharacter) then numDeadRelations+=1
+				var numDeadRelations = (charDeadRelations[name.replace(/['"]+/g, '')]  !== undefined)?charDeadRelations[name.replace(/['"]+/g, '')]:0;
+				var boolDeadRelations = (numDeadRelations != 0)?1:0;
 				
 				arff += ','+isMarried+','+isNoble+','+age+','+numDeadRelations+','+boolDeadRelations+','+isAlive;
 
