@@ -18,8 +18,7 @@ var allHou1 = [];
 var allReg1 = [];
 var deadCharacters = ["Aegon III Targaryen","Aegon II Targaryen","Aegon IV Targaryen","Aegon I Targaryen","Aegon V Targaryen","Aenys I Targaryen","Aerys II Targaryen","Aerys I Targaryen","Alysanne Targaryen","Baelor I Targaryen","Balon Greyjoy","Daeron II Targaryen","Daeron I Targaryen","Harren Hoare","Jaehaerys I Targaryen","Maekar I Targaryen","Viserys I Targaryen","Jaehaerys II Targaryen","Joffrey Baratheon","Maegor I Targaryen","Robb Stark","Tristifer IV Mudd","Viserys II Targaryen"];
 var smallFolk = ["Septon", "Septa", "Khal", "Bloodrider"];
-var charBookMentions = JSON.parse(require('fs').readFileSync('support/char_book_mentions.json', 'utf8'));
-//console.log(charDeadRelations);
+
 to_arff();
 
 function to_arff(){
@@ -179,13 +178,16 @@ function proCharacters(){
 
 				arff +=	','+placeOfDeath+','+house+','+spouse+','+allegiance+','+characterPopularity;
 
-				//var books = (element["books"] !== undefined)?('"'+element["books"]+'"'):"?";
-				var books = (charBookMentions[name.replace(/['"]+/g, '')] !== undefined)?charBookMentions[name.replace(/['"]+/g, '')]:'0,0,0,0,0';
+				var book1 = ((element["books"] !== undefined) && (element["books"].indexOf("A Game of Thrones") != -1))?(1):(0);
+				var book2 = ((element["books"] !== undefined) && (element["books"].indexOf("A Clash of Kings") != -1))?(1):(0);
+				var book3 = ((element["books"] !== undefined) && (element["books"].indexOf("A Storm of Swords") != -1))?(1):(0);
+				var book4 = ((element["books"] !== undefined) && (element["books"].indexOf("A Feast for Crows") != -1))?(1):(0);
+				var book5 = ((element["books"] !== undefined) && (element["books"].indexOf("A Dance with Dragons") != -1))?(1):(0);
 
 				var placeOfLastVisit = (element["placeOfLastVisit"] !== undefined)?('"'+element["placeOfLastVisit"]+'"'):"?";
 				//console.log(placeOfLastVisit);
 				
-				arff += ','+books+','+placeOfLastVisit;
+				arff += ','+book1+','+book2+','+book3','+book4+','+book5+','+placeOfLastVisit;
 
 				var isAliveMother = (element["mother"] !== undefined)?((deadCharacters.indexOf(element["mother"]) == -1)?(1):(0)):"?";
 				var isAliveFather = (element["father"] !== undefined)?((deadCharacters.indexOf(element["father"]) == -1)?(1):(0)):"?";
@@ -209,6 +211,9 @@ function proCharacters(){
 				};
 				var isPopular = (allPop[element["name"]] !== undefined && allPop[element["name"]] >= 0.34)?(1):(0);
 				var popularity = (allPop[element["name"]] !== undefined)?(allPop[element["name"]]):(0);
+				//console.log(allPop);
+				//console.log(allRel);
+				//console.log(name);
 				var numDeadRelations = (allRel[element["name"]] !== undefined)?(allRel[element["name"]]):(0);
 				var boolDeadRelations = (allRel[element["name"]] !== undefined)?(1):(0);
 				
