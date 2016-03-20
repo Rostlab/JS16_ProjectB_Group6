@@ -11,13 +11,14 @@ var allCul;
 var allHou;
 var allReg;
 var allTit;
+var allRel;
+var allPop;
 var allCul1 = [];
 var allHou1 = [];
 var allReg1 = [];
 var deadCharacters = ["Aegon III Targaryen","Aegon II Targaryen","Aegon IV Targaryen","Aegon I Targaryen","Aegon V Targaryen","Aenys I Targaryen","Aerys II Targaryen","Aerys I Targaryen","Alysanne Targaryen","Baelor I Targaryen","Balon Greyjoy","Daeron II Targaryen","Daeron I Targaryen","Harren Hoare","Jaehaerys I Targaryen","Maekar I Targaryen","Viserys I Targaryen","Jaehaerys II Targaryen","Joffrey Baratheon","Maegor I Targaryen","Robb Stark","Tristifer IV Mudd","Viserys II Targaryen"];
 var smallFolk = ["Septon", "Septa", "Khal", "Bloodrider"];
 var charBookMentions = JSON.parse(require('fs').readFileSync('support/char_book_mentions.json', 'utf8'));
-var charDeadRelations = JSON.parse(require('fs').readFileSync('support/char_dead_relations.json', 'utf8'));
 //console.log(charDeadRelations);
 to_arff();
 
@@ -28,23 +29,27 @@ function to_arff(){
 	var proNam = proNames();
 	var proReg = proRegions();
 	var proTit = proTitles();
-	promise.all([proCha, proCul, proHou, proNam, proReg, proTit]).then(function(v){
-		allCul1.forEach(function(element, index){
-			if(allCul.indexOf(element) == -1 && element !== ""){
-				allCul.push(element);
-			}
-		});
-		allHou1.forEach(function(element, index){
-			if(allHou.indexOf(element) == -1 && element !== ""){
-				allHou.push(element);
-			}
-		});
-		head(allCha, allCul, allHou, allReg, allTit);
-		fs.writeFile("characters.arff", header+arff, function (err, data) {
-	   		if (err) {
-	       		return console.error(err);
-	   		}
-	   		console.log("FILE SAVED.");
+	var proRel = proRelatedDead();
+	var proPop = proPopularity();
+	promise.all([proRel,proPop]).then(function(values){
+		promise.all([proCha, proCul, proHou, proNam, proReg, proTit]).then(function(v){
+			allCul1.forEach(function(element, index){
+				if(allCul.indexOf(element) == -1 && element !== ""){
+					allCul.push(element);
+				}
+			});
+			allHou1.forEach(function(element, index){
+				if(allHou.indexOf(element) == -1 && element !== ""){
+					allHou.push(element);
+				}
+			});
+			head(allCha, allCul, allHou, allReg, allTit);
+			fs.writeFile("characters.arff", header+arff, function (err, data) {
+		   		if (err) {
+		       		return console.error(err);
+		   		}
+		   		console.log("FILE SAVED.");
+			});
 		});
 	});
 }
@@ -90,6 +95,32 @@ function proTitles(){
    			allTit = res;
    			fulfill(res);
    		});
+	});
+}
+
+function proRelatedDead(){
+	return new promise(function(fulfill,reject){
+		data.relatedDead(function(success,data,err){
+			if(success){
+				allRel = data;
+				fulfill(data);
+			}else{
+				reject(err);
+			}
+		});
+	});
+}
+
+function proPopularity(){
+	return new promise(function(fulfill,reject){
+		data.popular(function(success,data,err){		
+			if(success){
+				allPop = data;
+				fulfill(data);
+			}else{	
+				reject(err);
+			}
+		});
 	});
 }
 
@@ -176,17 +207,16 @@ function proCharacters(){
 						age = 100;
 					}
 				};
-				//console.log(numDeadRelations);
-
-				var isAlive = (deadCharacters.indexOf(element["name"]) == -1)?(1):(0);
-				  
-				//for each (deadCharacter in got wikia) if (char isRelatedTo deadCharacter) then numDeadRelations+=1
-				var numDeadRelations = (charDeadRelations[name.replace(/['"]+/g, '')]  !== undefined)?charDeadRelations[name.replace(/['"]+/g, '')]:0;
-				var boolDeadRelations = (numDeadRelations != 0)?1:0;
+				var isPopular = (allPop[element["name"]] !== undefined && allPop[element["name"]] >= 0.34)?(1):(0);
+				var popularity = (allPop[element["name"]] !== undefined)?(allPop[element["name"]]):(0);
+				var numDeadRelations = (allRel[element["name"]] !== undefined)?(allRel[element["name"]]):(0);
+				var boolDeadRelations = (allRel[element["name"]] !== undefined)?(1):(0);
 				
-				arff += ','+isMarried+','+isNoble+','+age+','+numDeadRelations+','+boolDeadRelations+','+isAlive;
+				var isAlive = (deadCharacters.indexOf(element["name"]) == -1)?(1):(0);			  
+				//for each (deadCharacter in got wikia) if (char isRelatedTo deadCharacter) then numDeadRelations+=1			
+				arff += ','+isMarried+','+isNoble+','+age+','+numDeadRelations+','+boolDeadRelations+','+isPopular+','+popularity+','+isAlive;
 
-				arff += '\n';
+				arff += '\n';	
 			  }
 			});
 			fulfill(arff);
@@ -228,6 +258,8 @@ function head(allCha, allCul, allHou, allReg, allTit){
 		+"@ATTRIBUTE age NUMERIC\n"
 		+"@ATTRIBUTE numDeadRelations NUMERIC\n"
 		+"@ATTRIBUTE boolDeadRelations NUMERIC\n"
+		+"@ATTRIBUTE isPopular NUMERIC\n"
+		+"@ATTRIBUTE popularity NUMERIC\n"
 		+"@ATTRIBUTE isAlive {1,0}\n"
 }
 

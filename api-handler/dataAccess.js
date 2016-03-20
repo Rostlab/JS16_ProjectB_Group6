@@ -5,11 +5,15 @@ const cul = require("./getAllCultures");
 const hou = require("./getAllHouses");
 const reg = require("./getAllRegions");
 const tit = require("./getAllTitles");
+const pop = require("./getPopularity");
+const rel = require("./support/deadRelations");
 
 const url_cha = 'https://got-api.bruck.me/api/characters/';
 const url_cul = 'https://got-api.bruck.me/api/cultures/';
 const url_hou = 'https://got-api.bruck.me/api/houses/';
 const url_reg = 'https://got-api.bruck.me/api/regions/';
+
+
 
 function dataAccess(url, callback){
 	https.get(url, function(res) {
@@ -27,6 +31,10 @@ function dataAccess(url, callback){
 		console.log(`Got error: ${e.message}`);
 	});
 }
+
+
+
+
 
 module.exports = {
 	
@@ -64,5 +72,15 @@ module.exports = {
 		dataAccess(url_cha, function(res){
 			callback(tit.getAllTitles(res));
 		});
+	},
+	popular: function(callback){
+		pop.getPopularity(function(success,data,err){
+			callback(success,data,err);
+		});
+	},
+	relatedDead: function(callback){
+		rel.getNumRelatedDead(function(success,data,err){
+			callback(success,data,err);
+		});
 	}
-}
+};
