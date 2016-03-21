@@ -7,11 +7,11 @@ const reg = require("./getAllRegions");
 const tit = require("./getAllTitles");
 const pop = require("./getPopularity");
 const rel = require("./support/deadRelations");
-
-const url_cha = 'https://got-api.bruck.me/api/characters/';
-const url_cul = 'https://got-api.bruck.me/api/cultures/';
-const url_hou = 'https://got-api.bruck.me/api/houses/';
-const url_reg = 'https://got-api.bruck.me/api/regions/';
+const config = require("./config");
+const url_cha = config.urls.characters;
+const url_cul = config.urls.cultures;
+const url_hou = config.urls.houses;
+const url_reg = config.url.regions;
 
 
 
