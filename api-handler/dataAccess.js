@@ -5,13 +5,12 @@ const cul = require("./getAllCultures");
 const hou = require("./getAllHouses");
 const reg = require("./getAllRegions");
 const tit = require("./getAllTitles");
-const pop = require("./getPopularity");
 const rel = require("./support/deadRelations");
 const config = require("./config");
 const url_cha = config.urls.characters;
 const url_cul = config.urls.cultures;
 const url_hou = config.urls.houses;
-const url_reg = config.url.regions;
+const url_reg = config.urls.regions;
 
 
 
@@ -71,11 +70,6 @@ module.exports = {
 	titles: function(callback) {
 		dataAccess(url_cha, function(res){
 			callback(tit.getAllTitles(res));
-		});
-	},
-	popular: function(callback){
-		pop.getPopularity(function(success,data,err){
-			callback(success,data,err);
 		});
 	},
 	relatedDead: function(callback){
