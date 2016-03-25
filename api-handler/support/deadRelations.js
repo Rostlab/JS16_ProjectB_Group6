@@ -25,6 +25,9 @@ function getNumRelatedDead(callback){
             for (var property in data) {
                 if (data.hasOwnProperty(property)) {
                     var relationarray = data[property];
+                    if(relationarray == []){
+                        console.log(relationarray);
+                    }
                     relationarray.forEach(function(element,index){
                         if(distinct[element] === undefined){
                             distinct[element] = 1;
