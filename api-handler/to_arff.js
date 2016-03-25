@@ -144,39 +144,32 @@ function proCharacters(){
 
 				arff += name+','+title+','+male+','+culture+','+dateOfBirth;
 
-				var dateOfDeath = (element["dateOfDeath"] !== undefined)?(element["dateOfDeath"]):"?";
 				var mother = (element["mother"] !== undefined)?('"'+foo(element["mother"])+'"'):"?";
 				var father = (element["father"] !== undefined)?('"'+foo(element["father"])+'"'):"?";
 				var heir = (element["heir"] !== undefined)?('"'+foo(element["heir"])+'"'):"?";
-				var placeOfBirth = (element["placeOfBirth"] !== undefined)?('"'+element["placeOfBirth"]+'"'):"?";
 
-				arff += ','+dateOfDeath+','+mother+','+father+','+heir+','+placeOfBirth;
+				arff += ','+mother+','+father+','+heir;
 
-				var placeOfDeath = (element["placeOfDeath"] !== undefined)?('"'+element["placeOfDeath"]+'"'):"?";
 				var house = (element["house"] !== undefined)?('"'+element["house"]+'"'):"?";
 				allHou1.push((element["house"] !== undefined)?('"'+element["house"]+'"'):"?");
 				var spouse = (element["spouse"] !== undefined)?('"'+foo(element["spouse"])+'"'):"?";
-				var allegiance = (element["allegiance"] !== undefined)?('"'+foo(element["allegiance"])+'"'):"?";
 
-				arff +=	','+placeOfDeath+','+house+','+spouse+','+allegiance;
+				arff +=	','+house+','+spouse;
 
-				var book1 = ((element["books"] !== undefined) && (element["books"].indexOf("A Game of Thrones") != -1))?(1):(0);
-				var book2 = ((element["books"] !== undefined) && (element["books"].indexOf("A Clash of Kings") != -1))?(1):(0);
-				var book3 = ((element["books"] !== undefined) && (element["books"].indexOf("A Storm of Swords") != -1))?(1):(0);
-				var book4 = ((element["books"] !== undefined) && (element["books"].indexOf("A Feast for Crows") != -1))?(1):(0);
-				var book5 = ((element["books"] !== undefined) && (element["books"].indexOf("A Dance with Dragons") != -1))?(1):(0);
+				var GoT = ((element["books"] !== undefined) && (element["books"].indexOf("A Game of Thrones") != -1))?(1):(0);
+				var CoK = ((element["books"] !== undefined) && (element["books"].indexOf("A Clash of Kings") != -1))?(1):(0);
+				var SoS = ((element["books"] !== undefined) && (element["books"].indexOf("A Storm of Swords") != -1))?(1):(0);
+				var FfC = ((element["books"] !== undefined) && (element["books"].indexOf("A Feast for Crows") != -1))?(1):(0);
+				var DwD = ((element["books"] !== undefined) && (element["books"].indexOf("A Dance with Dragons") != -1))?(1):(0);
 
-				var placeOfLastVisit = (element["placeOfLastVisit"] !== undefined)?('"'+element["placeOfLastVisit"]+'"'):"?";
-				
-				arff += ','+book1+','+book2+','+book3+','+book4+','+book5+','+placeOfLastVisit;
+				arff += ','+GoT+','+CoK+','+SoS+','+FfC+','+DwD;
 
 				var isAliveMother = (element["mother"] !== undefined)?((deadCharacters.indexOf(element["mother"]) == -1)?(1):(0)):"?";
 				var isAliveFather = (element["father"] !== undefined)?((deadCharacters.indexOf(element["father"]) == -1)?(1):(0)):"?";
 				var isAliveHeir = (element["heir"] !== undefined)?((deadCharacters.indexOf(element["heir"]) == -1)?(1):(0)):"?";
 				var isAliveSpouse = (element["spouse"] !== undefined)?((deadCharacters.indexOf(element["spouse"]) == -1)?(1):(0)):"?";
-				var isAliveAllegiance = (element["allegiance"] !== undefined)?((deadCharacters.indexOf(element["allegiance"]) == -1)?(1):(0)):"?";
 
-				arff += ','+isAliveMother+','+isAliveFather+','+isAliveHeir+','+isAliveSpouse+','+isAliveAllegiance;
+				arff += ','+isAliveMother+','+isAliveFather+','+isAliveHeir+','+isAliveSpouse;
 
 				var isMarried = (element["spouse"] !== undefined)?(1):(0);
 				var isNoble = (element["title"] !== undefined && smallFolk.indexOf(element["title"])== -1)?1:0;
@@ -191,15 +184,15 @@ function proCharacters(){
 					}
 				};
 
-				var popularity = ((element["pageRank"] - minRank)/(maxRank - minRank)).toFixed(2);
-				var isPopular = (popularity >= 0.34)?(1):(0);
+				var popularityScore = ((element["pageRank"] - minRank)/(maxRank - minRank)).toFixed(2);
+				var isPopular = (popularityScore >= 0.34)?(1):(0);
 
 				var numDeadRelations = (allRel[element["name"]] !== undefined)?(allRel[element["name"]]):(0);
-				var boolDeadRelations = (allRel[element["name"]] !== undefined)?(1):(0);
+				var isRelatedToDead = (allRel[element["name"]] !== undefined)?(1):(0);
 				
 				var isAlive = (deadCharacters.indexOf(element["name"]) == -1)?(1):(0);			  
 			
-				arff += ','+isMarried+','+isNoble+','+age+','+numDeadRelations+','+boolDeadRelations+','+isPopular+','+popularity+','+isAlive;
+				arff += ','+isMarried+','+isNoble+','+age+','+numDeadRelations+','+isRelatedToDead+','+isPopular+','+popularityScore+','+isAlive;
 
 				arff += '\n';	
 			  }
@@ -217,33 +210,27 @@ function head(allCha, allCul, allHou, allReg, allTit){
 		+"@ATTRIBUTE male NUMERIC\n"
 		+"@ATTRIBUTE culture  {"+allCul+"}\n"
 		+"@ATTRIBUTE dateOfBirth  NUMERIC\n"
-		+"@ATTRIBUTE dateOfDeath  NUMERIC\n"
 		+"@ATTRIBUTE mother {"+allCha+"}\n"
 		+"@ATTRIBUTE father {"+allCha+"}\n"
 		+"@ATTRIBUTE heir {"+allCha+"}\n"
-		+"@ATTRIBUTE placeOfBirth {"+allReg+"}\n"
-		+"@ATTRIBUTE placeOfDeath {"+allReg+"}\n"
 		+"@ATTRIBUTE house  {"+allHou+"}\n"
 		+"@ATTRIBUTE spouse {"+allCha+"}\n"
-		+"@ATTRIBUTE allegiance {"+allCha+"}\n"
-		+"@ATTRIBUTE book1 NUMERIC\n"
-		+"@ATTRIBUTE book2 NUMERIC\n"
-		+"@ATTRIBUTE book3 NUMERIC\n"
-		+"@ATTRIBUTE book4 NUMERIC\n"
-		+"@ATTRIBUTE book5 NUMERIC\n"
-		+"@ATTRIBUTE placeOfLastVisit {"+allReg+"}\n"
+		+"@ATTRIBUTE GoT NUMERIC\n"
+		+"@ATTRIBUTE CoK NUMERIC\n"
+		+"@ATTRIBUTE SoS NUMERIC\n"
+		+"@ATTRIBUTE FfC NUMERIC\n"
+		+"@ATTRIBUTE DwD NUMERIC\n"
 		+"@ATTRIBUTE isAliveMother NUMERIC\n"
 		+"@ATTRIBUTE isAliveFather NUMERIC\n"
 		+"@ATTRIBUTE isAliveHeir NUMERIC\n"
 		+"@ATTRIBUTE isAliveSpouse NUMERIC\n"
-		+"@ATTRIBUTE isAliveAllegiance NUMERIC\n"
 		+"@ATTRIBUTE isMarried NUMERIC\n"
 		+"@ATTRIBUTE isNoble NUMERIC \n"
 		+"@ATTRIBUTE age NUMERIC\n"
 		+"@ATTRIBUTE numDeadRelations NUMERIC\n"
-		+"@ATTRIBUTE boolDeadRelations NUMERIC\n"
+		+"@ATTRIBUTE isRelatedToDead NUMERIC\n"
 		+"@ATTRIBUTE isPopular NUMERIC\n"
-		+"@ATTRIBUTE popularity NUMERIC\n"
+		+"@ATTRIBUTE popularityScore NUMERIC\n"
 		+"@ATTRIBUTE isAlive {1,0}\n"
 }
 
