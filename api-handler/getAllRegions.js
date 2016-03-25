@@ -1,4 +1,9 @@
 module.exports={
+	/**
+	*Gets all unique regions
+	*@param {JSON} json
+	*@return {Array} regions
+	*/
 	getAllRegions: function(json){
 		json = JSON.parse(json);
 		var regions = [];

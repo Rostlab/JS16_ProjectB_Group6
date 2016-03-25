@@ -20,6 +20,9 @@ var smallFolk = ["Septon", "Septa", "Khal", "Bloodrider"];
 
 to_arff();
 
+/**
+*Main function to create .arff file
+*/
 function to_arff(){
 	var proRel = proRelatedDead();
 	promise.all([proRel]).then(function(values){
@@ -52,6 +55,11 @@ function to_arff(){
 		console.log(error);
 	});;
 }
+
+/**
+*Gets all cultures
+*@return {Promise} promise
+*/
 function proCultures(){
 	return new promise(function (fulfill, reject){
     	data.cultures(function (res){
@@ -61,6 +69,10 @@ function proCultures(){
 	});
 }
 
+/**
+*Gets all houses
+*@return {Promise} promise
+*/
 function proHouses(){
 	return new promise(function (fulfill, reject){
     	data.houses(function (res){
@@ -70,6 +82,10 @@ function proHouses(){
 	});
 }
 
+/**
+*Gets all character names
+*@return {Promise} promise
+*/
 function proNames(){
 	return new promise(function (fulfill, reject){
     	data.names(function (res){
@@ -79,6 +95,10 @@ function proNames(){
 	});
 }
 
+/**
+*Gets all regions
+*@return {Promise} promise
+*/
 function proRegions(){
 	return new promise(function (fulfill, reject){
     	data.regions(function (res){
@@ -87,7 +107,11 @@ function proRegions(){
 		});
 	});
 }
-	
+
+/**
+*Gets all titles
+*@return {Promise} promise
+*/	
 function proTitles(){
 	return new promise(function (fulfill, reject){
    		data.titles(function (res){
@@ -97,6 +121,10 @@ function proTitles(){
 	});
 }
 
+/**
+*Gets number of dead realtives for characters
+*@return {Promise} promise
+*/
 function proRelatedDead(){
 	return new promise(function(fulfill,reject){
 		data.relatedDead(function(success,data,err){
@@ -110,6 +138,10 @@ function proRelatedDead(){
 	});
 }
 
+/**
+*Gets all characters and creates arff body from their attributes
+*@return {Promise} promise
+*/
 function proCharacters(){
 	return new promise(function (fulfill, reject){
     	data.characters(function (res){
@@ -209,7 +241,9 @@ function proCharacters(){
 	});
 }
 
-
+/**
+*Creates arff header
+*/
 function head(allCha, allCul, allHou, allReg, allTit){
 	header = "@RELATION characters\n"
 		+"@ATTRIBUTE name  {"+allCha+"}\n"
@@ -247,10 +281,18 @@ function head(allCha, allCul, allHou, allReg, allTit){
 		+"@ATTRIBUTE isAlive {1,0}\n"
 }
 
+/**
+*Filters charcter names to not contain houses
+*@return {Boolean} bool
+*/
 function filter(name){
 	return true && (name !== undefined) && (name.search(/House/) !== 0);
 }
 
+/**
+*Filters String to not contain double quotes
+*@return {String} string
+*/
 function foo(data){
 	return data.toString().replace(/"/g,"'");
 }

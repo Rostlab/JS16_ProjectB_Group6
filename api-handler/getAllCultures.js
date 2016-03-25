@@ -1,4 +1,9 @@
 module.exports={
+	/**
+	*Gets all unique cultures
+	*@param {JSON} json
+	*@return {Array} cultures
+	*/
 	getAllCultures: function(json){
 		json = JSON.parse(json);
 		var cultures = [];

@@ -1,4 +1,9 @@
 module.exports={
+	/**
+	*Gets all unique titles
+	*@param {JSON} json
+	*@return {Array} titles
+	*/
 	getAllTitles: function(json){
 		json = JSON.parse(json);
 		var titles = [];
