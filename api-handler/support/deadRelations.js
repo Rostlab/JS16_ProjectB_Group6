@@ -15,8 +15,9 @@ var diffInWikis = {
     "Robert Arryn": 7
 };
 
-/*
-    callback(success,data,error)
+/**
+*Gets number of dead realtives for characters
+*@param {callback} callback
 */
 function getNumRelatedDead(callback){
     scraper.getDeadRelations(function(success,data,err){
@@ -48,6 +49,12 @@ function getNumRelatedDead(callback){
         }
     });
 }
+/**
+*Callback used by getNumRelatedDead
+*@param {Boolean} success
+*@param {Array} result
+*@param {Error} err
+*/
 
 module.exports = {
     getNumRelatedDead : getNumRelatedDead

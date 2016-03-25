@@ -13,10 +13,12 @@ const url_hou = config.urls.houses;
 const url_reg = config.urls.regions;
 
 
-
-function dataAccess(url, callback){
+/**
+*Requests data from the API
+*@param {String} url
+*@param {callback} callback
+*/function dataAccess(url, callback){
 	https.get(url, function(res) {
-		//console.log(`Got response: ${res.statusCode}`);
 		var data = "";
 		res.on('data', function(d){
 			data += d;
@@ -24,14 +26,16 @@ function dataAccess(url, callback){
 		res.on('end', function(){
 			callback(data);
 		});
-		// consume response body
 		res.resume();
 	}).on('error', function(e) {
 		console.log(`Got error: ${e.message}`);
 	});
 }
 
-
+/**
+*Callback used by dataAccess
+*@param {JSON} data
+*/
 
 
 

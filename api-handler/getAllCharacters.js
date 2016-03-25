@@ -1,12 +1,22 @@
 const fs = require("fs");
 
 module.exports={
+	/**
+	*Gets all characters
+	*@param {JSON} json
+	*@return {Array} characters
+	*/
 	getAllCharacters: function(json){
 		var characters = [];
 		characters = JSON.parse(json);
 		return characters;
 	},
 
+	/**
+	*Gets all unique character names
+	*@param {JSON} json
+	*@return {Array} names
+	*/
 	getAllNames: function(json){
 		json = JSON.parse(json);
 		var names = [];
