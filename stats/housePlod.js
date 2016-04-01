@@ -22,5 +22,5 @@ csv.each('characters.csv').on('data', function(data) {
 	housePlod.sort(function(a, b) {
     	return b.PLOD - a.PLOD;
 	});
-  console.log('Houses with PLOD:'+ JSON.stringify(housePlod));
+  console.log(JSON.stringify(housePlod));
 })
