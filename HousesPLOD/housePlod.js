@@ -17,7 +17,10 @@ csv.each('characters.csv').on('data', function(data) {
 }).on('end', function() {
 	housePlod = [];
 	for(var house in houseHelp){
-		housePlod.push({House:house,PLOD:(houseHelp[house][1])/(houseHelp[house][0])});
+		housePlod.push({House:house,PLOD:(Math.round(1000*(houseHelp[house][1]/houseHelp[house][0])))/1000});
 	}
+	housePlod.sort(function(a, b) {
+    	return b.PLOD - a.PLOD;
+	});
   console.log('Houses with PLOD:'+ JSON.stringify(housePlod));
 })
