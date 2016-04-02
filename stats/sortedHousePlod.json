@@ -1,1048 +1,127 @@
 [{
-    "House": "house",
-    "PLOD": null
-}, {
-    "House": "House Lannister of Casterly Rock",
-    "PLOD": 0.982
-}, {
-    "House": "Blacks",
-    "PLOD": 0.977
-}, {
-    "House": "House Moore",
-    "PLOD": 0.94
-}, {
-    "House": "House Egen",
-    "PLOD": 0.937
-}, {
-    "House": "Good Masters",
-    "PLOD": 0.926
-}, {
     "House": "House Cassel",
-    "PLOD": 0.917
+    "plod": 0.917
 }, {
-    "House": "Brave Companions",
-    "PLOD": 0.908
-}, {
-    "House": "Khal",
-    "PLOD": 0.904
-}, {
-    "House": "House Cockshaw",
-    "PLOD": 0.886
-}, {
-    "House": "House Celtigar",
-    "PLOD": 0.869
-}, {
-    "House": "House Drinkwater",
-    "PLOD": 0.864
-}, {
-    "House": "House Foote",
-    "PLOD": 0.85
-}, {
-    "House": "House Blackwood",
-    "PLOD": 0.847
-}, {
-    "House": "Thenn",
-    "PLOD": 0.842
-}, {
-    "House": "House Darry",
-    "PLOD": 0.84
-}, {
-    "House": "City Watch of King's Landing",
-    "PLOD": 0.839
-}, {
-    "House": "House Gaunt",
-    "PLOD": 0.838
-}, {
-    "House": "House Rhysling",
-    "PLOD": 0.828
-}, {
-    "House": "House Ball",
-    "PLOD": 0.828
-}, {
-    "House": "House Condon",
-    "PLOD": 0.828
-}, {
-    "House": "House Nymeros Martell",
-    "PLOD": 0.822
-}, {
-    "House": "House Toyne",
-    "PLOD": 0.821
-}, {
-    "House": "House Cerwyn",
-    "PLOD": 0.816
-}, {
-    "House": "Unsullied",
-    "PLOD": 0.813
-}, {
-    "House": "Company of the Cat",
-    "PLOD": 0.813
-}, {
-    "House": "House Blackfyre",
-    "PLOD": 0.813
+    "House": "House Nymeros",
+    "plod": 0.822
 }, {
     "House": "House Velaryon",
-    "PLOD": 0.812
-}, {
-    "House": "House Strickland",
-    "PLOD": 0.811
-}, {
-    "House": "The Citadel",
-    "PLOD": 0.799
+    "plod": 0.812
 }, {
     "House": "brotherhood without banners",
-    "PLOD": 0.774
+    "plod": 0.774
 }, {
     "House": "House Poole",
-    "PLOD": 0.763
+    "plod": 0.763
 }, {
     "House": "House Stokeworth",
-    "PLOD": 0.758
+    "plod": 0.758
 }, {
     "House": "House Targaryen",
-    "PLOD": 0.751
-}, {
-    "House": "House Strong",
-    "PLOD": 0.746
-}, {
-    "House": "House Marbrand",
-    "PLOD": 0.742
+    "plod": 0.751
 }, {
     "House": "House Clegane",
-    "PLOD": 0.742
-}, {
-    "House": "House Wull",
-    "PLOD": 0.74
-}, {
-    "House": "House Thorne",
-    "PLOD": 0.738
-}, {
-    "House": "House Borrell",
-    "PLOD": 0.725
-}, {
-    "House": "House Tyrell of Brightwater Keep",
-    "PLOD": 0.707
-}, {
-    "House": "Stormcrows",
-    "PLOD": 0.693
-}, {
-    "House": "House Sunglass",
-    "PLOD": 0.687
-}, {
-    "House": "House Uffering",
-    "PLOD": 0.66
-}, {
-    "House": "House Bolton of the Dreadfort",
-    "PLOD": 0.64
-}, {
-    "House": "House Penrose",
-    "PLOD": 0.636
-}, {
-    "House": "House Lonmouth",
-    "PLOD": 0.623
-}, {
-    "House": "House Fossoway of Cider Hall",
-    "PLOD": 0.621
-}, {
-    "House": "House Charlton",
-    "PLOD": 0.611
-}, {
-    "House": "House Darklyn",
-    "PLOD": 0.609
-}, {
-    "House": "House Hornwood",
-    "PLOD": 0.609
-}, {
-    "House": "Graces",
-    "PLOD": 0.608
-}, {
-    "House": "House Tallhart",
-    "PLOD": 0.607
-}, {
-    "House": "House Norrey",
-    "PLOD": 0.603
+    "plod": 0.742
 }, {
     "House": "House Tully",
-    "PLOD": 0.602
-}, {
-    "House": "House Brax",
-    "PLOD": 0.6
-}, {
-    "House": "Golden Company",
-    "PLOD": 0.586
+    "plod": 0.602
 }, {
     "House": "House Cole",
-    "PLOD": 0.578
-}, {
-    "House": "House Bracken",
-    "PLOD": 0.57
-}, {
-    "House": "House Caron",
-    "PLOD": 0.561
-}, {
-    "House": "House of Pahl",
-    "PLOD": 0.557
-}, {
-    "House": "Thirteen",
-    "PLOD": 0.553
-}, {
-    "House": "House Trant",
-    "PLOD": 0.55
-}, {
-    "House": "House Flint of Widow's Watch",
-    "PLOD": 0.55
-}, {
-    "House": "Citadel",
-    "PLOD": 0.543
-}, {
-    "House": "House Erenford",
-    "PLOD": 0.542
-}, {
-    "House": "House Lefford",
-    "PLOD": 0.539
-}, {
-    "House": "House Hardyng",
-    "PLOD": 0.539
-}, {
-    "House": "House Hoare",
-    "PLOD": 0.534
-}, {
-    "House": "House Jast",
-    "PLOD": 0.533
-}, {
-    "House": "Black Ears",
-    "PLOD": 0.528
-}, {
-    "House": "House Whent",
-    "PLOD": 0.521
-}, {
-    "House": "House Flint",
-    "PLOD": 0.52
-}, {
-    "House": "House Peake",
-    "PLOD": 0.517
-}, {
-    "House": "House Baratheon",
-    "PLOD": 0.507
+    "plod": 0.578
 }, {
     "House": "House Chelsted",
-    "PLOD": 0.504
-}, {
-    "House": "House Blount",
-    "PLOD": 0.503
-}, {
-    "House": "House Locke",
-    "PLOD": 0.503
-}, {
-    "House": "House Cuy",
-    "PLOD": 0.5
-}, {
-    "House": "House Fell",
-    "PLOD": 0.5
+    "plod": 0.504
 }, {
     "House": "House Rowan",
-    "PLOD": 0.498
-}, {
-    "House": "House Royce",
-    "PLOD": 0.497
-}, {
-    "House": "House of Kandaq",
-    "PLOD": 0.497
+    "plod": 0.498
 }, {
     "House": "House Seaworth",
-    "PLOD": 0.492
+    "plod": 0.492
 }, {
     "House": "House Rosby",
-    "PLOD": 0.489
-}, {
-    "House": "Mance Rayder",
-    "PLOD": 0.488
-}, {
-    "House": "House Inchfield",
-    "PLOD": 0.486
-}, {
-    "House": "House Karstark",
-    "PLOD": 0.481
+    "plod": 0.489
 }, {
     "House": "House Tarly",
-    "PLOD": 0.481
-}, {
-    "House": "House Greenfield",
-    "PLOD": 0.48
-}, {
-    "House": "House Heddle",
-    "PLOD": 0.479
+    "plod": 0.481
 }, {
     "House": "House Lannister",
-    "PLOD": 0.477
-}, {
-    "House": "House Caswell",
-    "PLOD": 0.474
-}, {
-    "House": "House Wythers",
-    "PLOD": 0.473
-}, {
-    "House": "House of Galare",
-    "PLOD": 0.469
+    "plod": 0.478
 }, {
     "House": "House Butterwell",
-    "PLOD": 0.468
-}, {
-    "House": "House Pemford",
-    "PLOD": 0.468
-}, {
-    "House": "House Risley",
-    "PLOD": 0.468
-}, {
-    "House": "Pureborn",
-    "PLOD": 0.467
-}, {
-    "House": "House Morrigen",
-    "PLOD": 0.465
-}, {
-    "House": "Kingdom of the Three Daughters",
-    "PLOD": 0.465
-}, {
-    "House": "Faceless Men",
-    "PLOD": 0.459
-}, {
-    "House": "House Cupps",
-    "PLOD": 0.456
-}, {
-    "House": "House Sarsfield",
-    "PLOD": 0.456
+    "plod": 0.468
 }, {
     "House": "House Westerling",
-    "PLOD": 0.456
-}, {
-    "House": "House Lorch",
-    "PLOD": 0.452
-}, {
-    "House": "House Mooton",
-    "PLOD": 0.452
-}, {
-    "House": "House Wells",
-    "PLOD": 0.451
-}, {
-    "House": "House Dayne",
-    "PLOD": 0.448
+    "plod": 0.456
 }, {
     "House": "House Hightower",
-    "PLOD": 0.448
+    "plod": 0.448
 }, {
     "House": "House Greyjoy",
-    "PLOD": 0.447
-}, {
-    "House": "House Cox",
-    "PLOD": 0.446
+    "plod": 0.447
 }, {
     "House": "House Stark",
-    "PLOD": 0.446
-}, {
-    "House": "House Mallery",
-    "PLOD": 0.442
-}, {
-    "House": "House Woolfield",
-    "PLOD": 0.441
-}, {
-    "House": "House Beesbury",
-    "PLOD": 0.432
-}, {
-    "House": "House Grell",
-    "PLOD": 0.43
-}, {
-    "House": "House Plumm",
-    "PLOD": 0.43
-}, {
-    "House": "Iron Bank of Braavos",
-    "PLOD": 0.426
+    "plod": 0.446
 }, {
     "House": "House Arryn",
-    "PLOD": 0.42
-}, {
-    "House": "House Ryswell",
-    "PLOD": 0.419
-}, {
-    "House": "House Allyrion",
-    "PLOD": 0.413
-}, {
-    "House": "Burned Men",
-    "PLOD": 0.412
-}, {
-    "House": "Sea watch",
-    "PLOD": 0.402
-}, {
-    "House": "House Grandison",
-    "PLOD": 0.402
-}, {
-    "House": "House Varner",
-    "PLOD": 0.402
-}, {
-    "House": "House Rambton",
-    "PLOD": 0.402
-}, {
-    "House": "House Dondarrion",
-    "PLOD": 0.402
-}, {
-    "House": "House Hawick",
-    "PLOD": 0.397
-}, {
-    "House": "House Glover",
-    "PLOD": 0.397
-}, {
-    "House": "House Farring",
-    "PLOD": 0.393
-}, {
-    "House": "House of Reznak",
-    "PLOD": 0.389
-}, {
-    "House": "House Wylde",
-    "PLOD": 0.389
-}, {
-    "House": "Summer Islands",
-    "PLOD": 0.388
-}, {
-    "House": "House Osgrey",
-    "PLOD": 0.387
+    "plod": 0.42
 }, {
     "House": "Night's Watch",
-    "PLOD": 0.387
-}, {
-    "House": "House Swann",
-    "PLOD": 0.386
+    "plod": 0.387
 }, {
     "House": "House Manderly",
-    "PLOD": 0.386
-}, {
-    "House": "House Tarth",
-    "PLOD": 0.383
+    "plod": 0.386
 }, {
     "House": "House Merryweather",
-    "PLOD": 0.379
+    "plod": 0.379
 }, {
     "House": "House Oakheart",
-    "PLOD": 0.375
-}, {
-    "House": "House Yarwyck",
-    "PLOD": 0.366
-}, {
-    "House": "Three-eyed crow",
-    "PLOD": 0.363
-}, {
-    "House": "House Wayn",
-    "PLOD": 0.36
-}, {
-    "House": "House Staunton",
-    "PLOD": 0.355
-}, {
-    "House": "House Crakehall",
-    "PLOD": 0.353
-}, {
-    "House": "House Payne",
-    "PLOD": 0.353
-}, {
-    "House": "wildling",
-    "PLOD": 0.35
-}, {
-    "House": "House Conklyn",
-    "PLOD": 0.35
-}, {
-    "House": "House Dustin",
-    "PLOD": 0.348
+    "plod": 0.375
 }, {
     "House": "House Florent",
-    "PLOD": 0.347
+    "plod": 0.347
 }, {
-    "House": "House Lothston",
-    "PLOD": 0.344
-}, {
-    "House": "House Massey",
-    "PLOD": 0.341
-}, {
-    "House": "House Hollard",
-    "PLOD": 0.338
-}, {
-    "House": "House Blackbar",
-    "PLOD": 0.337
-}, {
-    "House": "House Ryger",
-    "PLOD": 0.336
-}, {
-    "House": "House Harlaw",
-    "PLOD": 0.332
-}, {
-    "House": "Second Sons",
-    "PLOD": 0.331
-}, {
-    "House": "House Sunderland",
-    "PLOD": 0.329
-}, {
-    "House": "Chataya's brothel",
-    "PLOD": 0.327
-}, {
-    "House": "Windblown",
-    "PLOD": 0.323
-}, {
-    "House": "House Peckledon",
-    "PLOD": 0.323
-}, {
-    "House": "House Hunter",
-    "PLOD": 0.323
-}, {
-    "House": "House Leygood",
-    "PLOD": 0.322
-}, {
-    "House": "House Vyrwel",
-    "PLOD": 0.32
-}, {
-    "House": "House Santagar",
-    "PLOD": 0.317
-}, {
-    "House": "House Gower",
-    "PLOD": 0.317
+    "House": "House Baratheon",
+    "plod": 0.341
 }, {
     "House": "?",
-    "PLOD": 0.316
-}, {
-    "House": "House Suggs",
-    "PLOD": 0.313
-}, {
-    "House": "House Smallwood",
-    "PLOD": 0.313
-}, {
-    "House": "House Estermont",
-    "PLOD": 0.313
-}, {
-    "House": "House Lydden",
-    "PLOD": 0.312
+    "plod": 0.316
 }, {
     "House": "House Mormont",
-    "PLOD": 0.311
-}, {
-    "House": "House Dayne of High Hermitage",
-    "PLOD": 0.311
-}, {
-    "House": "House Fossoway of New Barrel",
-    "PLOD": 0.311
+    "plod": 0.311
 }, {
     "House": "R'hllor",
-    "PLOD": 0.309
-}, {
-    "House": "House Yronwood",
-    "PLOD": 0.305
-}, {
-    "House": "House Cafferen",
-    "PLOD": 0.304
-}, {
-    "House": "House Qorgyle",
-    "PLOD": 0.3
-}, {
-    "House": "House Umber",
-    "PLOD": 0.298
-}, {
-    "House": "Moon Brothers",
-    "PLOD": 0.297
+    "plod": 0.309
 }, {
     "House": "House Frey",
-    "PLOD": 0.294
-}, {
-    "House": "House Ashford",
-    "PLOD": 0.293
-}, {
-    "House": "Undying Ones",
-    "PLOD": 0.292
-}, {
-    "House": "House Stout",
-    "PLOD": 0.288
-}, {
-    "House": "House Ambrose",
-    "PLOD": 0.286
-}, {
-    "House": "House Boggs",
-    "PLOD": 0.286
-}, {
-    "House": "House Hasty",
-    "PLOD": 0.285
-}, {
-    "House": "Antler Men",
-    "PLOD": 0.282
-}, {
-    "House": "House Roote",
-    "PLOD": 0.282
-}, {
-    "House": "House Reyne",
-    "PLOD": 0.282
-}, {
-    "House": "House Toland",
-    "PLOD": 0.28
-}, {
-    "House": "House Redfort",
-    "PLOD": 0.278
-}, {
-    "House": "House Templeton",
-    "PLOD": 0.278
-}, {
-    "House": "House Leek",
-    "PLOD": 0.278
-}, {
-    "House": "House Meadows",
-    "PLOD": 0.275
-}, {
-    "House": "House Kenning of Harlaw",
-    "PLOD": 0.274
-}, {
-    "House": "House Webber",
-    "PLOD": 0.273
-}, {
-    "House": "House Deddings",
-    "PLOD": 0.27
-}, {
-    "House": "House Crabb",
-    "PLOD": 0.27
-}, {
-    "House": "House Wynch",
-    "PLOD": 0.268
-}, {
-    "House": "House Slynt",
-    "PLOD": 0.266
-}, {
-    "House": "House Vypren",
-    "PLOD": 0.263
-}, {
-    "House": "House Vikary",
-    "PLOD": 0.261
-}, {
-    "House": "House Mudd",
-    "PLOD": 0.261
-}, {
-    "House": "House Harclay",
-    "PLOD": 0.261
-}, {
-    "House": "House Fossoway",
-    "PLOD": 0.257
-}, {
-    "House": "House Hewett",
-    "PLOD": 0.252
-}, {
-    "House": "House Haigh",
-    "PLOD": 0.25
-}, {
-    "House": "House Martell",
-    "PLOD": 0.247
-}, {
-    "House": "House Selmy",
-    "PLOD": 0.247
-}, {
-    "House": "House of Loraq",
-    "PLOD": 0.246
-}, {
-    "House": "House Uller",
-    "PLOD": 0.244
-}, {
-    "House": "House Reed",
-    "PLOD": 0.242
-}, {
-    "House": "House Yew",
-    "PLOD": 0.24
-}, {
-    "House": "House Frey of Riverrun",
-    "PLOD": 0.239
-}, {
-    "House": "House Vance",
-    "PLOD": 0.238
+    "plod": 0.293
 }, {
     "House": "House Bolton",
-    "PLOD": 0.233
+    "plod": 0.262
 }, {
-    "House": "House Willum",
-    "PLOD": 0.229
+    "House": "House Martell",
+    "plod": 0.247
+}, {
+    "House": "House Selmy",
+    "plod": 0.247
 }, {
     "House": "House Redwyne",
-    "PLOD": 0.226
-}, {
-    "House": "House Norcross",
-    "PLOD": 0.225
+    "plod": 0.226
 }, {
     "House": "House Connington",
-    "PLOD": 0.223
-}, {
-    "House": "House Grafton",
-    "PLOD": 0.22
-}, {
-    "House": "House Kettleblack",
-    "PLOD": 0.22
-}, {
-    "House": "House Hetherspoon",
-    "PLOD": 0.219
-}, {
-    "House": "House Hunt",
-    "PLOD": 0.219
-}, {
-    "House": "House Brune of Brownhollow",
-    "PLOD": 0.219
-}, {
-    "House": "House Horpe",
-    "PLOD": 0.216
-}, {
-    "House": "House Woods",
-    "PLOD": 0.216
-}, {
-    "House": "House Hogg",
-    "PLOD": 0.216
-}, {
-    "House": "House Waynwood",
-    "PLOD": 0.216
-}, {
-    "House": "House Bywater",
-    "PLOD": 0.216
-}, {
-    "House": "House Dalt",
-    "PLOD": 0.215
-}, {
-    "House": "House Byrch",
-    "PLOD": 0.215
-}, {
-    "House": "House Norridge",
-    "PLOD": 0.214
+    "plod": 0.223
 }, {
     "House": "Faith of the Seven",
-    "PLOD": 0.213
-}, {
-    "House": "Happy Port",
-    "PLOD": 0.212
-}, {
-    "House": "House Paege",
-    "PLOD": 0.211
-}, {
-    "House": "House Botley",
-    "PLOD": 0.21
-}, {
-    "House": "House Vance of Atranta",
-    "PLOD": 0.21
-}, {
-    "House": "House Mallister",
-    "PLOD": 0.209
-}, {
-    "House": "House Bulwer",
-    "PLOD": 0.208
-}, {
-    "House": "House Buckler",
-    "PLOD": 0.205
-}, {
-    "House": "Queensguard",
-    "PLOD": 0.205
-}, {
-    "House": "House Blanetree",
-    "PLOD": 0.205
-}, {
-    "House": "House Prester",
-    "PLOD": 0.202
-}, {
-    "House": "House Serry",
-    "PLOD": 0.201
-}, {
-    "House": "House Manwoody",
-    "PLOD": 0.193
+    "plod": 0.213
 }, {
     "House": "House Baelish",
-    "PLOD": 0.188
-}, {
-    "House": "Brotherhood without banners",
-    "PLOD": 0.187
-}, {
-    "House": "House Mullendore",
-    "PLOD": 0.187
-}, {
-    "House": "House Corbray",
-    "PLOD": 0.185
-}, {
-    "House": "House Nayland",
-    "PLOD": 0.184
-}, {
-    "House": "House Hayford",
-    "PLOD": 0.182
-}, {
-    "House": "House Errol",
-    "PLOD": 0.182
-}, {
-    "House": "House Baratheon of Dragonstone",
-    "PLOD": 0.181
-}, {
-    "House": "House Piper",
-    "PLOD": 0.181
-}, {
-    "House": "House Goodbrook",
-    "PLOD": 0.177
-}, {
-    "House": "House Vaith",
-    "PLOD": 0.173
-}, {
-    "House": "House Stackspear",
-    "PLOD": 0.171
-}, {
-    "House": "House Tollett",
-    "PLOD": 0.17
-}, {
-    "House": "Alchemists' Guild",
-    "PLOD": 0.169
-}, {
-    "House": "House Kenning of Kayce",
-    "PLOD": 0.169
-}, {
-    "House": "Kingswood Brotherhood",
-    "PLOD": 0.167
+    "plod": 0.188
 }, {
     "House": "House Tyrell",
-    "PLOD": 0.165
+    "plod": 0.179
 }, {
-    "House": "House Crane",
-    "PLOD": 0.165
+    "House": "Alchemists' Guild",
+    "plod": 0.169
 }, {
     "House": "House Swyft",
-    "PLOD": 0.161
-}, {
-    "House": "House Baratheon of King's Landing",
-    "PLOD": 0.158
-}, {
-    "House": "House Spicer",
-    "PLOD": 0.151
-}, {
-    "House": "Kingsguard",
-    "PLOD": 0.151
-}, {
-    "House": "Brotherhood Without Banners",
-    "PLOD": 0.149
-}, {
-    "House": "House Royce of the Gates of the Moon",
-    "PLOD": 0.146
-}, {
-    "House": "Stone Crows",
-    "PLOD": 0.145
-}, {
-    "House": "House Blackberry",
-    "PLOD": 0.144
-}, {
-    "House": "House Mollen",
-    "PLOD": 0.142
-}, {
-    "House": "House Clifton",
-    "PLOD": 0.14
-}, {
-    "House": "House Costayne",
-    "PLOD": 0.134
-}, {
-    "House": "House Vance of Wayfarer's Rest",
-    "PLOD": 0.133
-}, {
-    "House": "House Blackmont",
-    "PLOD": 0.114
-}, {
-    "House": "House Blacktyde",
-    "PLOD": 0.114
-}, {
-    "House": "House Graceford",
-    "PLOD": 0.101
-}, {
-    "House": "House Belmore",
-    "PLOD": 0.099
-}, {
-    "House": "House Rykker",
-    "PLOD": 0.097
-}, {
-    "House": "House Harlaw of the Tower of Glimmering",
-    "PLOD": 0.084
-}, {
-    "House": "House Harlaw of Harridan Hill",
-    "PLOD": 0.084
-}, {
-    "House": "House Farman",
-    "PLOD": 0.08
-}, {
-    "House": "Maesters",
-    "PLOD": 0.069
-}, {
-    "House": "House Harlaw of Harlaw Hall",
-    "PLOD": 0.063
-}, {
-    "House": "House Volmark",
-    "PLOD": 0.061
-}, {
-    "House": "House Sharp",
-    "PLOD": 0.054
-}, {
-    "House": "House Banefort",
-    "PLOD": 0.053
-}, {
-    "House": "House Potter",
-    "PLOD": 0.053
-}, {
-    "House": "House Estren",
-    "PLOD": 0.048
-}, {
-    "House": "House Fowler",
-    "PLOD": 0.048
-}, {
-    "House": "House Goodbrother",
-    "PLOD": 0.046
-}, {
-    "House": "House Chyttering",
-    "PLOD": 0.04
-}, {
-    "House": "House Stonehouse",
-    "PLOD": 0.04
-}, {
-    "House": "House Harlaw of Grey Garden",
-    "PLOD": 0.036
-}, {
-    "House": "Peach",
-    "PLOD": 0.032
-}, {
-    "House": "House Bushy",
-    "PLOD": 0.032
-}, {
-    "House": "House Sawyer",
-    "PLOD": 0.032
-}, {
-    "House": "House Turnberry",
-    "PLOD": 0.032
-}, {
-    "House": "House Liddle",
-    "PLOD": 0.031
-}, {
-    "House": "House Lynderly",
-    "PLOD": 0.027
-}, {
-    "House": "House Hardy",
-    "PLOD": 0.027
-}, {
-    "House": "House Moreland",
-    "PLOD": 0.027
-}, {
-    "House": "House Wode",
-    "PLOD": 0.026
-}, {
-    "House": "Band of Nine",
-    "PLOD": 0.025
-}, {
-    "House": "House Bolling",
-    "PLOD": 0.024
-}, {
-    "House": "House Shepherd",
-    "PLOD": 0.024
-}, {
-    "House": "House Jordayne",
-    "PLOD": 0.022
-}, {
-    "House": "House Staedmon",
-    "PLOD": 0.021
-}, {
-    "House": "House Farrow",
-    "PLOD": 0.021
-}, {
-    "House": "House Lannister of Lannisport",
-    "PLOD": 0.021
-}, {
-    "House": "House of Ghazeen",
-    "PLOD": 0.021
-}, {
-    "House": "House Coldwater",
-    "PLOD": 0.02
-}, {
-    "House": "House Ruttiger",
-    "PLOD": 0.02
-}, {
-    "House": "House Grimm",
-    "PLOD": 0.02
-}, {
-    "House": "House Penny",
-    "PLOD": 0.02
-}, {
-    "House": "House Brune of the Dyre Den",
-    "PLOD": 0.02
-}, {
-    "House": "House Bettley",
-    "PLOD": 0.02
-}, {
-    "House": "House Bar Emmon",
-    "PLOD": 0.02
-}, {
-    "House": "House Farwynd of the Lonely Light",
-    "PLOD": 0.02
-}, {
-    "House": "Drowned men",
-    "PLOD": 0.019
-}, {
-    "House": "Brotherhood without Banners",
-    "PLOD": 0.019
-}, {
-    "House": "House of Merreq",
-    "PLOD": 0.019
-}, {
-    "House": "House Gargalen",
-    "PLOD": 0.018
-}, {
-    "House": "House Mertyns",
-    "PLOD": 0.017
-}, {
-    "House": "House Drumm",
-    "PLOD": 0.016
-}, {
-    "House": "House Wagstaff",
-    "PLOD": 0.016
-}, {
-    "House": "House Shett of Gull Tower",
-    "PLOD": 0.016
-}, {
-    "House": "House Chester",
-    "PLOD": 0.015
-}, {
-    "House": "House Ironmaker",
-    "PLOD": 0.015
-}, {
-    "House": "House Longwaters",
-    "PLOD": 0.015
-}, {
-    "House": "House Lychester",
-    "PLOD": 0.013
-}, {
-    "House": "House Broom",
-    "PLOD": 0.011
-}, {
-    "House": "House Longthorpe",
-    "PLOD": 0.01
-}, {
-    "House": "House Weaver",
-    "PLOD": 0.01
-}, {
-    "House": "House Greenhill",
-    "PLOD": 0.007
-}, {
-    "House": "House Humble",
-    "PLOD": 0.007
-}, {
-    "House": "House Merlyn",
-    "PLOD": 0.006
-}, {
-    "House": "Wise Masters",
-    "PLOD": 0.004
-}, {
-    "House": "House Codd",
-    "PLOD": 0.004
-}, {
-    "House": "House Myre",
-    "PLOD": 0.003
-}, {
-    "House": "House Farwynd",
-    "PLOD": 0.002
-}, {
-    "House": "House Stonetree",
-    "PLOD": 0.002
-}, {
-    "House": "House Tawney",
-    "PLOD": 0.002
-}, {
-    "House": "House Sparr",
-    "PLOD": 0.002
-}, {
-    "House": "House Goodbrother of Shatterstone",
-    "PLOD": 0.002
+    "plod": 0.161
 }]
