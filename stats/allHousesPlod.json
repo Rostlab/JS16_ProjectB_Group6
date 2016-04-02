@@ -1,0 +1,895 @@
+[{
+    "House": "house",
+    "plod": null
+}, {
+    "House": "House Cole",
+    "plod": 1
+}, {
+    "House": "House Cerwyn",
+    "plod": 1
+}, {
+    "House": "House Rosby",
+    "plod": 1
+}, {
+    "House": "wildling",
+    "plod": 1
+}, {
+    "House": "Mance Rayder",
+    "plod": 1
+}, {
+    "House": "House Egen",
+    "plod": 1
+}, {
+    "House": "House Blackwood",
+    "plod": 0.993
+}, {
+    "House": "House Lonmouth",
+    "plod": 0.985
+}, {
+    "House": "House Fell",
+    "plod": 0.978
+}, {
+    "House": "House Stokeworth",
+    "plod": 0.97
+}, {
+    "House": "House Poole",
+    "plod": 0.959
+}, {
+    "House": "House Norrey",
+    "plod": 0.951
+}, {
+    "House": "House Wull",
+    "plod": 0.948
+}, {
+    "House": "House Darry",
+    "plod": 0.947
+}, {
+    "House": "House Blackfyre",
+    "plod": 0.924
+}, {
+    "House": "House Tully",
+    "plod": 0.922
+}, {
+    "House": "House Tallhart",
+    "plod": 0.919
+}, {
+    "House": "Stormcrows",
+    "plod": 0.895
+}, {
+    "House": "House Thorne",
+    "plod": 0.89
+}, {
+    "House": "House Celtigar",
+    "plod": 0.869
+}, {
+    "House": "House Cassel",
+    "plod": 0.865
+}, {
+    "House": "House Drinkwater",
+    "plod": 0.864
+}, {
+    "House": "House Foote",
+    "plod": 0.85
+}, {
+    "House": "House Greenfield",
+    "plod": 0.848
+}, {
+    "House": "House Clegane",
+    "plod": 0.848
+}, {
+    "House": "Brave Companions",
+    "plod": 0.838
+}, {
+    "House": "House Gaunt",
+    "plod": 0.838
+}, {
+    "House": "House Rhysling",
+    "plod": 0.828
+}, {
+    "House": "House Condon",
+    "plod": 0.828
+}, {
+    "House": "Unsullied",
+    "plod": 0.824
+}, {
+    "House": "House Nymeros",
+    "plod": 0.822
+}, {
+    "House": "House Bracken",
+    "plod": 0.82
+}, {
+    "House": "Company of the Cat",
+    "plod": 0.813
+}, {
+    "House": "House Strickland",
+    "plod": 0.811
+}, {
+    "House": "House Velaryon",
+    "plod": 0.808
+}, {
+    "House": "The Citadel",
+    "plod": 0.799
+}, {
+    "House": "House Charlton",
+    "plod": 0.787
+}, {
+    "House": "House Targaryen",
+    "plod": 0.775
+}, {
+    "House": "brotherhood without banners",
+    "plod": 0.774
+}, {
+    "House": "House Borrell",
+    "plod": 0.725
+}, {
+    "House": "House Marbrand",
+    "plod": 0.721
+}, {
+    "House": "House Lefford",
+    "plod": 0.704
+}, {
+    "House": "House Seaworth",
+    "plod": 0.699
+}, {
+    "House": "Kingdom of the Three Daughters",
+    "plod": 0.637
+}, {
+    "House": "House Karstark",
+    "plod": 0.632
+}, {
+    "House": "House Penrose",
+    "plod": 0.624
+}, {
+    "House": "Graces",
+    "plod": 0.608
+}, {
+    "House": "House Locke",
+    "plod": 0.605
+}, {
+    "House": "House Flint",
+    "plod": 0.595
+}, {
+    "House": "Golden Company",
+    "plod": 0.586
+}, {
+    "House": "House Strong",
+    "plod": 0.579
+}, {
+    "House": "House Wythers",
+    "plod": 0.579
+}, {
+    "House": "House Darklyn",
+    "plod": 0.571
+}, {
+    "House": "House Sunglass",
+    "plod": 0.569
+}, {
+    "House": "House Hetherspoon",
+    "plod": 0.558
+}, {
+    "House": "Thirteen",
+    "plod": 0.553
+}, {
+    "House": "House Trant",
+    "plod": 0.55
+}, {
+    "House": "Citadel",
+    "plod": 0.543
+}, {
+    "House": "House Erenford",
+    "plod": 0.542
+}, {
+    "House": "House Whent",
+    "plod": 0.537
+}, {
+    "House": "House Hoare",
+    "plod": 0.534
+}, {
+    "House": "House Jast",
+    "plod": 0.533
+}, {
+    "House": "House Mooton",
+    "plod": 0.529
+}, {
+    "House": "House Morrigen",
+    "plod": 0.529
+}, {
+    "House": "Black Ears",
+    "plod": 0.528
+}, {
+    "House": "House Payne",
+    "plod": 0.527
+}, {
+    "House": "House Staunton",
+    "plod": 0.519
+}, {
+    "House": "House Manderly",
+    "plod": 0.512
+}, {
+    "House": "House Blount",
+    "plod": 0.503
+}, {
+    "House": "House Rowan",
+    "plod": 0.498
+}, {
+    "House": "House Lannister",
+    "plod": 0.485
+}, {
+    "House": "House Mormont",
+    "plod": 0.483
+}, {
+    "House": "House Tarly",
+    "plod": 0.481
+}, {
+    "House": "House Brax",
+    "plod": 0.473
+}, {
+    "House": "House Wynch",
+    "plod": 0.47
+}, {
+    "House": "House Risley",
+    "plod": 0.468
+}, {
+    "House": "Pureborn",
+    "plod": 0.467
+}, {
+    "House": "House Swann",
+    "plod": 0.461
+}, {
+    "House": "Faceless Men",
+    "plod": 0.459
+}, {
+    "House": "House Beesbury",
+    "plod": 0.457
+}, {
+    "House": "House Sarsfield",
+    "plod": 0.456
+}, {
+    "House": "House Cupps",
+    "plod": 0.456
+}, {
+    "House": "House Fossoway",
+    "plod": 0.456
+}, {
+    "House": "House Westerling",
+    "plod": 0.455
+}, {
+    "House": "House Caswell",
+    "plod": 0.454
+}, {
+    "House": "House Ryswell",
+    "plod": 0.453
+}, {
+    "House": "House Cox",
+    "plod": 0.446
+}, {
+    "House": "House Crakehall",
+    "plod": 0.442
+}, {
+    "House": "House Woolfield",
+    "plod": 0.441
+}, {
+    "House": "House Farring",
+    "plod": 0.434
+}, {
+    "House": "House Stark",
+    "plod": 0.433
+}, {
+    "House": "House Arryn",
+    "plod": 0.432
+}, {
+    "House": "House Grell",
+    "plod": 0.43
+}, {
+    "House": "Iron Bank of Braavos",
+    "plod": 0.426
+}, {
+    "House": "House Greyjoy",
+    "plod": 0.423
+}, {
+    "House": "House Hollard",
+    "plod": 0.422
+}, {
+    "House": "House Dayne",
+    "plod": 0.42
+}, {
+    "House": "House Allyrion",
+    "plod": 0.413
+}, {
+    "House": "Burned Men",
+    "plod": 0.412
+}, {
+    "House": "House Bolton",
+    "plod": 0.411
+}, {
+    "House": "House Hornwood",
+    "plod": 0.407
+}, {
+    "House": "House Royce",
+    "plod": 0.404
+}, {
+    "House": "Sea watch",
+    "plod": 0.402
+}, {
+    "House": "House Dondarrion",
+    "plod": 0.402
+}, {
+    "House": "House Varner",
+    "plod": 0.402
+}, {
+    "House": "House Osgrey",
+    "plod": 0.401
+}, {
+    "House": "House Hardyng",
+    "plod": 0.399
+}, {
+    "House": "House Yronwood",
+    "plod": 0.399
+}, {
+    "House": "House Hightower",
+    "plod": 0.397
+}, {
+    "House": "House Hawick",
+    "plod": 0.397
+}, {
+    "House": "House Caron",
+    "plod": 0.396
+}, {
+    "House": "House Plumm",
+    "plod": 0.392
+}, {
+    "House": "Second Sons",
+    "plod": 0.389
+}, {
+    "House": "Summer Islands",
+    "plod": 0.388
+}, {
+    "House": "Night's Watch",
+    "plod": 0.384
+}, {
+    "House": "House Merryweather",
+    "plod": 0.379
+}, {
+    "House": "House Frey",
+    "plod": 0.375
+}, {
+    "House": "House Hunter",
+    "plod": 0.369
+}, {
+    "House": "House Yarwyck",
+    "plod": 0.366
+}, {
+    "House": "Three-eyed crow",
+    "plod": 0.363
+}, {
+    "House": "House Wayn",
+    "plod": 0.36
+}, {
+    "House": "House Oakheart",
+    "plod": 0.352
+}, {
+    "House": "House Conklyn",
+    "plod": 0.35
+}, {
+    "House": "House Baratheon",
+    "plod": 0.346
+}, {
+    "House": "House of",
+    "plod": 0.342
+}, {
+    "House": "House Massey",
+    "plod": 0.341
+}, {
+    "House": "House Uffering",
+    "plod": 0.341
+}, {
+    "House": "House Blackbar",
+    "plod": 0.337
+}, {
+    "House": "House Ryger",
+    "plod": 0.336
+}, {
+    "House": "House Wylde",
+    "plod": 0.332
+}, {
+    "House": "House Sunderland",
+    "plod": 0.329
+}, {
+    "House": "House Umber",
+    "plod": 0.327
+}, {
+    "House": "Chataya's brothel",
+    "plod": 0.327
+}, {
+    "House": "Windblown",
+    "plod": 0.323
+}, {
+    "House": "House Peckledon",
+    "plod": 0.323
+}, {
+    "House": "House Leygood",
+    "plod": 0.322
+}, {
+    "House": "House Vyrwel",
+    "plod": 0.32
+}, {
+    "House": "House Gower",
+    "plod": 0.317
+}, {
+    "House": "House Smallwood",
+    "plod": 0.313
+}, {
+    "House": "House Suggs",
+    "plod": 0.313
+}, {
+    "House": "House Lydden",
+    "plod": 0.312
+}, {
+    "House": "R'hllor",
+    "plod": 0.309
+}, {
+    "House": "House Lorch",
+    "plod": 0.308
+}, {
+    "House": "House Ashford",
+    "plod": 0.293
+}, {
+    "House": "Undying Ones",
+    "plod": 0.292
+}, {
+    "House": "House Florent",
+    "plod": 0.289
+}, {
+    "House": "House Stout",
+    "plod": 0.288
+}, {
+    "House": "House Glover",
+    "plod": 0.288
+}, {
+    "House": "Moon Brothers",
+    "plod": 0.287
+}, {
+    "House": "House Ambrose",
+    "plod": 0.286
+}, {
+    "House": "House Boggs",
+    "plod": 0.286
+}, {
+    "House": "House Hasty",
+    "plod": 0.285
+}, {
+    "House": "House Kenning",
+    "plod": 0.284
+}, {
+    "House": "House Crabb",
+    "plod": 0.283
+}, {
+    "House": "Antler Men",
+    "plod": 0.282
+}, {
+    "House": "House Reyne",
+    "plod": 0.282
+}, {
+    "House": "House Toland",
+    "plod": 0.28
+}, {
+    "House": "House Leek",
+    "plod": 0.278
+}, {
+    "House": "House Redfort",
+    "plod": 0.278
+}, {
+    "House": "House Templeton",
+    "plod": 0.278
+}, {
+    "House": "House Martell",
+    "plod": 0.276
+}, {
+    "House": "House Meadows",
+    "plod": 0.275
+}, {
+    "House": "House Deddings",
+    "plod": 0.27
+}, {
+    "House": "?",
+    "plod": 0.266
+}, {
+    "House": "House Qorgyle",
+    "plod": 0.266
+}, {
+    "House": "House Slynt",
+    "plod": 0.266
+}, {
+    "House": "House Vypren",
+    "plod": 0.263
+}, {
+    "House": "House Harclay",
+    "plod": 0.261
+}, {
+    "House": "House Vikary",
+    "plod": 0.261
+}, {
+    "House": "House Estermont",
+    "plod": 0.261
+}, {
+    "House": "House Mudd",
+    "plod": 0.261
+}, {
+    "House": "House Santagar",
+    "plod": 0.252
+}, {
+    "House": "House Hewett",
+    "plod": 0.252
+}, {
+    "House": "House Haigh",
+    "plod": 0.25
+}, {
+    "House": "House Selmy",
+    "plod": 0.247
+}, {
+    "House": "House Uller",
+    "plod": 0.244
+}, {
+    "House": "House Reed",
+    "plod": 0.242
+}, {
+    "House": "House Yew",
+    "plod": 0.24
+}, {
+    "House": "House Botley",
+    "plod": 0.239
+}, {
+    "House": "House Waynwood",
+    "plod": 0.232
+}, {
+    "House": "House Willum",
+    "plod": 0.229
+}, {
+    "House": "House Norcross",
+    "plod": 0.225
+}, {
+    "House": "House Connington",
+    "plod": 0.223
+}, {
+    "House": "House Tarth",
+    "plod": 0.223
+}, {
+    "House": "House Kettleblack",
+    "plod": 0.22
+}, {
+    "House": "House Hunt",
+    "plod": 0.219
+}, {
+    "House": "House Hogg",
+    "plod": 0.216
+}, {
+    "House": "House Horpe",
+    "plod": 0.216
+}, {
+    "House": "House Woods",
+    "plod": 0.216
+}, {
+    "House": "House Dalt",
+    "plod": 0.215
+}, {
+    "House": "House Norridge",
+    "plod": 0.214
+}, {
+    "House": "Happy Port",
+    "plod": 0.212
+}, {
+    "House": "House Paege",
+    "plod": 0.211
+}, {
+    "House": "House Mallister",
+    "plod": 0.209
+}, {
+    "House": "House Bulwer",
+    "plod": 0.208
+}, {
+    "House": "House Buckler",
+    "plod": 0.205
+}, {
+    "House": "House Blanetree",
+    "plod": 0.205
+}, {
+    "House": "House Butterwell",
+    "plod": 0.203
+}, {
+    "House": "House Redwyne",
+    "plod": 0.203
+}, {
+    "House": "House Prester",
+    "plod": 0.202
+}, {
+    "House": "Brotherhood without banners",
+    "plod": 0.201
+}, {
+    "House": "House Serry",
+    "plod": 0.201
+}, {
+    "House": "Alchemists' Guild",
+    "plod": 0.195
+}, {
+    "House": "House Vance",
+    "plod": 0.195
+}, {
+    "House": "House Manwoody",
+    "plod": 0.193
+}, {
+    "House": "House Harlaw",
+    "plod": 0.19
+}, {
+    "House": "House Baelish",
+    "plod": 0.188
+}, {
+    "House": "House Blacktyde",
+    "plod": 0.188
+}, {
+    "House": "House Mullendore",
+    "plod": 0.187
+}, {
+    "House": "House Corbray",
+    "plod": 0.185
+}, {
+    "House": "House Nayland",
+    "plod": 0.184
+}, {
+    "House": "House Errol",
+    "plod": 0.182
+}, {
+    "House": "House Hayford",
+    "plod": 0.182
+}, {
+    "House": "House Piper",
+    "plod": 0.181
+}, {
+    "House": "House Goodbrook",
+    "plod": 0.177
+}, {
+    "House": "House Tyrell",
+    "plod": 0.173
+}, {
+    "House": "House Vaith",
+    "plod": 0.173
+}, {
+    "House": "House Stackspear",
+    "plod": 0.171
+}, {
+    "House": "House Tollett",
+    "plod": 0.17
+}, {
+    "House": "House Grafton",
+    "plod": 0.168
+}, {
+    "House": "Faith of the Seven",
+    "plod": 0.168
+}, {
+    "House": "Kingswood Brotherhood",
+    "plod": 0.167
+}, {
+    "House": "House Crane",
+    "plod": 0.165
+}, {
+    "House": "House Peake",
+    "plod": 0.165
+}, {
+    "House": "House Swyft",
+    "plod": 0.161
+}, {
+    "House": "House Brune",
+    "plod": 0.153
+}, {
+    "House": "Stone Crows",
+    "plod": 0.152
+}, {
+    "House": "House Spicer",
+    "plod": 0.151
+}, {
+    "House": "Kingsguard",
+    "plod": 0.151
+}, {
+    "House": "House Cuy",
+    "plod": 0.151
+}, {
+    "House": "Brotherhood Without Banners",
+    "plod": 0.149
+}, {
+    "House": "House Blackberry",
+    "plod": 0.144
+}, {
+    "House": "House Mollen",
+    "plod": 0.142
+}, {
+    "House": "House Clifton",
+    "plod": 0.14
+}, {
+    "House": "House Costayne",
+    "plod": 0.134
+}, {
+    "House": "House Lothston",
+    "plod": 0.131
+}, {
+    "House": "House Webber",
+    "plod": 0.127
+}, {
+    "House": "House Inchfield",
+    "plod": 0.117
+}, {
+    "House": "House Blackmont",
+    "plod": 0.114
+}, {
+    "House": "House Heddle",
+    "plod": 0.107
+}, {
+    "House": "House Graceford",
+    "plod": 0.101
+}, {
+    "House": "House Belmore",
+    "plod": 0.099
+}, {
+    "House": "House Rykker",
+    "plod": 0.097
+}, {
+    "House": "House Farman",
+    "plod": 0.08
+}, {
+    "House": "Maesters",
+    "plod": 0.069
+}, {
+    "House": "House Volmark",
+    "plod": 0.061
+}, {
+    "House": "House Potter",
+    "plod": 0.053
+}, {
+    "House": "House Banefort",
+    "plod": 0.053
+}, {
+    "House": "House Wells",
+    "plod": 0.05
+}, {
+    "House": "House Estren",
+    "plod": 0.048
+}, {
+    "House": "House Fowler",
+    "plod": 0.048
+}, {
+    "House": "House Sharp",
+    "plod": 0.048
+}, {
+    "House": "House Goodbrother",
+    "plod": 0.04
+}, {
+    "House": "House Chyttering",
+    "plod": 0.04
+}, {
+    "House": "House Stonehouse",
+    "plod": 0.04
+}, {
+    "House": "House Sawyer",
+    "plod": 0.032
+}, {
+    "House": "House Turnberry",
+    "plod": 0.032
+}, {
+    "House": "Peach",
+    "plod": 0.032
+}, {
+    "House": "House Liddle",
+    "plod": 0.031
+}, {
+    "House": "House Moreland",
+    "plod": 0.027
+}, {
+    "House": "House Hardy",
+    "plod": 0.027
+}, {
+    "House": "House Lynderly",
+    "plod": 0.027
+}, {
+    "House": "House Wode",
+    "plod": 0.026
+}, {
+    "House": "House Shepherd",
+    "plod": 0.024
+}, {
+    "House": "House Bolling",
+    "plod": 0.024
+}, {
+    "House": "House Jordayne",
+    "plod": 0.022
+}, {
+    "House": "House Staedmon",
+    "plod": 0.021
+}, {
+    "House": "House Grimm",
+    "plod": 0.02
+}, {
+    "House": "House Penny",
+    "plod": 0.02
+}, {
+    "House": "House Coldwater",
+    "plod": 0.02
+}, {
+    "House": "House Ruttiger",
+    "plod": 0.02
+}, {
+    "House": "House Bettley",
+    "plod": 0.02
+}, {
+    "House": "House Bar",
+    "plod": 0.02
+}, {
+    "House": "Drowned men",
+    "plod": 0.019
+}, {
+    "House": "Brotherhood without Banners",
+    "plod": 0.019
+}, {
+    "House": "House Gargalen",
+    "plod": 0.018
+}, {
+    "House": "House Mertyns",
+    "plod": 0.017
+}, {
+    "House": "House Drumm",
+    "plod": 0.016
+}, {
+    "House": "House Farwynd",
+    "plod": 0.016
+}, {
+    "House": "House Shett",
+    "plod": 0.016
+}, {
+    "House": "House Wagstaff",
+    "plod": 0.016
+}, {
+    "House": "House Chester",
+    "plod": 0.015
+}, {
+    "House": "House Longwaters",
+    "plod": 0.015
+}, {
+    "House": "House Ironmaker",
+    "plod": 0.015
+}, {
+    "House": "House Lychester",
+    "plod": 0.013
+}, {
+    "House": "House Broom",
+    "plod": 0.011
+}, {
+    "House": "House Weaver",
+    "plod": 0.01
+}, {
+    "House": "House Longthorpe",
+    "plod": 0.01
+}, {
+    "House": "House Greenhill",
+    "plod": 0.007
+}, {
+    "House": "House Humble",
+    "plod": 0.007
+}, {
+    "House": "House Merlyn",
+    "plod": 0.006
+}, {
+    "House": "Wise Masters",
+    "plod": 0.004
+}, {
+    "House": "House Codd",
+    "plod": 0.004
+}, {
+    "House": "House Myre",
+    "plod": 0.003
+}, {
+    "House": "House Stonetree",
+    "plod": 0.002
+}, {
+    "House": "House Tawney",
+    "plod": 0.002
+}, {
+    "House": "House Sparr",
+    "plod": 0.002
+}]

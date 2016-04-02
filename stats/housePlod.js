@@ -4,10 +4,18 @@ houseHelp = {};
 csv.each('characters.csv').on('data', function(data) {
 	var house = data[14];
 	var houseName = house.match(/House ([^ ]+)/);
+	var isAlive = data[32];
+	var age = data[27];
 	if(houseName){
 		house = houseName[0];
 	}
+	if(isAlive != 0){
 	var plod = parseFloat(data[4].replace(',','.'));
+	} else if(age != undefined && age < 100){
+	plod = 1;
+	} else {
+		return;
+	}
 	var isPopular = data[30];	
 	if(!house){
 		return;
