@@ -1,5 +1,6 @@
-var weka_pred = JSON.parse(require('fs').readFileSync('weka_pred.json', 'utf8'));
-var weka_attr_score = JSON.parse(require('fs').readFileSync('weka_rank.json', 'utf8'));
+var path = require('path');
+var weka_pred = JSON.parse(require('fs').readFileSync(path.resolve(__dirname,'weka_pred.json'), 'utf8'));
+var weka_attr_score = JSON.parse(require('fs').readFileSync(path.resolve(__dirname,'weka_rank.json'), 'utf8'));
 
 var char_plod ={};
 var attr_score ={};
