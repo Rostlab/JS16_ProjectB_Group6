@@ -1,6 +1,6 @@
 var csv = require('node-csv');
-lines = 0;
 houseHelp = {};
+var counter = 0;
 csv.each('characters.csv').on('data', function(data) {
 	var house = data[14];
 	var houseName = house.match(/House ([^ ]+)/);
@@ -16,24 +16,24 @@ csv.each('characters.csv').on('data', function(data) {
 	} else {
 		return;
 	}
-	var isPopular = data[30];	
+	var isPopular = parseInt(data[30]);	
 	if(!house){
 		return;
 	}
 	if(house in houseHelp){
 		houseHelp[house][0]++;
 		houseHelp[house][1] += plod;
-		houseHelp[house][2] += isPopular;		 
+		//houseHelp[house][2] += isPopular;	
 	} else {
-		houseHelp[house] = [1,plod,isPopular];
+		houseHelp[house] = [1,plod];
 	}
 	
 }).on('end', function() {
 	housePlod = [];
 	for(var house in houseHelp){
-	 	if(houseHelp[house][2] > 0){
-		housePlod.push({House:house,plod:(Math.round(1000*(houseHelp[house][1]/houseHelp[house][0])))/1000});
-		}
+	 	//if(houseHelp[house][2] > 0){
+		housePlod.push({House:house,plod:(Math.round(1000*(houseHelp[house][1]/105)))/1000}); //houseHelp[house][0])))/1000});
+		//}
 	}
 	housePlod.sort(function(a, b) {
     	return b.plod - a.plod;
