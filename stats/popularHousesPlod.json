@@ -2,32 +2,65 @@
     "House": "House Cole",
     "plod": 1
 }, {
-    "House": "House Stokeworth",
-    "plod": 0.97
+    "House": "House Rosby",
+    "plod": 1
+}, {
+    "House": "House Chelsted",
+    "plod": 1
 }, {
     "House": "House Poole",
-    "plod": 0.959
+    "plod": 0.98
+}, {
+    "House": "House Stokeworth",
+    "plod": 0.98
+}, {
+    "House": "House Cassel",
+    "plod": 0.966
 }, {
     "House": "House Tully",
-    "plod": 0.922
+    "plod": 0.948
 }, {
     "House": "House Clegane",
-    "plod": 0.848
+    "plod": 0.899
+}, {
+    "House": "House Velaryon",
+    "plod": 0.843
+}, {
+    "House": "House Seaworth",
+    "plod": 0.833
 }, {
     "House": "House Nymeros",
     "plod": 0.822
 }, {
-    "House": "House Velaryon",
-    "plod": 0.808
-}, {
     "House": "House Targaryen",
-    "plod": 0.775
+    "plod": 0.819
 }, {
     "House": "brotherhood without banners",
     "plod": 0.774
 }, {
-    "House": "House Seaworth",
-    "plod": 0.699
+    "House": "Night's Watch",
+    "plod": 0.618
+}, {
+    "House": "House Oakheart",
+    "plod": 0.611
+}, {
+    "House": "House Greyjoy",
+    "plod": 0.592
+}, {
+    "House": "House Lannister",
+    "plod": 0.576
+}, {
+    "House": "House Westerling",
+    "plod": 0.576
+}, {
+    "House": "House Arryn",
+    "plod": 0.574
+}, {
+    "House": "House Stark",
+    "plod": 0.559
+}, {
+    "House": "House Bolton",
+    "plod": 0.537
 }, {
     "House": "House Manderly",
     "plod": 0.512
@@ -35,52 +68,46 @@
     "House": "House Rowan",
     "plod": 0.498
 }, {
-    "House": "House Lannister",
-    "plod": 0.485
-}, {
     "House": "House Mormont",
     "plod": 0.483
 }, {
     "House": "House Tarly",
     "plod": 0.481
 }, {
-    "House": "House Westerling",
-    "plod": 0.455
+    "House": "House Hightower",
+    "plod": 0.472
 }, {
-    "House": "House Stark",
-    "plod": 0.433
+    "House": "House Butterwell",
+    "plod": 0.468
 }, {
-    "House": "House Arryn",
-    "plod": 0.432
+    "House": "?",
+    "plod": 0.406
 }, {
-    "House": "House Greyjoy",
-    "plod": 0.423
+    "House": "House Florent",
+    "plod": 0.399
 }, {
-    "House": "House Bolton",
-    "plod": 0.411
+    "House": "House Baratheon",
+    "plod": 0.396
 }, {
-    "House": "Night's Watch",
-    "plod": 0.384
+    "House": "House Frey",
+    "plod": 0.382
 }, {
     "House": "House Merryweather",
     "plod": 0.379
 }, {
-    "House": "House Frey",
-    "plod": 0.375
-}, {
-    "House": "House Baratheon",
-    "plod": 0.346
+    "House": "Alchemists' Guild",
+    "plod": 0.31
 }, {
     "House": "R'hllor",
     "plod": 0.309
 }, {
-    "House": "House Florent",
-    "plod": 0.289
-}, {
     "House": "House Martell",
-    "plod": 0.276
+    "plod": 0.301
 }, {
-    "House": "?",
+    "House": "House Redwyne",
+    "plod": 0.292
+}, {
+    "House": "Faith of the Seven",
     "plod": 0.266
 }, {
     "House": "House Selmy",
@@ -89,15 +116,11 @@
     "House": "House Connington",
     "plod": 0.223
 }, {
-    "House": "House Redwyne",
-    "plod": 0.203
+    "House": "House Tyrell",
+    "plod": 0.218
 }, {
     "House": "House Baelish",
     "plod": 0.188
 }, {
-    "House": "House Tyrell",
-    "plod": 0.173
-}, {
     "House": "House Swyft",
     "plod": 0.161
-}]
