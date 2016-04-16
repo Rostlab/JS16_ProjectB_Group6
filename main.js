@@ -1,5 +1,6 @@
-var weka_pred = JSON.parse(require('fs').readFileSync('weka_pred.json', 'utf8'));
-var weka_attr_score = JSON.parse(require('fs').readFileSync('weka_rank.json', 'utf8'));
+var path = require('path');
+var weka_pred = JSON.parse(require('fs').readFileSync(path.resolve(__dirname,'weka_pred.json'), 'utf8'));
+var weka_attr_score = JSON.parse(require('fs').readFileSync(path.resolve(__dirname,'weka_rank.json'), 'utf8'));
 
 var char_plod ={};
 var attr_score ={};
@@ -10,9 +11,6 @@ for (var i=0; i < weka_pred.length; i++) {
 for (var i=0; i < weka_attr_score.length; i++) {
     attr_score[weka_attr_score[i].feature] = weka_attr_score[i].reliefFScore;
 }
-console.log(char_plod)
-console.log(attr_score)
-
 module.exports={
     getCharPLOD: function(char_name){
         if (char_plod.hasOwnProperty(char_name)) {
