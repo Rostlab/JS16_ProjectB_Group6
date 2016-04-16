@@ -1,8 +1,8 @@
 var urls = {
-	"characters" : "https://got-api.bruck.me/api/characters/",
-	"houses" : "https://got-api.bruck.me/api/houses/",
-	"regions" : "https://got-api.bruck.me/api/regions/",
-	"cultures" : "https://got-api.bruck.me/api/cultures/",
+	"characters" : "https://api.got.show/api/characters/",
+	"houses" : "https://api.got.show/api/houses/",
+	"regions" : "https://api.got.show/api/regions/",
+	"cultures" : "https://api.got.show/api/cultures/",
 	"wiki" : "http://gameofthrones.wikia.com/wiki/"
 }
 
