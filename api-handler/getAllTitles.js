@@ -8,8 +8,9 @@ module.exports={
 		json = JSON.parse(json);
 		var titles = [];
 		json.forEach(function(element,index){
-			if(element["title"] != undefined && titles.indexOf('"'+element["title"]+'"') == -1){
-			titles.push('"'+element["title"]+'"');
+			var title = element["titles"][0];
+			if(element["titles"] != undefined && titles.indexOf('"'+title+'"') == -1){
+			titles.push('"'+title+'"');
 			}
 		});
 		return titles.sort();

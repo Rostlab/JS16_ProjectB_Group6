@@ -168,7 +168,7 @@ function proCharacters(){
     		res.forEach(function(element,index){
     		  if(filter(element["name"])){
 				var name = '"'+foo(element["name"])+'"';
-				var title = (element["title"] !== undefined)?('"'+element["title"]+'"'):"?";
+				var title = (element["titles"].length !== 0)?('"'+element["titles"][0]+'"'):"?";
 				var male = (element["male"] !== undefined)?((element["male"])?(1):(0)):"?";
 				var culture = (element["culture"] !== undefined)?('"'+element["culture"]+'"'):"?";
 				allCul1.push((element["culture"] !== undefined)?('"'+element["culture"]+'"'):"");
@@ -204,7 +204,7 @@ function proCharacters(){
 				arff += ','+isAliveMother+','+isAliveFather+','+isAliveHeir+','+isAliveSpouse;
 
 				var isMarried = (element["spouse"] !== undefined)?(1):(0);
-				var isNoble = (element["title"] !== undefined && smallFolk.indexOf(element["title"])== -1)?1:0;
+				var isNoble = ((element["titles"].length !== 0) && smallFolk.indexOf(element["titles"])== -1)?1:0;
 				var age = "?";
 				if(element["dateOfBirth"] !== undefined){
 					if(element["dateOfDeath"] !== undefined){

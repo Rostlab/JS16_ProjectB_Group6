@@ -10,8 +10,9 @@ for (var i=0; i < weka_pred.length; i++) {
 for (var i=0; i < weka_attr_score.length; i++) {
     attr_score[weka_attr_score[i].feature] = weka_attr_score[i].reliefFScore;
 }
-console.log(char_plod);
-console.log(attr_score);
+console.log(char_plod)
+console.log(attr_score)
+
 module.exports={
     getCharPLOD: function(char_name){
         if (char_plod.hasOwnProperty(char_name)) {
